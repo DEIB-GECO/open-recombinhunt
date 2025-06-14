@@ -18,7 +18,17 @@ We apply this framework to openly-accessible datasets of SARS-CoV-2, Respiratory
 
 ----
 
+#### OpenRecombinHunt essentials
+This repository will contain:
+- The code of the Web application running on our servers
+- A user manual to run the application on a local machine:
+-     Docker architecture
+-     Software download
+-     Preparation/format of input
+-     Application startup
+In this preliminary version, we only report the documentation of our essential module, RecombinHunt, below.
 
+----
 
 # RecombinHunt
 RecombinHunt is a Python library implementing a data-driven novel method for identifying contributing lineages and breakpoints in recombinant viral sequences. The method is described in the following manuscript:
@@ -199,9 +209,6 @@ for each lineage.
 
 The source code is located in the ```src/``` directory.
 
-## License
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
-
 
  --------
 
@@ -217,6 +224,9 @@ The code is available on a [GitHub repository](https://github.com/matteo14c/Hapl
 
 
 --------
+
+## License
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
 
 
 
