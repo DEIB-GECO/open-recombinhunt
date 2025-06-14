@@ -1,26 +1,37 @@
-# RecombinHunt-CoV
+# OpenRecombinHunt
 
-This repository is an updated software version of the material and source code referenced and documented in the following manuscript:
+OpenRecombinHunt provides an online temporal snapshot of potential recombination events (i.e., single sequences with suspected mosaic structure, with one or two breakpoints).
+In this repository, we provide the code of our method and corresponding Web Server, with the potential of unlocking the automatic detection of recombination in viruses along the most current genomic surveillance interests.
 
+#### Motivation
+Viruses undergo change affecting their genome by several mechanisms, including point mutation and recombination. With the availability of open databases with large amounts of genome sequences (e.g., NCBI Virus and Nextstrain/pathogens) and the implementation of genomic surveillance systems, the need for light-weight automatic computational methods for  monitoring  continuously updating open data surges.
+
+#### Methodology
+OpenRecombinHunt extends our previously published RecombinHunt method ([Alfonsi et al., 2024](https://doi.org/10.1038/s41467-024-47464-5)), which we extensively applied to identify recombinant SARS-CoV-2 lineages, to any virus for which a large corpus of sequences is publicly available. 
+Here, we couple RecombinHunt with the HaploCov method ([Chiara et al., 2023](https://doi.org/10.1038/s42003-023-04784-4)), which allows the stratification of any virus in a discrete number of groups, even in the absence of a reference nomenclature, and derives a list of characterizing mutations. 
+
+OpenRecombinHunt provides 1) the holistic framework that exploits the output of HaploCoV as input of RecombinHunt, and 2) the automatic pipeline and Web reporting system that regularly updates datasets from NCBI Virus/Nextstrain sources and identifies novel recombination events, with a substantial contribution with respect to the previously cited works.
+
+#### Use cases 
+We apply this framework to openly-accessible datasets of SARS-CoV-2, Respiratory syncytial virus (RSV) A/B, monkeypox, Zika, Yellow Fever, and even hemagglutinin segments of H5N1 Influenza A, reporting several interesting insights.
+
+
+----
+
+
+
+# RecombinHunt
+RecombinHunt is a Python library implementing a data-driven novel method for identifying contributing lineages and breakpoints in recombinant viral sequences. The method is described in the following manuscript:
 > [Data-driven recombination detection in viral genomes](https://doi.org/10.1038/s41467-024-47464-5),
-> 
-> Tommaso Alfonsi, Anna Bernasconi, Matteo Chiara, Stefano Ceri
-> 
+> Tommaso Alfonsi, Anna Bernasconi, Matteo Chiara, Stefano Ceri> 
 > Nature Communications 15, 3313 (2024). https://doi.org/10.1038/s41467-024-47464-5
+The code is available on a [Zenodo repository](https://doi.org/10.5281/zenodo.8123832.
 
-> The original version referenced in the manuscript is the Version 4 (recombinhunt-cov-3.3.3-v4.zip), released March 13th, 2024 and available on the same Zenodo repository at the following [link](https://doi.org/10.5281/zenodo.10812636). 
-
-RecombinHunt (alias for the software contained in this repository) is a Python library implementing a data-driven novel method for identifying contributing lineages and breakpoints in recombinant viral sequences.
-
-# Installation
-
+## Installation
 Installation requires Python 3.10.12 and PIP. The software is independent of the operating system.
 It is suggested to use a dedicated python environment (e.g., conda, miniconda or venv). Below, it is described how to create one with conda.
 
 #### System requirements
-
-
-
 Here we describe how to create a conda environment suitable for the installation of RecombinHunt. If you already know how to create one or want to use a different virtual environment, you can safely skip this subsection.
 
 1. Follow the instructions at https://docs.conda.io/en/latest/miniconda.html# to download and install the latest version of miniconda.
@@ -29,7 +40,7 @@ Here we describe how to create a conda environment suitable for the installation
    $ conda create -n rh_env python=3.10.12 pip
    $ conda activate rh_env
     ```
-
+    
 Once the prerequisites are satisfied, move into the RecombinHunt-CoV directory and install the package with:  
 
 ```bash
@@ -51,10 +62,7 @@ fastjsonschema 2.20.0
 pyarrow 17.0.0
 ```
 
-
- 
-# Usage
-
+## Usage
 This package already provides the context information (*environment*) that are needed to evaluate the sequences. (The given *environment* is compressed to save storage space; please unzip it before proceeding). 
 
 You can load any suitable environment as:
@@ -150,12 +158,12 @@ In the ```demo/``` directory, you find the Jupyter Notebook ```recombinant_cases
 notebook computes the recombinant cases in Nextstrain dataset using the consensus of all the sequence of 
 good quality found for each recombinant case. 
 
-#### Demo input
+### Demo input
 The original nucleotide sequences are
 stored in ```demo/demo_input_nextstrain``` - for example, the sequences of recombinant case XD are stored in 
 ```demo/demo_input_nextstrain/sampels_XD.csv```. For each case, the consensus sequence is computed at runtime.
 
-#### Demo output
+### Demo output
 The notebook produces two files stored in ```demo/demo_input_nextstrain```:
 - *summary.md* is a markdown file organising the output of RecombinHunt in a tabular form (one row for each case) and 
 comparing the output against the ground truth when available.
@@ -163,10 +171,10 @@ comparing the output against the ground truth when available.
 plotting library). This file contains a more detailed output of RecombinHunt; it includes the plot of the likelihood 
 ratio for the candidate lineages contributing to a recombination, and the consensus sequence for each case.
 
-#### Expected run time
+### Expected run time
 The demo runs in ~ 1 minute. 
 
-#### Instructions
+### Instructions
 The demo is a Juputer notebook and requires a Jupyter server to run.
 The RecombinHunt package will automatically install Jupyter among its dependencies. To start a jupyter server locally, 
 open a terminal, move inside this README is located and run:
@@ -187,22 +195,28 @@ sequences satisfying our quality filters were retained.
 for each lineage.
 - ```demo/validation_data/alias_key.json```: File of recombinant definitions provided from PANGO GitHub repository.
 
-
 ## Source code
 
 The source code is located in the ```src/``` directory.
 
-## Acknowledgements
-
-This project is run by 
-- Tommaso Alfonsi - PhD candidate - Politecnico di Milano - tommaso.alfonsi@polimi.it
-- Anna Bernasconi - Assistant Professor - Politecnico di Milano - anna.bernasconi@polimi.it
-- Matteo Chiara - Associate Professor - Università degli Studi di Milano - matteo.chiara@unimi.it
-- Stefano Ceri - Full Professor - Politecnico di Milano - stefano.ceri@polimi.it
-
-
 ## License
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
- 
+
+
+ --------
+
+# HaploCov
+HaploCoV is a library collecting a set of utilities and methods to identify novel variants of viruses.
+In the manuscript:
+> [HaploCoV: unsupervised classification and rapid detection of novel emerging variants of SARS-CoV-2](https://doi.org/10.1038/s42003-023-04784-4),
+> Matteo Chiara, David S. Horner, Erika Ferrandi, Carmela Gissi, Graziano Pesole> 
+> Communication Biology 6, 443 (2023). https://doi.org/10.1038/s42003-023-04784-4
+Its use has been described for SARS-CoV-2.
+The code is available on a [GitHub repository](https://github.com/matteo14c/HaploCoV).
+
+
+
+--------
+
 
 
