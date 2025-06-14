@@ -15,17 +15,14 @@ OpenRecombinHunt provides 1) the holistic framework that exploits the output of 
 #### Use cases 
 We apply this framework to openly-accessible datasets of SARS-CoV-2, Respiratory syncytial virus (RSV) A/B, monkeypox, Zika, Yellow Fever, and even hemagglutinin segments of H5N1 Influenza A, reporting several interesting insights.
 
-
-----
-
-#### OpenRecombinHunt essentials
+#### Repository essentials
 This repository will contain:
 - The code of the Web application running on our servers
 - A user manual to run the application on a local machine:
--     Docker architecture
--     Software download
--     Preparation/format of input
--     Application startup
+    - Docker architecture
+    - Software download
+    - Preparation/format of input
+    - Application startup
 In this preliminary version, we only report the documentation of our essential module, RecombinHunt, below.
 
 ----
