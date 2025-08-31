@@ -37,5 +37,5 @@ toml==0.10.2
 urllib3==2.5.0
 watchdog==6.0.0
 webencodings==0.5.1
-numpy==2.2.6
+numpy==1.26.0
 pandas==2.1.1
