@@ -1,0 +1,18 @@
+{
+    "case_number": 63,
+    "case_name": "PP507073.1",
+    "group_name": "F.6",
+    "number_of_sequences": 33,
+    "number_of_changes": 68,
+    "best_candidates": "B.1.17.NmC5 + F.6",
+    "best_candidates_breakpoints_target": "35-36",
+    "best_candidates_breakpoints_genomic": "105470 - 105471",
+    "direction_L1": "<<",
+    "initial_region_span": "1-35,36-68",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 1.26e-01",
+    "p_value_vs_L1": "1.37e-103",
+    "p_value_vs_L2": "2.14e-16",
+    "flags": "Model_1BP_Best"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 23,
+    "case_name": "PP_001JYRF",
+    "group_name": "A.D.3.6",
+    "number_of_sequences": 757,
+    "number_of_changes": 21,
+    "best_candidates": "A.D.NmC1 + A.D.3.6",
+    "best_candidates_breakpoints_target": "8-9",
+    "best_candidates_breakpoints_genomic": "5407 - 5408",
+    "direction_L1": "<<",
+    "initial_region_span": "1-8,9-21",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 3.13e-126",
+    "p_value_vs_L1": "4.63e-05",
+    "p_value_vs_L2": "9.10e-03",
+    "flags": "Model_1BP_Best"
+}

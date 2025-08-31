@@ -1,0 +1,18 @@
+{
+    "case_number": 42,
+    "case_name": "PQ451843.1",
+    "group_name": "B.1.20",
+    "number_of_sequences": 87,
+    "number_of_changes": 66,
+    "best_candidates": "B.1.20 + B.1.2.NmC6 + B.1.20",
+    "best_candidates_breakpoints_target": "35-36, 53-54",
+    "best_candidates_breakpoints_genomic": "83752 - 83753, 150799 - 150800",
+    "direction_L1": ">>",
+    "initial_region_span": "1-35,36-53,54-66",
+    "gap_history": "35-54 -> ",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 3.31e-08",
+    "p_value_vs_L1": "4.26e-29",
+    "p_value_vs_L2": "2.15e-56",
+    "flags": "Model_2BP_Best"
+}

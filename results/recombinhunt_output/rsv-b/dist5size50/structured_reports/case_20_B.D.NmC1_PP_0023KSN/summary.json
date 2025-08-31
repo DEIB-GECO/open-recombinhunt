@@ -1,0 +1,18 @@
+{
+    "case_number": 20,
+    "case_name": "PP_0023KSN",
+    "group_name": "B.D.NmC1",
+    "number_of_sequences": 1726,
+    "number_of_changes": 43,
+    "best_candidates": "B.D.NmC1 + B.D.2 + B.D.NmC1",
+    "best_candidates_breakpoints_target": "31-32, 36-37",
+    "best_candidates_breakpoints_genomic": "5435 - 5436, 5461 - 5462",
+    "direction_L1": ">>",
+    "initial_region_span": "1-31,32-35,37-43",
+    "gap_history": "31-37 -> 35-37",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 3.05e-08",
+    "p_value_vs_L1": "2.44e-08",
+    "p_value_vs_L2": "7.44e-117",
+    "flags": "Model_2BP_Best"
+}

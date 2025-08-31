@@ -1,0 +1,18 @@
+{
+    "case_number": 3,
+    "case_name": "PP_001GW21",
+    "group_name": "A.D.3.NmC1",
+    "number_of_sequences": 397,
+    "number_of_changes": 56,
+    "best_candidates": "A.D.4.NmC1 + A.D.3.NmC1",
+    "best_candidates_breakpoints_target": "6-7",
+    "best_candidates_breakpoints_genomic": "4989 - 4990",
+    "direction_L1": "<<",
+    "initial_region_span": "1-6,7-56",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.86e-54",
+    "p_value_vs_L2": "5.10e-02",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 8,
+    "case_name": "PP_0021TG5",
+    "group_name": "B.D.1",
+    "number_of_sequences": 334,
+    "number_of_changes": 46,
+    "best_candidates": "B.3 + B.D.1",
+    "best_candidates_breakpoints_target": "5-6",
+    "best_candidates_breakpoints_genomic": "4940 - 4941",
+    "direction_L1": "<<",
+    "initial_region_span": "1-5,22-46",
+    "gap_history": "5-22",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "3.26e-30",
+    "p_value_vs_L2": "1.71e-07",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

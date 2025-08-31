@@ -1,0 +1,18 @@
+{
+    "case_number": 8,
+    "case_name": "OQ965116.1",
+    "group_name": "A.1",
+    "number_of_sequences": 3213,
+    "number_of_changes": 155,
+    "best_candidates": "A.1 + A.1.NmC5 + A.1",
+    "best_candidates_breakpoints_target": "134-135, 139-140",
+    "best_candidates_breakpoints_genomic": "1494 - 1495, 1538 - 1539",
+    "direction_L1": ">>",
+    "initial_region_span": "1-132,136-139,140-155",
+    "gap_history": "132-140 -> 132-136",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 5.52e-03",
+    "p_value_vs_L1": "4.63e+01",
+    "p_value_vs_L2": "2.03e-120",
+    "flags": "Model_2BP_Best"
+}

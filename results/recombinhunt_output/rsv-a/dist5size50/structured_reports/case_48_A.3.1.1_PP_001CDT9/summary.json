@@ -1,0 +1,18 @@
+{
+    "case_number": 48,
+    "case_name": "PP_001CDT9",
+    "group_name": "A.3.1.1",
+    "number_of_sequences": 731,
+    "number_of_changes": 35,
+    "best_candidates": "A.3.1.1 + A.D.5.NmC1",
+    "best_candidates_breakpoints_target": "25-26",
+    "best_candidates_breakpoints_genomic": "5575 - 5576",
+    "direction_L1": "<<",
+    "initial_region_span": "1-25,26-35",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "4.12e-08",
+    "p_value_vs_L2": "2.97e-36",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

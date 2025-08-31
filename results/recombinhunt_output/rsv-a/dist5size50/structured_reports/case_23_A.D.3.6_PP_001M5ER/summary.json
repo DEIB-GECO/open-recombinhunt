@@ -1,0 +1,18 @@
+{
+    "case_number": 23,
+    "case_name": "PP_001M5ER",
+    "group_name": "A.D.3.6",
+    "number_of_sequences": 757,
+    "number_of_changes": 19,
+    "best_candidates": "A.D.3.6 + A.D.4.NmC3",
+    "best_candidates_breakpoints_target": "11-12",
+    "best_candidates_breakpoints_genomic": "5444 - 5445",
+    "direction_L1": ">>",
+    "initial_region_span": "1-11,12-19",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 2.07e-05",
+    "p_value_vs_L1": "5.17e-05",
+    "p_value_vs_L2": "2.12e-281",
+    "flags": "Model_1BP_Best"
+}

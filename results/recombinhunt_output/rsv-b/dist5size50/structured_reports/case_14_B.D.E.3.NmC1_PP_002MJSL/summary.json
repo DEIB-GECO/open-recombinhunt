@@ -1,0 +1,18 @@
+{
+    "case_number": 14,
+    "case_name": "PP_002MJSL",
+    "group_name": "B.D.E.3.NmC1",
+    "number_of_sequences": 1318,
+    "number_of_changes": 82,
+    "best_candidates": "B.D.E.3.NmC1 + B.D.4.1",
+    "best_candidates_breakpoints_target": "74-75",
+    "best_candidates_breakpoints_genomic": "5614 - 5615",
+    "direction_L1": ">>",
+    "initial_region_span": "1-69,75-82",
+    "gap_history": "69-75",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "8.32e-11",
+    "p_value_vs_L2": "1.76e-202",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 9,
+    "case_name": "PP_00223A5",
+    "group_name": "B.D.1.NmC1",
+    "number_of_sequences": 605,
+    "number_of_changes": 105,
+    "best_candidates": "B.D.1.NmC1 + B.D.4.1 + B.D.1.NmC1",
+    "best_candidates_breakpoints_target": "69-70, 82-83",
+    "best_candidates_breakpoints_genomic": "5563 - 5564, 6030 - 6031",
+    "direction_L1": ">>",
+    "initial_region_span": "1-27,80-82,83-105",
+    "gap_history": "27-83 -> 27-80",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 3.59e-03",
+    "p_value_vs_L1": "2.41e-03",
+    "p_value_vs_L2": "2.69e-232",
+    "flags": "Model_2BP_Best"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 70,
+    "case_name": "OR777681.1",
+    "group_name": "B.1.NmC5",
+    "number_of_sequences": 256,
+    "number_of_changes": 60,
+    "best_candidates": "B.1.22 + B.1.2.NmC5 + B.1.22",
+    "best_candidates_breakpoints_target": "17-18, 32-33",
+    "best_candidates_breakpoints_genomic": "39172 - 39173, 85412 - 85413",
+    "direction_L1": "<<",
+    "initial_region_span": "1-17,18-32,33-60",
+    "gap_history": "17-33 -> ",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 8.23e-05",
+    "p_value_vs_L1": "1.78e-17",
+    "p_value_vs_L2": "4.83e-85",
+    "flags": "Model_2BP_Best"
+}

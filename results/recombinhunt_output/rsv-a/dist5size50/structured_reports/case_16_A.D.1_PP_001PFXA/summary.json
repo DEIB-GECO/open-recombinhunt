@@ -1,0 +1,18 @@
+{
+    "case_number": 16,
+    "case_name": "PP_001PFXA",
+    "group_name": "A.D.1",
+    "number_of_sequences": 1413,
+    "number_of_changes": 92,
+    "best_candidates": "A.D.1 + A.D.2.2.1",
+    "best_candidates_breakpoints_target": "84-85",
+    "best_candidates_breakpoints_genomic": "7345 - 7346",
+    "direction_L1": ">>",
+    "initial_region_span": "1-84,85-92",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "4.00e-06",
+    "p_value_vs_L2": "0.00e+00",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 45,
+    "case_name": "OP597776.1",
+    "group_name": "B.1.17.NmC6",
+    "number_of_sequences": 201,
+    "number_of_changes": 51,
+    "best_candidates": "B.1.2 + B.1.11.NmC2",
+    "best_candidates_breakpoints_target": "46-47",
+    "best_candidates_breakpoints_genomic": "170316 - 170317",
+    "direction_L1": ">>",
+    "initial_region_span": "1-46,47-51",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.08e-17",
+    "p_value_vs_L2": "4.46e-56",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

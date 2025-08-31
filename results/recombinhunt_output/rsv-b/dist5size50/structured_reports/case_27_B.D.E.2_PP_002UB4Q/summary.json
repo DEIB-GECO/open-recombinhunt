@@ -1,0 +1,18 @@
+{
+    "case_number": 27,
+    "case_name": "PP_002UB4Q",
+    "group_name": "B.D.E.2",
+    "number_of_sequences": 853,
+    "number_of_changes": 36,
+    "best_candidates": "B.D.4.1.1 + B.D.4.1",
+    "best_candidates_breakpoints_target": "11-12",
+    "best_candidates_breakpoints_genomic": "5356 - 5357",
+    "direction_L1": "<<",
+    "initial_region_span": "1-11,21-36",
+    "gap_history": "11-21",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "0.00e+00",
+    "p_value_vs_L2": "4.92e-05",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

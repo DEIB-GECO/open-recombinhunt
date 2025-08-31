@@ -1,0 +1,18 @@
+{
+    "case_number": 4,
+    "case_name": "PQ711009.1",
+    "group_name": "A.1.NmC7",
+    "number_of_sequences": 1060,
+    "number_of_changes": 157,
+    "best_candidates": "A.1.NmC7 + A.1.NmC12",
+    "best_candidates_breakpoints_target": "124-125",
+    "best_candidates_breakpoints_genomic": "1337 - 1338",
+    "direction_L1": ">>",
+    "initial_region_span": "1-122,125-157",
+    "gap_history": "122-125",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 6.41e-01",
+    "p_value_vs_L1": "2.35e+00",
+    "p_value_vs_L2": "6.76e-74",
+    "flags": "Model_1BP_Best"
+}

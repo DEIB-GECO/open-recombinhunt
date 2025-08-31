@@ -1,0 +1,18 @@
+{
+    "case_number": 11,
+    "case_name": "PP_0027YR3",
+    "group_name": "B.D.4",
+    "number_of_sequences": 1413,
+    "number_of_changes": 18,
+    "best_candidates": "B.D.4.1 + B.D.2",
+    "best_candidates_breakpoints_target": "14-15",
+    "best_candidates_breakpoints_genomic": "5471 - 5472",
+    "direction_L1": ">>",
+    "initial_region_span": "1-14,16-18",
+    "gap_history": "14-16",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "4.66e-07",
+    "p_value_vs_L2": "2.05e-30",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

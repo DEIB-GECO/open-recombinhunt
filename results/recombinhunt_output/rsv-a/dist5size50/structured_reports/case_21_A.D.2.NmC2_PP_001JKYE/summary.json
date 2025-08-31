@@ -1,0 +1,18 @@
+{
+    "case_number": 21,
+    "case_name": "PP_001JKYE",
+    "group_name": "A.D.2.NmC2",
+    "number_of_sequences": 132,
+    "number_of_changes": 90,
+    "best_candidates": "A.D.4.1 + A.D.2.NmC2",
+    "best_candidates_breakpoints_target": "8-9",
+    "best_candidates_breakpoints_genomic": "5782 - 5783",
+    "direction_L1": "<<",
+    "initial_region_span": "1-8,9-90",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 2.67e-132",
+    "p_value_vs_L1": "1.74e-178",
+    "p_value_vs_L2": "2.72e-10",
+    "flags": "Model_1BP_Best"
+}

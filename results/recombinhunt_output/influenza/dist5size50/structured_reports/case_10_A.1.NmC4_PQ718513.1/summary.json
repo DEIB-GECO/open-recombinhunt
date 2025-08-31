@@ -1,0 +1,18 @@
+{
+    "case_number": 10,
+    "case_name": "PQ718513.1",
+    "group_name": "A.1.NmC4",
+    "number_of_sequences": 1744,
+    "number_of_changes": 156,
+    "best_candidates": "A.1.NmC4 + A.1.NmC13 + A.1.NmC4",
+    "best_candidates_breakpoints_target": "110-111, 122-123",
+    "best_candidates_breakpoints_genomic": "1181 - 1182, 1337 - 1338",
+    "direction_L1": ">>",
+    "initial_region_span": "1-110,113-122,123-156",
+    "gap_history": "110-123 -> 110-113",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 5.02e-01",
+    "p_value_vs_L1": "6.45e+04",
+    "p_value_vs_L2": "3.86e-20",
+    "flags": "Model_2BP_Best"
+}

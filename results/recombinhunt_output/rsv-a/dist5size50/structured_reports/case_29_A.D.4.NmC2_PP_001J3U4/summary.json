@@ -1,0 +1,18 @@
+{
+    "case_number": 29,
+    "case_name": "PP_001J3U4",
+    "group_name": "A.D.4.NmC2",
+    "number_of_sequences": 848,
+    "number_of_changes": 63,
+    "best_candidates": "A.D.4.NmC2 + A.D.5.NmC1",
+    "best_candidates_breakpoints_target": "45-46",
+    "best_candidates_breakpoints_genomic": "5470 - 5471",
+    "direction_L1": ">>",
+    "initial_region_span": "1-45,46-63",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "4.64e-17",
+    "p_value_vs_L2": "1.48e-149",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

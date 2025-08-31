@@ -1,0 +1,18 @@
+{
+    "case_number": 15,
+    "case_name": "PP_00233JL",
+    "group_name": "B.D.4.NmC1",
+    "number_of_sequences": 1212,
+    "number_of_changes": 26,
+    "best_candidates": "B.D.4.NmC1 + B.D.4.1",
+    "best_candidates_breakpoints_target": "20-21",
+    "best_candidates_breakpoints_genomic": "5594 - 5595",
+    "direction_L1": ">>",
+    "initial_region_span": "1-20,21-26",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "4.80e-03",
+    "p_value_vs_L2": "4.35e-27",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

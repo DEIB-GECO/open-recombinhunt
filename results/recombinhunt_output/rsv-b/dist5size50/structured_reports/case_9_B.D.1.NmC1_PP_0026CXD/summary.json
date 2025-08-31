@@ -1,0 +1,18 @@
+{
+    "case_number": 9,
+    "case_name": "PP_0026CXD",
+    "group_name": "B.D.1.NmC1",
+    "number_of_sequences": 605,
+    "number_of_changes": 341,
+    "best_candidates": "B.D.1.NmC1 + B.D.4.1.2 + B.D.1.NmC1",
+    "best_candidates_breakpoints_target": "257-258, 328-329",
+    "best_candidates_breakpoints_genomic": "9818 - 9819, 14957 - 14958",
+    "direction_L1": ">>",
+    "initial_region_span": "1-36,267-328,329-341",
+    "gap_history": "36-329 -> 36-267",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 4.54e-11",
+    "p_value_vs_L1": "5.80e+24",
+    "p_value_vs_L2": "0.00e+00",
+    "flags": "Model_2BP_Best"
+}

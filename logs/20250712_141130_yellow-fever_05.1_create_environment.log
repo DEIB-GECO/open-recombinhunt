@@ -1,0 +1,29 @@
+2025-07-12 14:11:30,165 - INFO - Logging initialized. Log file at: logs/20250712_141130_yellow-fever_05.1_create_environment.log
+2025-07-12 14:11:30,165 - INFO - Virus is 'yellow-fever'. Using HaploCoV reformatted output as input.
+2025-07-12 14:11:30,165 - INFO - Environment files will be saved to: environments/yellow-fever/dist3size10
+2025-07-12 14:11:30,165 - INFO - Loading data from: results/haplocov_output/yellow-fever/dist3size10/haplocov_reformatted.tsv
+2025-07-12 14:11:30,326 - INFO - Calculating change probabilities...
+2025-07-12 14:11:30,326 - INFO -   Total sequences for calculation: 1,409
+2025-07-12 14:11:30,707 - INFO -   Found 7,413 unique mutations across all sequences.
+2025-07-12 14:11:30,740 - INFO -   Finished calculating change probabilities. Shape of result: (7413, 2)
+2025-07-12 14:11:30,763 - INFO - Calculating genome and variation counts per lineage...
+2025-07-12 14:11:30,764 - INFO -   Found 3 unique lineages in the dataset.
+2025-07-12 14:11:31,414 - INFO -   Finished calculating genome and variation counts.
+2025-07-12 14:11:31,414 - INFO - 
+Calculating 'lc_df.parquet'...
+2025-07-12 14:11:31,414 - INFO - 
+--- Running common logic: calculating lineage mutation frequencies ---
+2025-07-12 14:11:31,414 - INFO - Selected 3 lineages with at least 10 genomes.
+2025-07-12 14:11:31,448 - INFO - Removed 0 mutations that were not characteristic of any lineage.
+2025-07-12 14:11:31,451 - INFO - lc_df calculation complete.
+2025-07-12 14:11:31,451 - INFO - 
+Calculating 'change2lineage_probability.parquet'...
+2025-07-12 14:11:31,451 - INFO - 
+--- Running common logic: calculating lineage mutation frequencies ---
+2025-07-12 14:11:31,451 - INFO - Selected 3 lineages with at least 10 genomes.
+2025-07-12 14:11:31,553 - INFO - change2lineage_probability calculation complete.
+2025-07-12 14:11:31,553 - INFO - 
+Calculating 'lc_quality_df.parquet'...
+2025-07-12 14:11:31,553 - INFO - lc_quality_df calculation complete.
+2025-07-12 14:11:31,553 - INFO - Saving environment files...
+2025-07-12 14:11:32,303 - INFO - Environment creation complete.

@@ -1,0 +1,18 @@
+{
+    "case_number": 23,
+    "case_name": "PP_001FE1M",
+    "group_name": "A.D.3.6",
+    "number_of_sequences": 757,
+    "number_of_changes": 22,
+    "best_candidates": "A.D.3.6 + A.D.NmC1",
+    "best_candidates_breakpoints_target": "15-16",
+    "best_candidates_breakpoints_genomic": "5473 - 5474",
+    "direction_L1": ">>",
+    "initial_region_span": "1-13,16-22",
+    "gap_history": "13-16",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 6.57e-01",
+    "p_value_vs_L1": "3.11e-09",
+    "p_value_vs_L2": "5.90e-33",
+    "flags": "Model_1BP_Best"
+}

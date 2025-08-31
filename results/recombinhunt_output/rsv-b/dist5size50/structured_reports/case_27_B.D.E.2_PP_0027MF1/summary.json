@@ -1,0 +1,18 @@
+{
+    "case_number": 27,
+    "case_name": "PP_0027MF1",
+    "group_name": "B.D.E.2",
+    "number_of_sequences": 853,
+    "number_of_changes": 16,
+    "best_candidates": "B.D.4 + B.D.2",
+    "best_candidates_breakpoints_target": "9-10",
+    "best_candidates_breakpoints_genomic": "5461 - 5462",
+    "direction_L1": "<<",
+    "initial_region_span": "1-9,10-16",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 9.59e-04",
+    "p_value_vs_L1": "5.00e-15",
+    "p_value_vs_L2": "3.50e-19",
+    "flags": "Model_1BP_Best"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 8,
+    "case_name": "PV305880.1",
+    "group_name": "A.1",
+    "number_of_sequences": 3213,
+    "number_of_changes": 154,
+    "best_candidates": "A.1 + A.1",
+    "best_candidates_breakpoints_target": "60-61",
+    "best_candidates_breakpoints_genomic": "642 - 643",
+    "direction_L1": "<<",
+    "initial_region_span": "1-57,67-154",
+    "gap_history": "57-67",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 8.35e-03",
+    "p_value_vs_L1": "2.72e+00",
+    "p_value_vs_L2": "2.72e+00",
+    "flags": "Model_1BP_Best"
+}

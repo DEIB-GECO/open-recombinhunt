@@ -1,0 +1,18 @@
+{
+    "case_number": 20,
+    "case_name": "PP_0024D6Z",
+    "group_name": "B.D.NmC1",
+    "number_of_sequences": 1726,
+    "number_of_changes": 49,
+    "best_candidates": "B.D.NmC1 + B.D.1 + B.D.NmC1",
+    "best_candidates_breakpoints_target": "42-43, 45-46",
+    "best_candidates_breakpoints_genomic": "5460 - 5461, 5563 - 5564",
+    "direction_L1": ">>",
+    "initial_region_span": "1-42,43-44,46-49",
+    "gap_history": "42-46 -> 44-46",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 2.79e-01",
+    "p_value_vs_L1": "3.38e-01",
+    "p_value_vs_L2": "1.23e-64",
+    "flags": "Model_2BP_Best"
+}

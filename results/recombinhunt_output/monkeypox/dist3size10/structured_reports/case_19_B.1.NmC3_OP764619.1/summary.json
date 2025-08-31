@@ -1,0 +1,18 @@
+{
+    "case_number": 19,
+    "case_name": "OP764619.1",
+    "group_name": "B.1.NmC3",
+    "number_of_sequences": 263,
+    "number_of_changes": 62,
+    "best_candidates": "B.1.NmC3 + B.1.8.NmC2",
+    "best_candidates_breakpoints_target": "56-57",
+    "best_candidates_breakpoints_genomic": "168204 - 168205",
+    "direction_L1": ">>",
+    "initial_region_span": "1-56,57-62",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 3.48e-01",
+    "p_value_vs_L1": "9.90e-03",
+    "p_value_vs_L2": "1.14e-110",
+    "flags": "Model_1BP_Best"
+}

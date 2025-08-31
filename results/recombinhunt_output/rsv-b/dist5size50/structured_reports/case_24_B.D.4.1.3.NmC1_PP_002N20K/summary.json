@@ -1,0 +1,18 @@
+{
+    "case_number": 24,
+    "case_name": "PP_002N20K",
+    "group_name": "B.D.4.1.3.NmC1",
+    "number_of_sequences": 1269,
+    "number_of_changes": 104,
+    "best_candidates": "B.D.4.1.1 + B.D.4.1.1",
+    "best_candidates_breakpoints_target": "73-74",
+    "best_candidates_breakpoints_genomic": "6829 - 6830",
+    "direction_L1": ">>",
+    "initial_region_span": "1-36,74-104",
+    "gap_history": "36-74",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 3.36e-41",
+    "p_value_vs_L1": "2.72e+00",
+    "p_value_vs_L2": "2.72e+00",
+    "flags": "Model_1BP_Best"
+}

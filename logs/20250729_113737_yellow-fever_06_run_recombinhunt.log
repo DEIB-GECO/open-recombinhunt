@@ -1,0 +1,1062 @@
+2025-07-29 11:37:37,908 - INFO - Logging initialized. Log file at: logs/20250729_113737_yellow-fever_06_run_recombinhunt.log
+2025-07-29 11:37:37,908 - INFO - --- Starting Step 6: Run RecombinHunt for 'yellow-fever' ---
+2025-07-29 11:37:37,908 - INFO - Loading RecombinHunt environment from: environments/yellow-fever/dist3size10
+2025-07-29 11:37:37,965 - INFO - Loading lineage totals from 'samples/yellow-fever/dist3size10/samples_total.json'
+2025-07-29 11:37:37,965 - INFO - Found 3 sample files in 'samples/yellow-fever/dist3size10'.
+2025-07-29 11:37:38,019 - INFO -   Lineage 'A.1.NmC2', Mode 'all': Processing all 193 samples.
+2025-07-29 11:37:42,959 - INFO -   Lineage 'A.1.NmC1', Mode 'all': Processing all 380 samples.
+2025-07-29 11:37:43,598 - ERROR -   Error on one sample in lineage A.1.NmC1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_MH030053.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_MH030053.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:37:47,210 - ERROR -   Error on one sample in lineage A.1.NmC1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_MZ604862.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_MZ604862.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:37:47,809 - ERROR -   Error on one sample in lineage A.1.NmC1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OQ714242.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OQ714242.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:37:49,886 - ERROR -   Error on one sample in lineage A.1.NmC1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_ON022368.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_ON022368.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:37:50,280 - ERROR -   Error on one sample in lineage A.1.NmC1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OP508590.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OP508590.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:37:50,896 - ERROR -   Error on one sample in lineage A.1.NmC1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OP508602.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OP508602.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:37:50,995 - ERROR -   Error on one sample in lineage A.1.NmC1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OP508604.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OP508604.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:37:51,121 - ERROR -   Error on one sample in lineage A.1.NmC1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OP508608.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OP508608.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:37:51,302 - ERROR -   Error on one sample in lineage A.1.NmC1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OP508706.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OP508706.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:37:51,568 - ERROR -   Error on one sample in lineage A.1.NmC1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OP508626.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OP508626.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:37:51,668 - ERROR -   Error on one sample in lineage A.1.NmC1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OP508628.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OP508628.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:37:51,810 - ERROR -   Error on one sample in lineage A.1.NmC1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OP508681.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OP508681.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:37:51,961 - ERROR -   Error on one sample in lineage A.1.NmC1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OP508646.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OP508646.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:37:52,540 - ERROR -   Error on one sample in lineage A.1.NmC1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OP508659.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OP508659.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:37:53,247 - ERROR -   Error on one sample in lineage A.1.NmC1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OP508704.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OP508704.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:37:53,612 - ERROR -   Error on one sample in lineage A.1.NmC1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OP508678.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OP508678.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:37:53,766 - ERROR -   Error on one sample in lineage A.1.NmC1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OP508698.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OP508698.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:37:53,871 - ERROR -   Error on one sample in lineage A.1.NmC1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OP508680.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OP508680.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:37:53,959 - ERROR -   Error on one sample in lineage A.1.NmC1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OP508695.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OP508695.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:37:54,120 - ERROR -   Error on one sample in lineage A.1.NmC1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OP508686.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_OP508686.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:37:54,289 - INFO -   Lineage 'A.1', Mode 'all': Processing all 836 samples.
+2025-07-29 11:37:55,335 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OQ932914.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OQ932914.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:37:55,551 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MH666056.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MH666056.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:37:55,869 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MH666058.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MH666058.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:37:56,572 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MH018069.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MH018069.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:37:56,739 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON502428.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON502428.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:37:57,548 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MH018071.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MH018071.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:37:57,668 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MH018098.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MH018098.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:37:58,037 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON502424.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON502424.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:37:59,292 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022510.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022510.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:37:59,452 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MK882606.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MK882606.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:37:59,639 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MK882605.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MK882605.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:37:59,841 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MN604280.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MN604280.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:00,162 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MN604284.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MN604284.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:00,723 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022400.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022400.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:01,528 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022381.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022381.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:01,631 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022390.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022390.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:02,117 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022725.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022725.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:02,246 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MK882614.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MK882614.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:02,366 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MK882616.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MK882616.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:03,425 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MH030091.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MH030091.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:03,577 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022734.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022734.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:03,730 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022371.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022371.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:03,855 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022412.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022412.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:04,067 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508715.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508715.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:04,511 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022406.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022406.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:04,668 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MH030079.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MH030079.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:04,792 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MH030081.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MH030081.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:04,885 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MH030082.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MH030082.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:05,211 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022378.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022378.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:05,432 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022397.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022397.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:05,910 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OQ714299.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OQ714299.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:05,932 - WARNING - Gap made of only target mutations (How can it be? It's an almost impossible condition). Target mutation that minimizes the loss has been assigned to the right region).
+2025-07-29 11:38:06,015 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022629.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022629.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:06,147 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022623.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022623.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:06,280 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022280.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022280.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:06,622 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MK249066.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MK249066.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:07,107 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OQ714323.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OQ714323.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:07,399 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022672.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022672.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:07,719 - WARNING - Gap made of only target mutations (How can it be? It's an almost impossible condition). Target mutation that minimizes the loss has been assigned to the right region).
+2025-07-29 11:38:07,803 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022260.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022260.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:07,923 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022586.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022586.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:08,143 - WARNING - Gap made of only target mutations (How can it be? It's an almost impossible condition). Target mutation that minimizes the loss has been assigned to the right region).
+2025-07-29 11:38:08,216 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022657.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022657.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:08,704 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022729.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022729.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:08,936 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON502396.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON502396.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:09,283 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022450.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022450.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:09,385 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022471.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022471.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:09,486 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022479.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022479.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:09,661 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MK882619.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MK882619.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:09,906 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON502405.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON502405.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:10,108 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022587.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022587.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:10,560 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022503.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022503.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:10,906 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022491.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022491.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:11,385 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022473.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022473.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:11,629 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON502410.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON502410.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:11,851 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022502.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022502.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:12,011 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022482.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022482.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:12,352 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022499.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022499.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:12,525 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022511.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022511.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:12,696 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022433.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022433.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:12,890 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022316.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022316.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:13,215 - WARNING - Gap made of only target mutations (How can it be? It's an almost impossible condition). Target mutation that minimizes the loss has been assigned to the right region).
+2025-07-29 11:38:13,288 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022449.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022449.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:13,588 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022593.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022593.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:13,708 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022312.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022312.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:13,882 - WARNING - Gap made of only target mutations (How can it be? It's an almost impossible condition). Target mutation that minimizes the loss has been assigned to the right region).
+2025-07-29 11:38:13,961 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022465.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022465.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:14,060 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022394.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022394.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:14,504 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022291.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022291.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:14,615 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022293.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022293.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:14,723 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022294.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022294.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:14,822 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022733.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022733.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:14,970 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022286.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022286.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:15,099 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022304.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022304.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:15,353 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022283.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022283.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:15,504 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022549.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022549.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:15,900 - ERROR -   Error on one sample in lineage A.1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+2025-07-29 11:38:16,603 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508595.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508595.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:16,773 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508603.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508603.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:17,012 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_JF912179.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_JF912179.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:17,142 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_JF912181.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_JF912181.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:17,246 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_JF912183.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_JF912183.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:17,370 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_JF912184.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_JF912184.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:17,550 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_JF912186.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_JF912186.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:18,198 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MF004382.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MF004382.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:18,324 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MH018100.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MH018100.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:18,424 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MH018101.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MH018101.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:18,573 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MW158338.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MW158338.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:18,754 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MW158343.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MW158343.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:18,870 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MW158345.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MW158345.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:18,992 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MW158346.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MW158346.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:19,156 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MW158359.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MW158359.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:19,264 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MW158361.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_MW158361.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:19,432 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022716.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_ON022716.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:19,699 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PQ181571.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PQ181571.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:19,708 - ERROR -   Error on one sample in lineage A.1: Reindexing only valid with uniquely valued Index objects
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 162, in run_recombinhunt_for_lineage
+    experiment.set_target(nuc_change_data_list)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 567, in set_target
+    self.merged_df = self.env.make_merged_df(seq_df)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/environment.py", line 104, in make_merged_df
+    target_and_not_lc_df = pd.concat([
+  File "/home/topcuoglu/.local/lib/python3.10/site-packages/pandas/core/reshape/concat.py", line 393, in concat
+    return op.get_result()
+  File "/home/topcuoglu/.local/lib/python3.10/site-packages/pandas/core/reshape/concat.py", line 676, in get_result
+    indexers[ax] = obj_labels.get_indexer(new_labels)
+  File "/home/topcuoglu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3874, in get_indexer
+    raise InvalidIndexError(self._requires_unique_msg)
+pandas.errors.InvalidIndexError: Reindexing only valid with uniquely valued Index objects
+2025-07-29 11:38:19,897 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PQ441955.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PQ441955.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:20,553 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508607.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508607.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:20,702 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508611.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508611.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:20,852 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508620.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508620.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:21,021 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508621.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508621.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:21,298 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508634.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508634.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:21,445 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508637.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508637.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:21,627 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508639.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508639.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:21,785 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508641.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508641.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:22,013 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508571.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508571.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:22,360 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508653.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508653.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:22,471 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508655.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508655.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:22,598 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508701.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508701.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:22,703 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508707.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508707.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:22,877 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508697.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508697.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:23,048 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508672.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508672.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:23,159 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508670.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508670.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:23,282 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508674.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508674.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:23,402 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508673.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508673.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:23,951 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508579.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OP508579.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:24,175 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PQ276811.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PQ276811.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:24,271 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PV710608.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PV710608.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:24,370 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OR237970.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_OR237970.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:24,498 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PP477075.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PP477075.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:24,658 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PP869888.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PP869888.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:24,971 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PV710606.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PV710606.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:25,162 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PV710607.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PV710607.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:25,259 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PV710587.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PV710587.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:25,383 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PV710596.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PV710596.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:25,515 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PV710593.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PV710593.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:25,631 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PV710595.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PV710595.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:25,744 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PV710597.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PV710597.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:25,847 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PV710599.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PV710599.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:25,979 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PV710600.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PV710600.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:26,129 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PV710602.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PV710602.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:26,232 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PV710603.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PV710603.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:26,345 - ERROR -   Error on one sample in lineage A.1: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PV710604.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 203, in run_recombinhunt_for_lineage
+    'case_report_folder': str(case_report_folder.relative_to(PROJECT_ROOT))
+  File "/home/topcuoglu/miniconda3/envs/orh/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_PV710604.1' is not in the subpath of '/home/topcuoglu/openrecombinhunt' OR one path is relative and the other is absolute.
+2025-07-29 11:38:26,351 - INFO - Text report saved to: results/recombinhunt_output/yellow-fever/dist3size10/experiment-output.all.txt
+2025-07-29 11:38:26,351 - INFO - HTML report saved to: results/recombinhunt_output/yellow-fever/dist3size10/experiment-detail.all.html
+2025-07-29 11:38:26,352 - INFO - RecombinHunt experiment step finished successfully.

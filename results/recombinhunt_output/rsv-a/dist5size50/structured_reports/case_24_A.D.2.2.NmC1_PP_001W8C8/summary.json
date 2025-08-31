@@ -1,0 +1,18 @@
+{
+    "case_number": 24,
+    "case_name": "PP_001W8C8",
+    "group_name": "A.D.2.2.NmC1",
+    "number_of_sequences": 394,
+    "number_of_changes": 24,
+    "best_candidates": "A.D + A.D.2.2.NmC1",
+    "best_candidates_breakpoints_target": "19-20",
+    "best_candidates_breakpoints_genomic": "5525 - 5526",
+    "direction_L1": ">>",
+    "initial_region_span": "1-19,20-24",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "8.28e-19",
+    "p_value_vs_L2": "1.93e-06",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

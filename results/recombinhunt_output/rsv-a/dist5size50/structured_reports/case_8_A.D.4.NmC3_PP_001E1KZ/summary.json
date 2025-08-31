@@ -1,0 +1,18 @@
+{
+    "case_number": 8,
+    "case_name": "PP_001E1KZ",
+    "group_name": "A.D.4.NmC3",
+    "number_of_sequences": 1653,
+    "number_of_changes": 59,
+    "best_candidates": "A.D.4.NmC3 + A.3.1.NmC2",
+    "best_candidates_breakpoints_target": "56-57",
+    "best_candidates_breakpoints_genomic": "5525 - 5526",
+    "direction_L1": ">>",
+    "initial_region_span": "1-56,57-59",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "4.86e-12",
+    "p_value_vs_L2": "3.95e-226",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

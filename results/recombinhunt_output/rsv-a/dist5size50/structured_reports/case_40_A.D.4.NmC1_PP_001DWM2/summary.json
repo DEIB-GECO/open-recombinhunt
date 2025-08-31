@@ -1,0 +1,18 @@
+{
+    "case_number": 40,
+    "case_name": "PP_001DWM2",
+    "group_name": "A.D.4.NmC1",
+    "number_of_sequences": 2189,
+    "number_of_changes": 57,
+    "best_candidates": "A.D.4.NmC3 + A.D.4.NmC1",
+    "best_candidates_breakpoints_target": "13-14",
+    "best_candidates_breakpoints_genomic": "4959 - 4960",
+    "direction_L1": "<<",
+    "initial_region_span": "1-13,14-57",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 5.64e-108",
+    "p_value_vs_L1": "2.54e-07",
+    "p_value_vs_L2": "6.64e-07",
+    "flags": "Model_1BP_Best"
+}

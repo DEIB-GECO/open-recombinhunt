@@ -1,0 +1,18 @@
+{
+    "case_number": 14,
+    "case_name": "PP_002WA5K",
+    "group_name": "B.D.E.3.NmC1",
+    "number_of_sequences": 1318,
+    "number_of_changes": 62,
+    "best_candidates": "B.D.E.3.NmC1 + B.D.E.2",
+    "best_candidates_breakpoints_target": "45-46",
+    "best_candidates_breakpoints_genomic": "5336 - 5337",
+    "direction_L1": ">>",
+    "initial_region_span": "1-44,47-62",
+    "gap_history": "44-47",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 7.12e-121",
+    "p_value_vs_L1": "5.87e-04",
+    "p_value_vs_L2": "4.05e-212",
+    "flags": "Model_1BP_Best"
+}

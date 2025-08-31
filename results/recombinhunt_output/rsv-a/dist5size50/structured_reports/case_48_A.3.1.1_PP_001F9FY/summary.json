@@ -1,0 +1,18 @@
+{
+    "case_number": 48,
+    "case_name": "PP_001F9FY",
+    "group_name": "A.3.1.1",
+    "number_of_sequences": 731,
+    "number_of_changes": 41,
+    "best_candidates": "A.3.1.1 + A.D.NmC1 + A.3.1.1",
+    "best_candidates_breakpoints_target": "10-11, 12-13",
+    "best_candidates_breakpoints_genomic": "5434 - 5435, 5444 - 5445",
+    "direction_L1": "<<",
+    "initial_region_span": "1-10,11-12,13-41",
+    "gap_history": "10-13 -> ",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 6.59e-02",
+    "p_value_vs_L1": "3.28e-03",
+    "p_value_vs_L2": "6.78e-166",
+    "flags": "Model_2BP_Best"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 65,
+    "case_name": "PQ686939.1",
+    "group_name": "B.1.13.NmC3",
+    "number_of_sequences": 123,
+    "number_of_changes": 73,
+    "best_candidates": "B.1.13.NmC3 + B.1.17.NmC5",
+    "best_candidates_breakpoints_target": "68-69",
+    "best_candidates_breakpoints_genomic": "182134 - 182135",
+    "direction_L1": ">>",
+    "initial_region_span": "1-65,71-73",
+    "gap_history": "65-71",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "2.41e-01",
+    "p_value_vs_L2": "2.62e-115",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

@@ -1,0 +1,71 @@
+
+========== Processing Lineage: A.1.NmC3 ==========
+Total genomes available for this lineage: 111
+  Results for A.1.NmC3:
+    Samples Run: 111
+    Successful Runs: 82
+    Result - No Match: 29
+    Result - 0BP (Single Candidate): 82
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: A.1.NmC2 ==========
+Total genomes available for this lineage: 677
+  Results for A.1.NmC2:
+    Samples Run: 677
+    Successful Runs: 451
+    Result - No Match: 226
+    Result - 0BP (Single Candidate): 443
+    Result - 1BP (Recombinant): 6
+    Result - 2BP (Recombinant): 2
+
+========== Processing Lineage: A.1.NmC1 ==========
+Total genomes available for this lineage: 182
+  Results for A.1.NmC1:
+    Samples Run: 182
+    Successful Runs: 182
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 177
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 4
+
+========== Processing Lineage: A.1 ==========
+Total genomes available for this lineage: 1066
+  Results for A.1:
+    Samples Run: 1066
+    Successful Runs: 1066
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1012
+    Result - 1BP (Recombinant): 40
+    Result - 2BP (Recombinant): 14
+
+========== Processing Lineage: A.1.NmC4 ==========
+Total genomes available for this lineage: 80
+  Results for A.1.NmC4:
+    Samples Run: 80
+    Successful Runs: 80
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 80
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+
+==================== Overall Summary Table ====================
+true_lineage  samples_run  True Lineage in Candidates %  0BP (Single Candidate)  1BP  2BP  No Match
+    A.1.NmC3          111                     97.560976                      82    0    0        29
+    A.1.NmC2          677                     44.789357                     443    6    2       226
+    A.1.NmC1          182                    100.000000                     177    1    4         0
+         A.1         1066                     98.686679                    1012   40   14         0
+    A.1.NmC4           80                    100.000000                      80    0    0         0
+
+
+==================== Recombinant Genomes Detected by Lineage ====================
+
+Lineage: A.1.NmC2
+  KU686218.1, MK216724.1, MF434520.1, KY785417.1, KY126348.1, MF173411.1, OP858752.1, KF383070.1
+
+Lineage: A.1.NmC1
+  MT377503.1, KY241712.1, PP626402.1, MT377491.2, MG807647.1
+
+Lineage: A.1
+  KX694532.2, KX051560.1, KX051561.1, PP115590.1, KX051562.1, KX548902.1, KU647676.1, MN185325.1, MN473453.1, MN473454.1, PP470595.1, KY317937.1, KU922923.1, KU922960.1, MK049245.1, MK049246.1, KY785451.1, KY785480.1, MW915411.1, PP431239.1, PP431229.1, PP431244.1, PP431247.1, PP431233.1, MH368551.1, MK049250.1, KY693678.1, PP431235.1, KY693679.1, MK269361.1, KY272987.1, OQ661916.1, PP431245.1, MW915412.1, MW915414.1, MH119185.1, PP626400.1, MT377493.2, OQ661918.1, MK238035.1, KU955593.1, MG645981.1, MH158236.1, MT377502.1, MT377504.1, MW015936.1, OP281680.1, PQ849442.1, OR264642.1, OQ734448.1, OR264644.1, OR264645.1, OR264647.1, PQ551088.1

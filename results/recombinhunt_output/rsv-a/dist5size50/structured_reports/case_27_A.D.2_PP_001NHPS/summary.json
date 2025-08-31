@@ -1,0 +1,18 @@
+{
+    "case_number": 27,
+    "case_name": "PP_001NHPS",
+    "group_name": "A.D.2",
+    "number_of_sequences": 2386,
+    "number_of_changes": 145,
+    "best_candidates": "A.D.5.NmC1 + A.D.2.1",
+    "best_candidates_breakpoints_target": "23-24",
+    "best_candidates_breakpoints_genomic": "5581 - 5582",
+    "direction_L1": "<<",
+    "initial_region_span": "1-20,24-145",
+    "gap_history": "20-24",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 7.94e-105",
+    "p_value_vs_L1": "0.00e+00",
+    "p_value_vs_L2": "1.49e-31",
+    "flags": "Model_1BP_Best"
+}

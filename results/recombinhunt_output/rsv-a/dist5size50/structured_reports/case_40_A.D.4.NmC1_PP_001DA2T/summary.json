@@ -1,0 +1,18 @@
+{
+    "case_number": 40,
+    "case_name": "PP_001DA2T",
+    "group_name": "A.D.4.NmC1",
+    "number_of_sequences": 2189,
+    "number_of_changes": 45,
+    "best_candidates": "A.3 + A.3.1.1 + A.3",
+    "best_candidates_breakpoints_target": "32-33, 38-39",
+    "best_candidates_breakpoints_genomic": "5434 - 5435, 5490 - 5491",
+    "direction_L1": ">>",
+    "initial_region_span": "1-32,33-38,40-45",
+    "gap_history": "32-40 -> 38-40",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 1.83e-01",
+    "p_value_vs_L1": "1.14e-04",
+    "p_value_vs_L2": "2.17e-92",
+    "flags": "Model_2BP_Best"
+}

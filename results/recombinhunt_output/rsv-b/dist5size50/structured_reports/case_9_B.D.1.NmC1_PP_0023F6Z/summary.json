@@ -1,0 +1,18 @@
+{
+    "case_number": 9,
+    "case_name": "PP_0023F6Z",
+    "group_name": "B.D.1.NmC1",
+    "number_of_sequences": 605,
+    "number_of_changes": 276,
+    "best_candidates": "B.D.4.1.2 + B.D.1.NmC1 + B.D.4.1.2",
+    "best_candidates_breakpoints_target": "255-256, 262-263",
+    "best_candidates_breakpoints_genomic": "13867 - 13868, 14595 - 14596",
+    "direction_L1": "<<",
+    "initial_region_span": "1-76,257-262,263-276",
+    "gap_history": "76-263 -> 76-257",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 2.76e-18",
+    "p_value_vs_L1": "7.39e-33",
+    "p_value_vs_L2": "4.21e+206",
+    "flags": "Model_2BP_Best"
+}

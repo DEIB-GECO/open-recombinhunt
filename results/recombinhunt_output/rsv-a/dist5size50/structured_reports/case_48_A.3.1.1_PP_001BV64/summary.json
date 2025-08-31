@@ -1,0 +1,18 @@
+{
+    "case_number": 48,
+    "case_name": "PP_001BV64",
+    "group_name": "A.3.1.1",
+    "number_of_sequences": 731,
+    "number_of_changes": 34,
+    "best_candidates": "A.3.1.1 + A.D.5.NmC1",
+    "best_candidates_breakpoints_target": "23-24",
+    "best_candidates_breakpoints_genomic": "5572 - 5573",
+    "direction_L1": ">>",
+    "initial_region_span": "1-23,32-34",
+    "gap_history": "23-32",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 5.06e-186",
+    "p_value_vs_L1": "6.54e-01",
+    "p_value_vs_L2": "8.31e-26",
+    "flags": "Model_1BP_Best"
+}

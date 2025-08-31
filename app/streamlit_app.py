@@ -1,0 +1,786 @@
+import json
+import sys
+from pathlib import Path
+import yaml
+import os
+import re
+import pandas as pd
+import streamlit as st
+from streamlit_option_menu import option_menu
+import streamlit.components.v1 as components
+import plotly.express as px
+import plotly.graph_objects as go
+from geopy.geocoders import Nominatim
+from agstyler import draw_grid, PINLEFT, PRECISION_TWO
+
+# --- Path Setup for Imports ---
+# Add the project root to the Python path to allow imports from 'src'
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+sys.path.append(str(PROJECT_ROOT))
+
+mapping = {
+    "sars-cov-2": "SARS-CoV-2",
+    "yellow-fever": "Yellow Fever",
+    "zika": "Zika",
+    "rsv-a": "RSV-A",
+    "rsv-b": "RSV-B",
+    "monkeypox": "Monkeypox",
+    "influenza": "Influenza (H5N1)"
+}
+
+try:
+    from src.utils.constants import *
+except ImportError as e:
+    print(f"CRITICAL ERROR: Could not import from 'src/utils/constants.py'. {e}")
+    sys.exit(1)
+
+# --- Configuration & Path Setup ---
+CONFIG_PATH = Path("config/config.yaml")
+
+try:
+    with open(CONFIG_PATH, 'r') as f:
+        config = yaml.safe_load(f)
+    RESULTS_DIR_BASE = Path(config.get(PATHS).get(RESULTS))
+except FileNotFoundError:
+    st.error(f"Configuration file not found at {CONFIG_PATH}. Please ensure the file exists.")
+    st.stop()
+except Exception as e:
+    st.error(f"Error loading or parsing configuration file: {e}")
+    st.stop()
+
+def visualize(virus):
+    return mapping.get(virus.lower())
+
+@st.cache_data
+def discover_viruses():
+    """discover available viruses by scanning recombinhunt_output/ directory"""
+    recombinhunt_output_path = RESULTS_DIR_BASE / RECOMBINHUNT_OUTPUT
+
+    if not recombinhunt_output_path.exists():
+        st.warning(f"No recombinhunt output found at {recombinhunt_output_path}.")
+        return []
+
+    virus_dirs = [d for d in recombinhunt_output_path.iterdir() if d.is_dir()]
+    if not virus_dirs:
+        st.warning(f"No virus directories found in {recombinhunt_output_path}.")
+        return []
+
+    # return only the names, not paths
+    return [d.name for d in virus_dirs]
+
+@st.cache_data
+def load_master_data(virus):
+    """load and merge master data for the specified virus"""
+
+    # load param set
+    try:
+        if virus not in ["sars-cov-2"]:
+            params = config.get(VIRUSES).get(virus).get(PARAMETERS).get(HAPLOCOV)
+            dist = params.get(DIST)
+            size = params.get(SIZE)
+        elif virus in ["sars-cov-2"]:
+            dist, size = 0, 0
+        paramset = f"dist{dist}size{size}"
+    except Exception as e:
+        st.error(f"Error loading parameters for {virus}: {e}")
+        return None
+
+    # load source data
+    try:
+        if virus.lower() == "sars-cov-2":
+            source_file = RESULTS_DIR_BASE / NEXTSTRAIN_OUTPUT / virus / "nextstrain_reformatted.tsv"
+            columns = ["genomeID", "Collection date", "Submission date", "Location", "pangoLin"]
+        else:
+            source_file = RESULTS_DIR_BASE / HAPLOCOV_OUTPUT / virus / paramset / "haplocov_reformatted.tsv"
+            columns = ["genomeID", "collectionD", "continent", "country", "pangoLin"]
+
+        if source_file.exists():
+            source_df = pd.read_csv(source_file, sep="\t", usecols=columns)
+        else:
+            st.warning(f"Source file not found: {source_file}")
+    except Exception as e:
+        st.error(f"Error loading master data for {virus}: {e}")
+        return None
+    
+    # load recombinant summary
+    try:
+        recombinant_summary_file = RESULTS_DIR_BASE / RECOMBINHUNT_OUTPUT / virus / paramset / "recombinant_summary.tsv"
+        if recombinant_summary_file.exists():
+            recombinant_summary_df = pd.read_csv(recombinant_summary_file, sep="\t")
+            recombinant_summary_df.rename(columns={"genomeIDs": "genomeID"}, inplace=True)
+        else:
+            st.warning(f"Recombinant summary file not found: {recombinant_summary_file}")
+    except Exception as e:
+        st.error(f"Error loading recombinant summary for {virus}: {e}")
+        return None
+
+    # merge dataframes
+    try:
+        merged_df = pd.merge(source_df, recombinant_summary_df, on="genomeID", how="left")
+    except Exception as e:
+        st.error(f"Error merging dataframes for {virus}: {e}")
+        return None
+
+    # add is_recombinant column to merged_df
+    # if breakpoint_count.notnull()
+    merged_df["is_recombinant"] = merged_df["breakpoint_count"].notnull()
+
+    # rename some columns of merged_df
+    mapping = {
+        "collectionD": "collection_date",
+        "Collection date": "collection_date",
+        "Submission date": "submission_date",
+    }
+    merged_df.rename(columns=mapping, inplace=True)
+
+    return merged_df
+
+def apply_time_filter(df):
+    """
+    applies time based filtering to the dataframe
+    user can select between three options:
+        -no time filtering (returns all data)
+        -filter by specific date selections (choose start and end dates: end date defaults to today)
+        -filter by the number of latest X sequences (user inputs an integer number, we sort the dataframe by collection date and return the latest X rows)
+    """
+    # select filter type
+    filter_type = st.pills(
+        "Choose filter type:",
+        options = ["No filtering", "Filter by Date Range", "Filter by Latest X Sequences"],
+        selection_mode = "single"
+    )
+
+    # select filter value
+    filter_value = None
+    if filter_type == "Filter by Date Range":
+        col1, col2 = st.columns(2)
+        with col1:
+            start_date = st.date_input("Start Date", value=pd.to_datetime("2020-01-01"))
+        with col2:
+            end_date = st.date_input("End Date", value=pd.to_datetime("today"))
+        filter_value = (start_date, end_date)
+    elif filter_type == "Filter by Latest X Sequences":
+        filter_value = st.number_input("Number of Latest Sequences", min_value=1, value=10)
+
+    # apply filtering to the df
+    filtered_df = df
+    if filter_type == "Filter by Date Range" and filter_value:
+        start_date, end_date = filter_value
+        # convert string df['collection_date'] to datetime object
+        collection_date = pd.to_datetime(df["collection_date"]).dt.date
+
+        filtered_df = df[(collection_date >= start_date) & (collection_date <= end_date)]
+    elif filter_type == "Filter by Latest X Sequences" and filter_value:
+        filtered_df = df.sort_values("collection_date", ascending=False).head(filter_value)
+
+    return filtered_df
+
+def create_key_metrics(df):
+    """
+    creates key metrics as cards for the summary dashboard
+        -# Total Sequences
+        -# Recombinant Events
+        -Recombination Rate
+        -Top Recombinant Lineage
+        -Most Common Parents
+    """
+    st.title("🔑 Key Metrics")
+
+    total_sequences = len(df)
+    total_recombinants = df["is_recombinant"].sum()
+    num_1BP = df[df["breakpoint_count"] == "1BP"].shape[0]
+    num_2BP = df[df["breakpoint_count"] == "2BP"].shape[0]
+    recombination_rate = (total_recombinants / total_sequences * 100) if total_sequences > 0 else 0
+    top_recombinant_lineage = df[df["is_recombinant"]]["pangoLin"].mode().values[0] if total_recombinants > 0 else "N/A"
+    most_common_parents = df[df["is_recombinant"]]["recombinant_parents"].value_counts().idxmax() if total_recombinants > 0 else "N/A"
+
+    a, b = st.columns(2)
+    c, d, e = st.columns(3)
+    [f] = st.columns(1) 
+    [g] = st.columns(1)
+
+    a.metric("Total Sequences", total_sequences, border=True)
+    b.metric("Recombination Rate", f"{recombination_rate:.2f}%", border=True)
+
+    c.metric("Recombination Events", total_recombinants, border=True)
+    d.metric("1BP", num_1BP, border=True)
+    e.metric("2BP", num_2BP, border=True)
+
+    f.metric("Top Recombinant Lineage", top_recombinant_lineage, border=True)
+
+    g.metric("Most Common Parents", most_common_parents, border=True)
+
+def create_summary_tables(df):
+    "create summary and hotspots tables"
+    st.title("📋 Summary Tables")
+
+    with st.spinner("Creating lineage breakdown table..."):
+        st.subheader("Lineage Breakdown")
+        with st.expander("Show Lineage Breakdown"):
+            # create a table
+            # group by each lineage (pangoLin)
+            # count 1BP in breakpoint_count as 1BP Count
+            # rate of 1BP Count / total sequences
+            # count 2BP in breakpoint_count as 2BP Count
+            # rate of 2BP Count / total sequences
+            # rest is No Recombination
+            # total sequences in each lineage
+            lineage_breakdown = df.groupby("pangoLin").agg(
+                BP1_Count=("breakpoint_count", lambda x: (x == "1BP").sum()),
+                BP1_Rate=("breakpoint_count", lambda x: f"{(x == '1BP').sum() / len(x) * 100:.2f}%" if len(x) > 0 else "0.00%"),
+                BP2_Count=("breakpoint_count", lambda x: (x == "2BP").sum()),
+                BP2_Rate=("breakpoint_count", lambda x: f"{(x == '2BP').sum() / len(x) * 100:.2f}%" if len(x) > 0 else "0.00%"),
+                No_Recombination=("breakpoint_count", lambda x: ((x != "1BP") & (x != "2BP")).sum()),
+                Total_Sequences=("breakpoint_count", "size")
+            ).reset_index()
+
+            lineage_breakdown.rename(columns={
+                "pangoLin": "Lineage",
+                "BP1_Count": "1BP Count",
+                "BP1_Rate": "1BP Rate",
+                "BP2_Count": "2BP Count",
+                "BP2_Rate": "2BP Rate",
+                "No_Recombination": "No Recombination",
+                "Total_Sequences": "Total Sequences"
+            }, inplace=True)
+
+            lineage_breakdown.set_index("Lineage", inplace=True)
+
+            st.write(lineage_breakdown)
+
+    with st.spinner("Creating recombination hotspots table..."):
+        st.subheader("Recombination Hotspots")
+        with st.expander("Show Recombination Hotspots"):
+            # group by recombinant_parents
+            # display frequency
+            recombination_hotspots = df.groupby("recombinant_parents").size().reset_index(name="Frequency")
+            recombination_hotspots.rename(columns={"recombinant_parents": "Recombinant Parents"}, inplace=True)
+            recombination_hotspots.set_index("Recombinant Parents", inplace=True)
+            recombination_hotspots.sort_values(by="Frequency", ascending=False, inplace=True)
+            st.write(recombination_hotspots)
+
+def create_temporal_plot(df, virus):
+    if "collection_date" not in df.columns:
+        st.warning("Collection date information is not available.")
+        return
+
+    with st.spinner("Generating temporal distribution plot..."):
+        df = df.dropna(subset=["collection_date"])
+        df["collection_date"] = pd.to_datetime(df["collection_date"])
+
+        date_range = df["collection_date"].max() - df["collection_date"].min()
+
+        if date_range > pd.Timedelta(days=180):
+            freq = "M" 
+            freq_label = "Month"  
+        else:
+            freq = "W" 
+            freq_label = "Week" 
+
+        df["year-month"] = df["collection_date"].dt.to_period(freq)
+
+        monthly_data = df.groupby("year-month").agg(
+            {
+                "is_recombinant": ["count", "sum"]
+            }
+        )
+
+        monthly_data.columns = [
+            "total_sequences", "recombinations"
+        ]
+
+        monthly_data = monthly_data.reset_index()
+        monthly_data["year-month"] = monthly_data["year-month"].astype(str)
+
+        fig = go.Figure()
+
+        fig.add_trace(
+            go.Scatter(
+                x=monthly_data["year-month"],
+                y=monthly_data["total_sequences"],
+                fill="tonexty",
+                mode="none",
+                name=f"Total Sequences per {freq_label}",
+                fillcolor="rgba(74, 144, 226, 0.15)",
+                line=dict(width=0)
+            )
+        )
+
+        fig.add_trace(
+            go.Scatter(
+                x=monthly_data["year-month"],
+                y=monthly_data["recombinations"],
+                mode="lines+markers",
+                name="Recombination Events",
+                line=dict(color="#4A90E2",
+                                width=3,
+                                shape="spline",
+                                smoothing=1.3),
+                marker=dict(size=6, color="#4A90E2")
+            )
+        )
+
+        fig.update_layout(
+            title="Temporal Distribution of Recombination Events",
+            xaxis_title="Time",
+            yaxis_title="Number of Sequences",
+            hovermode="x unified",
+            height=500,
+            showlegend=True
+        )
+
+        if virus.lower() == "sars-cov-2":
+            fig.update_layout(yaxis_type="log")
+            fig.update_yaxes(title="Number of Sequences (log scale)")
+
+        st.plotly_chart(fig, width="stretch")
+
+def create_geographic_map(df, virus):
+    # only keep is_recombinant
+    df = df[df["is_recombinant"] == True]
+    if df.empty:
+        st.warning("No recombinant sequences found.")
+        return
+
+    with st.spinner("Generating geographic distribution map..."):
+        if virus == "sars-cov-2":
+            df['country'] = df["Location"].apply(lambda x: x.split("/")[1].strip() if isinstance(x, str) else x)
+
+        df['country'] = df['country'].str.strip()
+        geo_data = df["country"].value_counts().reset_index()
+        geo_data.columns = ["country", "count"]
+
+        lat_lon_df = pd.read_csv("app/country.csv")
+
+        geo_data = geo_data.merge(lat_lon_df, on="country", how="left")
+        
+        missing_countries = geo_data[geo_data["latitude"].isna()]["country"].tolist()
+
+        if missing_countries:
+            print("Missing countries (will geocode):", missing_countries)
+
+            for country in missing_countries:
+                try:
+                    loc = Nominatim(user_agent="GetLoc")
+                    getLoc = loc.geocode(country)
+
+                    geo_data.loc[geo_data["country"] == country, "latitude"] = getLoc.latitude
+                    geo_data.loc[geo_data["country"] == country, "longitude"] = getLoc.longitude
+                except Exception as e:
+                    print(f"Could not geocode {country}: {e}")
+
+        geo_data = geo_data.dropna(subset=["latitude", "longitude"])
+
+        fig = px.scatter_mapbox(
+            geo_data,
+            lat="latitude",
+            lon="longitude",
+            size="count",
+            hover_name="country",
+            color="count",
+            color_continuous_scale=px.colors.sequential.Blues,
+            size_max=40,
+            zoom=1
+        )
+
+        fig.update_layout(mapbox_style="carto-positron")
+        fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+
+        st.plotly_chart(fig, use_container_width=True)
+
+def create_distribution_plots(df, virus):
+    "creates temporal and locational distributions"
+    st.title("📈 Distribution Plots")
+
+    st.subheader("🕗 Temporal Distribution")
+    create_temporal_plot(df, virus)
+
+    st.subheader("🌏 Locational Distribution")
+    create_geographic_map(df, virus)
+
+def apply_user_filter(df, virus):
+    """Apply user-defined filters to the DataFrame."""
+    # filter types
+    a, b, c = st.columns(3)
+
+    with a:
+        lineage_filter = st.selectbox(
+            'Select Lineage:',
+            ["All"] + sorted(df["pangoLin"].dropna().unique().tolist()) if "pangoLin" in df.columns else ["NA"]
+        )
+
+    with b:
+        breakpoint_filter = st.selectbox(
+            "Breakpoint Count:",
+            ["All"] + sorted(df["breakpoint_count"].dropna().unique().tolist()) if "breakpoint_count" in df.columns else ["NA"]
+        )
+
+    with c:
+        if virus == "sars-cov-2": df["continent"] = df["Location"].apply(lambda x: x.split("/")[0].strip() if isinstance(x, str) else x)
+        else: df["continent"] = df["continent"].apply(lambda x: x.strip() if isinstance(x, str) else x)
+        location_filter = st.selectbox(
+            "Select Continent:",
+            ["All"] + sorted(df["continent"].dropna().unique().tolist()) if "continent" in df.columns else ["NA"]
+        )
+
+    # apply filters
+    if lineage_filter not in ["All", "NA"]:
+        df = df[df["pangoLin"] == lineage_filter]
+
+    if breakpoint_filter not in ["All", "NA"]:
+        df = df[df["breakpoint_count"] == breakpoint_filter]
+
+    if location_filter not in ["All", "NA"]:
+        df = df[df["continent"] == location_filter]
+
+    return df
+
+def load_report_data(path):
+    """Load report data from a specified path."""
+    
+    report = {}
+
+    with st.spinner("Loading detailed report for the genome..."):
+        # load summary.json
+        summary_path = os.path.join(path, "summary.json")
+        if os.path.exists(summary_path):
+            with open(summary_path, "r") as f:
+                report["summary"] = json.load(f)
+
+        # load all region tables
+        # files named region_*_table.csv: 
+        # * in [1, 2] if 1BP
+        # * in [1, 2, 3] if 2BP
+        region_files = [f for f in os.listdir(path) if f.startswith("region_") and f.endswith("_table.csv")]
+        for region_file in region_files:
+            region_path = os.path.join(path, region_file)
+            if os.path.exists(region_path):
+                with open(region_path, "r") as f:
+                    report[region_file] = pd.read_csv(f)
+
+        # load plots (in json format)
+        # plot_per_region.json
+        # plot_whole_genome.json
+        plot_files = [f for f in os.listdir(path) if f.startswith("plot_") and f.endswith(".json")]
+        for plot_file in plot_files:
+            plot_path = os.path.join(path, plot_file)
+            if os.path.exists(plot_path):
+                with open(plot_path, "r") as f:
+                    report[plot_file] = json.load(f)
+
+        # load target_mutations.txt
+        target_mutations_path = os.path.join(path, "target_mutations.txt")
+        if os.path.exists(target_mutations_path):
+            with open(target_mutations_path, "r") as f:
+                report["target_mutations"] = f.read().splitlines()
+
+    return report
+
+def display_detailed_report(report):
+    if not report:
+        st.warning("No report data available.")
+        return
+    
+    # summary
+    if "summary" in report:
+        with st.expander("📋 Case Summary", expanded=True):
+            summary = report["summary"]
+            
+            a, b = st.columns(2)
+            a.metric("Genome ID", summary["case_name"], border=True)
+            b.metric("Lineage Name", summary["group_name"], border=True)
+
+            a, b = st.columns(2)
+            a.metric("Number of Sequences", summary["number_of_sequences"], border=True)
+            b.metric("Number of Changes", summary["number_of_changes"], border=True)
+
+            [a] = st.columns(1)
+            a.metric("Recombinant Parents", summary["best_candidates"], border=True)
+
+            a, b, c = st.columns(3)
+            a.metric("Breakpoints Target", summary["best_candidates_breakpoints_target"], border=True)
+            b.metric("Breakpoints Genomic", summary["best_candidates_breakpoints_genomic"], border=True)
+            c.metric("Direction L1", summary["direction_L1"], border=True)
+
+    # TODO: DISCUSS THIS PART WITH TOMMASO
+    # region tables
+    region_tables = {
+        k: v
+        for k, v in report.items()
+        if k.startswith("region_") and isinstance(v, pd.DataFrame)
+    }
+    if region_tables:
+        with st.expander("📊 Region Analysis Tables", expanded=False):
+            for region_name, df in region_tables.items():
+                st.markdown(f"#### {region_name.replace('_', ' ').replace('.csv', '').title()}")
+                st.dataframe(df, use_container_width=True)
+
+    # plot visualization graphs from JSON
+    plot_files = [f for f in report.keys() if f.startswith("plot_") and f.endswith(".json")]
+    if plot_files:
+        with st.expander("📈 Visualization", expanded=True):
+            for plot_file in plot_files:
+                st.markdown(f"#### {plot_file.replace('_', ' ').replace('.json', '').title()}")
+                fig = go.Figure(report[plot_file])
+                st.plotly_chart(fig, use_container_width=True)
+
+    # target mutations list
+    if "target_mutations" in report:
+        with st.expander("🎯 Target Mutations", expanded=False):
+            st.markdown("#### List of Target Mutations")
+
+            mutations = [m.strip() for m in report["target_mutations"][0].split(",")]
+
+            def classify_mutation(mutation: str):
+                # Deletion: 12345_12349 or 12345
+                if re.fullmatch(r"\d+_\d+", mutation) or re.fullmatch(r"\d+", mutation):
+                    return "deletion"
+                # Insertion: 12345_.|ATG
+                elif re.fullmatch(r"\d+_\.\|[A-Za-z]+", mutation):
+                    return "insertion"
+                # Substitution: 12345_T|A
+                elif re.fullmatch(r"\d+_[A-Za-z]+\|[A-Za-z]+", mutation):
+                    return "substitution"
+                else:
+                    return "other"
+
+            colors = {
+                "deletion":   {"bg": "#ffebee", "fg": "#c62828"},   # red
+                "insertion":  {"bg": "#e8f5e9", "fg": "#2e7d32"},   # green
+                "substitution": {"bg": "#e3f2fd", "fg": "#1565c0"}, # blue
+                "other":      {"bg": "#eeeeee", "fg": "#424242"},   # grey
+            }
+
+            def make_chip(text, kind):
+                style = colors[kind]
+                return (
+                    f"<span style='background:{style['bg']}; color:{style['fg']}; "
+                    f"padding:3px 8px; border-radius:12px; margin:2px; "
+                    f"display:inline-block; font-size:90%; font-weight:500'>{text}</span>"
+                )
+
+            # --- Legend chips ---
+            legend = " ".join([
+                make_chip("Deletion", "deletion"),
+                make_chip("Insertion", "insertion"),
+                make_chip("Substitution", "substitution"),
+            ])
+            st.markdown(legend, unsafe_allow_html=True)
+
+            # --- Mutation chips ---
+            chips = []
+            for m in mutations:
+                mtype = classify_mutation(m)
+                chips.append(make_chip(m, mtype))
+
+            st.markdown(" ".join(chips), unsafe_allow_html=True)
+
+def create_recombinant_cases_table(df):
+    """Create a table to display recombinant cases."""
+    st.subheader("🔬 Recombinant Cases")
+
+    with st.spinner("Loading recombinant cases..."):
+        if df.empty:
+            st.warning("No recombinant cases found.")
+            return
+
+        formatter = {
+            "genomeID": ("Genome ID", PINLEFT),
+            "breakpoint_count": ("BP Count", {"width": 80}),
+            "original_lineage": ("Assigned Lineage", {"width": 150}),
+            "recombinant_parents": ("Recombinant Parents", {"width": 250}),
+            "country": ("Country", {"width": 100}),
+            "collection_date": ("Collection Date", {"width": 100}),
+        }
+
+        custom_css = {
+            ".ag-root": {"font-family": "inherit"}, 
+            ".ag-cell": {"font-family": "inherit"},
+            ".ag-header-cell": {"font-family": "inherit"}
+        }
+
+        response = draw_grid(
+            df,
+            formatter=formatter,
+            fit_columns=True,
+            selection="single",     
+            use_checkbox=True,     
+            max_height=800,
+            css=custom_css,
+        )
+
+    if response:
+        selected = response["selected_rows"]
+        if selected is not None:
+            selected_id = selected["genomeID"].iloc[0]
+
+            #st.experimental_set_query_params(scroll="details_section")
+            st.markdown("---")
+
+            st.markdown('<div id="details_section"></div>', unsafe_allow_html=True)
+            st.subheader("📄 Details of the Selected Genome:")
+            st.markdown(f"### {selected_id}")
+            
+            # Only scroll when the selection changes
+            if st.session_state.get("last_scrolled_id") != selected_id:
+                components.html(
+                    """
+                    <script>
+                      const scrollNow = () => {
+                        const el = window.parent.document.getElementById("details_section");
+                        if (el) { el.scrollIntoView({behavior: "smooth", block: "start"}); }
+                      };
+                      // Small delay helps ensure parent DOM finished updating
+                      setTimeout(scrollNow, 60);
+                    </script>
+                    """,
+                    height=0,
+                )
+                st.session_state["last_scrolled_id"] = selected_id
+
+
+            path_to_the_case_report_folder = selected["case_report_folder"].iloc[0]
+
+            report = load_report_data(path_to_the_case_report_folder)
+            display_detailed_report(report)
+
+
+def sidebar(virus_list):
+    """sidebar navigation for the streamlit"""
+    with st.sidebar:
+
+        menu_options = ["Home"] + sorted([visualize(v) for v in virus_list if v in mapping.keys()])
+        menu_icons = ["house"] + ["virus2"] * (len(menu_options) - 1)
+
+        selected = option_menu(
+            menu_title="🧬 OpenRecombinHunt",
+            options=menu_options,
+            icons=menu_icons,
+            menu_icon="cast",
+            default_index=0,
+            orientation="vertical",
+            styles={
+                "container": {"padding": "0!important", "background-color": "#fafafa"},
+                "icon": {"color": "#000000", "font-size": "18px"},
+                "nav-link": {"font-size": "16px", "text-align": "left", "margin": "0px", "--hover-color": "#eee"},
+                "nav-link-selected": {"background-color": "#4A90E2"},
+            }
+        )
+
+        return selected
+
+def show_home_page():
+    """display welcome page"""
+    st.title("🧬 OpenRecombinHunt Dashboard")
+    st.markdown("---")
+
+    st.markdown("""
+    ## Welcome to the OpenRecombinHunt Bioinformatics Dashboard
+    
+    This sophisticated multi-page dashboard provides comprehensive analysis and visualization 
+    capabilities for viral recombination detection across multiple virus species.
+    
+    ### Features:
+    
+    📊 **Summary Dashboard**
+    - Dynamic time-based filtering
+    - Key performance metrics
+    - Interactive temporal visualizations
+    - Geographic distribution analysis
+    - Comprehensive summary tables
+    
+    🔬 **Recombinant Explorer**
+    - Advanced filtering capabilities
+    - Interactive case selection
+    - Detailed report exploration
+    - On-demand data loading
+    
+    ### Getting Started:
+    1. Select a virus from the sidebar menu
+    2. Choose between Summary Dashboard or Recombinant Explorer tabs
+    3. Use filters to customize your analysis
+    4. Explore detailed cases in the Recombinant Explorer
+    
+    ### Data Sources:
+    - **SARS-CoV-2**: Nextstrain reformatted data
+    - **Other Viruses**: HaploCov reformatted data
+    - **Recombination Analysis**: RecombinHunt output files
+    
+    ---
+    *This dashboard is part of a master's thesis project focused on advancing 
+    bioinformatics analysis capabilities for viral recombination detection.*
+    """)
+
+def show_virus_page(virus):
+    """display virus-specific analysis and visualizations"""
+    virus_name = visualize(virus)
+    st.title(f"🦠 {virus_name} Dashboard")
+
+    # load master data
+    with st.spinner(f"Loading data for {virus}..."):
+        master_df = load_master_data(virus)
+
+    if master_df is None or master_df.empty:
+        st.error(f"No data found for {virus}.")
+
+        # display a card with information
+        st.markdown(f"""
+        <div style="border: 1px solid #eee; border-radius: 5px; padding: 10px;">
+            <h4>{virus_name} is in the oven...</h4>
+            <p>Please wait for some time.</p>
+        </div>
+        """, unsafe_allow_html=True)    
+
+        return
+
+    # tabs
+    tab1, tab2 = st.tabs(["📊 Summary Dashboard", "🔬 Recombinant Explorer"])
+
+    with tab1:
+        # time-based filtering
+        with st.spinner("Applying time filter..."):
+            summary_df = apply_time_filter(master_df)
+
+        st.markdown("---")
+
+        # create key metrics and display
+        with st.spinner("Creating key metrics..."):
+            create_key_metrics(summary_df)
+
+        st.markdown("---")
+
+        # create summary tables and display
+        create_summary_tables(summary_df)
+
+        st.markdown("---")
+
+        create_distribution_plots(summary_df, virus)
+
+    with tab2:
+        # filtering
+        with st.spinner("Applying filters..."):
+            recombinant_df = master_df[master_df["is_recombinant"]]
+            explorer_df = apply_user_filter(recombinant_df, virus)
+
+        st.markdown("---")
+
+        # create interactive table with radio buttons as the index column
+        create_recombinant_cases_table(explorer_df)
+
+def main():
+
+    # discover available viruses
+    viruses = discover_viruses()
+
+    viruses_visualized = [visualize(v) for v in viruses]
+
+    # sidebar navigation
+    selected = sidebar(viruses)
+
+    if selected == "Home":
+        show_home_page()
+    elif selected in viruses_visualized:
+        show_virus_page(viruses[viruses_visualized.index(selected)])
+
+if __name__ == "__main__":
+    main()

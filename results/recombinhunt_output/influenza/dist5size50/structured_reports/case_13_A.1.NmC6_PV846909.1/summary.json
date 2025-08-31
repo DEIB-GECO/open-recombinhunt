@@ -1,0 +1,18 @@
+{
+    "case_number": 13,
+    "case_name": "PV846909.1",
+    "group_name": "A.1.NmC6",
+    "number_of_sequences": 294,
+    "number_of_changes": 161,
+    "best_candidates": "A.1.NmC6 + A.1.NmC8 + A.1.NmC6",
+    "best_candidates_breakpoints_target": "9-10, 12-13",
+    "best_candidates_breakpoints_genomic": "122 - 123, 182 - 183",
+    "direction_L1": "<<",
+    "initial_region_span": "1-9,10-12,13-161",
+    "gap_history": "9-13 -> ",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 2.39e-02",
+    "p_value_vs_L1": "6.49e-02",
+    "p_value_vs_L2": "2.38e-148",
+    "flags": "Model_2BP_Best"
+}

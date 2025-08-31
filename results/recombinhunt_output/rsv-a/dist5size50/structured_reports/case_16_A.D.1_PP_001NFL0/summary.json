@@ -1,0 +1,18 @@
+{
+    "case_number": 16,
+    "case_name": "PP_001NFL0",
+    "group_name": "A.D.1",
+    "number_of_sequences": 1413,
+    "number_of_changes": 140,
+    "best_candidates": "A.D.5.NmC1 + A.D.2.2.1",
+    "best_candidates_breakpoints_target": "11-12",
+    "best_candidates_breakpoints_genomic": "5383 - 5384",
+    "direction_L1": "<<",
+    "initial_region_span": "1-11,12-140",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "0.00e+00",
+    "p_value_vs_L2": "1.03e-208",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

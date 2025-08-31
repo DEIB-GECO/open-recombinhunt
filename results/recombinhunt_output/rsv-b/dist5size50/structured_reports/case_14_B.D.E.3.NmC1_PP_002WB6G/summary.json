@@ -1,0 +1,18 @@
+{
+    "case_number": 14,
+    "case_name": "PP_002WB6G",
+    "group_name": "B.D.E.3.NmC1",
+    "number_of_sequences": 1318,
+    "number_of_changes": 59,
+    "best_candidates": "B.D.E.3.NmC1 + B.D.E.2",
+    "best_candidates_breakpoints_target": "40-41",
+    "best_candidates_breakpoints_genomic": "5336 - 5337",
+    "direction_L1": ">>",
+    "initial_region_span": "1-39,46-59",
+    "gap_history": "39-46",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 1.42e-121",
+    "p_value_vs_L1": "1.50e+03",
+    "p_value_vs_L2": "2.88e-190",
+    "flags": "Model_1BP_Best"
+}

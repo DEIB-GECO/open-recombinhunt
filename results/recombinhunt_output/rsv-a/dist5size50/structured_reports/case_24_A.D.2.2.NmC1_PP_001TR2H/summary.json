@@ -1,0 +1,18 @@
+{
+    "case_number": 24,
+    "case_name": "PP_001TR2H",
+    "group_name": "A.D.2.2.NmC1",
+    "number_of_sequences": 394,
+    "number_of_changes": 35,
+    "best_candidates": "A.D.5.NmC1 + A.2.1.1",
+    "best_candidates_breakpoints_target": "30-31",
+    "best_candidates_breakpoints_genomic": "5696 - 5697",
+    "direction_L1": ">>",
+    "initial_region_span": "1-25,31-35",
+    "gap_history": "25-31",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "8.67e-04",
+    "p_value_vs_L2": "0.00e+00",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

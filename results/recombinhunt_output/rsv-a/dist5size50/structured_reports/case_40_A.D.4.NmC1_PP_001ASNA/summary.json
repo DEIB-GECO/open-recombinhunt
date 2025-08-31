@@ -1,0 +1,18 @@
+{
+    "case_number": 40,
+    "case_name": "PP_001ASNA",
+    "group_name": "A.D.4.NmC1",
+    "number_of_sequences": 2189,
+    "number_of_changes": 81,
+    "best_candidates": "A.D.2.2.1 + A.2.1.1",
+    "best_candidates_breakpoints_target": "72-73",
+    "best_candidates_breakpoints_genomic": "5640 - 5641",
+    "direction_L1": ">>",
+    "initial_region_span": "1-72,77-81",
+    "gap_history": "72-77",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "3.15e-264",
+    "p_value_vs_L2": "0.00e+00",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

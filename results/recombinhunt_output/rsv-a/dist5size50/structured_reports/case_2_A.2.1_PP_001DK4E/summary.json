@@ -1,0 +1,18 @@
+{
+    "case_number": 2,
+    "case_name": "PP_001DK4E",
+    "group_name": "A.2.1",
+    "number_of_sequences": 366,
+    "number_of_changes": 494,
+    "best_candidates": "A.D.3.3 + A.2.1",
+    "best_candidates_breakpoints_target": "12-13",
+    "best_candidates_breakpoints_genomic": "505 - 506",
+    "direction_L1": "<<",
+    "initial_region_span": "1-12,13-494",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 1.73e-03",
+    "p_value_vs_L1": "0.00e+00",
+    "p_value_vs_L2": "1.68e+15",
+    "flags": "Model_1BP_Best"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 23,
+    "case_name": "PP_0022G36",
+    "group_name": "B.D.3",
+    "number_of_sequences": 433,
+    "number_of_changes": 50,
+    "best_candidates": "B.D.NmC1 + B.D.3",
+    "best_candidates_breakpoints_target": "42-43",
+    "best_candidates_breakpoints_genomic": "5426 - 5427",
+    "direction_L1": ">>",
+    "initial_region_span": "1-40,43-50",
+    "gap_history": "40-43",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 8.54e-139",
+    "p_value_vs_L1": "2.19e-01",
+    "p_value_vs_L2": "1.47e-02",
+    "flags": "Model_1BP_Best"
+}

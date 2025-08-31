@@ -1,0 +1,18 @@
+{
+    "case_number": 88,
+    "case_name": "OR035653.1",
+    "group_name": "B.1.13.NmC2",
+    "number_of_sequences": 242,
+    "number_of_changes": 57,
+    "best_candidates": "B.1.NmC9 + B.1.11.NmC1",
+    "best_candidates_breakpoints_target": "50-51",
+    "best_candidates_breakpoints_genomic": "168204 - 168205",
+    "direction_L1": ">>",
+    "initial_region_span": "1-50,51-57",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "7.86e-28",
+    "p_value_vs_L2": "3.81e-80",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

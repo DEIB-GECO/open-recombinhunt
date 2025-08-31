@@ -1,0 +1,18 @@
+{
+    "case_number": 20,
+    "case_name": "PP_0023A9Y",
+    "group_name": "B.D.NmC1",
+    "number_of_sequences": 1726,
+    "number_of_changes": 58,
+    "best_candidates": "B.D.E.3 + B.D.NmC1",
+    "best_candidates_breakpoints_target": "6-7",
+    "best_candidates_breakpoints_genomic": "4862 - 4863",
+    "direction_L1": "<<",
+    "initial_region_span": "1-6,7-58",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "4.45e-40",
+    "p_value_vs_L2": "7.08e-05",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

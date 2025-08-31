@@ -1,0 +1,18 @@
+{
+    "case_number": 20,
+    "case_name": "PP_001LCWM",
+    "group_name": "A.3.1",
+    "number_of_sequences": 1992,
+    "number_of_changes": 37,
+    "best_candidates": "A.3.1.1 + A.2.1.1",
+    "best_candidates_breakpoints_target": "27-28",
+    "best_candidates_breakpoints_genomic": "5578 - 5579",
+    "direction_L1": ">>",
+    "initial_region_span": "1-26,33-37",
+    "gap_history": "26-33",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "4.11e+03",
+    "p_value_vs_L2": "6.95e-129",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

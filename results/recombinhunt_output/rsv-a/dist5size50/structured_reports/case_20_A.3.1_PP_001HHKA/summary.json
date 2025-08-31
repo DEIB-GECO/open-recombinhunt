@@ -1,0 +1,18 @@
+{
+    "case_number": 20,
+    "case_name": "PP_001HHKA",
+    "group_name": "A.3.1",
+    "number_of_sequences": 1992,
+    "number_of_changes": 37,
+    "best_candidates": "A.3.1 + A.D.5.NmC1",
+    "best_candidates_breakpoints_target": "30-31",
+    "best_candidates_breakpoints_genomic": "5589 - 5590",
+    "direction_L1": "<<",
+    "initial_region_span": "1-26,31-37",
+    "gap_history": "26-31",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 1.28e-12",
+    "p_value_vs_L1": "3.92e-06",
+    "p_value_vs_L2": "5.22e-36",
+    "flags": "Model_1BP_Best"
+}

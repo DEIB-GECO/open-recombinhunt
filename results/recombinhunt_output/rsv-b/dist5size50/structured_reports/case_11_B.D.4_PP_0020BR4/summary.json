@@ -1,0 +1,18 @@
+{
+    "case_number": 11,
+    "case_name": "PP_0020BR4",
+    "group_name": "B.D.4",
+    "number_of_sequences": 1413,
+    "number_of_changes": 22,
+    "best_candidates": "B.D.4.1.1 + B.D.4",
+    "best_candidates_breakpoints_target": "6-7",
+    "best_candidates_breakpoints_genomic": "5287 - 5288",
+    "direction_L1": "<<",
+    "initial_region_span": "1-6,8-22",
+    "gap_history": "6-8",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "0.00e+00",
+    "p_value_vs_L2": "2.05e-06",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 27,
+    "case_name": "PP_0027VLG",
+    "group_name": "B.D.E.2",
+    "number_of_sequences": 853,
+    "number_of_changes": 28,
+    "best_candidates": "B.D.2 + B.D.E.2 + B.D.2",
+    "best_candidates_breakpoints_target": "13-14, 15-16",
+    "best_candidates_breakpoints_genomic": "5457 - 5458, 5470 - 5471",
+    "direction_L1": ">>",
+    "initial_region_span": "1-13,14-15,16-28",
+    "gap_history": "13-16 -> ",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 7.70e-12",
+    "p_value_vs_L1": "1.08e-14",
+    "p_value_vs_L2": "2.53e-05",
+    "flags": "Model_2BP_Best"
+}

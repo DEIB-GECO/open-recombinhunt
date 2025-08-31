@@ -1,0 +1,18 @@
+{
+    "case_number": 22,
+    "case_name": "PP_002240Q",
+    "group_name": "B.3",
+    "number_of_sequences": 60,
+    "number_of_changes": 83,
+    "best_candidates": "B.3 + B.D.4.1.1.NmC1",
+    "best_candidates_breakpoints_target": "80-81",
+    "best_candidates_breakpoints_genomic": "7221 - 7222",
+    "direction_L1": ">>",
+    "initial_region_span": "1-80,81-83",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "2.05e-01",
+    "p_value_vs_L2": "0.00e+00",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

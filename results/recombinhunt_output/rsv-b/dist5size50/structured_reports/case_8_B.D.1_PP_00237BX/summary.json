@@ -1,0 +1,18 @@
+{
+    "case_number": 8,
+    "case_name": "PP_00237BX",
+    "group_name": "B.D.1",
+    "number_of_sequences": 334,
+    "number_of_changes": 26,
+    "best_candidates": "B.D.1 + B.D.4.NmC1",
+    "best_candidates_breakpoints_target": "22-23",
+    "best_candidates_breakpoints_genomic": "5566 - 5567",
+    "direction_L1": ">>",
+    "initial_region_span": "1-22,23-26",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "4.72e-03",
+    "p_value_vs_L2": "2.63e-09",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

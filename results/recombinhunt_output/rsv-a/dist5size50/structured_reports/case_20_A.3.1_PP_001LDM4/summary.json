@@ -1,0 +1,18 @@
+{
+    "case_number": 20,
+    "case_name": "PP_001LDM4",
+    "group_name": "A.3.1",
+    "number_of_sequences": 1992,
+    "number_of_changes": 33,
+    "best_candidates": "A.3.1 + A.D.5.NmC1",
+    "best_candidates_breakpoints_target": "21-22",
+    "best_candidates_breakpoints_genomic": "5559 - 5560",
+    "direction_L1": "<<",
+    "initial_region_span": "1-21,22-33",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "2.02e-10",
+    "p_value_vs_L2": "1.00e-35",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

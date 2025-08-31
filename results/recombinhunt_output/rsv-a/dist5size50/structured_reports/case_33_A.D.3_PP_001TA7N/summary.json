@@ -1,0 +1,18 @@
+{
+    "case_number": 33,
+    "case_name": "PP_001TA7N",
+    "group_name": "A.D.3",
+    "number_of_sequences": 128,
+    "number_of_changes": 54,
+    "best_candidates": "A.D.4.NmC1 + A.D.3",
+    "best_candidates_breakpoints_target": "9-10",
+    "best_candidates_breakpoints_genomic": "5017 - 5018",
+    "direction_L1": "<<",
+    "initial_region_span": "1-9,10-54",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "4.84e-55",
+    "p_value_vs_L2": "1.26e+00",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

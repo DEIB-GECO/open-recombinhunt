@@ -1,0 +1,18 @@
+{
+    "case_number": 20,
+    "case_name": "PP_001BVN5",
+    "group_name": "A.3.1",
+    "number_of_sequences": 1992,
+    "number_of_changes": 36,
+    "best_candidates": "A.D.5.NmC1 + A.3.1 + A.D.5.NmC1",
+    "best_candidates_breakpoints_target": "4-5, 24-25",
+    "best_candidates_breakpoints_genomic": "5289 - 5290, 5560 - 5561",
+    "direction_L1": "<<",
+    "initial_region_span": "1-4,5-24,25-36",
+    "gap_history": "4-25 -> ",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 1.62e-04",
+    "p_value_vs_L1": "6.80e-30",
+    "p_value_vs_L2": "2.51e-14",
+    "flags": "Model_2BP_Best"
+}

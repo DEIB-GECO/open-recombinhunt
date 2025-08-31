@@ -1,0 +1,18 @@
+{
+    "case_number": 8,
+    "case_name": "PP_001XHS2",
+    "group_name": "A.D.4.NmC3",
+    "number_of_sequences": 1653,
+    "number_of_changes": 61,
+    "best_candidates": "A.D.4.NmC3 + A.D.2.2.NmC1",
+    "best_candidates_breakpoints_target": "57-58",
+    "best_candidates_breakpoints_genomic": "5470 - 5471",
+    "direction_L1": ">>",
+    "initial_region_span": "1-57,58-61",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "5.01e-10",
+    "p_value_vs_L2": "1.10e-318",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

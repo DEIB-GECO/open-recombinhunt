@@ -1,0 +1,18 @@
+{
+    "case_number": 20,
+    "case_name": "PP_001F1RK",
+    "group_name": "A.3.1",
+    "number_of_sequences": 1992,
+    "number_of_changes": 23,
+    "best_candidates": "A.3.1.1 + A.D.4.NmC1",
+    "best_candidates_breakpoints_target": "3-4",
+    "best_candidates_breakpoints_genomic": "5363 - 5364",
+    "direction_L1": "<<",
+    "initial_region_span": "1-3,4-23",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "9.15e-09",
+    "p_value_vs_L2": "2.64e-52",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

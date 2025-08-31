@@ -1,0 +1,18 @@
+{
+    "case_number": 23,
+    "case_name": "PP_0023T4R",
+    "group_name": "B.D.3",
+    "number_of_sequences": 433,
+    "number_of_changes": 47,
+    "best_candidates": "B.D.3 + B.D.4.NmC1",
+    "best_candidates_breakpoints_target": "44-45",
+    "best_candidates_breakpoints_genomic": "5570 - 5571",
+    "direction_L1": ">>",
+    "initial_region_span": "1-44,45-47",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "5.57e-03",
+    "p_value_vs_L2": "2.36e-211",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

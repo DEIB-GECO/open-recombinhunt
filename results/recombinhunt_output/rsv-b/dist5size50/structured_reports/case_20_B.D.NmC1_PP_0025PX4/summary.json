@@ -1,0 +1,18 @@
+{
+    "case_number": 20,
+    "case_name": "PP_0025PX4",
+    "group_name": "B.D.NmC1",
+    "number_of_sequences": 1726,
+    "number_of_changes": 40,
+    "best_candidates": "B.D.E.3.NmC1 + B.D.2",
+    "best_candidates_breakpoints_target": "35-36",
+    "best_candidates_breakpoints_genomic": "5461 - 5462",
+    "direction_L1": ">>",
+    "initial_region_span": "1-29,36-40",
+    "gap_history": "29-36",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 7.05e-01",
+    "p_value_vs_L1": "1.67e+00",
+    "p_value_vs_L2": "1.79e-36",
+    "flags": "Model_1BP_Best"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 7,
+    "case_name": "PP_0018WGP",
+    "group_name": "A.D.2.2",
+    "number_of_sequences": 545,
+    "number_of_changes": 22,
+    "best_candidates": "A.D.2.2 + A.D.2.2",
+    "best_candidates_breakpoints_target": "8-9",
+    "best_candidates_breakpoints_genomic": "5289 - 5290",
+    "direction_L1": "<<",
+    "initial_region_span": "1-4,9-22",
+    "gap_history": "4-9",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 2.42e-110",
+    "p_value_vs_L1": "2.72e+00",
+    "p_value_vs_L2": "2.72e+00",
+    "flags": "Model_1BP_Best"
+}

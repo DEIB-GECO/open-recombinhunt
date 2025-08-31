@@ -1,0 +1,18 @@
+{
+    "case_number": 20,
+    "case_name": "PP_002S6TL",
+    "group_name": "B.D.NmC1",
+    "number_of_sequences": 1726,
+    "number_of_changes": 46,
+    "best_candidates": "B.D.NmC1 + B.D.2",
+    "best_candidates_breakpoints_target": "34-35",
+    "best_candidates_breakpoints_genomic": "5461 - 5462",
+    "direction_L1": ">>",
+    "initial_region_span": "1-30,35-46",
+    "gap_history": "30-35",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 1.45e-110",
+    "p_value_vs_L1": "1.66e-07",
+    "p_value_vs_L2": "1.92e-42",
+    "flags": "Model_1BP_Best"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 9,
+    "case_name": "PP_002MCRU",
+    "group_name": "B.D.1.NmC1",
+    "number_of_sequences": 605,
+    "number_of_changes": 400,
+    "best_candidates": "B.D.1.NmC1 + B.D.3 + B.D.1.NmC1",
+    "best_candidates_breakpoints_target": "145-146, 177-178",
+    "best_candidates_breakpoints_genomic": "4688 - 4689, 5285 - 5286",
+    "direction_L1": ">>",
+    "initial_region_span": "1-145,146-175,320-400",
+    "gap_history": "145-320 -> 175-320",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 3.29e-55",
+    "p_value_vs_L1": "9.06e+16",
+    "p_value_vs_L2": "0.00e+00",
+    "flags": "Model_2BP_Best"
+}

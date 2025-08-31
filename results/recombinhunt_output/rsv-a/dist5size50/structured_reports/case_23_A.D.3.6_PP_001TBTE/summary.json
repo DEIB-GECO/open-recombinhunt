@@ -1,0 +1,18 @@
+{
+    "case_number": 23,
+    "case_name": "PP_001TBTE",
+    "group_name": "A.D.3.6",
+    "number_of_sequences": 757,
+    "number_of_changes": 24,
+    "best_candidates": "A.D.5.NmC1 + A.D.3.6",
+    "best_candidates_breakpoints_target": "4-5",
+    "best_candidates_breakpoints_genomic": "5289 - 5290",
+    "direction_L1": "<<",
+    "initial_region_span": "1-4,5-24",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "4.14e-76",
+    "p_value_vs_L2": "4.36e-03",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

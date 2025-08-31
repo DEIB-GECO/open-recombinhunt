@@ -1,0 +1,18 @@
+{
+    "case_number": 53,
+    "case_name": "OP890508.1",
+    "group_name": "B.1",
+    "number_of_sequences": 452,
+    "number_of_changes": 55,
+    "best_candidates": "B.1.NmC2 + B.1.4",
+    "best_candidates_breakpoints_target": "11-12",
+    "best_candidates_breakpoints_genomic": "36616 - 36617",
+    "direction_L1": "<<",
+    "initial_region_span": "1-11,12-55",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 1.78e-01",
+    "p_value_vs_L1": "5.48e-22",
+    "p_value_vs_L2": "5.13e-10",
+    "flags": "Model_1BP_Best"
+}

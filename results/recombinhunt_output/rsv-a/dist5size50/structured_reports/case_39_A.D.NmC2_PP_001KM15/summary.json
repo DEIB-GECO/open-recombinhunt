@@ -1,0 +1,18 @@
+{
+    "case_number": 39,
+    "case_name": "PP_001KM15",
+    "group_name": "A.D.NmC2",
+    "number_of_sequences": 637,
+    "number_of_changes": 31,
+    "best_candidates": "A.D.NmC2 + A.D.3.NmC1",
+    "best_candidates_breakpoints_target": "23-24",
+    "best_candidates_breakpoints_genomic": "5514 - 5515",
+    "direction_L1": ">>",
+    "initial_region_span": "1-21,24-31",
+    "gap_history": "21-24",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.57e-08",
+    "p_value_vs_L2": "1.27e-130",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

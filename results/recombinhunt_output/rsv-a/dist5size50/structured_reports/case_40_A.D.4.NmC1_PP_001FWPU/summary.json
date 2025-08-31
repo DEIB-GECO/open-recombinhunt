@@ -1,0 +1,18 @@
+{
+    "case_number": 40,
+    "case_name": "PP_001FWPU",
+    "group_name": "A.D.4.NmC1",
+    "number_of_sequences": 2189,
+    "number_of_changes": 93,
+    "best_candidates": "A.D.2.2.1 + A.D.5.NmC1",
+    "best_candidates_breakpoints_target": "81-82",
+    "best_candidates_breakpoints_genomic": "5559 - 5560",
+    "direction_L1": ">>",
+    "initial_region_span": "1-67,82-93",
+    "gap_history": "67-82",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "0.00e+00",
+    "p_value_vs_L2": "0.00e+00",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 48,
+    "case_name": "PP_0016LSG",
+    "group_name": "A.3.1.1",
+    "number_of_sequences": 731,
+    "number_of_changes": 26,
+    "best_candidates": "A.D.2.1 + A.3.1.NmC1",
+    "best_candidates_breakpoints_target": "12-13",
+    "best_candidates_breakpoints_genomic": "5447 - 5448",
+    "direction_L1": "<<",
+    "initial_region_span": "1-4,13-26",
+    "gap_history": "4-13",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "0.00e+00",
+    "p_value_vs_L2": "2.59e-12",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

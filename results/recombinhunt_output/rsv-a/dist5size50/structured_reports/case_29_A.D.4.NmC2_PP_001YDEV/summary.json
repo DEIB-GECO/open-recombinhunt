@@ -1,0 +1,18 @@
+{
+    "case_number": 29,
+    "case_name": "PP_001YDEV",
+    "group_name": "A.D.4.NmC2",
+    "number_of_sequences": 848,
+    "number_of_changes": 60,
+    "best_candidates": "A.D.4.NmC3 + A.D.5",
+    "best_candidates_breakpoints_target": "52-53",
+    "best_candidates_breakpoints_genomic": "5419 - 5420",
+    "direction_L1": ">>",
+    "initial_region_span": "1-52,53-60",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.96e-18",
+    "p_value_vs_L2": "1.22e-169",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 19,
+    "case_name": "PP_00273YJ",
+    "group_name": "B.D.4.1",
+    "number_of_sequences": 218,
+    "number_of_changes": 351,
+    "best_candidates": "B.D.4.1.2 + B.D.4.1",
+    "best_candidates_breakpoints_target": "9-10",
+    "best_candidates_breakpoints_genomic": "475 - 476",
+    "direction_L1": "<<",
+    "initial_region_span": "1-7,11-351",
+    "gap_history": "7-11",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "0.00e+00",
+    "p_value_vs_L2": "4.33e+15",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 15,
+    "case_name": "PP_002SG3R",
+    "group_name": "B.D.4.NmC1",
+    "number_of_sequences": 1212,
+    "number_of_changes": 21,
+    "best_candidates": "B.D.1 + B.D.1.1",
+    "best_candidates_breakpoints_target": "16-17",
+    "best_candidates_breakpoints_genomic": "5558 - 5559",
+    "direction_L1": ">>",
+    "initial_region_span": "1-16,17-21",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "2.56e-04",
+    "p_value_vs_L2": "2.01e-48",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 33,
+    "case_name": "PP_001Q537",
+    "group_name": "A.D.3",
+    "number_of_sequences": 128,
+    "number_of_changes": 46,
+    "best_candidates": "A.D.3 + A.D.3.NmC2",
+    "best_candidates_breakpoints_target": "6-7",
+    "best_candidates_breakpoints_genomic": "5052 - 5053",
+    "direction_L1": "<<",
+    "initial_region_span": "1-6,7-46",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.36e-06",
+    "p_value_vs_L2": "1.32e-109",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

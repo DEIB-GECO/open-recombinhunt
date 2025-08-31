@@ -1,0 +1,18 @@
+{
+    "case_number": 40,
+    "case_name": "PP_001ACSG",
+    "group_name": "A.D.4.NmC1",
+    "number_of_sequences": 2189,
+    "number_of_changes": 66,
+    "best_candidates": "A.D.4.NmC1 + A.2.1.1",
+    "best_candidates_breakpoints_target": "62-63",
+    "best_candidates_breakpoints_genomic": "5692 - 5693",
+    "direction_L1": ">>",
+    "initial_region_span": "1-48,63-66",
+    "gap_history": "48-63",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "2.40e-04",
+    "p_value_vs_L2": "4.94e-324",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

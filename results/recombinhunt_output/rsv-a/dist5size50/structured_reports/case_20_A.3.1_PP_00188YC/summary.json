@@ -1,0 +1,18 @@
+{
+    "case_number": 20,
+    "case_name": "PP_00188YC",
+    "group_name": "A.3.1",
+    "number_of_sequences": 1992,
+    "number_of_changes": 22,
+    "best_candidates": "A.D.2.2.NmC1 + A.D.4.NmC1",
+    "best_candidates_breakpoints_target": "4-5",
+    "best_candidates_breakpoints_genomic": "5374 - 5375",
+    "direction_L1": "<<",
+    "initial_region_span": "1-4,5-22",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "3.11e-19",
+    "p_value_vs_L2": "2.21e-193",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

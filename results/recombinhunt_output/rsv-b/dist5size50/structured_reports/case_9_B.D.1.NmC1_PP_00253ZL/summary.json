@@ -1,0 +1,18 @@
+{
+    "case_number": 9,
+    "case_name": "PP_00253ZL",
+    "group_name": "B.D.1.NmC1",
+    "number_of_sequences": 605,
+    "number_of_changes": 18,
+    "best_candidates": "B.D.1.NmC1 + B.D.1.NmC1",
+    "best_candidates_breakpoints_target": "8-9",
+    "best_candidates_breakpoints_genomic": "1810 - 1811",
+    "direction_L1": "<<",
+    "initial_region_span": "1-7,13-18",
+    "gap_history": "7-13",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 4.86e-14",
+    "p_value_vs_L1": "2.72e+00",
+    "p_value_vs_L2": "2.72e+00",
+    "flags": "Model_1BP_Best"
+}

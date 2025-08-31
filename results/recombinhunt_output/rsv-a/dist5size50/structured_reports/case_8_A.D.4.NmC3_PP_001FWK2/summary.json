@@ -1,0 +1,18 @@
+{
+    "case_number": 8,
+    "case_name": "PP_001FWK2",
+    "group_name": "A.D.4.NmC3",
+    "number_of_sequences": 1653,
+    "number_of_changes": 89,
+    "best_candidates": "A.D.2.2.1 + A.D.4.NmC3",
+    "best_candidates_breakpoints_target": "21-22",
+    "best_candidates_breakpoints_genomic": "4669 - 4670",
+    "direction_L1": "<<",
+    "initial_region_span": "1-15,22-89",
+    "gap_history": "15-22",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "0.00e+00",
+    "p_value_vs_L2": "1.80e-27",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

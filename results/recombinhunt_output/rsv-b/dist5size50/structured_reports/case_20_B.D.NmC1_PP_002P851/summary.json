@@ -1,0 +1,18 @@
+{
+    "case_number": 20,
+    "case_name": "PP_002P851",
+    "group_name": "B.D.NmC1",
+    "number_of_sequences": 1726,
+    "number_of_changes": 59,
+    "best_candidates": "B.D.E.3.NmC1 + B.D.1.1",
+    "best_candidates_breakpoints_target": "54-55",
+    "best_candidates_breakpoints_genomic": "5564 - 5565",
+    "direction_L1": ">>",
+    "initial_region_span": "1-53,55-59",
+    "gap_history": "53-55",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "8.05e-06",
+    "p_value_vs_L2": "0.00e+00",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

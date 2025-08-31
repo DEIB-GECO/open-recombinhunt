@@ -1,0 +1,18 @@
+{
+    "case_number": 15,
+    "case_name": "PP_002MLF7",
+    "group_name": "B.D.4.NmC1",
+    "number_of_sequences": 1212,
+    "number_of_changes": 29,
+    "best_candidates": "B.D.4.NmC1 + B.D.4.1",
+    "best_candidates_breakpoints_target": "24-25",
+    "best_candidates_breakpoints_genomic": "5584 - 5585",
+    "direction_L1": ">>",
+    "initial_region_span": "1-24,25-29",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "8.87e-03",
+    "p_value_vs_L2": "2.20e-27",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

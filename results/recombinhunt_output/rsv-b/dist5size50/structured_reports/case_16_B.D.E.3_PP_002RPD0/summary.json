@@ -1,0 +1,18 @@
+{
+    "case_number": 16,
+    "case_name": "PP_002RPD0",
+    "group_name": "B.D.E.3",
+    "number_of_sequences": 125,
+    "number_of_changes": 85,
+    "best_candidates": "B.D.E.3 + B.D.E.3",
+    "best_candidates_breakpoints_target": "73-74",
+    "best_candidates_breakpoints_genomic": "5563 - 5564",
+    "direction_L1": ">>",
+    "initial_region_span": "1-69,83-85",
+    "gap_history": "69-83",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 1.36e-102",
+    "p_value_vs_L1": "2.72e+00",
+    "p_value_vs_L2": "2.72e+00",
+    "flags": "Model_1BP_Best"
+}

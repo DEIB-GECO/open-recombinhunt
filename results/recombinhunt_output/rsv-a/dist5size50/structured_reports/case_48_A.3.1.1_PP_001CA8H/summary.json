@@ -1,0 +1,18 @@
+{
+    "case_number": 48,
+    "case_name": "PP_001CA8H",
+    "group_name": "A.3.1.1",
+    "number_of_sequences": 731,
+    "number_of_changes": 22,
+    "best_candidates": "A.3.1.1 + A.D.2.2.NmC1",
+    "best_candidates_breakpoints_target": "19-20",
+    "best_candidates_breakpoints_genomic": "5553 - 5554",
+    "direction_L1": ">>",
+    "initial_region_span": "1-19,20-22",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.29e-02",
+    "p_value_vs_L2": "3.82e-14",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 9,
+    "case_name": "PV311040.1",
+    "group_name": "A.1.NmC13",
+    "number_of_sequences": 668,
+    "number_of_changes": 157,
+    "best_candidates": "A.1.NmC13 + A.1.NmC3 + A.1.NmC13",
+    "best_candidates_breakpoints_target": "25-26, 27-28",
+    "best_candidates_breakpoints_genomic": "319 - 320, 331 - 332",
+    "direction_L1": "<<",
+    "initial_region_span": "1-25,26-27,28-157",
+    "gap_history": "25-28 -> ",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 7.12e-01",
+    "p_value_vs_L1": "4.95e-11",
+    "p_value_vs_L2": "1.64e-230",
+    "flags": "Model_2BP_Best"
+}

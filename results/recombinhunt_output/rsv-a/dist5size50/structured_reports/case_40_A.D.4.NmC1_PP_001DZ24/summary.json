@@ -1,0 +1,18 @@
+{
+    "case_number": 40,
+    "case_name": "PP_001DZ24",
+    "group_name": "A.D.4.NmC1",
+    "number_of_sequences": 2189,
+    "number_of_changes": 60,
+    "best_candidates": "A.D.2.2.1 + A.D.4.NmC1",
+    "best_candidates_breakpoints_target": "45-46",
+    "best_candidates_breakpoints_genomic": "5398 - 5399",
+    "direction_L1": ">>",
+    "initial_region_span": "1-45,46-60",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "0.00e+00",
+    "p_value_vs_L2": "2.55e-06",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

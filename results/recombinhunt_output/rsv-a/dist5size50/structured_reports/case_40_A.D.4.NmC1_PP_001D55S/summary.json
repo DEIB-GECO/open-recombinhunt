@@ -1,0 +1,18 @@
+{
+    "case_number": 40,
+    "case_name": "PP_001D55S",
+    "group_name": "A.D.4.NmC1",
+    "number_of_sequences": 2189,
+    "number_of_changes": 48,
+    "best_candidates": "A.3.1.1 + A.D.4.NmC1",
+    "best_candidates_breakpoints_target": "5-6",
+    "best_candidates_breakpoints_genomic": "5001 - 5002",
+    "direction_L1": "<<",
+    "initial_region_span": "1-5,6-48",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.38e-43",
+    "p_value_vs_L2": "2.85e-12",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

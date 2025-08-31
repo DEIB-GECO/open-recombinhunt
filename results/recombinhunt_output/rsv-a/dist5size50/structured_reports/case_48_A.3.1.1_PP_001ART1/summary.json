@@ -1,0 +1,18 @@
+{
+    "case_number": 48,
+    "case_name": "PP_001ART1",
+    "group_name": "A.3.1.1",
+    "number_of_sequences": 731,
+    "number_of_changes": 26,
+    "best_candidates": "A.3.1.1 + A.3.1.NmC1",
+    "best_candidates_breakpoints_target": "14-15",
+    "best_candidates_breakpoints_genomic": "5473 - 5474",
+    "direction_L1": "<<",
+    "initial_region_span": "1-13,15-26",
+    "gap_history": "13-15",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "6.10e-01",
+    "p_value_vs_L2": "9.12e-33",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

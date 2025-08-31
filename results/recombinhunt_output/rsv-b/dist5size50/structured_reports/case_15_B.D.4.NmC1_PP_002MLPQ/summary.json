@@ -1,0 +1,18 @@
+{
+    "case_number": 15,
+    "case_name": "PP_002MLPQ",
+    "group_name": "B.D.4.NmC1",
+    "number_of_sequences": 1212,
+    "number_of_changes": 28,
+    "best_candidates": "B.D.4.NmC1 + B.D.1.1",
+    "best_candidates_breakpoints_target": "9-10",
+    "best_candidates_breakpoints_genomic": "5405 - 5406",
+    "direction_L1": "<<",
+    "initial_region_span": "1-9,10-28",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "8.21e-06",
+    "p_value_vs_L2": "8.42e-14",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

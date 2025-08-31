@@ -1,0 +1,18 @@
+{
+    "case_number": 3,
+    "case_name": "PP_001T7WC",
+    "group_name": "A.D.3.NmC1",
+    "number_of_sequences": 397,
+    "number_of_changes": 65,
+    "best_candidates": "A.D.3.NmC1 + A.D.5.NmC1",
+    "best_candidates_breakpoints_target": "45-46",
+    "best_candidates_breakpoints_genomic": "5471 - 5472",
+    "direction_L1": ">>",
+    "initial_region_span": "1-45,46-65",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "4.37e-37",
+    "p_value_vs_L2": "5.96e-155",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

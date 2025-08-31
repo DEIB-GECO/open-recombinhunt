@@ -1,0 +1,18 @@
+{
+    "case_number": 2,
+    "case_name": "OP508680.1",
+    "group_name": "A.1.NmC1",
+    "number_of_sequences": 380,
+    "number_of_changes": 1445,
+    "best_candidates": "A.1.NmC1 + A.1.NmC2 + A.1.NmC1",
+    "best_candidates_breakpoints_target": "1428-1429, 1442-1443",
+    "best_candidates_breakpoints_genomic": "10523 - 10524, 10657 - 10658",
+    "direction_L1": ">>",
+    "initial_region_span": "1-1428,1429-1442,1443-1445",
+    "gap_history": "1428-1443 -> ",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 1.30e-10",
+    "p_value_vs_L1": "4.98e-04",
+    "p_value_vs_L2": "2.58e-264",
+    "flags": "Model_2BP_Best"
+}

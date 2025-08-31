@@ -1,0 +1,18 @@
+{
+    "case_number": 15,
+    "case_name": "PV339364.1",
+    "group_name": "A.1.NmC5",
+    "number_of_sequences": 1745,
+    "number_of_changes": 152,
+    "best_candidates": "A.1.NmC5 + A.1.NmC14",
+    "best_candidates_breakpoints_target": "137-138",
+    "best_candidates_breakpoints_genomic": "1520 - 1521",
+    "direction_L1": ">>",
+    "initial_region_span": "1-137,138-152",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "8.45e+08",
+    "p_value_vs_L2": "3.53e-240",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

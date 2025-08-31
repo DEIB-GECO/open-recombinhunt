@@ -1,0 +1,18 @@
+{
+    "case_number": 27,
+    "case_name": "PP_002VDA8",
+    "group_name": "B.D.E.2",
+    "number_of_sequences": 853,
+    "number_of_changes": 23,
+    "best_candidates": "B.D.1 + B.D.E.2",
+    "best_candidates_breakpoints_target": "4-5",
+    "best_candidates_breakpoints_genomic": "5309 - 5310",
+    "direction_L1": "<<",
+    "initial_region_span": "1-4,5-23",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "5.96e-10",
+    "p_value_vs_L2": "8.35e-01",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

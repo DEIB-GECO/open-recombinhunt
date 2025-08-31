@@ -1,0 +1,18 @@
+{
+    "case_number": 11,
+    "case_name": "PP_002L24F",
+    "group_name": "B.D.4",
+    "number_of_sequences": 1413,
+    "number_of_changes": 14,
+    "best_candidates": "B.D.4.1 + B.D.4",
+    "best_candidates_breakpoints_target": "7-8",
+    "best_candidates_breakpoints_genomic": "5485 - 5486",
+    "direction_L1": ">>",
+    "initial_region_span": "1-7,8-14",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "4.95e-11",
+    "p_value_vs_L2": "2.12e-05",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

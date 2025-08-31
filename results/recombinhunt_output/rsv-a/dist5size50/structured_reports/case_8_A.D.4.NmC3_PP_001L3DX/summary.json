@@ -1,0 +1,18 @@
+{
+    "case_number": 8,
+    "case_name": "PP_001L3DX",
+    "group_name": "A.D.4.NmC3",
+    "number_of_sequences": 1653,
+    "number_of_changes": 79,
+    "best_candidates": "A.D.4.NmC3 + A.D.5.NmC1",
+    "best_candidates_breakpoints_target": "55-56",
+    "best_candidates_breakpoints_genomic": "5470 - 5471",
+    "direction_L1": ">>",
+    "initial_region_span": "1-55,58-79",
+    "gap_history": "55-58",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.63e-36",
+    "p_value_vs_L2": "1.20e-240",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

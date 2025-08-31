@@ -1,0 +1,18 @@
+{
+    "case_number": 26,
+    "case_name": "OQ330988.1",
+    "group_name": "B.1.17.NmC1",
+    "number_of_sequences": 375,
+    "number_of_changes": 51,
+    "best_candidates": "B.1.17.NmC1 + B.1.2.NmC4",
+    "best_candidates_breakpoints_target": "45-46",
+    "best_candidates_breakpoints_genomic": "179224 - 179225",
+    "direction_L1": "<<",
+    "initial_region_span": "1-43,46-51",
+    "gap_history": "43-46",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 1.20e-06",
+    "p_value_vs_L1": "6.51e-03",
+    "p_value_vs_L2": "4.24e-95",
+    "flags": "Model_1BP_Best"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 28,
+    "case_name": "OP451008.1",
+    "group_name": "B.1.NmC7",
+    "number_of_sequences": 172,
+    "number_of_changes": 67,
+    "best_candidates": "B.1.NmC7 + C.1.NmC2",
+    "best_candidates_breakpoints_target": "63-64",
+    "best_candidates_breakpoints_genomic": "179224 - 179225",
+    "direction_L1": ">>",
+    "initial_region_span": "1-63,64-67",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "6.64e+01",
+    "p_value_vs_L2": "1.66e-123",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

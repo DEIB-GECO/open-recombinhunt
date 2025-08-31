@@ -1,0 +1,18 @@
+{
+    "case_number": 48,
+    "case_name": "PP_0019SZQ",
+    "group_name": "A.3.1.1",
+    "number_of_sequences": 731,
+    "number_of_changes": 77,
+    "best_candidates": "A.3.1.1 + A.3.1.1",
+    "best_candidates_breakpoints_target": "21-22",
+    "best_candidates_breakpoints_genomic": "5106 - 5107",
+    "direction_L1": "<<",
+    "initial_region_span": "1-6,24-77",
+    "gap_history": "6-24",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 1.46e-69",
+    "p_value_vs_L1": "2.72e+00",
+    "p_value_vs_L2": "2.72e+00",
+    "flags": "Model_1BP_Best"
+}

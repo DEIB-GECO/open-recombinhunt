@@ -1,0 +1,18 @@
+{
+    "case_number": 15,
+    "case_name": "PP_00236KF",
+    "group_name": "B.D.4.NmC1",
+    "number_of_sequences": 1212,
+    "number_of_changes": 29,
+    "best_candidates": "B.D.1 + B.D.4.NmC1",
+    "best_candidates_breakpoints_target": "5-6",
+    "best_candidates_breakpoints_genomic": "5279 - 5280",
+    "direction_L1": "<<",
+    "initial_region_span": "1-5,6-29",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "8.32e-11",
+    "p_value_vs_L2": "9.28e-03",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

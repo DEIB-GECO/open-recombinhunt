@@ -1,0 +1,18 @@
+{
+    "case_number": 20,
+    "case_name": "PP_001C3RP",
+    "group_name": "A.3.1",
+    "number_of_sequences": 1992,
+    "number_of_changes": 39,
+    "best_candidates": "A.3.1 + A.3.1",
+    "best_candidates_breakpoints_target": "21-22",
+    "best_candidates_breakpoints_genomic": "5596 - 5597",
+    "direction_L1": ">>",
+    "initial_region_span": "1-15,37-39",
+    "gap_history": "15-37",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 2.60e-139",
+    "p_value_vs_L1": "2.72e+00",
+    "p_value_vs_L2": "2.72e+00",
+    "flags": "Model_1BP_Best"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 2,
+    "case_name": "PP_001DJHN",
+    "group_name": "A.2.1",
+    "number_of_sequences": 366,
+    "number_of_changes": 513,
+    "best_candidates": "A.D.3.1 + A.2.1",
+    "best_candidates_breakpoints_target": "11-12",
+    "best_candidates_breakpoints_genomic": "508 - 509",
+    "direction_L1": "<<",
+    "initial_region_span": "1-11,12-513",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "0.00e+00",
+    "p_value_vs_L2": "2.37e-45",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

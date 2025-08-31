@@ -1,0 +1,18 @@
+{
+    "case_number": 20,
+    "case_name": "PP_00237ZL",
+    "group_name": "B.D.NmC1",
+    "number_of_sequences": 1726,
+    "number_of_changes": 51,
+    "best_candidates": "B.D.NmC1 + B.D.4.1",
+    "best_candidates_breakpoints_target": "44-45",
+    "best_candidates_breakpoints_genomic": "5460 - 5461",
+    "direction_L1": ">>",
+    "initial_region_span": "1-44,45-51",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "2.70e+00",
+    "p_value_vs_L2": "3.03e-133",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

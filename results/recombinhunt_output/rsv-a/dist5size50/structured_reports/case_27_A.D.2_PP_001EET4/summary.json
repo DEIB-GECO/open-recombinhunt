@@ -1,0 +1,18 @@
+{
+    "case_number": 27,
+    "case_name": "PP_001EET4",
+    "group_name": "A.D.2",
+    "number_of_sequences": 2386,
+    "number_of_changes": 64,
+    "best_candidates": "A.D.2 + A.2.1.1",
+    "best_candidates_breakpoints_target": "12-13",
+    "best_candidates_breakpoints_genomic": "5908 - 5909",
+    "direction_L1": "<<",
+    "initial_region_span": "1-12,13-64",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.98e-286",
+    "p_value_vs_L2": "0.00e+00",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

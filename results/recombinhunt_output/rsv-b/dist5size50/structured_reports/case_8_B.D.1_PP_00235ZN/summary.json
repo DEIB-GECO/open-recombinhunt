@@ -1,0 +1,18 @@
+{
+    "case_number": 8,
+    "case_name": "PP_00235ZN",
+    "group_name": "B.D.1",
+    "number_of_sequences": 334,
+    "number_of_changes": 23,
+    "best_candidates": "B.D.4.1.1 + B.D.1",
+    "best_candidates_breakpoints_target": "6-7",
+    "best_candidates_breakpoints_genomic": "5309 - 5310",
+    "direction_L1": "<<",
+    "initial_region_span": "1-6,12-23",
+    "gap_history": "6-12",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 5.53e-06",
+    "p_value_vs_L1": "0.00e+00",
+    "p_value_vs_L2": "3.93e-01",
+    "flags": "Model_1BP_Best"
+}

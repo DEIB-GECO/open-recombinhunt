@@ -1,0 +1,18 @@
+{
+    "case_number": 22,
+    "case_name": "PP_001UKZS",
+    "group_name": "A.D.2.NmC1",
+    "number_of_sequences": 464,
+    "number_of_changes": 89,
+    "best_candidates": "A.D.2 + A.D.2.NmC1",
+    "best_candidates_breakpoints_target": "11-12",
+    "best_candidates_breakpoints_genomic": "5803 - 5804",
+    "direction_L1": "<<",
+    "initial_region_span": "1-11,12-89",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 4.61e-123",
+    "p_value_vs_L1": "4.73e-07",
+    "p_value_vs_L2": "8.81e-06",
+    "flags": "Model_1BP_Best"
+}

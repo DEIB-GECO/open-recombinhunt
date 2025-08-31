@@ -1,0 +1,18 @@
+{
+    "case_number": 11,
+    "case_name": "PP_001EMR1",
+    "group_name": "A.D.4",
+    "number_of_sequences": 176,
+    "number_of_changes": 54,
+    "best_candidates": "A.D.4 + A.D.3 + A.D.4",
+    "best_candidates_breakpoints_target": "42-43, 48-49",
+    "best_candidates_breakpoints_genomic": "5470 - 5471, 5525 - 5526",
+    "direction_L1": ">>",
+    "initial_region_span": "1-42,43-48,49-54",
+    "gap_history": "42-49 -> ",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 5.86e-07",
+    "p_value_vs_L1": "1.59e-06",
+    "p_value_vs_L2": "2.03e-76",
+    "flags": "Model_2BP_Best"
+}

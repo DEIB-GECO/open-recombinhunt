@@ -1,0 +1,18 @@
+{
+    "case_number": 20,
+    "case_name": "PP_002MCYE",
+    "group_name": "B.D.NmC1",
+    "number_of_sequences": 1726,
+    "number_of_changes": 407,
+    "best_candidates": "B.D.4.1.2 + B.D.4.1.2",
+    "best_candidates_breakpoints_target": "368-369",
+    "best_candidates_breakpoints_genomic": "13783 - 13784",
+    "direction_L1": ">>",
+    "initial_region_span": "1-361,369-407",
+    "gap_history": "361-369",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 1.04e-01",
+    "p_value_vs_L1": "2.72e+00",
+    "p_value_vs_L2": "2.72e+00",
+    "flags": "Model_1BP_Best"
+}

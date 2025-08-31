@@ -1,0 +1,18 @@
+{
+    "case_number": 76,
+    "case_name": "PP507070.1",
+    "group_name": "F.3",
+    "number_of_sequences": 76,
+    "number_of_changes": 64,
+    "best_candidates": "B.1.6 + F.3",
+    "best_candidates_breakpoints_target": "3-4",
+    "best_candidates_breakpoints_genomic": "20912 - 20913",
+    "direction_L1": "<<",
+    "initial_region_span": "1-3,4-64",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.24e-104",
+    "p_value_vs_L2": "4.92e-09",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

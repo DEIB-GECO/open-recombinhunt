@@ -1,0 +1,18 @@
+{
+    "case_number": 40,
+    "case_name": "PP_0019FF4",
+    "group_name": "A.D.4.NmC1",
+    "number_of_sequences": 2189,
+    "number_of_changes": 63,
+    "best_candidates": "A.D.4.NmC3 + A.D.4.NmC1",
+    "best_candidates_breakpoints_target": "39-40",
+    "best_candidates_breakpoints_genomic": "5289 - 5290",
+    "direction_L1": ">>",
+    "initial_region_span": "1-39,40-63",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 2.55e-05",
+    "p_value_vs_L1": "6.90e-12",
+    "p_value_vs_L2": "8.90e-08",
+    "flags": "Model_1BP_Best"
+}

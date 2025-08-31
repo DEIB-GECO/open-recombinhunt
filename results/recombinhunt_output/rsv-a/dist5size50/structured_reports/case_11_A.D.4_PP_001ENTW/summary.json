@@ -1,0 +1,18 @@
+{
+    "case_number": 11,
+    "case_name": "PP_001ENTW",
+    "group_name": "A.D.4",
+    "number_of_sequences": 176,
+    "number_of_changes": 49,
+    "best_candidates": "A.D.4 + A.D.4.NmC2",
+    "best_candidates_breakpoints_target": "42-43",
+    "best_candidates_breakpoints_genomic": "5471 - 5472",
+    "direction_L1": ">>",
+    "initial_region_span": "1-41,45-49",
+    "gap_history": "41-45",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.36e-05",
+    "p_value_vs_L2": "6.57e-28",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

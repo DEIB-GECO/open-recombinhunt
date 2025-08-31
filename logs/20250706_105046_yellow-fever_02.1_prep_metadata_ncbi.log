@@ -1,0 +1,32 @@
+2025-07-06 10:50:46,483 - INFO - Logging initialized. Log file at: logs/20250706_105046_yellow-fever_02.1_prep_metadata_ncbi.log
+2025-07-06 10:50:46,483 - INFO - Loading raw metadata from data/raw/yellow-fever/raw_metadata.tsv...
+2025-07-06 10:50:46,506 - INFO - Step 1: Applying quality filters from config and checking for special characters in ID...
+2025-07-06 10:50:46,508 - INFO -   Filter 'Isolate Collection date notna None': Removed 608 rows.
+2025-07-06 10:50:46,509 - INFO -   Filter 'Accession notna None': Removed 0 rows.
+2025-07-06 10:50:46,510 - INFO -   Filter 'Length notna None': Removed 0 rows.
+2025-07-06 10:50:46,512 - INFO -   Filter 'Length >= 9000': Removed 249 rows.
+2025-07-06 10:50:46,514 - INFO -   Filter 'Special Chars in ID': Removed 0 rows.
+2025-07-06 10:50:46,514 - INFO - Step 2: Processing lineage column...
+2025-07-06 10:50:46,514 - INFO - No source lineage column specified ('NONE'). Assigning default lineage 'A.1' to all rows.
+2025-07-06 10:50:46,514 - INFO - Step 3: Performing final formatting on date and location columns...
+2025-07-06 10:50:46,515 - INFO - Formatting date columns...
+2025-07-06 10:50:46,516 - INFO -   - Analyzing and formatting 'Collection date'
+2025-07-06 10:50:46,521 - INFO -     Date format statistics for 'Collection date':
+2025-07-06 10:50:46,521 - INFO -       YYYY-MM-DD format: 1239
+2025-07-06 10:50:46,521 - INFO -       YYYY-MM format   : 37
+2025-07-06 10:50:46,521 - INFO -       YYYY format      : 133
+2025-07-06 10:50:46,521 - INFO -       Other/unparseable: 0
+2025-07-06 10:50:46,521 - INFO -       Missing (NA)     : 0
+2025-07-06 10:50:46,525 - INFO -   - Analyzing and formatting 'Submission date'
+2025-07-06 10:50:46,529 - INFO -     Date format statistics for 'Submission date':
+2025-07-06 10:50:46,529 - INFO -       YYYY-MM-DD format: 0
+2025-07-06 10:50:46,529 - INFO -       YYYY-MM format   : 0
+2025-07-06 10:50:46,530 - INFO -       YYYY format      : 0
+2025-07-06 10:50:46,530 - INFO -       Other/unparseable: 1409
+2025-07-06 10:50:46,530 - INFO -       Missing (NA)     : 0
+2025-07-06 10:50:46,533 - INFO - Formatting 'Location' column by combining 'Geographic Region' and 'Geographic Location'...
+2025-07-06 10:50:46,551 - INFO - Preprocessing complete. Final dataset has 1409 rows.
+2025-07-06 10:50:46,551 - INFO - Saving processed metadata (1409 rows) to data/processed/yellow-fever/metadata.tsv...
+2025-07-06 10:50:46,556 - INFO - Saving 857 quality-filtered sequence IDs to data/processed/yellow-fever/filtered_sequence_ids.txt...
+2025-07-06 10:50:46,556 - INFO - Saving 0 non-classified sequence IDs to data/processed/yellow-fever/non_classified_sequence_ids.txt...
+2025-07-06 10:50:46,556 - INFO - Script finished successfully.

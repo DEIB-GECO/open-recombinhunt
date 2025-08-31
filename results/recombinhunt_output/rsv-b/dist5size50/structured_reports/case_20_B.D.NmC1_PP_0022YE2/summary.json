@@ -1,0 +1,18 @@
+{
+    "case_number": 20,
+    "case_name": "PP_0022YE2",
+    "group_name": "B.D.NmC1",
+    "number_of_sequences": 1726,
+    "number_of_changes": 52,
+    "best_candidates": "B.D.NmC1 + B.D.1.1",
+    "best_candidates_breakpoints_target": "29-30",
+    "best_candidates_breakpoints_genomic": "5264 - 5265",
+    "direction_L1": "<<",
+    "initial_region_span": "1-29,30-52",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "2.76e-12",
+    "p_value_vs_L2": "3.60e-211",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

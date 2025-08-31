@@ -1,0 +1,18 @@
+{
+    "case_number": 6,
+    "case_name": "PP_001MJ14",
+    "group_name": "A.D",
+    "number_of_sequences": 2353,
+    "number_of_changes": 20,
+    "best_candidates": "A.D.2.2.NmC1 + A.D",
+    "best_candidates_breakpoints_target": "4-5",
+    "best_candidates_breakpoints_genomic": "5374 - 5375",
+    "direction_L1": "<<",
+    "initial_region_span": "1-4,5-20",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "7.99e-32",
+    "p_value_vs_L2": "1.05e-01",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

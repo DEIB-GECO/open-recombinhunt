@@ -1,0 +1,18 @@
+{
+    "case_number": 20,
+    "case_name": "PP_0021TVC",
+    "group_name": "B.D.NmC1",
+    "number_of_sequences": 1726,
+    "number_of_changes": 47,
+    "best_candidates": "B.D.NmC1 + B + B.D.NmC1",
+    "best_candidates_breakpoints_target": "40-41, 42-43",
+    "best_candidates_breakpoints_genomic": "5435 - 5436, 5461 - 5462",
+    "direction_L1": ">>",
+    "initial_region_span": "1-40,41-42,43-47",
+    "gap_history": "40-43 -> ",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 8.65e-01",
+    "p_value_vs_L1": "5.83e-03",
+    "p_value_vs_L2": "6.09e-132",
+    "flags": "Model_2BP_Best"
+}

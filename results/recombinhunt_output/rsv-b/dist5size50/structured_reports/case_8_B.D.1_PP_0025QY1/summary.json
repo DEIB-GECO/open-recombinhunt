@@ -1,0 +1,18 @@
+{
+    "case_number": 8,
+    "case_name": "PP_0025QY1",
+    "group_name": "B.D.1",
+    "number_of_sequences": 334,
+    "number_of_changes": 40,
+    "best_candidates": "B.D.3 + B.D.1",
+    "best_candidates_breakpoints_target": "16-17",
+    "best_candidates_breakpoints_genomic": "5246 - 5247",
+    "direction_L1": "<<",
+    "initial_region_span": "1-16,17-40",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "9.93e-39",
+    "p_value_vs_L2": "3.25e-03",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

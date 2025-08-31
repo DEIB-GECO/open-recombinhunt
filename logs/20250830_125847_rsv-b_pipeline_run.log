@@ -1,0 +1,1345 @@
+2025-08-30 12:58:47,021 - INFO - Logging initialized. Log file at: logs/20250830_125847_rsv-b_pipeline_run.log
+2025-08-30 12:58:47,021 - INFO - ================== STARTING PIPELINE FOR: RSV-B ==================
+2025-08-30 12:58:47,021 - INFO - --- Executing: /home/topcuoglu/miniconda3/envs/orh/bin/python src/01_data_acquisition/fetch_data.py --virus rsv-b --config config/config.yaml ---
+2025-08-30 12:58:50,404 - INFO - Stdout from step:
+INFO: Logging initialized. Log file at: logs/20250830_125847_rsv-b_01_fetch_data.log
+INFO: Ensuring raw data directory exists: data/raw/rsv-b
+INFO: Starting Nextstrain data acquisition via URL...
+INFO: Step 1: Downloading metadata...
+INFO: Downloading from https://data.nextstrain.org/files/workflows/rsv/b/metadata.tsv.gz
+INFO: Decompressing data/raw/rsv-b/temp_raw_metadata.tsv.gz...
+INFO: Successfully created data/raw/rsv-b/raw_metadata.tsv
+INFO: Step 2: Downloading sequences...
+INFO: Downloading from https://data.nextstrain.org/files/workflows/rsv/b/sequences.fasta.xz
+INFO: Decompressing data/raw/rsv-b/temp_raw_sequences.fasta.xz...
+INFO: Successfully created data/raw/rsv-b/raw_sequences.fasta
+INFO: Step 3: Fetching reference sequence from NCBI...
+INFO: Fetching reference sequence from NCBI...
+INFO: Executing: datasets download virus genome accession NC_001781.1 --include genome --filename rsv-b-reference.zip
+INFO: Unzipping data/raw/rsv-b/temp_ref_download/rsv-b-reference.zip...
+INFO: Found: data/raw/rsv-b/temp_ref_download/ncbi_dataset/data/genomic.fna. Moving and renaming to data/raw/rsv-b/reference.fasta
+INFO: Cleaning up temporary reference sequence files...
+INFO: Data fetching process for 'rsv-b' complete.
+
+2025-08-30 12:58:50,404 - INFO - --- Step Succeeded: /home/topcuoglu/miniconda3/envs/orh/bin/python src/01_data_acquisition/fetch_data.py --virus rsv-b --config config/config.yaml ---
+2025-08-30 12:58:50,404 - INFO - --- Executing: /home/topcuoglu/miniconda3/envs/orh/bin/python src/02_preprocessing/nextstrain/prep_metadata_nextstrain.py --virus rsv-b --config config/config.yaml ---
+2025-08-30 12:58:51,763 - INFO - Stdout from step:
+INFO: Logging initialized. Log file at: logs/20250830_125851_rsv-b_02.1_prep_metadata_nextstrain.log
+INFO: Loading raw metadata from data/raw/rsv-b/raw_metadata.tsv...
+INFO: Starting preprocessing of Nextstrain metadata with 23332 rows.
+INFO: Step 1: Applying quality filters from config...
+INFO:   Filter 'accession notna None': Removed 0 rows.
+INFO:   Filter 'date notna None': Removed 0 rows.
+INFO:   Filter 'qc.overallStatus == good': Removed 1104 rows.
+INFO:   Filter 'missing_data < 3': Removed 2758 rows.
+INFO: Step 2: Checking for special characters in ID...
+INFO:   Filter 'Special Chars in ID': Removed 0 rows.
+INFO: Step 3: Processing lineage column...
+INFO: Using source column 'clade' for lineage information.
+INFO:   Identified and removed 0 non-classified rows (missing 'clade').
+INFO: Step 4: Performing final formatting...
+INFO: Formatting date columns...
+INFO:   - Analyzing and formatting 'Collection date'
+INFO:     Removed 1419 rows with incomplete 'XXXX' dates.
+INFO:     Date format statistics for 'Collection date':
+INFO:       YYYY-MM-DD format: 12521
+INFO:       YYYY-MM format   : 0
+INFO:       YYYY format      : 0
+INFO:       Other/unparseable: 5530
+INFO:       Missing (NA)     : 0
+INFO:   - Analyzing and formatting 'Submission date'
+INFO:     Date format statistics for 'Submission date':
+INFO:       YYYY-MM-DD format: 18051
+INFO:       YYYY-MM format   : 0
+INFO:       YYYY format      : 0
+INFO:       Other/unparseable: 0
+INFO:       Missing (NA)     : 0
+INFO: Formatting 'Location' column by combining 'region' and 'country'...
+INFO: Preprocessing complete. Final dataset has 18051 rows.
+INFO: Saving processed metadata (18051 rows) to data/processed/rsv-b/metadata.tsv...
+INFO: Saving 5281 quality-filtered sequence IDs to data/processed/rsv-b/filtered_sequence_ids.txt...
+INFO: Saving 0 non-classified sequence IDs to data/processed/rsv-b/non_classified_sequence_ids.txt...
+INFO: Script finished successfully.
+
+2025-08-30 12:58:51,764 - INFO - --- Step Succeeded: /home/topcuoglu/miniconda3/envs/orh/bin/python src/02_preprocessing/nextstrain/prep_metadata_nextstrain.py --virus rsv-b --config config/config.yaml ---
+2025-08-30 12:58:51,764 - INFO - --- Executing: /home/topcuoglu/miniconda3/envs/orh/bin/python src/02_preprocessing/common/prep_fasta.py --virus rsv-b --config config/config.yaml ---
+2025-08-30 12:58:53,636 - INFO - Stdout from step:
+INFO: Logging initialized. Log file at: logs/20250830_125852_rsv-b_02.2_prep_fasta.log
+INFO: Loading IDs of sequences to be dropped...
+INFO: Loading IDs from: data/processed/rsv-b/filtered_sequence_ids.txt
+INFO: Loaded 5281 unique IDs.
+INFO: Loading IDs from: data/processed/rsv-b/non_classified_sequence_ids.txt
+INFO: Loaded 0 unique IDs.
+INFO: NUmber of Filtered IDs: 5281
+INFO: Number of Non-Classified IDs: 0
+INFO: Total unique IDs to drop from FASTA file: 5281
+INFO: Filtering FASTA file: data/raw/rsv-b/raw_sequences.fasta...
+INFO: Removing sequences whose ID is in the combined dropped list (5281 total IDs).
+INFO: FASTA Filtering Summary:
+INFO:   Original sequences read: 23332
+INFO:   Sequences dropped      : 5281
+INFO:   Sequences kept         : 18051
+INFO: Filtered FASTA saved to  : data/processed/rsv-b/sequences.fasta
+INFO: Script finished successfully.
+
+2025-08-30 12:58:53,636 - INFO - --- Step Succeeded: /home/topcuoglu/miniconda3/envs/orh/bin/python src/02_preprocessing/common/prep_fasta.py --virus rsv-b --config config/config.yaml ---
+2025-08-30 12:58:53,636 - INFO - --- Executing: /home/topcuoglu/miniconda3/envs/orh/bin/python src/02_preprocessing/common/prep_ref.py --virus rsv-b --config config/config.yaml ---
+2025-08-30 12:58:53,744 - INFO - Stdout from step:
+INFO: Logging initialized. Log file at: logs/20250830_125853_rsv-b_02.3_prep_ref.log
+INFO: Copying reference sequence...
+INFO:   Source: data/raw/rsv-b/reference.fasta
+INFO:   Destination: data/processed/rsv-b/reference.fasta
+INFO: Reference sequence successfully copied to processed directory.
+INFO: Script finished successfully.
+
+2025-08-30 12:58:53,744 - INFO - --- Step Succeeded: /home/topcuoglu/miniconda3/envs/orh/bin/python src/02_preprocessing/common/prep_ref.py --virus rsv-b --config config/config.yaml ---
+2025-08-30 12:58:53,744 - INFO - --- Executing: /home/topcuoglu/miniconda3/envs/orh/bin/python src/03_haplocov/run_haplocov.py --virus rsv-b --config config/config.yaml ---
+2025-08-30 13:02:45,943 - INFO - Stdout from step:
+INFO: Logging initialized. Log file at: logs/20250830_125853_rsv-b_03_run_haplocov.log
+INFO: --- Starting Step 3: Run HaploCoV for 'rsv-b' ---
+INFO: Created temporary working directory: results/haplocov_output/rsv-b/dist5size50/temp_work
+INFO: Creating symbolic links for input files in temporary directory...
+INFO: Executing HaploCoV with designation_mode: 'both'
+INFO: Executing: perl ../../../../../libs/haplocov/addToTableNCBI.pl --metadata metadata.tsv --ref reference.fasta --seq sequences.fasta --outfile out.HaploCoV --nproc 16
+INFO: Executing: perl ../../../../../libs/haplocov/computeDefining.pl out.HaploCoV
+INFO: Executing: perl ../../../../../libs/haplocov/assign.pl --dfile out.HaploCoV.definingVariants.txt --infile out.HaploCoV --outfile out.HaploCoV.assigned
+INFO: Executing: perl ../../../../../libs/haplocov/augmentClusters.pl --metafile out.HaploCoV.assigned --deffile out.HaploCoV.definingVariants.txt --posFile out.HaploCoV.frequentVariants.txt --outfile out.HaploCoV.definingVariantsNew.txt --dist 5 --size 50
+INFO: Executing: perl ../../../../../libs/haplocov/assign.pl --dfile out.HaploCoV.definingVariantsNew.txt --infile out.HaploCoV --outfile out.HaploCoV.assignedNew
+INFO: Executing: cut -f 10 out.HaploCoV.assignedNew | sort | uniq -c > rsv-b-report.txt
+INFO: Moving final output file 'out.HaploCoV.assignedNew' to 'results/haplocov_output/rsv-b/dist5size50/haplocov_assigned.tsv'
+INFO: HaploCoV step completed.
+INFO: HaploCoV step finished successfully.
+
+2025-08-30 13:02:45,944 - INFO - --- Step Succeeded: /home/topcuoglu/miniconda3/envs/orh/bin/python src/03_haplocov/run_haplocov.py --virus rsv-b --config config/config.yaml ---
+2025-08-30 13:02:45,944 - INFO - --- Executing: /home/topcuoglu/miniconda3/envs/orh/bin/python src/04_postprocessing/format_haplocov_variations.py --virus rsv-b --config config/config.yaml ---
+2025-08-30 13:02:48,876 - INFO - Stdout from step:
+INFO: Logging initialized. Log file at: logs/20250830_130246_rsv-b_04_postprocess_haplocov.log
+INFO: Loading HaploCoV output from: results/haplocov_output/rsv-b/dist5size50/haplocov_assigned.tsv
+INFO: Reformatting mutations in the 'listV' column...
+INFO: Saving reformatted data to: results/haplocov_output/rsv-b/dist5size50/haplocov_reformatted.tsv
+INFO: Script finished successfully.
+
+2025-08-30 13:02:48,876 - WARNING - Stderr from step:
+
+Formatting mutations:   0%|          | 0/18051 [00:00<?, ?it/s]
+Formatting mutations:  16%|█▋        | 2964/18051 [00:00<00:00, 29627.24it/s]
+Formatting mutations:  33%|███▎      | 5927/18051 [00:00<00:00, 22671.53it/s]
+Formatting mutations:  46%|████▌     | 8293/18051 [00:00<00:00, 20671.12it/s]
+Formatting mutations:  58%|█████▊    | 10413/18051 [00:00<00:00, 17644.31it/s]
+Formatting mutations:  68%|██████▊   | 12238/18051 [00:00<00:00, 17199.77it/s]
+Formatting mutations:  80%|███████▉  | 14440/18051 [00:00<00:00, 18561.69it/s]
+Formatting mutations:  91%|█████████ | 16344/18051 [00:00<00:00, 16312.77it/s]
+Formatting mutations: 100%|█████████▉| 18039/18051 [00:01<00:00, 10654.65it/s]
+Formatting mutations: 100%|██████████| 18051/18051 [00:01<00:00, 14915.53it/s]
+
+2025-08-30 13:02:48,876 - INFO - --- Step Succeeded: /home/topcuoglu/miniconda3/envs/orh/bin/python src/04_postprocessing/format_haplocov_variations.py --virus rsv-b --config config/config.yaml ---
+2025-08-30 13:02:48,876 - INFO - --- Executing: /home/topcuoglu/miniconda3/envs/orh/bin/python src/05_prepare_recombinhunt/create_environment.py --virus rsv-b --config config/config.yaml ---
+2025-08-30 13:02:53,373 - INFO - Stdout from step:
+INFO: Logging initialized. Log file at: logs/20250830_130249_rsv-b_05.1_create_environment.log
+INFO: Virus is 'rsv-b'. Using HaploCoV reformatted output as input.
+INFO: Environment files will be saved to: environments/rsv-b/dist5size50
+INFO: Loading data from: results/haplocov_output/rsv-b/dist5size50/haplocov_reformatted.tsv
+INFO: Initial row count: 18,051
+INFO: Row count after cleaning: 18,051
+INFO: Calculating change probabilities...
+INFO:   Total sequences for calculation: 18,051
+INFO:   Found 17,407 unique mutations across all sequences.
+INFO:   Finished calculating change probabilities. Shape of result: (17407, 2)
+INFO: Calculating genome and variation counts per lineage...
+INFO:   Found 28 unique lineages in the dataset.
+INFO:   Finished calculating genome and variation counts.
+INFO: 
+Calculating 'lc_df.parquet'...
+INFO: 
+--- Running common logic: calculating lineage mutation frequencies ---
+INFO: Selected 28 lineages with at least 10 genomes.
+INFO: Removed 0 mutations that were not characteristic of any lineage.
+INFO: lc_df calculation complete.
+INFO: 
+Calculating 'change2lineage_probability.parquet'...
+INFO: 
+--- Running common logic: calculating lineage mutation frequencies ---
+INFO: Selected 28 lineages with at least 10 genomes.
+INFO: change2lineage_probability calculation complete.
+INFO: 
+Calculating 'lc_quality_df.parquet'...
+INFO: lc_quality_df calculation complete.
+INFO: Saving environment files...
+INFO: Environment creation complete.
+
+2025-08-30 13:02:53,374 - INFO - --- Step Succeeded: /home/topcuoglu/miniconda3/envs/orh/bin/python src/05_prepare_recombinhunt/create_environment.py --virus rsv-b --config config/config.yaml ---
+2025-08-30 13:02:53,374 - INFO - --- Executing: /home/topcuoglu/miniconda3/envs/orh/bin/python src/05_prepare_recombinhunt/create_samples.py --virus rsv-b --config config/config.yaml ---
+2025-08-30 13:02:55,042 - INFO - Stdout from step:
+INFO: Logging initialized. Log file at: logs/20250830_130253_rsv-b_05.2_create_samples.log
+INFO: --- Starting Step 5.2: Create Samples for 'rsv-b' ---
+INFO: Virus is 'rsv-b'. Using HaploCoV reformatted output as input.
+INFO: Sample files will be saved to: samples/rsv-b/dist5size50
+INFO: Loading data from: results/haplocov_output/rsv-b/dist5size50/haplocov_reformatted.tsv
+INFO: Cleaning data by dropping rows with missing pangoLin or mutations...
+INFO: Initially, there were 18051 rows.
+INFO: Data cleaning complete. 18051 rows remaining for sample creation.
+INFO: Grouping by lineage and creating sample files...
+INFO:   Saved: samples/rsv-b/dist5size50/samples_B.csv (21 rows)
+INFO:   Saved: samples/rsv-b/dist5size50/samples_B.3.csv (60 rows)
+INFO:   Saved: samples/rsv-b/dist5size50/samples_B.D.csv (150 rows)
+INFO:   Saved: samples/rsv-b/dist5size50/samples_B.D.1.csv (334 rows)
+INFO:   Saved: samples/rsv-b/dist5size50/samples_B.D.1.1.csv (115 rows)
+INFO:   Saved: samples/rsv-b/dist5size50/samples_B.D.1.NmC1.csv (605 rows)
+INFO:   Saved: samples/rsv-b/dist5size50/samples_B.D.2.csv (1269 rows)
+INFO:   Saved: samples/rsv-b/dist5size50/samples_B.D.3.csv (433 rows)
+INFO:   Saved: samples/rsv-b/dist5size50/samples_B.D.4.csv (1413 rows)
+INFO:   Saved: samples/rsv-b/dist5size50/samples_B.D.4.1.csv (218 rows)
+INFO:   Saved: samples/rsv-b/dist5size50/samples_B.D.4.1.1.csv (260 rows)
+INFO:   Saved: samples/rsv-b/dist5size50/samples_B.D.4.1.1.NmC1.csv (2215 rows)
+INFO:   Saved: samples/rsv-b/dist5size50/samples_B.D.4.1.2.csv (1305 rows)
+INFO:   Saved: samples/rsv-b/dist5size50/samples_B.D.4.1.3.NmC1.csv (1269 rows)
+INFO:   Saved: samples/rsv-b/dist5size50/samples_B.D.4.NmC1.csv (1212 rows)
+INFO:   Saved: samples/rsv-b/dist5size50/samples_B.D.E.1.csv (1124 rows)
+INFO:   Saved: samples/rsv-b/dist5size50/samples_B.D.E.1.1.csv (68 rows)
+INFO:   Saved: samples/rsv-b/dist5size50/samples_B.D.E.1.2.csv (165 rows)
+INFO:   Saved: samples/rsv-b/dist5size50/samples_B.D.E.1.7.csv (29 rows)
+INFO:   Saved: samples/rsv-b/dist5size50/samples_B.D.E.1.8.csv (76 rows)
+INFO:   Saved: samples/rsv-b/dist5size50/samples_B.D.E.2.csv (853 rows)
+INFO:   Saved: samples/rsv-b/dist5size50/samples_B.D.E.3.csv (125 rows)
+INFO:   Saved: samples/rsv-b/dist5size50/samples_B.D.E.3.NmC1.csv (1318 rows)
+INFO:   Saved: samples/rsv-b/dist5size50/samples_B.D.E.4.csv (1372 rows)
+INFO:   Saved: samples/rsv-b/dist5size50/samples_B.D.E.5.csv (276 rows)
+INFO:   Saved: samples/rsv-b/dist5size50/samples_B.D.E.6.csv (17 rows)
+INFO:   Saved: samples/rsv-b/dist5size50/samples_B.D.E.7.csv (23 rows)
+INFO:   Saved: samples/rsv-b/dist5size50/samples_B.D.NmC1.csv (1726 rows)
+INFO: Saving lineage count summary to: samples/rsv-b/dist5size50/samples_total.json
+INFO: Sample creation step finished successfully.
+
+2025-08-30 13:02:55,042 - INFO - --- Step Succeeded: /home/topcuoglu/miniconda3/envs/orh/bin/python src/05_prepare_recombinhunt/create_samples.py --virus rsv-b --config config/config.yaml ---
+2025-08-30 13:02:55,043 - INFO - --- Executing: /home/topcuoglu/miniconda3/envs/orh/bin/python src/06_recombinhunt/run_recombinhunt.py --virus rsv-b --config config/config.yaml ---
+2025-08-30 13:16:51,119 - INFO - Stdout from step:
+INFO: Logging initialized. Log file at: logs/20250830_130256_rsv-b_06_run_recombinhunt.log
+INFO: --- Starting Step 6: Run RecombinHunt for 'rsv-b' ---
+INFO: Loading RecombinHunt environment from: environments/rsv-b/dist5size50
+Starting formal checks of the environment...
+INFO: Loading lineage totals from 'samples/rsv-b/dist5size50/samples_total.json'
+INFO: Found 28 sample files in 'samples/rsv-b/dist5size50'.
+INFO:   Lineage 'B.D', Mode 'all': Processing all 150 samples.
+INFO:   Lineage 'B.D.E.1.7', Mode 'all': Processing all 29 samples.
+INFO:   Lineage 'B.D.E.1.1', Mode 'all': Processing all 68 samples.
+INFO:   Lineage 'B.D.4.1.1.NmC1', Mode 'all': Processing all 2215 samples.
+INFO:   Lineage 'B.D.1.1', Mode 'all': Processing all 115 samples.
+INFO:   Lineage 'B.D.E.1', Mode 'all': Processing all 1124 samples.
+INFO:   Lineage 'B.D.4.1.1', Mode 'all': Processing all 260 samples.
+INFO:   Lineage 'B.D.1', Mode 'all': Processing all 334 samples.
+INFO:   Lineage 'B.D.1.NmC1', Mode 'all': Processing all 605 samples.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+WARNING: Gap made of only target mutations (How can it be? It's an almost impossible condition). Target mutation that minimizes the loss has been assigned to the right region).
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+ERROR:   Error on one sample in lineage B.D.1.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+INFO:   Lineage 'B', Mode 'all': Processing all 21 samples.
+INFO:   Lineage 'B.D.4', Mode 'all': Processing all 1413 samples.
+WARNING: Gap made of only target mutations (How can it be? It's an almost impossible condition). Target mutation that minimizes the loss has been assigned to the right region).
+WARNING: Gap made of only target mutations (How can it be? It's an almost impossible condition). Target mutation that minimizes the loss has been assigned to the right region).
+ERROR:   Error on one sample in lineage B.D.4: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+INFO:   Lineage 'B.D.E.1.8', Mode 'all': Processing all 76 samples.
+INFO:   Lineage 'B.D.E.7', Mode 'all': Processing all 23 samples.
+INFO:   Lineage 'B.D.E.3.NmC1', Mode 'all': Processing all 1318 samples.
+INFO:   Lineage 'B.D.4.NmC1', Mode 'all': Processing all 1212 samples.
+WARNING: Gap made of only target mutations (How can it be? It's an almost impossible condition). Target mutation that minimizes the loss has been assigned to the right region).
+INFO:   Lineage 'B.D.E.3', Mode 'all': Processing all 125 samples.
+ERROR:   Error on one sample in lineage B.D.E.3: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+INFO:   Lineage 'B.D.E.4', Mode 'all': Processing all 1372 samples.
+INFO:   Lineage 'B.D.4.1.2', Mode 'all': Processing all 1305 samples.
+INFO:   Lineage 'B.D.4.1', Mode 'all': Processing all 218 samples.
+INFO:   Lineage 'B.D.NmC1', Mode 'all': Processing all 1726 samples.
+ERROR:   Error on one sample in lineage B.D.NmC1: No candidates found searching in both directions.
+Traceback (most recent call last):
+  File "/home/topcuoglu/openrecombinhunt/src/06_recombinhunt/run_recombinhunt.py", line 163, in run_recombinhunt_for_lineage
+    result = experiment.run()
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 663, in run
+    L1_reg: Region = search_L(self.merged_df, self.p_merged_df, self.change_probabilities, min_target_len=self.MIN_CANDIDATE_REGION_LENGTH, cache=self.cache)
+  File "/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/method.py", line 1035, in search_L
+    raise NoCandidatesFound("No candidates found searching in both directions.")
+recombinhunt.core.method.NoCandidatesFound: No candidates found searching in both directions.
+WARNING: Gap made of only target mutations (How can it be? It's an almost impossible condition). Target mutation that minimizes the loss has been assigned to the right region).
+INFO:   Lineage 'B.D.E.6', Mode 'all': Processing all 17 samples.
+INFO:   Lineage 'B.3', Mode 'all': Processing all 60 samples.
+INFO:   Lineage 'B.D.3', Mode 'all': Processing all 433 samples.
+INFO:   Lineage 'B.D.4.1.3.NmC1', Mode 'all': Processing all 1269 samples.
+INFO:   Lineage 'B.D.E.5', Mode 'all': Processing all 276 samples.
+INFO:   Lineage 'B.D.2', Mode 'all': Processing all 1269 samples.
+INFO:   Lineage 'B.D.E.2', Mode 'all': Processing all 853 samples.
+WARNING: Gap made of only target mutations (How can it be? It's an almost impossible condition). Target mutation that minimizes the loss has been assigned to the right region).
+WARNING: Gap made of only target mutations (How can it be? It's an almost impossible condition). Target mutation that minimizes the loss has been assigned to the right region).
+INFO:   Lineage 'B.D.E.1.2', Mode 'all': Processing all 165 samples.
+INFO: Recombinant summary saved to: results/recombinhunt_output/rsv-b/dist5size50/recombinant_summary.tsv
+INFO: Saved extensive summary table to: results/recombinhunt_output/rsv-b/dist5size50/recombinant_summary_extensive.tsv
+INFO: Text report saved to: results/recombinhunt_output/rsv-b/dist5size50/experiment-output.all.txt
+INFO: HTML report saved to: results/recombinhunt_output/rsv-b/dist5size50/experiment-detail.all.html
+INFO: RecombinHunt experiment step finished successfully.
+
+2025-08-30 13:16:51,122 - WARNING - Stderr from step:
+/home/topcuoglu/openrecombinhunt/libs/recombinhunt-cov-7.0.0/src/recombinhunt/core/environment.py:237: UserWarning: RecombinHunt 5.+ expects a candidates_hierarchy.json in the environment dir but the file is missing. Backward compatibility is possible by calling Environment.embed_candidates_hierarchy() with a CandidatesHierarchy object. Resorting to default CandidatesHierarchy.
+  warnings.warn("RecombinHunt 5.+ expects a candidates_hierarchy.json in the environment dir but the file is missing. Backward compatibility is possible by"
+
+Running Experiments:   0%|          | 0/28 [00:00<?, ?it/s]
+Running Experiments:   4%|▎         | 1/28 [00:08<03:59,  8.87s/it]
+Running Experiments:   7%|▋         | 2/28 [00:10<01:53,  4.37s/it]
+Running Experiments:  11%|█         | 3/28 [00:12<01:29,  3.59s/it]
+Running Experiments:  14%|█▍        | 4/28 [01:43<15:16, 38.17s/it]
+Running Experiments:  18%|█▊        | 5/28 [01:49<10:11, 26.59s/it]
+Running Experiments:  21%|██▏       | 6/28 [02:34<12:02, 32.85s/it]
+Running Experiments:  25%|██▌       | 7/28 [02:44<08:49, 25.20s/it]
+Running Experiments:  29%|██▊       | 8/28 [03:02<07:41, 23.06s/it]
+Running Experiments:  32%|███▏      | 9/28 [03:27<07:25, 23.43s/it]
+Running Experiments:  36%|███▌      | 10/28 [03:28<04:56, 16.46s/it]
+Running Experiments:  39%|███▉      | 11/28 [04:39<09:26, 33.35s/it]
+Running Experiments:  43%|████▎     | 12/28 [04:42<06:25, 24.12s/it]
+Running Experiments:  46%|████▋     | 13/28 [04:43<04:16, 17.08s/it]
+Running Experiments:  50%|█████     | 14/28 [05:51<07:34, 32.47s/it]
+Running Experiments:  54%|█████▎    | 15/28 [06:57<09:12, 42.48s/it]
+Running Experiments:  57%|█████▋    | 16/28 [07:02<06:16, 31.39s/it]
+Running Experiments:  61%|██████    | 17/28 [07:57<07:02, 38.40s/it]
+Running Experiments:  64%|██████▍   | 18/28 [08:47<06:58, 41.82s/it]
+Running Experiments:  68%|██████▊   | 19/28 [08:58<04:52, 32.53s/it]
+Running Experiments:  71%|███████▏  | 20/28 [10:25<06:32, 49.06s/it]
+Running Experiments:  75%|███████▌  | 21/28 [10:26<04:01, 34.54s/it]
+Running Experiments:  79%|███████▊  | 22/28 [10:29<02:29, 24.99s/it]
+Running Experiments:  82%|████████▏ | 23/28 [10:50<02:00, 24.01s/it]
+Running Experiments:  86%|████████▌ | 24/28 [11:43<02:10, 32.68s/it]
+Running Experiments:  89%|████████▉ | 25/28 [11:56<01:19, 26.53s/it]
+Running Experiments:  93%|█████████▎| 26/28 [13:01<01:16, 38.08s/it]
+Running Experiments:  96%|█████████▋| 27/28 [13:47<00:40, 40.70s/it]
+Running Experiments: 100%|██████████| 28/28 [13:54<00:00, 30.47s/it]
+Running Experiments: 100%|██████████| 28/28 [13:54<00:00, 29.80s/it]
+
+2025-08-30 13:16:51,122 - INFO - --- Step Succeeded: /home/topcuoglu/miniconda3/envs/orh/bin/python src/06_recombinhunt/run_recombinhunt.py --virus rsv-b --config config/config.yaml ---
+2025-08-30 13:16:51,122 - INFO - ================== PIPELINE FOR RSV-B FINISHED ==================
+
+

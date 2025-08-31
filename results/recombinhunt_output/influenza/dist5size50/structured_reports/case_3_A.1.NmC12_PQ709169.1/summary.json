@@ -1,0 +1,18 @@
+{
+    "case_number": 3,
+    "case_name": "PQ709169.1",
+    "group_name": "A.1.NmC12",
+    "number_of_sequences": 640,
+    "number_of_changes": 159,
+    "best_candidates": "A.1.NmC12 + A.1.NmC7 + A.1.NmC12",
+    "best_candidates_breakpoints_target": "95-96, 120-121",
+    "best_candidates_breakpoints_genomic": "989 - 990, 1265 - 1266",
+    "direction_L1": ">>",
+    "initial_region_span": "1-95,96-116,126-159",
+    "gap_history": "95-126 -> 116-126",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 8.52e-03",
+    "p_value_vs_L1": "2.32e-02",
+    "p_value_vs_L2": "1.28e-35",
+    "flags": "Model_2BP_Best"
+}

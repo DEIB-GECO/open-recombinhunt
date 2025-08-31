@@ -1,0 +1,18 @@
+{
+    "case_number": 26,
+    "case_name": "PP_002KMUH",
+    "group_name": "B.D.2",
+    "number_of_sequences": 1269,
+    "number_of_changes": 24,
+    "best_candidates": "B.D.2 + B.D.4.1",
+    "best_candidates_breakpoints_target": "14-15",
+    "best_candidates_breakpoints_genomic": "5485 - 5486",
+    "direction_L1": ">>",
+    "initial_region_span": "1-14,16-24",
+    "gap_history": "14-16",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "9.33e-05",
+    "p_value_vs_L2": "1.37e-03",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

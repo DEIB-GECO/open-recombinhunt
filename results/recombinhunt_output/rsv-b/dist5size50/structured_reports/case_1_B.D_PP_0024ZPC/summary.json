@@ -1,0 +1,18 @@
+{
+    "case_number": 1,
+    "case_name": "PP_0024ZPC",
+    "group_name": "B.D",
+    "number_of_sequences": 150,
+    "number_of_changes": 51,
+    "best_candidates": "B.D + B.D.4.NmC1",
+    "best_candidates_breakpoints_target": "48-49",
+    "best_candidates_breakpoints_genomic": "5570 - 5571",
+    "direction_L1": ">>",
+    "initial_region_span": "1-48,49-51",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "2.09e-01",
+    "p_value_vs_L2": "4.68e-224",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

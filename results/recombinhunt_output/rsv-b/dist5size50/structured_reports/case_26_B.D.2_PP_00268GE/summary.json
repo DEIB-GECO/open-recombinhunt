@@ -1,0 +1,18 @@
+{
+    "case_number": 26,
+    "case_name": "PP_00268GE",
+    "group_name": "B.D.2",
+    "number_of_sequences": 1269,
+    "number_of_changes": 19,
+    "best_candidates": "B.D.1 + B.D.E.3.NmC1",
+    "best_candidates_breakpoints_target": "8-9",
+    "best_candidates_breakpoints_genomic": "5426 - 5427",
+    "direction_L1": "<<",
+    "initial_region_span": "1-6,9-19",
+    "gap_history": "6-9",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "2.64e-23",
+    "p_value_vs_L2": "2.57e-48",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

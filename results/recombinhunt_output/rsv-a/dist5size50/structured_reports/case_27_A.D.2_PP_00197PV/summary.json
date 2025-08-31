@@ -1,0 +1,18 @@
+{
+    "case_number": 27,
+    "case_name": "PP_00197PV",
+    "group_name": "A.D.2",
+    "number_of_sequences": 2386,
+    "number_of_changes": 69,
+    "best_candidates": "A.D.2 + A.2.1.1",
+    "best_candidates_breakpoints_target": "7-8",
+    "best_candidates_breakpoints_genomic": "5713 - 5714",
+    "direction_L1": "<<",
+    "initial_region_span": "1-6,8-69",
+    "gap_history": "6-8",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "2.26e-298",
+    "p_value_vs_L2": "0.00e+00",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

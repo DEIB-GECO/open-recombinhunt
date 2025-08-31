@@ -1,0 +1,18 @@
+{
+    "case_number": 11,
+    "case_name": "PP_001EK4C",
+    "group_name": "A.D.4",
+    "number_of_sequences": 176,
+    "number_of_changes": 48,
+    "best_candidates": "A.D.4 + A.D.3",
+    "best_candidates_breakpoints_target": "41-42",
+    "best_candidates_breakpoints_genomic": "5470 - 5471",
+    "direction_L1": ">>",
+    "initial_region_span": "1-41,42-48",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "3.12e-21",
+    "p_value_vs_L2": "1.20e-48",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

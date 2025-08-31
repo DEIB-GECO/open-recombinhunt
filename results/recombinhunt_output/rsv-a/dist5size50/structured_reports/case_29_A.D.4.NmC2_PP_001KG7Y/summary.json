@@ -1,0 +1,18 @@
+{
+    "case_number": 29,
+    "case_name": "PP_001KG7Y",
+    "group_name": "A.D.4.NmC2",
+    "number_of_sequences": 848,
+    "number_of_changes": 72,
+    "best_candidates": "A.D.4.NmC3 + A.D.4.NmC2",
+    "best_candidates_breakpoints_target": "10-11",
+    "best_candidates_breakpoints_genomic": "4755 - 4756",
+    "direction_L1": "<<",
+    "initial_region_span": "1-4,11-72",
+    "gap_history": "4-11",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "2.00e-20",
+    "p_value_vs_L2": "1.93e-05",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

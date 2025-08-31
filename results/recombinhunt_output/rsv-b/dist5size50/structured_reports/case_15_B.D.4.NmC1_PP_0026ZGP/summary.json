@@ -1,0 +1,18 @@
+{
+    "case_number": 15,
+    "case_name": "PP_0026ZGP",
+    "group_name": "B.D.4.NmC1",
+    "number_of_sequences": 1212,
+    "number_of_changes": 26,
+    "best_candidates": "B.D.1 + B.D.4.NmC1",
+    "best_candidates_breakpoints_target": "5-6",
+    "best_candidates_breakpoints_genomic": "5309 - 5310",
+    "direction_L1": "<<",
+    "initial_region_span": "1-5,7-26",
+    "gap_history": "5-7",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "7.52e-07",
+    "p_value_vs_L2": "2.12e-01",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

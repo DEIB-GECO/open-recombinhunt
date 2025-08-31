@@ -1,0 +1,18 @@
+{
+    "case_number": 29,
+    "case_name": "PP_001WW8U",
+    "group_name": "A.D.4.NmC2",
+    "number_of_sequences": 848,
+    "number_of_changes": 53,
+    "best_candidates": "A.D.4.NmC2 + A.D.NmC2",
+    "best_candidates_breakpoints_target": "44-45",
+    "best_candidates_breakpoints_genomic": "5473 - 5474",
+    "direction_L1": ">>",
+    "initial_region_span": "1-44,47-53",
+    "gap_history": "44-47",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 3.08e-02",
+    "p_value_vs_L1": "6.16e-03",
+    "p_value_vs_L2": "9.07e-93",
+    "flags": "Model_1BP_Best"
+}

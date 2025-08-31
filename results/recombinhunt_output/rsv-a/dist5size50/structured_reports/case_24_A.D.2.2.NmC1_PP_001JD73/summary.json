@@ -1,0 +1,18 @@
+{
+    "case_number": 24,
+    "case_name": "PP_001JD73",
+    "group_name": "A.D.2.2.NmC1",
+    "number_of_sequences": 394,
+    "number_of_changes": 26,
+    "best_candidates": "A.D + A.D.2.2.NmC1",
+    "best_candidates_breakpoints_target": "21-22",
+    "best_candidates_breakpoints_genomic": "5525 - 5526",
+    "direction_L1": ">>",
+    "initial_region_span": "1-21,22-26",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "2.85e-13",
+    "p_value_vs_L2": "5.77e-05",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 24,
+    "case_name": "PP_001M32H",
+    "group_name": "A.D.2.2.NmC1",
+    "number_of_sequences": 394,
+    "number_of_changes": 26,
+    "best_candidates": "A.D.2.2.NmC1 + A.3.1.NmC1",
+    "best_candidates_breakpoints_target": "23-24",
+    "best_candidates_breakpoints_genomic": "5553 - 5554",
+    "direction_L1": ">>",
+    "initial_region_span": "1-23,24-26",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "2.20e-03",
+    "p_value_vs_L2": "4.45e-86",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

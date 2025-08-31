@@ -1,0 +1,18 @@
+{
+    "case_number": 24,
+    "case_name": "PP_001TQB0",
+    "group_name": "A.D.2.2.NmC1",
+    "number_of_sequences": 394,
+    "number_of_changes": 40,
+    "best_candidates": "A.D.5.NmC1 + A.3",
+    "best_candidates_breakpoints_target": "30-31",
+    "best_candidates_breakpoints_genomic": "5634 - 5635",
+    "direction_L1": ">>",
+    "initial_region_span": "1-30,31-40",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "2.30e-16",
+    "p_value_vs_L2": "3.29e-58",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

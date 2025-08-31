@@ -1,0 +1,18 @@
+{
+    "case_number": 35,
+    "case_name": "PP_001HD2F",
+    "group_name": "A.3",
+    "number_of_sequences": 202,
+    "number_of_changes": 48,
+    "best_candidates": "A.3 + A.3.1 + A.3",
+    "best_candidates_breakpoints_target": "36-37, 42-43",
+    "best_candidates_breakpoints_genomic": "5470 - 5471, 5514 - 5515",
+    "direction_L1": ">>",
+    "initial_region_span": "1-36,37-40,43-48",
+    "gap_history": "36-43 -> 40-43",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 1.37e-01",
+    "p_value_vs_L1": "4.22e-04",
+    "p_value_vs_L2": "1.98e-133",
+    "flags": "Model_2BP_Best"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 20,
+    "case_name": "PP_00187EG",
+    "group_name": "A.3.1",
+    "number_of_sequences": 1992,
+    "number_of_changes": 18,
+    "best_candidates": "A.D.NmC2 + A.3",
+    "best_candidates_breakpoints_target": "12-13",
+    "best_candidates_breakpoints_genomic": "5514 - 5515",
+    "direction_L1": "<<",
+    "initial_region_span": "1-4,13-18",
+    "gap_history": "4-13",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.97e-29",
+    "p_value_vs_L2": "1.90e+07",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

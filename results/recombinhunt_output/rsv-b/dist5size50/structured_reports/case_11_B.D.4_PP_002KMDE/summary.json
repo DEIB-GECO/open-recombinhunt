@@ -1,0 +1,18 @@
+{
+    "case_number": 11,
+    "case_name": "PP_002KMDE",
+    "group_name": "B.D.4",
+    "number_of_sequences": 1413,
+    "number_of_changes": 21,
+    "best_candidates": "B.D.E.2 + B.D.4.1",
+    "best_candidates_breakpoints_target": "13-14",
+    "best_candidates_breakpoints_genomic": "5485 - 5486",
+    "direction_L1": ">>",
+    "initial_region_span": "1-13,15-21",
+    "gap_history": "13-15",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.53e-02",
+    "p_value_vs_L2": "7.75e-07",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 26,
+    "case_name": "PP_002LVHV",
+    "group_name": "B.D.2",
+    "number_of_sequences": 1269,
+    "number_of_changes": 28,
+    "best_candidates": "B.D.2 + B.D.3 + B.D.2",
+    "best_candidates_breakpoints_target": "19-20, 21-22",
+    "best_candidates_breakpoints_genomic": "5503 - 5504, 5549 - 5550",
+    "direction_L1": ">>",
+    "initial_region_span": "1-19,20-21,22-28",
+    "gap_history": "19-22 -> ",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 9.28e-05",
+    "p_value_vs_L1": "1.19e-03",
+    "p_value_vs_L2": "3.14e-164",
+    "flags": "Model_2BP_Best"
+}

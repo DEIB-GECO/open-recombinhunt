@@ -1,0 +1,18 @@
+{
+    "case_number": 48,
+    "case_name": "PP_0017DWD",
+    "group_name": "A.3.1.1",
+    "number_of_sequences": 731,
+    "number_of_changes": 57,
+    "best_candidates": "A.3 + A.2.1.1",
+    "best_candidates_breakpoints_target": "4-5",
+    "best_candidates_breakpoints_genomic": "5124 - 5125",
+    "direction_L1": "<<",
+    "initial_region_span": "1-4,6-57",
+    "gap_history": "4-6",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.83e-06",
+    "p_value_vs_L2": "1.13e-38",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

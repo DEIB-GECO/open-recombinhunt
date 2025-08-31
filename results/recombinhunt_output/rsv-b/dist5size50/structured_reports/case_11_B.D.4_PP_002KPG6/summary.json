@@ -1,0 +1,18 @@
+{
+    "case_number": 11,
+    "case_name": "PP_002KPG6",
+    "group_name": "B.D.4",
+    "number_of_sequences": 1413,
+    "number_of_changes": 23,
+    "best_candidates": "B.D.2 + B.D.4.1",
+    "best_candidates_breakpoints_target": "12-13",
+    "best_candidates_breakpoints_genomic": "5457 - 5458",
+    "direction_L1": ">>",
+    "initial_region_span": "1-12,19-23",
+    "gap_history": "12-19",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 1.27e-74",
+    "p_value_vs_L1": "4.14e-02",
+    "p_value_vs_L2": "1.41e-10",
+    "flags": "Model_1BP_Best"
+}

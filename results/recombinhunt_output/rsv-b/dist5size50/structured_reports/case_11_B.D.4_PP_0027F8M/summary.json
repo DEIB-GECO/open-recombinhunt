@@ -1,0 +1,18 @@
+{
+    "case_number": 11,
+    "case_name": "PP_0027F8M",
+    "group_name": "B.D.4",
+    "number_of_sequences": 1413,
+    "number_of_changes": 12,
+    "best_candidates": "B.D.4.NmC1 + B.D.NmC1",
+    "best_candidates_breakpoints_target": "5-6",
+    "best_candidates_breakpoints_genomic": "5374 - 5375",
+    "direction_L1": "<<",
+    "initial_region_span": "1-5,7-12",
+    "gap_history": "5-7",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.84e-07",
+    "p_value_vs_L2": "1.08e-151",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

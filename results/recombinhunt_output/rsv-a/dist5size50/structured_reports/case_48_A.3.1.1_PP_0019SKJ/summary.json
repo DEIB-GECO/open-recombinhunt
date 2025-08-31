@@ -1,0 +1,18 @@
+{
+    "case_number": 48,
+    "case_name": "PP_0019SKJ",
+    "group_name": "A.3.1.1",
+    "number_of_sequences": 731,
+    "number_of_changes": 82,
+    "best_candidates": "A.3.1.1 + A.2.1.1",
+    "best_candidates_breakpoints_target": "65-66",
+    "best_candidates_breakpoints_genomic": "5578 - 5579",
+    "direction_L1": ">>",
+    "initial_region_span": "1-65,66-82",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "7.21e-08",
+    "p_value_vs_L2": "5.27e+01",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

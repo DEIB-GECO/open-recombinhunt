@@ -1,0 +1,18 @@
+{
+    "case_number": 48,
+    "case_name": "PP_001GAV0",
+    "group_name": "A.3.1.1",
+    "number_of_sequences": 731,
+    "number_of_changes": 26,
+    "best_candidates": "A.D + A.D.2.2.NmC1",
+    "best_candidates_breakpoints_target": "21-22",
+    "best_candidates_breakpoints_genomic": "5533 - 5534",
+    "direction_L1": ">>",
+    "initial_region_span": "1-21,23-26",
+    "gap_history": "21-23",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "6.80e-18",
+    "p_value_vs_L2": "4.22e-17",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

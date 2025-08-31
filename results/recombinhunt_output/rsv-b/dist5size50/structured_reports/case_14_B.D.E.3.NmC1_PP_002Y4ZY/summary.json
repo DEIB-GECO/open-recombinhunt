@@ -1,0 +1,18 @@
+{
+    "case_number": 14,
+    "case_name": "PP_002Y4ZY",
+    "group_name": "B.D.E.3.NmC1",
+    "number_of_sequences": 1318,
+    "number_of_changes": 53,
+    "best_candidates": "B.D.E.3.NmC1 + B.D.E.2",
+    "best_candidates_breakpoints_target": "35-36",
+    "best_candidates_breakpoints_genomic": "5334 - 5335",
+    "direction_L1": ">>",
+    "initial_region_span": "1-35,36-53",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 1.23e-128",
+    "p_value_vs_L1": "4.60e-04",
+    "p_value_vs_L2": "4.72e-136",
+    "flags": "Model_1BP_Best"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 20,
+    "case_name": "PP_0023C54",
+    "group_name": "B.D.NmC1",
+    "number_of_sequences": 1726,
+    "number_of_changes": 345,
+    "best_candidates": "B.D.4.1.2 + B.D.E.5 + B.D.4.1.2",
+    "best_candidates_breakpoints_target": "334-335, 338-339",
+    "best_candidates_breakpoints_genomic": "14837 - 14838, 15002 - 15003",
+    "direction_L1": ">>",
+    "initial_region_span": "1-334,335-336,339-345",
+    "gap_history": "334-339 -> 336-339",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 1.57e-07",
+    "p_value_vs_L1": "1.03e-07",
+    "p_value_vs_L2": "1.33e-235",
+    "flags": "Model_2BP_Best"
+}

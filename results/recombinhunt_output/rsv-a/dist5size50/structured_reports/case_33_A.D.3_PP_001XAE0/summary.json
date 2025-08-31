@@ -1,0 +1,18 @@
+{
+    "case_number": 33,
+    "case_name": "PP_001XAE0",
+    "group_name": "A.D.3",
+    "number_of_sequences": 128,
+    "number_of_changes": 59,
+    "best_candidates": "A.D.3.NmC1 + A.2.1.1",
+    "best_candidates_breakpoints_target": "41-42",
+    "best_candidates_breakpoints_genomic": "5578 - 5579",
+    "direction_L1": ">>",
+    "initial_region_span": "1-29,55-59",
+    "gap_history": "29-55",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "2.79e-26",
+    "p_value_vs_L2": "0.00e+00",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

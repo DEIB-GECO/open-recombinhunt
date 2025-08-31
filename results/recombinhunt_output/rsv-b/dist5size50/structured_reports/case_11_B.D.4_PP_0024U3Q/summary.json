@@ -1,0 +1,18 @@
+{
+    "case_number": 11,
+    "case_name": "PP_0024U3Q",
+    "group_name": "B.D.4",
+    "number_of_sequences": 1413,
+    "number_of_changes": 17,
+    "best_candidates": "B.D.E.2 + B.D.4",
+    "best_candidates_breakpoints_target": "9-10",
+    "best_candidates_breakpoints_genomic": "5435 - 5436",
+    "direction_L1": "<<",
+    "initial_region_span": "1-6,13-17",
+    "gap_history": "6-13",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "4.80e-09",
+    "p_value_vs_L2": "3.03e+05",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

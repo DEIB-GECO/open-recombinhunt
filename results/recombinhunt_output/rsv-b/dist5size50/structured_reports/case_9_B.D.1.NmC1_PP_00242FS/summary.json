@@ -1,0 +1,18 @@
+{
+    "case_number": 9,
+    "case_name": "PP_00242FS",
+    "group_name": "B.D.1.NmC1",
+    "number_of_sequences": 605,
+    "number_of_changes": 295,
+    "best_candidates": "B.D.1.NmC1 + B.D.4.1.2",
+    "best_candidates_breakpoints_target": "267-268",
+    "best_candidates_breakpoints_genomic": "13714 - 13715",
+    "direction_L1": "<<",
+    "initial_region_span": "1-40,276-295",
+    "gap_history": "40-276",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 8.70e-73",
+    "p_value_vs_L1": "6.42e-02",
+    "p_value_vs_L2": "0.00e+00",
+    "flags": "Model_1BP_Best"
+}

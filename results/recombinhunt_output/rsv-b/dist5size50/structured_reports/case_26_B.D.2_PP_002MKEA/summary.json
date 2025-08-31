@@ -1,0 +1,18 @@
+{
+    "case_number": 26,
+    "case_name": "PP_002MKEA",
+    "group_name": "B.D.2",
+    "number_of_sequences": 1269,
+    "number_of_changes": 37,
+    "best_candidates": "B.D.2 + B.D.4.1",
+    "best_candidates_breakpoints_target": "29-30",
+    "best_candidates_breakpoints_genomic": "5572 - 5573",
+    "direction_L1": ">>",
+    "initial_region_span": "1-29,30-37",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "3.73e-06",
+    "p_value_vs_L2": "4.66e-09",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

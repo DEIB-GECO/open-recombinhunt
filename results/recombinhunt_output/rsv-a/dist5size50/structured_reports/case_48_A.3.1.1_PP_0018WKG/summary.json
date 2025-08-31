@@ -1,0 +1,18 @@
+{
+    "case_number": 48,
+    "case_name": "PP_0018WKG",
+    "group_name": "A.3.1.1",
+    "number_of_sequences": 731,
+    "number_of_changes": 61,
+    "best_candidates": "A.3 + A.3.1.1 + A.3",
+    "best_candidates_breakpoints_target": "11-12, 17-18",
+    "best_candidates_breakpoints_genomic": "5023 - 5024, 5156 - 5157",
+    "direction_L1": "<<",
+    "initial_region_span": "1-11,14-17,18-61",
+    "gap_history": "11-18 -> 11-14",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 2.79e-18",
+    "p_value_vs_L1": "1.92e-16",
+    "p_value_vs_L2": "6.81e-34",
+    "flags": "Model_2BP_Best"
+}

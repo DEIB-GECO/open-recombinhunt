@@ -1,0 +1,18 @@
+{
+    "case_number": 20,
+    "case_name": "PP_0026WR7",
+    "group_name": "B.D.NmC1",
+    "number_of_sequences": 1726,
+    "number_of_changes": 41,
+    "best_candidates": "B.D.NmC1 + B.D.2",
+    "best_candidates_breakpoints_target": "37-38",
+    "best_candidates_breakpoints_genomic": "5461 - 5462",
+    "direction_L1": ">>",
+    "initial_region_span": "1-37,38-41",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "9.26e-02",
+    "p_value_vs_L2": "3.20e-137",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

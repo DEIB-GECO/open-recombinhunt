@@ -1,0 +1,18 @@
+{
+    "case_number": 23,
+    "case_name": "PP_0031NVG",
+    "group_name": "A.D.3.6",
+    "number_of_sequences": 757,
+    "number_of_changes": 27,
+    "best_candidates": "A.D.3.6 + A.D.2.2.NmC1",
+    "best_candidates_breakpoints_target": "20-21",
+    "best_candidates_breakpoints_genomic": "5517 - 5518",
+    "direction_L1": ">>",
+    "initial_region_span": "1-18,21-27",
+    "gap_history": "18-21",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.88e-06",
+    "p_value_vs_L2": "4.40e-24",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

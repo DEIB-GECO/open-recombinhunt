@@ -1,0 +1,18 @@
+{
+    "case_number": 24,
+    "case_name": "PP_001XNFL",
+    "group_name": "A.D.2.2.NmC1",
+    "number_of_sequences": 394,
+    "number_of_changes": 26,
+    "best_candidates": "A.D.5 + A.D + A.D.5",
+    "best_candidates_breakpoints_target": "15-16, 17-18",
+    "best_candidates_breakpoints_genomic": "5500 - 5501, 5514 - 5515",
+    "direction_L1": "<<",
+    "initial_region_span": "1-15,16-17,18-26",
+    "gap_history": "15-18 -> ",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 4.01e-01",
+    "p_value_vs_L1": "7.28e-08",
+    "p_value_vs_L2": "1.11e-35",
+    "flags": "Model_2BP_Best"
+}

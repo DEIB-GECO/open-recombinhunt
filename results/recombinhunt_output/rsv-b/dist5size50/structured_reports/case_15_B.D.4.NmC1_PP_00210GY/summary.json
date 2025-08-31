@@ -1,0 +1,18 @@
+{
+    "case_number": 15,
+    "case_name": "PP_00210GY",
+    "group_name": "B.D.4.NmC1",
+    "number_of_sequences": 1212,
+    "number_of_changes": 17,
+    "best_candidates": "B.D.E.2 + B.D.4.NmC1",
+    "best_candidates_breakpoints_target": "3-4",
+    "best_candidates_breakpoints_genomic": "5336 - 5337",
+    "direction_L1": "<<",
+    "initial_region_span": "1-3,4-17",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.15e-13",
+    "p_value_vs_L2": "1.33e-01",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 40,
+    "case_name": "PP_001FSHA",
+    "group_name": "A.D.4.NmC1",
+    "number_of_sequences": 2189,
+    "number_of_changes": 45,
+    "best_candidates": "A.D.4.NmC2 + A.D",
+    "best_candidates_breakpoints_target": "32-33",
+    "best_candidates_breakpoints_genomic": "5407 - 5408",
+    "direction_L1": ">>",
+    "initial_region_span": "1-28,33-45",
+    "gap_history": "28-33",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.09e-24",
+    "p_value_vs_L2": "7.03e-157",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

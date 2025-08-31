@@ -1,0 +1,18 @@
+{
+    "case_number": 35,
+    "case_name": "PP_0017C4Z",
+    "group_name": "A.3",
+    "number_of_sequences": 202,
+    "number_of_changes": 45,
+    "best_candidates": "A.3 + A.2.1.1",
+    "best_candidates_breakpoints_target": "38-39",
+    "best_candidates_breakpoints_genomic": "5640 - 5641",
+    "direction_L1": ">>",
+    "initial_region_span": "1-38,39-45",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "3.34e-02",
+    "p_value_vs_L2": "5.98e-121",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

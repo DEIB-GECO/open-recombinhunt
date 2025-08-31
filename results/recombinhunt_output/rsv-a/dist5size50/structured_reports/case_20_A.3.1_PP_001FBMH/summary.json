@@ -1,0 +1,18 @@
+{
+    "case_number": 20,
+    "case_name": "PP_001FBMH",
+    "group_name": "A.3.1",
+    "number_of_sequences": 1992,
+    "number_of_changes": 51,
+    "best_candidates": "A.3.1 + A.D.2.2",
+    "best_candidates_breakpoints_target": "40-41",
+    "best_candidates_breakpoints_genomic": "5640 - 5641",
+    "direction_L1": ">>",
+    "initial_region_span": "1-28,49-51",
+    "gap_history": "28-49",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "2.12e-07",
+    "p_value_vs_L2": "2.35e-182",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

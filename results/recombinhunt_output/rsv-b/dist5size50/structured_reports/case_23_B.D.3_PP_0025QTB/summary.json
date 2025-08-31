@@ -1,0 +1,18 @@
+{
+    "case_number": 23,
+    "case_name": "PP_0025QTB",
+    "group_name": "B.D.3",
+    "number_of_sequences": 433,
+    "number_of_changes": 36,
+    "best_candidates": "B.D.NmC1 + B.D.1.1",
+    "best_candidates_breakpoints_target": "18-19",
+    "best_candidates_breakpoints_genomic": "5264 - 5265",
+    "direction_L1": "<<",
+    "initial_region_span": "1-18,19-36",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "5.83e-13",
+    "p_value_vs_L2": "1.04e-94",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

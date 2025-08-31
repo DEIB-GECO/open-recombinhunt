@@ -1,0 +1,18 @@
+{
+    "case_number": 65,
+    "case_name": "OQ320466.1",
+    "group_name": "B.1.13.NmC3",
+    "number_of_sequences": 123,
+    "number_of_changes": 65,
+    "best_candidates": "B.1.13.NmC3 + C.1.NmC2",
+    "best_candidates_breakpoints_target": "62-63",
+    "best_candidates_breakpoints_genomic": "182134 - 182135",
+    "direction_L1": ">>",
+    "initial_region_span": "1-62,63-65",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.22e+02",
+    "p_value_vs_L2": "7.14e-118",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

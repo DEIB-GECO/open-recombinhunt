@@ -1,0 +1,18 @@
+{
+    "case_number": 6,
+    "case_name": "PP_001J5V0",
+    "group_name": "A.D",
+    "number_of_sequences": 2353,
+    "number_of_changes": 19,
+    "best_candidates": "A.D.NmC1 + A.D.3",
+    "best_candidates_breakpoints_target": "12-13",
+    "best_candidates_breakpoints_genomic": "5470 - 5471",
+    "direction_L1": ">>",
+    "initial_region_span": "1-12,13-19",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 4.84e-03",
+    "p_value_vs_L1": "5.03e-04",
+    "p_value_vs_L2": "1.74e-30",
+    "flags": "Model_1BP_Best"
+}

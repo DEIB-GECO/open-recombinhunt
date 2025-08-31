@@ -1,0 +1,18 @@
+{
+    "case_number": 48,
+    "case_name": "PP_001ANWY",
+    "group_name": "A.3.1.1",
+    "number_of_sequences": 731,
+    "number_of_changes": 23,
+    "best_candidates": "A.D.3.6 + A.D.4.NmC1",
+    "best_candidates_breakpoints_target": "4-5",
+    "best_candidates_breakpoints_genomic": "5381 - 5382",
+    "direction_L1": "<<",
+    "initial_region_span": "1-4,5-23",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "6.61e-48",
+    "p_value_vs_L2": "1.81e-198",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

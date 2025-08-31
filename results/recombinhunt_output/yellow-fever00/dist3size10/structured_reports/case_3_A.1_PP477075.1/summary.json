@@ -1,0 +1,18 @@
+{
+    "case_number": 3,
+    "case_name": "PP477075.1",
+    "group_name": "A.1",
+    "number_of_sequences": 836,
+    "number_of_changes": 1474,
+    "best_candidates": "A.1 + A.1.NmC2 + A.1",
+    "best_candidates_breakpoints_target": "1417-1418, 1438-1439",
+    "best_candidates_breakpoints_genomic": "10248 - 10249, 10360 - 10361",
+    "direction_L1": ">>",
+    "initial_region_span": "1-1417,1418-1437,1466-1474",
+    "gap_history": "1417-1466 -> 1437-1466",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 2.55e-23",
+    "p_value_vs_L1": "4.68e+01",
+    "p_value_vs_L2": "0.00e+00",
+    "flags": "Model_2BP_Best"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 7,
+    "case_name": "PP_001J34K",
+    "group_name": "A.D.2.2",
+    "number_of_sequences": 545,
+    "number_of_changes": 20,
+    "best_candidates": "A.D.NmC2 + A.D.3.NmC1",
+    "best_candidates_breakpoints_target": "16-17",
+    "best_candidates_breakpoints_genomic": "5490 - 5491",
+    "direction_L1": ">>",
+    "initial_region_span": "1-16,18-20",
+    "gap_history": "16-18",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "9.95e-03",
+    "p_value_vs_L2": "8.34e-128",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

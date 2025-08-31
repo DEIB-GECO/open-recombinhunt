@@ -1,0 +1,18 @@
+{
+    "case_number": 7,
+    "case_name": "PP_001H92K",
+    "group_name": "A.D.2.2",
+    "number_of_sequences": 545,
+    "number_of_changes": 42,
+    "best_candidates": "A.D.2.2.1 + A.D.2.2",
+    "best_candidates_breakpoints_target": "36-37",
+    "best_candidates_breakpoints_genomic": "4610 - 4611",
+    "direction_L1": ">>",
+    "initial_region_span": "1-36,37-42",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "0.00e+00",
+    "p_value_vs_L2": "1.03e-02",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 28,
+    "case_name": "OP378696.1",
+    "group_name": "B.1.NmC7",
+    "number_of_sequences": 172,
+    "number_of_changes": 65,
+    "best_candidates": "B.1.7 + B.1.13.NmC1 + B.1.7",
+    "best_candidates_breakpoints_target": "49-50, 60-61",
+    "best_candidates_breakpoints_genomic": "150549 - 150550, 178132 - 178133",
+    "direction_L1": ">>",
+    "initial_region_span": "1-49,50-60,61-65",
+    "gap_history": "49-61 -> ",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 2.66e-01",
+    "p_value_vs_L1": "2.79e-26",
+    "p_value_vs_L2": "1.09e-14",
+    "flags": "Model_2BP_Best"
+}

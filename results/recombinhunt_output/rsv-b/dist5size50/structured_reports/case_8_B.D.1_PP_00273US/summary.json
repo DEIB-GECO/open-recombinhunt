@@ -1,0 +1,18 @@
+{
+    "case_number": 8,
+    "case_name": "PP_00273US",
+    "group_name": "B.D.1",
+    "number_of_sequences": 334,
+    "number_of_changes": 133,
+    "best_candidates": "B.D.E.5 + B.D.1",
+    "best_candidates_breakpoints_target": "4-5",
+    "best_candidates_breakpoints_genomic": "373 - 374",
+    "direction_L1": "<<",
+    "initial_region_span": "1-4,42-133",
+    "gap_history": "4-42",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "0.00e+00",
+    "p_value_vs_L2": "2.83e+06",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

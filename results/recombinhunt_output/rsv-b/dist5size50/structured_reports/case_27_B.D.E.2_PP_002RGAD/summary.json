@@ -1,0 +1,18 @@
+{
+    "case_number": 27,
+    "case_name": "PP_002RGAD",
+    "group_name": "B.D.E.2",
+    "number_of_sequences": 853,
+    "number_of_changes": 24,
+    "best_candidates": "B.D.4.1.1 + B.D.E.2",
+    "best_candidates_breakpoints_target": "4-5",
+    "best_candidates_breakpoints_genomic": "5309 - 5310",
+    "direction_L1": "<<",
+    "initial_region_span": "1-4,5-24",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "0.00e+00",
+    "p_value_vs_L2": "2.83e+02",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

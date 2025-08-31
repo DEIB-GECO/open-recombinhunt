@@ -1,0 +1,18 @@
+{
+    "case_number": 87,
+    "case_name": "ON622718.1",
+    "group_name": "B.1.8",
+    "number_of_sequences": 49,
+    "number_of_changes": 63,
+    "best_candidates": "B.1.8 + B.1.NmC6 + B.1.8",
+    "best_candidates_breakpoints_target": "6-7, 20-21",
+    "best_candidates_breakpoints_genomic": "21990 - 21991, 64170 - 64171",
+    "direction_L1": "<<",
+    "initial_region_span": "1-6,7-20,21-63",
+    "gap_history": "6-21 -> ",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 1.67e-04",
+    "p_value_vs_L1": "9.89e-18",
+    "p_value_vs_L2": "5.11e-51",
+    "flags": "Model_2BP_Best"
+}

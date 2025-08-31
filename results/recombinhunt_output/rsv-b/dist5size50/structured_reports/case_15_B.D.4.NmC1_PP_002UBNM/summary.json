@@ -1,0 +1,18 @@
+{
+    "case_number": 15,
+    "case_name": "PP_002UBNM",
+    "group_name": "B.D.4.NmC1",
+    "number_of_sequences": 1212,
+    "number_of_changes": 27,
+    "best_candidates": "B.D.E.2 + B.D.1.1",
+    "best_candidates_breakpoints_target": "22-23",
+    "best_candidates_breakpoints_genomic": "5564 - 5565",
+    "direction_L1": ">>",
+    "initial_region_span": "1-20,23-27",
+    "gap_history": "20-23",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.60e-07",
+    "p_value_vs_L2": "3.26e-144",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

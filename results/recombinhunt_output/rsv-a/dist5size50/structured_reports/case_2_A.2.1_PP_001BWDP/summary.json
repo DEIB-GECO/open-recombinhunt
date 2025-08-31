@@ -1,0 +1,18 @@
+{
+    "case_number": 2,
+    "case_name": "PP_001BWDP",
+    "group_name": "A.2.1",
+    "number_of_sequences": 366,
+    "number_of_changes": 573,
+    "best_candidates": "A.D.5.3 + A.2.1",
+    "best_candidates_breakpoints_target": "12-13",
+    "best_candidates_breakpoints_genomic": "505 - 506",
+    "direction_L1": "<<",
+    "initial_region_span": "1-12,13-573",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "0.00e+00",
+    "p_value_vs_L2": "2.67e-03",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

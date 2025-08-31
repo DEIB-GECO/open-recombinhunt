@@ -7,6 +7,6 @@
 /results/nextstrain_output/sars-cov-200/
 /results/recombinhunt_output/sars-cov-2/
 /results/recombinhunt_output/sars-cov-200/
-
+/sars-cov-2
 head*
 src/analyse/influenza_data_exploration/

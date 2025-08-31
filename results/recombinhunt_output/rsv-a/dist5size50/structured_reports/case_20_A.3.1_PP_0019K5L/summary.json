@@ -1,0 +1,18 @@
+{
+    "case_number": 20,
+    "case_name": "PP_0019K5L",
+    "group_name": "A.3.1",
+    "number_of_sequences": 1992,
+    "number_of_changes": 24,
+    "best_candidates": "A.3.1 + A.3.1.NmC1",
+    "best_candidates_breakpoints_target": "11-12",
+    "best_candidates_breakpoints_genomic": "5459 - 5460",
+    "direction_L1": "<<",
+    "initial_region_span": "1-10,12-24",
+    "gap_history": "10-12",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "7.89e-02",
+    "p_value_vs_L2": "2.11e-23",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

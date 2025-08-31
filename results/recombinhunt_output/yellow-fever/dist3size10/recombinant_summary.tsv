@@ -1,0 +1,144 @@
+genomeIDs	original_lineage	recombinant_parents	breakpoint_count	case_report_folder
+MH030053.1	A.1.NmC1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_A.1.NmC1_MH030053.1
+MZ604862.1	A.1.NmC1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_A.1.NmC1_MZ604862.1
+OQ714242.1	A.1.NmC1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_A.1.NmC1_OQ714242.1
+ON022368.1	A.1.NmC1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_A.1.NmC1_ON022368.1
+OP508590.1	A.1.NmC1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_A.1.NmC1_OP508590.1
+OP508602.1	A.1.NmC1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_A.1.NmC1_OP508602.1
+OP508604.1	A.1.NmC1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_A.1.NmC1_OP508604.1
+OP508608.1	A.1.NmC1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_A.1.NmC1_OP508608.1
+OP508706.1	A.1.NmC1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_A.1.NmC1_OP508706.1
+OP508626.1	A.1.NmC1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_A.1.NmC1_OP508626.1
+OP508628.1	A.1.NmC1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_A.1.NmC1_OP508628.1
+OP508681.1	A.1.NmC1	A.1.NmC1 + A.1.NmC2	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_A.1.NmC1_OP508681.1
+OP508646.1	A.1.NmC1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_A.1.NmC1_OP508646.1
+OP508659.1	A.1.NmC1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_A.1.NmC1_OP508659.1
+OP508704.1	A.1.NmC1	A.1.NmC1 + A.1.NmC2	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_A.1.NmC1_OP508704.1
+OP508678.1	A.1.NmC1	A.1.NmC1 + A.1.NmC2	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_A.1.NmC1_OP508678.1
+OP508698.1	A.1.NmC1	A.1.NmC1 + A.1.NmC2 + A.1.NmC1	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_A.1.NmC1_OP508698.1
+OP508680.1	A.1.NmC1	A.1.NmC1 + A.1.NmC2 + A.1.NmC1	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_A.1.NmC1_OP508680.1
+OP508695.1	A.1.NmC1	A.1.NmC1 + A.1.NmC2	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_A.1.NmC1_OP508695.1
+OP508686.1	A.1.NmC1	A.1.NmC1 + A.1.NmC2	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_2_A.1.NmC1_OP508686.1
+OQ932914.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_OQ932914.1
+MH666056.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_MH666056.1
+MH666058.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_MH666058.1
+ON502428.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON502428.1
+MH018098.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_MH018098.1
+ON502424.1	A.1	A.1.NmC2 + A.1 + A.1.NmC2	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON502424.1
+ON022510.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022510.1
+MN604280.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_MN604280.1
+MN604284.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_MN604284.1
+ON022400.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022400.1
+ON022381.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022381.1
+ON022390.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022390.1
+ON022725.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022725.1
+MK882614.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_MK882614.1
+MK882616.1	A.1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_MK882616.1
+MH030091.1	A.1	A.1.NmC2 + A.1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_MH030091.1
+ON022734.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022734.1
+ON022371.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022371.1
+ON022412.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022412.1
+OP508715.1	A.1	A.1.NmC2 + A.1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_OP508715.1
+ON022406.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022406.1
+MH030079.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_MH030079.1
+MH030081.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_MH030081.1
+MH030082.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_MH030082.1
+ON022378.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022378.1
+ON022397.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022397.1
+OQ714299.1	A.1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_OQ714299.1
+ON022629.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022629.1
+ON022623.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022623.1
+ON022280.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022280.1
+MK249066.1	A.1	A.1.NmC2 + A.1 + A.1.NmC2	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_MK249066.1
+OQ714323.1	A.1	A.1 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_OQ714323.1
+ON022672.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022672.1
+ON022260.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022260.1
+ON022586.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022586.1
+ON022657.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022657.1
+ON502396.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON502396.1
+ON022450.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022450.1
+ON022471.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022471.1
+ON022479.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022479.1
+MK882619.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_MK882619.1
+ON502401.1	A.1	A.1.NmC1 + A.1.NmC2 + A.1.NmC1	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON502401.1
+ON502405.1	A.1	A.1.NmC2 + A.1 + A.1.NmC2	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON502405.1
+ON022587.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022587.1
+ON022503.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022503.1
+ON022491.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022491.1
+ON022473.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022473.1
+ON502410.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON502410.1
+ON022502.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022502.1
+ON022482.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022482.1
+ON022499.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022499.1
+ON022511.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022511.1
+ON022433.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022433.1
+ON022316.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022316.1
+ON022449.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022449.1
+ON022593.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022593.1
+ON022312.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022312.1
+ON022465.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022465.1
+ON022394.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022394.1
+ON022291.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022291.1
+ON022293.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022293.1
+ON022294.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022294.1
+ON022733.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022733.1
+ON022286.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022286.1
+ON022304.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022304.1
+ON022549.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022549.1
+OP508603.1	A.1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_OP508603.1
+JF912179.1	A.1	A.1.NmC2 + A.1 + A.1.NmC2	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_JF912179.1
+JF912181.1	A.1	A.1 + A.1.NmC2 + A.1	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_JF912181.1
+JF912183.1	A.1	A.1.NmC2 + A.1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_JF912183.1
+JF912184.1	A.1	A.1.NmC2 + A.1 + A.1.NmC2	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_JF912184.1
+JF912186.1	A.1	A.1.NmC2 + A.1 + A.1.NmC2	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_JF912186.1
+MF004382.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_MF004382.1
+MH018100.1	A.1	A.1.NmC2 + A.1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_MH018100.1
+MH018101.1	A.1	A.1.NmC2 + A.1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_MH018101.1
+MW158338.1	A.1	A.1.NmC2 + A.1 + A.1.NmC2	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_MW158338.1
+MW158339.1	A.1	A.1.NmC2 + A.1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_MW158339.1
+MW158343.1	A.1	A.1.NmC2 + A.1 + A.1.NmC2	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_MW158343.1
+MW158345.1	A.1	A.1.NmC2 + A.1 + A.1.NmC2	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_MW158345.1
+MW158346.1	A.1	A.1.NmC2 + A.1 + A.1.NmC2	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_MW158346.1
+MW158359.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_MW158359.1
+MW158361.1	A.1	A.1 + A.1.NmC2	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_MW158361.1
+ON022716.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_ON022716.1
+OR119828.1	A.1	A.1.NmC2 + A.1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_OR119828.1
+PQ186339.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_PQ186339.1
+PQ186344.1	A.1	A.1.NmC2 + A.1 + A.1.NmC2	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_PQ186344.1
+PQ186349.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_PQ186349.1
+PQ186350.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_PQ186350.1
+PQ186354.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_PQ186354.1
+PQ441955.1	A.1	A.1.NmC2 + A.1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_PQ441955.1
+OP508607.1	A.1	A.1 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_OP508607.1
+OP508611.1	A.1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_OP508611.1
+OP508620.1	A.1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_OP508620.1
+OP508621.1	A.1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_OP508621.1
+OP508634.1	A.1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_OP508634.1
+OP508637.1	A.1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_OP508637.1
+OP508639.1	A.1	A.1 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_OP508639.1
+OP508641.1	A.1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_OP508641.1
+OP508571.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_OP508571.1
+OP508653.1	A.1	A.1.NmC1 + A.1.NmC2 + A.1.NmC1	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_OP508653.1
+OP508655.1	A.1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_OP508655.1
+OP508701.1	A.1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_OP508701.1
+OP508707.1	A.1	A.1.NmC1 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_OP508707.1
+OP508697.1	A.1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_OP508697.1
+OP508672.1	A.1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_OP508672.1
+OP508674.1	A.1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_OP508674.1
+OP508673.1	A.1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_OP508673.1
+OP508579.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_OP508579.1
+PQ276811.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_PQ276811.1
+PV710608.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_PV710608.1
+PP477075.1	A.1	A.1 + A.1.NmC2 + A.1	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_PP477075.1
+PP869888.1	A.1	A.1.NmC2 + A.1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_PP869888.1
+PV710607.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_PV710607.1
+PV710587.1	A.1	A.1.NmC2 + A.1.NmC1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_PV710587.1
+PV710596.1	A.1	A.1.NmC1 + A.1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_PV710596.1
+PV710593.1	A.1	A.1.NmC1 + A.1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_PV710593.1
+PV710595.1	A.1	A.1 + A.1.NmC2 + A.1	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_PV710595.1
+PV710597.1	A.1	A.1 + A.1.NmC2 + A.1	2BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_PV710597.1
+PV710599.1	A.1	A.1.NmC1 + A.1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_PV710599.1
+PV710600.1	A.1	A.1.NmC1 + A.1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_PV710600.1
+PV710602.1	A.1	A.1.NmC1 + A.1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_PV710602.1
+PV710603.1	A.1	A.1.NmC1 + A.1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_PV710603.1
+PV710604.1	A.1	A.1.NmC1 + A.1	1BP	results/recombinhunt_output/yellow-fever/dist3size10/structured_reports/case_3_A.1_PV710604.1

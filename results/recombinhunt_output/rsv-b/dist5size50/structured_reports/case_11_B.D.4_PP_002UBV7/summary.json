@@ -1,0 +1,18 @@
+{
+    "case_number": 11,
+    "case_name": "PP_002UBV7",
+    "group_name": "B.D.4",
+    "number_of_sequences": 1413,
+    "number_of_changes": 24,
+    "best_candidates": "B.D.2 + B.D.4 + B.D.2",
+    "best_candidates_breakpoints_target": "9-10, 15-16",
+    "best_candidates_breakpoints_genomic": "5435 - 5436, 5535 - 5536",
+    "direction_L1": ">>",
+    "initial_region_span": "1-9,10-15,16-24",
+    "gap_history": "9-16 -> ",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 2.46e-08",
+    "p_value_vs_L1": "1.37e-19",
+    "p_value_vs_L2": "8.11e-05",
+    "flags": "Model_2BP_Best"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 25,
+    "case_name": "PP_002T4WE",
+    "group_name": "B.D.E.5",
+    "number_of_sequences": 276,
+    "number_of_changes": 547,
+    "best_candidates": "B.D.E.5 + B.D.E.6 + B.D.E.5",
+    "best_candidates_breakpoints_target": "537-538, 544-545",
+    "best_candidates_breakpoints_genomic": "15056 - 15057, 15166 - 15167",
+    "direction_L1": ">>",
+    "initial_region_span": "1-537,538-544,545-547",
+    "gap_history": "537-545 -> ",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 9.12e-08",
+    "p_value_vs_L1": "2.48e-07",
+    "p_value_vs_L2": "0.00e+00",
+    "flags": "Model_2BP_Best"
+}

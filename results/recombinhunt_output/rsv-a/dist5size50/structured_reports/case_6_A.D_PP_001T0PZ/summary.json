@@ -1,0 +1,18 @@
+{
+    "case_number": 6,
+    "case_name": "PP_001T0PZ",
+    "group_name": "A.D",
+    "number_of_sequences": 2353,
+    "number_of_changes": 19,
+    "best_candidates": "A.D.5 + A.D.3",
+    "best_candidates_breakpoints_target": "12-13",
+    "best_candidates_breakpoints_genomic": "5470 - 5471",
+    "direction_L1": ">>",
+    "initial_region_span": "1-12,13-19",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.16e-20",
+    "p_value_vs_L2": "2.37e-20",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

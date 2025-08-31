@@ -1,0 +1,18 @@
+{
+    "case_number": 11,
+    "case_name": "PP_002RRQ9",
+    "group_name": "B.D.4",
+    "number_of_sequences": 1413,
+    "number_of_changes": 30,
+    "best_candidates": "B.D.4.1.1 + B.D.4",
+    "best_candidates_breakpoints_target": "8-9",
+    "best_candidates_breakpoints_genomic": "5334 - 5335",
+    "direction_L1": "<<",
+    "initial_region_span": "1-8,9-30",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "0.00e+00",
+    "p_value_vs_L2": "4.73e-07",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

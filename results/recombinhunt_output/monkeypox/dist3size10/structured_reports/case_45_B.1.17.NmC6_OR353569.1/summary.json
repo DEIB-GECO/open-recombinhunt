@@ -1,0 +1,18 @@
+{
+    "case_number": 45,
+    "case_name": "OR353569.1",
+    "group_name": "B.1.17.NmC6",
+    "number_of_sequences": 201,
+    "number_of_changes": 54,
+    "best_candidates": "B.1.3.NmC1 + B.1.7 + B.1.3.NmC1",
+    "best_candidates_breakpoints_target": "37-38, 47-48",
+    "best_candidates_breakpoints_genomic": "121393 - 121394, 157300 - 157301",
+    "direction_L1": ">>",
+    "initial_region_span": "1-37,38-47,48-54",
+    "gap_history": "37-48 -> ",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 2.26e-24",
+    "p_value_vs_L1": "1.00e-34",
+    "p_value_vs_L2": "1.23e-41",
+    "flags": "Model_2BP_Best"
+}

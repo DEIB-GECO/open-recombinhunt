@@ -1,0 +1,18 @@
+{
+    "case_number": 14,
+    "case_name": "PP_002MK3Y",
+    "group_name": "B.D.E.3.NmC1",
+    "number_of_sequences": 1318,
+    "number_of_changes": 74,
+    "best_candidates": "B.D.E.3.NmC1 + B.D.4.1",
+    "best_candidates_breakpoints_target": "64-65",
+    "best_candidates_breakpoints_genomic": "5572 - 5573",
+    "direction_L1": ">>",
+    "initial_region_span": "1-64,65-74",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "2.44e-08",
+    "p_value_vs_L2": "4.25e-169",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

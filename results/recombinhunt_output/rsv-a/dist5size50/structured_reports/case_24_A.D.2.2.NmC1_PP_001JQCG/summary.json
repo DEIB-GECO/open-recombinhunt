@@ -1,0 +1,18 @@
+{
+    "case_number": 24,
+    "case_name": "PP_001JQCG",
+    "group_name": "A.D.2.2.NmC1",
+    "number_of_sequences": 394,
+    "number_of_changes": 24,
+    "best_candidates": "A.D.2.2.NmC1 + A.D.3 + A.D.2.2.NmC1",
+    "best_candidates_breakpoints_target": "12-13, 18-19",
+    "best_candidates_breakpoints_genomic": "5470 - 5471, 5521 - 5522",
+    "direction_L1": ">>",
+    "initial_region_span": "1-12,13-18,19-24",
+    "gap_history": "12-19 -> ",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 1.88e-06",
+    "p_value_vs_L1": "5.13e-06",
+    "p_value_vs_L2": "1.85e-131",
+    "flags": "Model_2BP_Best"
+}

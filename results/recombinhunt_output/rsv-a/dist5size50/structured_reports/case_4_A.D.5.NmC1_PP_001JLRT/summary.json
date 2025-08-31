@@ -1,0 +1,18 @@
+{
+    "case_number": 4,
+    "case_name": "PP_001JLRT",
+    "group_name": "A.D.5.NmC1",
+    "number_of_sequences": 425,
+    "number_of_changes": 39,
+    "best_candidates": "A.D.2.1 + A.D.5.NmC1",
+    "best_candidates_breakpoints_target": "5-6",
+    "best_candidates_breakpoints_genomic": "5303 - 5304",
+    "direction_L1": "<<",
+    "initial_region_span": "1-5,26-39",
+    "gap_history": "5-26",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 2.58e-96",
+    "p_value_vs_L1": "0.00e+00",
+    "p_value_vs_L2": "2.87e-01",
+    "flags": "Model_1BP_Best"
+}

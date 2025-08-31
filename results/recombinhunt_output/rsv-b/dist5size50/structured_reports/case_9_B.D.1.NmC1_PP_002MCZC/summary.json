@@ -1,0 +1,18 @@
+{
+    "case_number": 9,
+    "case_name": "PP_002MCZC",
+    "group_name": "B.D.1.NmC1",
+    "number_of_sequences": 605,
+    "number_of_changes": 410,
+    "best_candidates": "B.D.1.NmC1 + B.D.1 + B.D.1.NmC1",
+    "best_candidates_breakpoints_target": "150-151, 203-204",
+    "best_candidates_breakpoints_genomic": "4688 - 4689, 5626 - 5627",
+    "direction_L1": ">>",
+    "initial_region_span": "1-150,151-199,326-410",
+    "gap_history": "150-326 -> 199-326",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 8.65e-65",
+    "p_value_vs_L1": "1.79e-14",
+    "p_value_vs_L2": "0.00e+00",
+    "flags": "Model_2BP_Best"
+}

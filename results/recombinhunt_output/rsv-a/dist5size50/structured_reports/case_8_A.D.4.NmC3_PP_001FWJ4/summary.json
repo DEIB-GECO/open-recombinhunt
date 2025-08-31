@@ -1,0 +1,18 @@
+{
+    "case_number": 8,
+    "case_name": "PP_001FWJ4",
+    "group_name": "A.D.4.NmC3",
+    "number_of_sequences": 1653,
+    "number_of_changes": 87,
+    "best_candidates": "A.D.2.2.1 + A.D.5.NmC1",
+    "best_candidates_breakpoints_target": "73-74",
+    "best_candidates_breakpoints_genomic": "5470 - 5471",
+    "direction_L1": ">>",
+    "initial_region_span": "1-39,74-87",
+    "gap_history": "39-74",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "0.00e+00",
+    "p_value_vs_L2": "0.00e+00",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 17,
+    "case_name": "PP_002VP0J",
+    "group_name": "B.D.E.4",
+    "number_of_sequences": 1372,
+    "number_of_changes": 535,
+    "best_candidates": "B.D.E.1 + B.D.E.4",
+    "best_candidates_breakpoints_target": "3-4",
+    "best_candidates_breakpoints_genomic": "211 - 212",
+    "direction_L1": "<<",
+    "initial_region_span": "1-3,4-535",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "0.00e+00",
+    "p_value_vs_L2": "6.84e-03",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

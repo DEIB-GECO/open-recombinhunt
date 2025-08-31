@@ -1,0 +1,18 @@
+{
+    "case_number": 4,
+    "case_name": "PP_001LEM3",
+    "group_name": "A.D.5.NmC1",
+    "number_of_sequences": 425,
+    "number_of_changes": 40,
+    "best_candidates": "A.D.2.1 + A.D.5.NmC1",
+    "best_candidates_breakpoints_target": "7-8",
+    "best_candidates_breakpoints_genomic": "5360 - 5361",
+    "direction_L1": "<<",
+    "initial_region_span": "1-6,20-40",
+    "gap_history": "6-20",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 1.12e-107",
+    "p_value_vs_L1": "0.00e+00",
+    "p_value_vs_L2": "4.24e+06",
+    "flags": "Model_1BP_Best"
+}

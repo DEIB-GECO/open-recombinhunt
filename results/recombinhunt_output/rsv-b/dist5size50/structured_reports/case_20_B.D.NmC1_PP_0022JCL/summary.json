@@ -1,0 +1,18 @@
+{
+    "case_number": 20,
+    "case_name": "PP_0022JCL",
+    "group_name": "B.D.NmC1",
+    "number_of_sequences": 1726,
+    "number_of_changes": 46,
+    "best_candidates": "B.D.3 + B.D.4.NmC1",
+    "best_candidates_breakpoints_target": "42-43",
+    "best_candidates_breakpoints_genomic": "5570 - 5571",
+    "direction_L1": ">>",
+    "initial_region_span": "1-42,43-46",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "6.05e-04",
+    "p_value_vs_L2": "4.60e-215",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 48,
+    "case_name": "PP_001E3LV",
+    "group_name": "A.3.1.1",
+    "number_of_sequences": 731,
+    "number_of_changes": 77,
+    "best_candidates": "A.2.1.1 + A.3.1.1",
+    "best_candidates_breakpoints_target": "14-15",
+    "best_candidates_breakpoints_genomic": "4926 - 4927",
+    "direction_L1": "<<",
+    "initial_region_span": "1-14,18-77",
+    "gap_history": "14-18",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.63e+28",
+    "p_value_vs_L2": "2.37e-05",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

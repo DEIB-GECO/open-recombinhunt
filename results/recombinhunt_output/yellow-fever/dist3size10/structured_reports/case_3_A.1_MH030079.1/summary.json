@@ -1,0 +1,18 @@
+{
+    "case_number": 3,
+    "case_name": "MH030079.1",
+    "group_name": "A.1",
+    "number_of_sequences": 835,
+    "number_of_changes": 1426,
+    "best_candidates": "A.1.NmC2 + A.1.NmC1",
+    "best_candidates_breakpoints_target": "1354-1355",
+    "best_candidates_breakpoints_genomic": "9761 - 9762",
+    "direction_L1": ">>",
+    "initial_region_span": "1-1353,1355-1426",
+    "gap_history": "1353-1355",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "8.55e-194",
+    "p_value_vs_L2": "3.79e-26",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

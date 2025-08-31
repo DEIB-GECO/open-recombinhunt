@@ -1,0 +1,18 @@
+{
+    "case_number": 23,
+    "case_name": "PP_001TQP9",
+    "group_name": "A.D.3.6",
+    "number_of_sequences": 757,
+    "number_of_changes": 47,
+    "best_candidates": "A.D.3.6 + A.D.5.NmC1",
+    "best_candidates_breakpoints_target": "22-23",
+    "best_candidates_breakpoints_genomic": "5553 - 5554",
+    "direction_L1": ">>",
+    "initial_region_span": "1-22,23-47",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.30e-21",
+    "p_value_vs_L2": "2.01e-51",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

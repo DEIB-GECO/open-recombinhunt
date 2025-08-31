@@ -1,0 +1,18 @@
+{
+    "case_number": 11,
+    "case_name": "PP_002LURE",
+    "group_name": "B.D.4",
+    "number_of_sequences": 1413,
+    "number_of_changes": 26,
+    "best_candidates": "B.D.4.1 + B.D.4 + B.D.4.1",
+    "best_candidates_breakpoints_target": "9-10, 11-12",
+    "best_candidates_breakpoints_genomic": "5435 - 5436, 5456 - 5457",
+    "direction_L1": "<<",
+    "initial_region_span": "1-8,10-11,12-26",
+    "gap_history": "8-12 -> 8-10",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 2.74e-09",
+    "p_value_vs_L1": "2.30e-11",
+    "p_value_vs_L2": "1.27e-03",
+    "flags": "Model_2BP_Best"
+}

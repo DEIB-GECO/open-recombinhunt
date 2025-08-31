@@ -1,0 +1,18 @@
+{
+    "case_number": 69,
+    "case_name": "OP535313.1",
+    "group_name": "A",
+    "number_of_sequences": 58,
+    "number_of_changes": 24,
+    "best_candidates": "A.2 + A",
+    "best_candidates_breakpoints_target": "3-4",
+    "best_candidates_breakpoints_genomic": "28705 - 28706",
+    "direction_L1": "<<",
+    "initial_region_span": "1-3,4-24",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.62e-158",
+    "p_value_vs_L2": "3.74e+00",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

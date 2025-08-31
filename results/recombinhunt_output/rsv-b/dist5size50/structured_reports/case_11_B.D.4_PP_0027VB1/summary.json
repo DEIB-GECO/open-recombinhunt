@@ -1,0 +1,18 @@
+{
+    "case_number": 11,
+    "case_name": "PP_0027VB1",
+    "group_name": "B.D.4",
+    "number_of_sequences": 1413,
+    "number_of_changes": 24,
+    "best_candidates": "B.D.2 + B.D.4.NmC1",
+    "best_candidates_breakpoints_target": "20-21",
+    "best_candidates_breakpoints_genomic": "5568 - 5569",
+    "direction_L1": ">>",
+    "initial_region_span": "1-17,22-24",
+    "gap_history": "17-22",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "2.48e+03",
+    "p_value_vs_L2": "3.45e-32",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

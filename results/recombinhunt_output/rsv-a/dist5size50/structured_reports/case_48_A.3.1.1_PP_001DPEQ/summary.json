@@ -1,0 +1,18 @@
+{
+    "case_number": 48,
+    "case_name": "PP_001DPEQ",
+    "group_name": "A.3.1.1",
+    "number_of_sequences": 731,
+    "number_of_changes": 56,
+    "best_candidates": "A.3.1.1 + A.2.1.1",
+    "best_candidates_breakpoints_target": "6-7",
+    "best_candidates_breakpoints_genomic": "5298 - 5299",
+    "direction_L1": "<<",
+    "initial_region_span": "1-6,7-56",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "5.59e-60",
+    "p_value_vs_L2": "3.41e-45",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

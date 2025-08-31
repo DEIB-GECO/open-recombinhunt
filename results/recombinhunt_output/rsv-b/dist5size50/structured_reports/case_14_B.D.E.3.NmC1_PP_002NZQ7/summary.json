@@ -1,0 +1,18 @@
+{
+    "case_number": 14,
+    "case_name": "PP_002NZQ7",
+    "group_name": "B.D.E.3.NmC1",
+    "number_of_sequences": 1318,
+    "number_of_changes": 60,
+    "best_candidates": "B.D.E.3.NmC1 + B.D.4.NmC1",
+    "best_candidates_breakpoints_target": "57-58",
+    "best_candidates_breakpoints_genomic": "5572 - 5573",
+    "direction_L1": ">>",
+    "initial_region_span": "1-57,58-60",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "4.29e-02",
+    "p_value_vs_L2": "1.03e-204",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

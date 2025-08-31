@@ -1,0 +1,18 @@
+{
+    "case_number": 20,
+    "case_name": "PP_0024YWZ",
+    "group_name": "B.D.NmC1",
+    "number_of_sequences": 1726,
+    "number_of_changes": 48,
+    "best_candidates": "B.D + B.D.4.NmC1",
+    "best_candidates_breakpoints_target": "45-46",
+    "best_candidates_breakpoints_genomic": "5570 - 5571",
+    "direction_L1": ">>",
+    "initial_region_span": "1-45,46-48",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "2.09e-01",
+    "p_value_vs_L2": "1.00e-213",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

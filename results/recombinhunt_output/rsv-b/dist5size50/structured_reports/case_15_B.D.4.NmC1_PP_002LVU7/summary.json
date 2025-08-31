@@ -1,0 +1,18 @@
+{
+    "case_number": 15,
+    "case_name": "PP_002LVU7",
+    "group_name": "B.D.4.NmC1",
+    "number_of_sequences": 1212,
+    "number_of_changes": 37,
+    "best_candidates": "B.D.E.2 + B.D.4.1",
+    "best_candidates_breakpoints_target": "28-29",
+    "best_candidates_breakpoints_genomic": "5519 - 5520",
+    "direction_L1": ">>",
+    "initial_region_span": "1-11,30-37",
+    "gap_history": "11-30",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "3.85e-03",
+    "p_value_vs_L2": "4.68e-71",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 53,
+    "case_name": "OX261748.1",
+    "group_name": "B.1",
+    "number_of_sequences": 452,
+    "number_of_changes": 57,
+    "best_candidates": "B.1.2.NmC5 + B.1.NmC8",
+    "best_candidates_breakpoints_target": "46-47",
+    "best_candidates_breakpoints_genomic": "150549 - 150550",
+    "direction_L1": ">>",
+    "initial_region_span": "1-46,47-57",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "4.82e-28",
+    "p_value_vs_L2": "8.21e-27",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

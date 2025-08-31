@@ -1,0 +1,18 @@
+{
+    "case_number": 15,
+    "case_name": "PQ706969.1",
+    "group_name": "A.1.NmC5",
+    "number_of_sequences": 1745,
+    "number_of_changes": 150,
+    "best_candidates": "A.1.NmC5 + A.1.NmC6",
+    "best_candidates_breakpoints_target": "145-146",
+    "best_candidates_breakpoints_genomic": "1640 - 1641",
+    "direction_L1": ">>",
+    "initial_region_span": "1-133,146-150",
+    "gap_history": "133-146",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "4.51e+15",
+    "p_value_vs_L2": "0.00e+00",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

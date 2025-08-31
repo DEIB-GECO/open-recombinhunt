@@ -1,0 +1,18 @@
+{
+    "case_number": 66,
+    "case_name": "OR035700.1",
+    "group_name": "B.1.6",
+    "number_of_sequences": 35,
+    "number_of_changes": 51,
+    "best_candidates": "B.1.13.NmC1 + B.1.8",
+    "best_candidates_breakpoints_target": "48-49",
+    "best_candidates_breakpoints_genomic": "179224 - 179225",
+    "direction_L1": ">>",
+    "initial_region_span": "1-48,49-51",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.10e-01",
+    "p_value_vs_L2": "1.47e-09",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

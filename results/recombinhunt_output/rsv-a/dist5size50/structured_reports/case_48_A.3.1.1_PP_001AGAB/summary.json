@@ -1,0 +1,18 @@
+{
+    "case_number": 48,
+    "case_name": "PP_001AGAB",
+    "group_name": "A.3.1.1",
+    "number_of_sequences": 731,
+    "number_of_changes": 80,
+    "best_candidates": "A.D.2.2.1 + A.3",
+    "best_candidates_breakpoints_target": "7-8",
+    "best_candidates_breakpoints_genomic": "4818 - 4819",
+    "direction_L1": "<<",
+    "initial_region_span": "1-6,10-80",
+    "gap_history": "6-10",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "0.00e+00",
+    "p_value_vs_L2": "4.81e-02",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

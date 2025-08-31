@@ -1,0 +1,18 @@
+{
+    "case_number": 6,
+    "case_name": "PP_001DFGU",
+    "group_name": "A.D",
+    "number_of_sequences": 2353,
+    "number_of_changes": 25,
+    "best_candidates": "A.D.2.1 + A.D",
+    "best_candidates_breakpoints_target": "17-18",
+    "best_candidates_breakpoints_genomic": "5470 - 5471",
+    "direction_L1": ">>",
+    "initial_region_span": "1-17,18-25",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "0.00e+00",
+    "p_value_vs_L2": "7.97e-06",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

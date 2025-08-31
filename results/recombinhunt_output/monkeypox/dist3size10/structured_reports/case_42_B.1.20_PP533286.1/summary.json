@@ -1,0 +1,18 @@
+{
+    "case_number": 42,
+    "case_name": "PP533286.1",
+    "group_name": "B.1.20",
+    "number_of_sequences": 87,
+    "number_of_changes": 72,
+    "best_candidates": "B.1.20 + B.1.6 + B.1.20",
+    "best_candidates_breakpoints_target": "4-5, 6-7",
+    "best_candidates_breakpoints_genomic": "15717 - 15718, 23563 - 23564",
+    "direction_L1": "<<",
+    "initial_region_span": "1-4,5-6,7-72",
+    "gap_history": "4-7 -> ",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 8.21e-02",
+    "p_value_vs_L1": "2.05e-17",
+    "p_value_vs_L2": "4.05e-81",
+    "flags": "Model_2BP_Best"
+}

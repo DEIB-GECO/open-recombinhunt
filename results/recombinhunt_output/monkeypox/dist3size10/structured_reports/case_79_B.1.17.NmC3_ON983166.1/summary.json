@@ -1,0 +1,18 @@
+{
+    "case_number": 79,
+    "case_name": "ON983166.1",
+    "group_name": "B.1.17.NmC3",
+    "number_of_sequences": 53,
+    "number_of_changes": 54,
+    "best_candidates": "B.1.NmC7 + C.1.NmC2",
+    "best_candidates_breakpoints_target": "50-51",
+    "best_candidates_breakpoints_genomic": "179224 - 179225",
+    "direction_L1": ">>",
+    "initial_region_span": "1-50,51-54",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "6.64e+01",
+    "p_value_vs_L2": "6.36e-91",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

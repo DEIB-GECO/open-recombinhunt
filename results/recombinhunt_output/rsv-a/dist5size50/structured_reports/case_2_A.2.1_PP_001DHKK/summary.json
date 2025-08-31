@@ -1,0 +1,18 @@
+{
+    "case_number": 2,
+    "case_name": "PP_001DHKK",
+    "group_name": "A.2.1",
+    "number_of_sequences": 366,
+    "number_of_changes": 576,
+    "best_candidates": "A.2.1 + A.D.1.5 + A.2.1",
+    "best_candidates_breakpoints_target": "4-5, 13-14",
+    "best_candidates_breakpoints_genomic": "143 - 144, 490 - 491",
+    "direction_L1": "<<",
+    "initial_region_span": "1-4,7-13,14-576",
+    "gap_history": "4-14 -> 4-7",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 4.52e-13",
+    "p_value_vs_L1": "3.86e-45",
+    "p_value_vs_L2": "0.00e+00",
+    "flags": "Model_2BP_Best"
+}

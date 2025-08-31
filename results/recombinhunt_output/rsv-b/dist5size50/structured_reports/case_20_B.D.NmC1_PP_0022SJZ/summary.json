@@ -1,0 +1,18 @@
+{
+    "case_number": 20,
+    "case_name": "PP_0022SJZ",
+    "group_name": "B.D.NmC1",
+    "number_of_sequences": 1726,
+    "number_of_changes": 57,
+    "best_candidates": "B.D + B.D.1.1",
+    "best_candidates_breakpoints_target": "45-46",
+    "best_candidates_breakpoints_genomic": "5519 - 5520",
+    "direction_L1": ">>",
+    "initial_region_span": "1-45,47-57",
+    "gap_history": "45-47",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "3.19e+04",
+    "p_value_vs_L2": "1.05e-280",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

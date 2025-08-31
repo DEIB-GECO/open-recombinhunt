@@ -1,0 +1,18 @@
+{
+    "case_number": 36,
+    "case_name": "OQ503781.1",
+    "group_name": "B.1.17.NmC5",
+    "number_of_sequences": 119,
+    "number_of_changes": 51,
+    "best_candidates": "B.1.6 + C.1.NmC2",
+    "best_candidates_breakpoints_target": "47-48",
+    "best_candidates_breakpoints_genomic": "168204 - 168205",
+    "direction_L1": ">>",
+    "initial_region_span": "1-47,48-51",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "6.11e+08",
+    "p_value_vs_L2": "1.42e-77",
+    "flags": "Model_2BP_Bad_L1_opp"
+}
