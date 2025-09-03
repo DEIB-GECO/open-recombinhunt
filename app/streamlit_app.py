@@ -12,6 +12,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 from geopy.geocoders import Nominatim
 from agstyler import draw_grid, PINLEFT, PRECISION_TWO
+from about_virus import describe
 
 st.set_page_config(layout="wide")
 
@@ -903,7 +904,13 @@ def show_virus_page(virus):
         return
 
     # tabs
-    tab1, tab2 = st.tabs(["Summary Dashboard", "Recombinant Explorer"])
+    tab0, tab1, tab2 = st.tabs(["About the Virus", "Summary Dashboard", "Recombinant Explorer"])
+
+    with tab0:
+        st.header(f"About {virus_name}")
+
+        describe(virus, config, master_df)
+
 
     with tab1:
         # time-based filtering
