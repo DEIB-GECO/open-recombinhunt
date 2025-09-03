@@ -18,6 +18,7 @@ viruses:
 
     reference:
       accession_id: "NC_002031.1"
+      length: 10862
 
     parameters:
       metadata_processing:
@@ -67,6 +68,7 @@ viruses:
 
     reference:
       accession_id: "NC_038235.1"
+      length: 15222
 
     parameters:
       metadata_processing:
@@ -104,6 +106,7 @@ viruses:
 
     reference:
       accession_id: "NC_001781.1"
+      length: 15225
 
     parameters:
       metadata_processing:
@@ -135,6 +138,7 @@ viruses:
 
     reference:
       accession_id: "NC_035889.1"
+      length: 10808
 
     parameters:
       metadata_processing:
@@ -177,6 +181,7 @@ viruses:
 
     reference:
       accession_id: "NC_063383.1"
+      length: 197209
 
     parameters:
       metadata_processing:
@@ -219,6 +224,7 @@ viruses:
 
     reference:
       accession_id: "NC_007362.1"
+      length: 1760
 
     parameters:
       haplocov:
@@ -239,8 +245,9 @@ viruses:
 
     # taxon_id: "" 
 
-    # reference:
+    reference:
       # accession_id: "NC_045512.2"
+      length: 29903
 
     parameters:
       metadata_processing:
