@@ -1,0 +1,17 @@
+services:
+  frontend:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: open_recombinhunt_frontend
+    container_name: open_recombinhunt_frontend
+    ports:
+      - 60129:8501
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./environments:/app/environments
+      - ./logs:/app/logs
+      - ./results:/app/results
+      - ./data:/app/data
+      - ./samples:/app/samples

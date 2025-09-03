@@ -1,0 +1,40 @@
+.git
+.gitignore
+.gitmodules
+.gitattributes
+
+venv/
+.venv/
+env/
+.env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.ipynb_checkpoints/ 
+
+.vscode/ # VS Code configuration
+.idea/   # IntelliJ/PyCharm configuration
+*.swp    # Vim swap files
+*~       # Emacs backup files
+
+dist/
+build/
+*.egg-info/
+.coverage
+.pytest_cache/ # pytest cache
+htmlcov/       # coverage HTML reports
+
+Dockerfile
+docker-compose.yml
+docker-compose.*.yml
+.dockerignore
+
+# Project specific
+environments
+logs
+results
+data
+samples
+src/analyse/influenza_data_exploration
