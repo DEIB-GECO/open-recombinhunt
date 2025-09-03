@@ -13,6 +13,8 @@ import plotly.graph_objects as go
 from geopy.geocoders import Nominatim
 from agstyler import draw_grid, PINLEFT, PRECISION_TWO
 
+st.set_page_config(layout="wide")
+
 # --- Path Setup for Imports ---
 # Add the project root to the Python path to allow imports from 'src'
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -536,7 +538,7 @@ def format_region_table(df: pd.DataFrame, region: str) -> pd.DataFrame:
 
     return df
 
-def display_detailed_report(report, virus):
+def display_detailed_report_summary(report, virus):
     if not report:
         st.warning("No report data available.")
         return
@@ -572,6 +574,12 @@ def display_detailed_report(report, virus):
             a, b = st.columns(2)
             a.metric(f"Recombinant Confidence:\n{BP} Rec. vs {C1}", summary["p_value_vs_L1"], border=True)
             b.metric(f"Recombinant Confidence:\n{BP} Rec. vs {C2}", summary["p_value_vs_L2"], border=True)
+    
+
+def display_detailed_report(report):
+    if not report:
+        st.warning("No report data available.")
+        return
 
     # region tables
     region_tables = {
@@ -592,7 +600,7 @@ def display_detailed_report(report, virus):
         branch as the first one.
     """
     if region_tables:
-        with st.expander("Region Analysis Tables", expanded=False):
+        with st.expander("Region Analysis Tables", expanded=True):
             st.write(information)
             for region_name, df in region_tables.items():
                 title_mapping = {
@@ -702,70 +710,57 @@ def create_recombinant_cases_table(df, virus):
     """Create a table to display recombinant cases."""
     st.subheader("Recombinant Cases")
 
-    with st.spinner("Loading recombinant cases..."):
-        if df.empty:
-            st.warning("No recombinant cases found.")
-            return
+    if df.empty:
+        st.warning("No recombinant cases found.")
+        return
+    
+    # Split screen: left (table) | right (details)
+    left_col, right_col = st.columns([1, 1])
 
-        formatter = {
-            "genomeID": ("Genome ID", PINLEFT),
-            "breakpoint_count": ("BP Count", {"width": 80}),
-            "original_lineage": ("Assigned Lineage", {"width": 150}),
-            "recombinant_parents": ("Recombinant Parents", {"width": 250}),
-            "country": ("Country", {"width": 100}),
-            "collection_date": ("Collection Date", {"width": 100}),
-        }
+    with left_col:
+        with st.spinner("Loading recombinant cases..."):
+            formatter = {
+                "genomeID": ("Genome ID", PINLEFT),
+                "breakpoint_count": ("BP Count", {"width": 80}),
+                "original_lineage": ("Assigned Lineage", {"width": 150}),
+                "recombinant_parents": ("Recombinant Parents", {"width": 250}),
+                "country": ("Country", {"width": 100}),
+                "collection_date": ("Collection Date", {"width": 100}),
+            }
 
-        custom_css = {
-            ".ag-root": {"font-family": "inherit"}, 
-            ".ag-cell": {"font-family": "inherit"},
-            ".ag-header-cell": {"font-family": "inherit"}
-        }
+            custom_css = {
+                ".ag-root": {"font-family": "inherit"}, 
+                ".ag-cell": {"font-family": "inherit"},
+                ".ag-header-cell": {"font-family": "inherit"}
+            }
 
-        response = draw_grid(
-            df,
-            formatter=formatter,
-            fit_columns=True,
-            selection="single",     
-            use_checkbox=True,     
-            max_height=800,
-            css=custom_css,
-        )
+            response = draw_grid(
+                df,
+                formatter=formatter,
+                fit_columns=True,
+                selection="single",     
+                use_checkbox=True,     
+                max_height=800,
+                css=custom_css,
+            )
 
-    if response:
-        selected = response["selected_rows"]
-        if selected is not None:
-            selected_id = selected["genomeID"].iloc[0]
+    report_exists = False
+    with right_col:
+        if response:
+            selected = response["selected_rows"]
+            if selected is not None:
+                selected_id = selected["genomeID"].iloc[0]
+                st.subheader(f"Details of the Selected Genome: {selected_id}")
 
-            #st.experimental_set_query_params(scroll="details_section")
-            st.markdown("---")
+                path_to_the_case_report_folder = selected["case_report_folder"].iloc[0]
+                report = load_report_data(path_to_the_case_report_folder)
+                display_detailed_report_summary(report, virus)
+                report_exists = True
+            else:
+                st.info("Select a genome from the table to see its details here.")
 
-            st.markdown('<div id="details_section"></div>', unsafe_allow_html=True)
-            st.subheader("Details of the Selected Genome:")
-            st.markdown(f"### {selected_id}")
-            
-            # Only scroll when the selection changes
-            if st.session_state.get("last_scrolled_id") != selected_id:
-                components.html(
-                    """
-                    <script>
-                      const scrollNow = () => {
-                        const el = window.parent.document.getElementById("details_section");
-                        if (el) { el.scrollIntoView({behavior: "smooth", block: "start"}); }
-                      };
-                      // Small delay helps ensure parent DOM finished updating
-                      setTimeout(scrollNow, 60);
-                    </script>
-                    """,
-                    height=0,
-                )
-                st.session_state["last_scrolled_id"] = selected_id
-
-
-            path_to_the_case_report_folder = selected["case_report_folder"].iloc[0]
-
-            report = load_report_data(path_to_the_case_report_folder)
-            display_detailed_report(report, virus)
+    if report_exists:
+        display_detailed_report(report)
 
 
 def sidebar(virus_list):
@@ -783,9 +778,9 @@ def sidebar(virus_list):
             default_index=0,
             orientation="vertical",
             styles={
-                "container": {"padding": "0!important", "background-color": "#fafafa"},
+                "container": {"padding": "0!important"},
                 "icon": {"color": "#000000", "font-size": "18px"},
-                "nav-link": {"font-size": "16px", "text-align": "left", "margin": "0px", "--hover-color": "#eee"},
+                "nav-link": {"font-size": "16px", "text-align": "left", "margin": "0px", "--hover-color": "#818181"},
                 "nav-link-selected": {"background-color": "#4A90E2"},
             }
         )
