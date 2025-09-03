@@ -495,6 +495,48 @@ def load_report_data(path):
 
     return report
 
+def format_region_table(df: pd.DataFrame, region: str) -> pd.DataFrame:
+    # Drop index column if it exists (Streamlit shows it by default otherwise)
+    df = df.reset_index(drop=True)
+
+    # Rename columns according to mapping
+    rename_map = {
+        "Unnamed: 0": "Alternative Lineage",
+        "num_seq": "#Seq",
+        "t_ch_MAX": "max-L1" if region == "1" else "max-L2" if region == "2" else "max-L3",
+        "max_CL": "LR",
+        "aic": "AIC",
+        "PV": "p-value",
+        "PV_OK": "C1",
+        "t_ch_MAX_OK": "C2",
+        "phyl_OK": "C3",
+    }
+    df = df.rename(columns=rename_map)
+
+    # Drop unnecessary column(s)
+    cols_to_drop = [c for c in df.columns if "CL@BC" in c]  # matches CL@BC_t_ch_MAX
+    df = df.drop(columns=cols_to_drop, errors="ignore")
+
+    # Format p-value column
+    if "p-value" in df.columns:
+        def format_pval(x):
+            if x is None or pd.isna(x):
+                return ""
+            try:
+                return f"{float(x):.0e}"  # scientific notation
+            except:
+                return str(x)
+
+        df["p-value"] = df["p-value"].apply(format_pval)
+
+    # Replace *, None in C1, C2, C3 with tick mark or empty
+    tick = "✔️"
+    for c in ["C1", "C2", "C3"]:
+        if c in df.columns:
+            df[c] = df[c].apply(lambda x: tick if str(x).strip() == "*" else "")
+
+    return df
+
 def display_detailed_report(report, virus):
     if not report:
         st.warning("No report data available.")
@@ -532,19 +574,37 @@ def display_detailed_report(report, virus):
             a.metric(f"Recombinant Confidence:\n{BP} Rec. vs {C1}", summary["p_value_vs_L1"], border=True)
             b.metric(f"Recombinant Confidence:\n{BP} Rec. vs {C2}", summary["p_value_vs_L2"], border=True)
 
-
-    # TODO: DISCUSS THIS PART WITH TOMMASO
     # region tables
     region_tables = {
         k: v
         for k, v in report.items()
         if k.startswith("region_") and isinstance(v, pd.DataFrame)
     }
+
+    information = """
+        Tables report the number of sequences,
+        breakpoint, maximum likelihood ratio. The next columns illustrate the comparison
+        of the candidate with the first of the table: value of one-sided AIC comparison
+        between recombination model and non-recombination model (lower values are
+        when row candidate is similar to the first candidate); p-value of AIC -- without
+        multiple comparison corrections; and three conditions: (C1) marked if p-value is
+        ≥10−5; (C2) marked if row breakpoint is at most one mutation apart from the one of
+        the first candidate; (C3) marked if candidate belongs to the same phylogenetic
+        branch as the first one.
+    """
     if region_tables:
         with st.expander("📊 Region Analysis Tables", expanded=False):
+            st.write(information)
             for region_name, df in region_tables.items():
-                st.markdown(f"#### {region_name.replace('_', ' ').replace('.csv', '').title()}")
-                st.dataframe(df, use_container_width=True)
+                title_mapping = {
+                    "1": "First",
+                    "2": "Second",
+                    "3": "Third"
+                }
+                region = region_name.split("_")[1]
+                region_title = title_mapping.get(region)
+                st.markdown(f"#### {region_title} Region Candidates")
+                st.dataframe(format_region_table(df, region), use_container_width=True, hide_index=True)
 
     # plot visualization graphs from JSON
     plot_files = [f for f in report.keys() if f.startswith("plot_") and f.endswith(".json")]
