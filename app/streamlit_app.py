@@ -526,10 +526,19 @@ def display_detailed_report(report):
 
     # target mutations list
     if "target_mutations" in report:
-        with st.expander("🎯 Target Mutations", expanded=False):
+        with st.expander("🎯 Target Mutations", expanded=True):
             st.markdown("#### List of Target Mutations")
 
             mutations = [m.strip() for m in report["target_mutations"][0].split(",")]
+
+            # --- Download button ---
+            mutations_text = "\n".join(mutations)
+            st.download_button(
+                label="Download Mutations List",
+                data=mutations_text,
+                file_name="target_mutations.txt",
+                mime="text/plain"
+            )
 
             def classify_mutation(mutation: str):
                 # Deletion: 12345_12349 or 12345
