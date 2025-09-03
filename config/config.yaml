@@ -39,7 +39,7 @@ viruses:
           - column: "Length"
             operator: "notna"
 
-          # Rule 4: Discard rows where sequence 'Length' is less than 9000.
+          # Rule 4: Discard rows where sequence 'Length' is less than 9775.
           - column: "Length"
             operator: ">="
             value: 9775

@@ -54,6 +54,56 @@ except Exception as e:
 def visualize(virus):
     return mapping.get(virus.lower())
 
+def loading_animation(virus_name):
+    # write text on top of loading animation
+    loader_html = f"""
+        <style>
+        .loader-overlay {{
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            font-family: 'Segoe UI', sans-serif;
+        }}
+        .loader {{
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }}
+        @keyframes spin {{
+            0% {{ transform: rotate(0deg); }}
+            100% {{ transform: rotate(360deg); }}
+        }}
+        .loading-text {{
+            font-size: 20px;
+            color: #333;
+            text-align: center;
+            animation: fadein 2s infinite alternate;
+        }}
+        @keyframes fadein {{
+            from {{ opacity: 0.4; }}
+            to {{ opacity: 1; }}
+        }}
+        </style>
+        <div class="loader-overlay">
+            <div class="loader"></div>
+            <div class="loading-text">
+                The {virus_name} data is heavy.<br>
+                Pulling the sequences from the archives...
+            </div>
+        </div>
+    """
+    return loader_html
+
 @st.cache_data
 def discover_viruses():
     """discover available viruses by scanning recombinhunt_output/ directory"""
@@ -455,6 +505,7 @@ def apply_user_filter(df, virus):
 
     return df
 
+@st.cache_data
 def load_report_data(path):
     """Load report data from a specified path."""
     
@@ -573,8 +624,7 @@ def display_detailed_report_summary(report, virus):
             C2 = BC.split("+")[1]
             a, b = st.columns(2)
             a.metric(f"Recombinant Confidence:\n{BP} Rec. vs {C1}", summary["p_value_vs_L1"], border=True)
-            b.metric(f"Recombinant Confidence:\n{BP} Rec. vs {C2}", summary["p_value_vs_L2"], border=True)
-    
+            b.metric(f"Recombinant Confidence:\n{BP} Rec. vs {C2}", summary["p_value_vs_L2"], border=True)    
 
 def display_detailed_report(report):
     if not report:
@@ -617,8 +667,6 @@ def display_detailed_report(report):
 
                 # --- Filtering UI ---
                 _, col0, col1, col2, col3 = st.columns([5, 3, 1, 1, 1])
-                with col0:
-                    st.markdown("**Filter by conditions:**")
                 with col1:
                     filter_c1 = st.checkbox("C1", key=f"{region_name}_c1")
                 with col2:
@@ -762,7 +810,6 @@ def create_recombinant_cases_table(df, virus):
     if report_exists:
         display_detailed_report(report)
 
-
 def sidebar(virus_list):
     """sidebar navigation for the streamlit"""
     with st.sidebar:
@@ -834,9 +881,13 @@ def show_virus_page(virus):
     virus_name = visualize(virus)
     st.title(f"{virus_name} Dashboard")
 
+    loader_placeholder = st.empty()
+    loader_placeholder.markdown(loading_animation(virus_name), unsafe_allow_html=True)
+
     # load master data
     with st.spinner(f"Loading data for {virus}..."):
         master_df = load_master_data(virus)
+        loader_placeholder.markdown("<style>.loader-overlay{display:none;}</style>", unsafe_allow_html=True)
 
     if master_df is None or master_df.empty:
         st.error(f"No data found for {virus}.")
