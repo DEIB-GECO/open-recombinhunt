@@ -943,6 +943,10 @@ def show_virus_page(virus):
         # create interactive table with radio buttons as the index column
         create_recombinant_cases_table(explorer_df, virus)
 
+    if "initial_rerun_done" not in st.session_state:
+        st.session_state.initial_rerun_done = True
+        st.rerun()
+
 def main():
 
     # discover available viruses
