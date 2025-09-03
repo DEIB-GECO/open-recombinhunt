@@ -604,7 +604,32 @@ def display_detailed_report(report, virus):
                 region = region_name.split("_")[1]
                 region_title = title_mapping.get(region)
                 st.markdown(f"#### {region_title} Region Candidates")
-                st.dataframe(format_region_table(df, region), use_container_width=True, hide_index=True)
+
+                # Format table
+                formatted_df = format_region_table(df, region).reset_index(drop=True)
+
+                # --- Filtering UI ---
+                _, col0, col1, col2, col3 = st.columns([5, 3, 1, 1, 1])
+                with col0:
+                    st.markdown("**Filter by conditions:**")
+                with col1:
+                    filter_c1 = st.checkbox("C1", key=f"{region_name}_c1")
+                with col2:
+                    filter_c2 = st.checkbox("C2", key=f"{region_name}_c2")
+                with col3:
+                    filter_c3 = st.checkbox("C3", key=f"{region_name}_c3")
+
+
+                # --- Apply filters ---
+                filtered_df = formatted_df.copy()
+                if filter_c1:
+                    filtered_df = filtered_df[filtered_df["C1"] == "✔️"]
+                if filter_c2:
+                    filtered_df = filtered_df[filtered_df["C2"] == "✔️"]
+                if filter_c3:
+                    filtered_df = filtered_df[filtered_df["C3"] == "✔️"]
+
+                st.dataframe(filtered_df, use_container_width=True, hide_index=True)
 
     # plot visualization graphs from JSON
     plot_files = [f for f in report.keys() if f.startswith("plot_") and f.endswith(".json")]
