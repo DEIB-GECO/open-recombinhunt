@@ -185,7 +185,7 @@ def create_key_metrics(df):
         -Top Recombinant Lineage
         -Most Common Parents
     """
-    st.title("🔑 Key Metrics")
+    st.title("Key Metrics")
 
     total_sequences = len(df)
     total_recombinants = df["is_recombinant"].sum()
@@ -223,7 +223,7 @@ def create_key_metrics(df):
 
 def create_summary_tables(df):
     "create summary and hotspots tables"
-    st.title("📋 Summary Tables")
+    st.title("Summary Tables")
 
     with st.spinner("Creating lineage breakdown table..."):
         st.subheader("Lineage Breakdown")
@@ -340,7 +340,6 @@ def create_temporal_plot(df, virus):
         )
 
         fig.update_layout(
-            title="Temporal Distribution of Recombination Events",
             xaxis_title="Time",
             yaxis_title="Number of Sequences",
             hovermode="x unified",
@@ -409,12 +408,12 @@ def create_geographic_map(df, virus):
 
 def create_distribution_plots(df, virus):
     "creates temporal and locational distributions"
-    st.title("📈 Distribution Plots")
+    st.title("Distribution Plots")
 
-    st.subheader("🕗 Temporal Distribution")
+    st.subheader("Temporal Distribution")
     create_temporal_plot(df, virus)
 
-    st.subheader("🌏 Locational Distribution")
+    st.subheader("Locational Distribution")
     create_geographic_map(df, virus)
 
 def apply_user_filter(df, virus):
@@ -544,7 +543,7 @@ def display_detailed_report(report, virus):
     
     # summary
     if "summary" in report:
-        with st.expander("📋 Case Summary", expanded=True):
+        with st.expander("Case Summary", expanded=True):
             summary = report["summary"]
             
             a, b = st.columns(2)
@@ -593,7 +592,7 @@ def display_detailed_report(report, virus):
         branch as the first one.
     """
     if region_tables:
-        with st.expander("📊 Region Analysis Tables", expanded=False):
+        with st.expander("Region Analysis Tables", expanded=False):
             st.write(information)
             for region_name, df in region_tables.items():
                 title_mapping = {
@@ -634,7 +633,7 @@ def display_detailed_report(report, virus):
     # plot visualization graphs from JSON
     plot_files = [f for f in report.keys() if f.startswith("plot_") and f.endswith(".json")]
     if plot_files:
-        with st.expander("📈 Visualization", expanded=True):
+        with st.expander("Visualization", expanded=True):
             for plot_file in plot_files:
                 st.markdown(f"#### {plot_file.replace('_', ' ').replace('.json', '').title()}")
                 fig = go.Figure(report[plot_file])
@@ -642,8 +641,7 @@ def display_detailed_report(report, virus):
 
     # target mutations list
     if "target_mutations" in report:
-        with st.expander("🎯 Target Mutations", expanded=True):
-            st.markdown("#### List of Target Mutations")
+        with st.expander("Target Mutations", expanded=True):
 
             mutations = [m.strip() for m in report["target_mutations"][0].split(",")]
 
@@ -702,7 +700,7 @@ def display_detailed_report(report, virus):
 
 def create_recombinant_cases_table(df, virus):
     """Create a table to display recombinant cases."""
-    st.subheader("🔬 Recombinant Cases")
+    st.subheader("Recombinant Cases")
 
     with st.spinner("Loading recombinant cases..."):
         if df.empty:
@@ -743,7 +741,7 @@ def create_recombinant_cases_table(df, virus):
             st.markdown("---")
 
             st.markdown('<div id="details_section"></div>', unsafe_allow_html=True)
-            st.subheader("📄 Details of the Selected Genome:")
+            st.subheader("Details of the Selected Genome:")
             st.markdown(f"### {selected_id}")
             
             # Only scroll when the selection changes
@@ -778,7 +776,7 @@ def sidebar(virus_list):
         menu_icons = ["house"] + ["virus2"] * (len(menu_options) - 1)
 
         selected = option_menu(
-            menu_title="🧬 OpenRecombinHunt",
+            menu_title="OpenRecombinHunt",
             options=menu_options,
             icons=menu_icons,
             menu_icon="cast",
@@ -796,7 +794,7 @@ def sidebar(virus_list):
 
 def show_home_page():
     """display welcome page"""
-    st.title("🧬 OpenRecombinHunt Dashboard")
+    st.title("OpenRecombinHunt Dashboard")
     st.markdown("---")
 
     st.markdown("""
@@ -807,14 +805,14 @@ def show_home_page():
     
     ### Features:
     
-    📊 **Summary Dashboard**
+    **Summary Dashboard**
     - Dynamic time-based filtering
     - Key performance metrics
     - Interactive temporal visualizations
     - Geographic distribution analysis
     - Comprehensive summary tables
     
-    🔬 **Recombinant Explorer**
+    **Recombinant Explorer**
     - Advanced filtering capabilities
     - Interactive case selection
     - Detailed report exploration
@@ -839,7 +837,7 @@ def show_home_page():
 def show_virus_page(virus):
     """display virus-specific analysis and visualizations"""
     virus_name = visualize(virus)
-    st.title(f"🦠 {virus_name} Dashboard")
+    st.title(f"{virus_name} Dashboard")
 
     # load master data
     with st.spinner(f"Loading data for {virus}..."):
@@ -859,7 +857,7 @@ def show_virus_page(virus):
         return
 
     # tabs
-    tab1, tab2 = st.tabs(["📊 Summary Dashboard", "🔬 Recombinant Explorer"])
+    tab1, tab2 = st.tabs(["Summary Dashboard", "Recombinant Explorer"])
 
     with tab1:
         # time-based filtering
