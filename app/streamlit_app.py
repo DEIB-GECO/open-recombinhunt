@@ -41,6 +41,7 @@ try:
     with open(CONFIG_PATH, 'r') as f:
         config = yaml.safe_load(f)
     RESULTS_DIR_BASE = Path(config.get(PATHS).get(RESULTS))
+    REFERENCE_LENGTHS = {virus: config.get(VIRUSES).get(virus).get(REFERENCE).get(LENGTH) for virus in mapping.keys()}
 except FileNotFoundError:
     st.error(f"Configuration file not found at {CONFIG_PATH}. Please ensure the file exists.")
     st.stop()
@@ -494,7 +495,7 @@ def load_report_data(path):
 
     return report
 
-def display_detailed_report(report):
+def display_detailed_report(report, virus):
     if not report:
         st.warning("No report data available.")
         return
@@ -508,17 +509,29 @@ def display_detailed_report(report):
             a.metric("Genome ID", summary["case_name"], border=True)
             b.metric("Lineage Name", summary["group_name"], border=True)
 
-            a, b = st.columns(2)
-            a.metric("Number of Sequences", summary["number_of_sequences"], border=True)
+            [a] = st.columns(1)
+            a.metric("Reference Sequence Length", REFERENCE_LENGTHS.get(virus), border=True)
+
+            [b] = st.columns(1)
             b.metric("Number of Changes", summary["number_of_changes"], border=True)
 
             [a] = st.columns(1)
             a.metric("Recombinant Parents", summary["best_candidates"], border=True)
 
-            a, b, c = st.columns(3)
+            [a] = st.columns(1)
             a.metric("Breakpoints Target", summary["best_candidates_breakpoints_target"], border=True)
-            b.metric("Breakpoints Genomic", summary["best_candidates_breakpoints_genomic"], border=True)
-            c.metric("Direction L1", summary["direction_L1"], border=True)
+            
+            [a] = st.columns(1)
+            a.metric("Genomic Coordinates", summary["best_candidates_breakpoints_genomic"], border=True)
+
+            BC = summary["best_candidates"]
+            BP = f"{BC.count('+')}BP"
+            C1 = BC.split("+")[0]
+            C2 = BC.split("+")[1]
+            a, b = st.columns(2)
+            a.metric(f"Recombinant Confidence:\n{BP} Rec. vs {C1}", summary["p_value_vs_L1"], border=True)
+            b.metric(f"Recombinant Confidence:\n{BP} Rec. vs {C2}", summary["p_value_vs_L2"], border=True)
+
 
     # TODO: DISCUSS THIS PART WITH TOMMASO
     # region tables
@@ -602,7 +615,7 @@ def display_detailed_report(report):
 
             st.markdown(" ".join(chips), unsafe_allow_html=True)
 
-def create_recombinant_cases_table(df):
+def create_recombinant_cases_table(df, virus):
     """Create a table to display recombinant cases."""
     st.subheader("🔬 Recombinant Cases")
 
@@ -669,7 +682,7 @@ def create_recombinant_cases_table(df):
             path_to_the_case_report_folder = selected["case_report_folder"].iloc[0]
 
             report = load_report_data(path_to_the_case_report_folder)
-            display_detailed_report(report)
+            display_detailed_report(report, virus)
 
 
 def sidebar(virus_list):
@@ -792,7 +805,7 @@ def show_virus_page(virus):
         st.markdown("---")
 
         # create interactive table with radio buttons as the index column
-        create_recombinant_cases_table(explorer_df)
+        create_recombinant_cases_table(explorer_df, virus)
 
 def main():
 

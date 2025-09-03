@@ -36,6 +36,7 @@ CLI = "cli"
 URL = "url"
 TAXON_ID = "taxon_id"
 REFERENCE = "reference"
+LENGTH = "length"
 PARAMETERS = "parameters"
 
 # --- Keys within the 'reference' block ---
