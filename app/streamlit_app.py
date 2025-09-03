@@ -226,7 +226,7 @@ def create_summary_tables(df):
 
     with st.spinner("Creating lineage breakdown table..."):
         st.subheader("Lineage Breakdown")
-        with st.expander("Show Lineage Breakdown"):
+        with st.expander("", expanded=True):
             # create a table
             # group by each lineage (pangoLin)
             # count 1BP in breakpoint_count as 1BP Count
@@ -237,9 +237,9 @@ def create_summary_tables(df):
             # total sequences in each lineage
             lineage_breakdown = df.groupby("pangoLin").agg(
                 BP1_Count=("breakpoint_count", lambda x: (x == "1BP").sum()),
-                BP1_Rate=("breakpoint_count", lambda x: f"{(x == '1BP').sum() / len(x) * 100:.2f}%" if len(x) > 0 else "0.00%"),
+                BP1_Rate=("breakpoint_count", lambda x: (x == "1BP").mean() * 100 if len(x) > 0 else 0.00),
                 BP2_Count=("breakpoint_count", lambda x: (x == "2BP").sum()),
-                BP2_Rate=("breakpoint_count", lambda x: f"{(x == '2BP').sum() / len(x) * 100:.2f}%" if len(x) > 0 else "0.00%"),
+                BP2_Rate=("breakpoint_count", lambda x: (x == "2BP").mean() * 100 if len(x) > 0 else 0.00),
                 No_Recombination=("breakpoint_count", lambda x: ((x != "1BP") & (x != "2BP")).sum()),
                 Total_Sequences=("breakpoint_count", "size")
             ).reset_index()
@@ -256,11 +256,19 @@ def create_summary_tables(df):
 
             lineage_breakdown.set_index("Lineage", inplace=True)
 
-            st.write(lineage_breakdown)
+            lineage_breakdown.sort_values(by="1BP Rate", ascending=False, inplace=True)
+
+            st.dataframe(
+                lineage_breakdown.style.format({
+                    "1BP Rate": "{:.2f}%",
+                    "2BP Rate": "{:.2f}%"
+                }),
+                use_container_width=True
+            )
 
     with st.spinner("Creating recombination hotspots table..."):
         st.subheader("Recombination Hotspots")
-        with st.expander("Show Recombination Hotspots"):
+        with st.expander("", expanded=True):
             # group by recombinant_parents
             # display frequency
             recombination_hotspots = df.groupby("recombinant_parents").size().reset_index(name="Frequency")
