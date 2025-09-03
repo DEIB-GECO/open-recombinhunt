@@ -191,8 +191,18 @@ def create_key_metrics(df):
     num_1BP = df[df["breakpoint_count"] == "1BP"].shape[0]
     num_2BP = df[df["breakpoint_count"] == "2BP"].shape[0]
     recombination_rate = (total_recombinants / total_sequences * 100) if total_sequences > 0 else 0
-    top_recombinant_lineage = df[df["is_recombinant"]]["pangoLin"].mode().values[0] if total_recombinants > 0 else "N/A"
-    most_common_parents = df[df["is_recombinant"]]["recombinant_parents"].value_counts().idxmax() if total_recombinants > 0 else "N/A"
+
+    # get top recombinant lineage
+    # and top recombinant lineage count
+    top_recombinant_value_counts = df[df["is_recombinant"]]["pangoLin"].value_counts()
+    top_recombinant_lineage = top_recombinant_value_counts.idxmax() if not top_recombinant_value_counts.empty else "N/A"
+    top_recombinant_count = top_recombinant_value_counts.max() if not top_recombinant_value_counts.empty else 0
+
+    # get most common parents
+    # and most common parents count
+    most_common_parents_value_counts = df[df["is_recombinant"]]["recombinant_parents"].value_counts()
+    most_common_parents = most_common_parents_value_counts.idxmax() if not most_common_parents_value_counts.empty else "N/A"
+    most_common_parents_count = most_common_parents_value_counts.max() if not most_common_parents_value_counts.empty else 0
 
     a, b = st.columns(2)
     c, d, e = st.columns(3)
@@ -206,9 +216,9 @@ def create_key_metrics(df):
     d.metric("1BP", num_1BP, border=True)
     e.metric("2BP", num_2BP, border=True)
 
-    f.metric("Top Recombinant Lineage", top_recombinant_lineage, border=True)
+    f.metric("Top Recombinant Lineage", f"{top_recombinant_lineage} ({top_recombinant_count})", border=True)
 
-    g.metric("Most Common Parents", most_common_parents, border=True)
+    g.metric("Most Common Parents", f"{most_common_parents} ({most_common_parents_count})", border=True)
 
 def create_summary_tables(df):
     "create summary and hotspots tables"
