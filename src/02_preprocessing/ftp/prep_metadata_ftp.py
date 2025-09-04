@@ -84,7 +84,7 @@ def process_ftp_metadata(df: pd.DataFrame) -> pd.DataFrame:
             (df["Geo_Location"].str.contains("USA|Canada|Mexico", na=False) & ~df["Geo_Location"].str.contains(":", na=False)) |
             (df["Geo_Location"].str.contains("USA:|Canada:|Mexico:", na=False) & df["Geo_Location"].str.contains(":", na=False))
         ) &
-        (df["Length"] > 1700) &
+        (df["Length"] > 1672) &
         (df["Collection_Date"].notna()) &
         (df["Release_Date"].notna())
     ].copy()

@@ -849,6 +849,14 @@ def show_home_page():
     capabilities for viral recombination detection across multiple virus species.
     
     ### Features:
+                
+    **About the Virus**
+    - Description of the virus
+    - Info about the reference genome
+    - Data source details
+    - Quality filtering criteria
+    - HaploCoV explanation
+    - Dataset overview
     
     **Summary Dashboard**
     - Dynamic time-based filtering

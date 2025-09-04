@@ -246,7 +246,7 @@ viruses:
     # taxon_id: "" 
 
     reference:
-      # accession_id: "NC_045512.2"
+      accession_id: "NC_045512.2"
       length: 29903
 
     parameters:
