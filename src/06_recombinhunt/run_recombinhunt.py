@@ -92,7 +92,8 @@ def run_recombinhunt_for_lineage(
     report_file_handle,
     html_report_handle,
     virus_name_for_report: str,
-    structured_reports_dir: Path
+    structured_reports_dir: Path,
+    virus_name: str
 ) -> dict:
     """
     Reads a per-lineage sample file, runs RecombinHunt, and returns detailed statistics.
@@ -114,6 +115,21 @@ def run_recombinhunt_for_lineage(
     except Exception as e:
         logging.error(f"Error reading sample file {sample_filepath}: {e}")
         return results_summary
+    
+    if virus_name == "sars-cov-2" and run_mode.lower() == ALL:
+        logging.warning(f"Warning: Running 'all' mode for SARS-CoV-2 may be resource-intensive due to large sample sizes. Reducing to last 6 months.")
+        if 'collection_date' in df_lineage.columns:
+            logging.info("Filtering samples to those collected in the last 6 months based on 'Collection date'.")
+            logging.info(f"Initial sample count: {len(df_lineage)}")
+            df_lineage['collection_date'] = pd.to_datetime(df_lineage['collection_date'], errors='coerce')
+            six_months_ago = pd.Timestamp.now() - pd.DateOffset(months=6)
+            df_lineage = df_lineage[df_lineage['collection_date'] >= six_months_ago]
+            logging.info(f"Filtered samples to last 6 months. {len(df_lineage)} samples remain.")
+
+    if virus_name == "sars-cov-2" and run_mode.lower() != ALL:
+        logging.info("get rid of the collection_date column for all rows - SARS-CoV-2 specific handling.")
+        if 'Collection date' in df_lineage.columns:
+            df_lineage.drop(columns=['collection_date'], inplace=True)
 
     nuc_to_ids_map = defaultdict(list)
     for _, row in df_lineage.iterrows():
@@ -236,13 +252,21 @@ def run_experiments(virus_name: str, config: dict):
     virus_config = config.get(VIRUSES, {}).get(virus_name, {})
     haplocov_params = virus_config.get(PARAMETERS, {}).get(HAPLOCOV, {})
     recombinhunt_params = virus_config.get(PARAMETERS, {}).get(RECOMBINHUNT, {})
+
+    run_mode = recombinhunt_params.get(RUN_MODE)
+    num_samples = recombinhunt_params.get(NUM_SAMPLES_TO_RUN, 50)
+    threshold = recombinhunt_params.get(CONSENSUS_THRESHOLD, 0.75)
     
     param_string = f"dist{haplocov_params.get(DIST, 0)}size{haplocov_params.get(SIZE, 0)}"
     
     env_dir = Path(paths_config.get(ENVIRONMENTS)) / virus_name / param_string
     samples_dir = Path(paths_config.get(SAMPLES)) / virus_name / param_string
+    
     results_dir = Path(paths_config.get(RESULTS)) / "recombinhunt_output" / virus_name / param_string
+    if virus_name == "sars-cov-2":
+        results_dir = results_dir / run_mode
     results_dir.mkdir(parents=True, exist_ok=True)
+
     structured_reports_dir = results_dir / "structured_reports"
     structured_reports_dir.mkdir(parents=True, exist_ok=True)
 
@@ -256,10 +280,6 @@ def run_experiments(virus_name: str, config: dict):
         sys.exit(1)
 
     # --- 3. Setup Report Files ---
-    run_mode = recombinhunt_params.get(RUN_MODE)
-    num_samples = recombinhunt_params.get(NUM_SAMPLES_TO_RUN, 50)
-    threshold = recombinhunt_params.get(CONSENSUS_THRESHOLD, 0.75)
-
     if run_mode == RANDOM:      file_suffix = f"{run_mode}-{num_samples}"
     elif run_mode == CONSENSUS: file_suffix = f"{run_mode}-{threshold}"
     elif run_mode == ALL:       file_suffix = run_mode
@@ -292,7 +312,8 @@ def run_experiments(virus_name: str, config: dict):
                 num_samples_to_run=num_samples, random_seed=42, threshold=threshold,
                 report_file_handle=report_file, html_report_handle=html_file,
                 virus_name_for_report=virus_name,
-                structured_reports_dir=structured_reports_dir
+                structured_reports_dir=structured_reports_dir,
+                virus_name=virus_name
             )
             case_counter += 1
             
@@ -387,7 +408,15 @@ def main():
 
     try:
         run_experiments(args.virus, config)
-        logging.info("RecombinHunt experiment step finished successfully.")
+        logging.info("RecombinHunt experiment step finished successfully with given config and run mode.")
+
+        if args.virus.lower() == "sars-cov-2" and config.get(VIRUSES).get(args.virus).get(PARAMETERS).get(RECOMBINHUNT).get(RUN_MODE) != CONSENSUS:
+            logging.info("For sars-cov-2, it's recommended to run the CONSENSUS mode next for a comprehensive analysis.")
+            logging.info("Now running the CONSENSUS mode as a follow-up step.")
+            config.get(VIRUSES).get(args.virus).get(PARAMETERS).get(RECOMBINHUNT)[RUN_MODE] = CONSENSUS
+            run_experiments(args.virus, config)
+            logging.info("Follow-up CONSENSUS mode run finished successfully.")
+
     except Exception as e:
         logging.critical(f"RecombinHunt experiment step failed: {e}", exc_info=True)
         sys.exit(1)

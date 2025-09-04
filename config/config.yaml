@@ -274,8 +274,8 @@ viruses:
       recombinhunt:
         lc_threshold: 0.75
         min_genome_count: 10
-        run_mode: "random"
-        num_samples_to_run: 100
+        run_mode: "all"
+        # num_samples_to_run: 100
 
 ncbi-cli:
   # Configuration for NCBI CLI to download virus genomes and metadata.

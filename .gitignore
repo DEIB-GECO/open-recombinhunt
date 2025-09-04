@@ -3,10 +3,12 @@
 *Tgenomes*
 /samples/sars-cov-2/
 /samples/sars-cov-200/
+/samples/sars-cov-201/
 /results/nextstrain_output/sars-cov-2/
 /results/nextstrain_output/sars-cov-200/
 /results/recombinhunt_output/sars-cov-2/
 /results/recombinhunt_output/sars-cov-200/
+/results/recombinhunt_output/sars-cov-201/
 /sars-cov-2
 head*
 src/analyse/influenza_data_exploration/

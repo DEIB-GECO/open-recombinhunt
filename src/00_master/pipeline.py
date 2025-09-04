@@ -130,10 +130,10 @@ def main():
         # --- Execute the pipeline sequentially ---
         if virus_name.lower() == "sars-cov-2":
             pipeline_steps = [
-                step1_fetch,
-                step2_prep_meta,
-                step4_postprocess_covid,
-                step5_create_env,
+                #step1_fetch,
+                #step2_prep_meta,
+                #step4_postprocess_covid,
+                #step5_create_env,
                 step5_create_samples,
                 step6_run_recombinhunt
             ]

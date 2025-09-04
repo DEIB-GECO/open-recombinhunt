@@ -110,11 +110,23 @@ def create_samples_step(virus_name: str, config: dict):
     for lineage_name, group_df in df.groupby('pangoLin'):
         
         # Prepare the DataFrame for output
-        output_df = group_df[['genomeID', 'pangoLin', 'mutations']].copy()
-        output_df.rename(columns={
-            'pangoLin': 'true_lineage',
-            'mutations': 'nuc_changes'
-        }, inplace=True)
+        if virus_name == 'sars-cov-2':
+            logging.info(f"Processing lineage: {lineage_name} (SARS-CoV-2 special handling)")
+            # + Collection date
+            output_df = group_df[['genomeID', 'pangoLin', 'mutations', 'Collection date']].copy()
+            output_df.rename(columns={
+                'pangoLin': 'true_lineage',
+                'mutations': 'nuc_changes',
+                'Collection date': 'collection_date'
+            }, inplace=True)
+
+        else:
+            logging.info(f"Processing lineage: {lineage_name}")
+            output_df = group_df[['genomeID', 'pangoLin', 'mutations']].copy()
+            output_df.rename(columns={
+                'pangoLin': 'true_lineage',
+                'mutations': 'nuc_changes'
+            }, inplace=True)
         
         # Store count for the JSON summary
         num_sequences = len(output_df)
