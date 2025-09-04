@@ -1,0 +1,18 @@
+{
+    "case_number": 4,
+    "case_name": "KU955590.1",
+    "group_name": "A.1",
+    "number_of_sequences": 995,
+    "number_of_changes": 49,
+    "best_candidates": "A.1 + A.1.NmC2 + A.1",
+    "best_candidates_breakpoints_target": "42-43, 45-46",
+    "best_candidates_breakpoints_genomic": "9295 - 9296, 9433 - 9434",
+    "direction_L1": ">>",
+    "initial_region_span": "1-42,43-45,47-49",
+    "gap_history": "42-47 -> 45-47",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 4.68e-01",
+    "p_value_vs_L1": "4.70e-01",
+    "p_value_vs_L2": "7.77e-184",
+    "flags": "Model_2BP_Best"
+}

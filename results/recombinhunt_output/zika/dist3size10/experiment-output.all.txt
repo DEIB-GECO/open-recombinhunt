@@ -1,71 +1,412 @@
 
 ========== Processing Lineage: A.1.NmC3 ==========
-Total genomes available for this lineage: 111
+Total genomes available for this lineage: 0
   Results for A.1.NmC3:
     Samples Run: 111
-    Successful Runs: 82
-    Result - No Match: 29
-    Result - 0BP (Single Candidate): 82
+    Successful Runs: 9
+    Result - No Match: 102
+    Result - 0BP (Single Candidate): 9
     Result - 1BP (Recombinant): 0
     Result - 2BP (Recombinant): 0
 
 ========== Processing Lineage: A.1.NmC2 ==========
-Total genomes available for this lineage: 677
+Total genomes available for this lineage: 83
   Results for A.1.NmC2:
-    Samples Run: 677
-    Successful Runs: 451
-    Result - No Match: 226
-    Result - 0BP (Single Candidate): 443
-    Result - 1BP (Recombinant): 6
-    Result - 2BP (Recombinant): 2
+    Samples Run: 83
+    Successful Runs: 83
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 82
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 1
 
 ========== Processing Lineage: A.1.NmC1 ==========
-Total genomes available for this lineage: 182
+Total genomes available for this lineage: 181
   Results for A.1.NmC1:
-    Samples Run: 182
-    Successful Runs: 182
+    Samples Run: 181
+    Successful Runs: 181
     Result - No Match: 0
-    Result - 0BP (Single Candidate): 177
+    Result - 0BP (Single Candidate): 175
     Result - 1BP (Recombinant): 1
-    Result - 2BP (Recombinant): 4
+    Result - 2BP (Recombinant): 5
 
 ========== Processing Lineage: A.1 ==========
-Total genomes available for this lineage: 1066
+Total genomes available for this lineage: 995
   Results for A.1:
-    Samples Run: 1066
-    Successful Runs: 1066
-    Result - No Match: 0
-    Result - 0BP (Single Candidate): 1012
-    Result - 1BP (Recombinant): 40
-    Result - 2BP (Recombinant): 14
+    Samples Run: 995
+    Successful Runs: 984
+    Result - No Match: 11
+    Result - 0BP (Single Candidate): 827
+    Result - 1BP (Recombinant): 127
+    Result - 2BP (Recombinant): 30
 
 ========== Processing Lineage: A.1.NmC4 ==========
-Total genomes available for this lineage: 80
+Total genomes available for this lineage: 0
   Results for A.1.NmC4:
     Samples Run: 80
     Successful Runs: 80
     Result - No Match: 0
-    Result - 0BP (Single Candidate): 80
+    Result - 0BP (Single Candidate): 79
     Result - 1BP (Recombinant): 0
-    Result - 2BP (Recombinant): 0
+    Result - 2BP (Recombinant): 1
 
 
 ==================== Overall Summary Table ====================
 true_lineage  samples_run  True Lineage in Candidates %  0BP (Single Candidate)  1BP  2BP  No Match
-    A.1.NmC3          111                     97.560976                      82    0    0        29
-    A.1.NmC2          677                     44.789357                     443    6    2       226
-    A.1.NmC1          182                    100.000000                     177    1    4         0
-         A.1         1066                     98.686679                    1012   40   14         0
-    A.1.NmC4           80                    100.000000                      80    0    0         0
+    A.1.NmC3          111                      0.000000                       9    0    0       102
+    A.1.NmC2           83                    100.000000                      82    0    1         0
+    A.1.NmC1          181                    100.000000                     175    1    5         0
+         A.1          995                     98.678862                     827  127   30        11
+    A.1.NmC4           80                      0.000000                      79    0    1         0
 
 
 ==================== Recombinant Genomes Detected by Lineage ====================
 
 Lineage: A.1.NmC2
-  KU686218.1, MK216724.1, MF434520.1, KY785417.1, KY126348.1, MF173411.1, OP858752.1, KF383070.1
+  PP431249.1
 
 Lineage: A.1.NmC1
-  MT377503.1, KY241712.1, PP626402.1, MT377491.2, MG807647.1
+  MT377503.1, KY241700.1, KY241712.1, PP626402.1, MT377491.2, MG807647.1
 
 Lineage: A.1
-  KX694532.2, KX051560.1, KX051561.1, PP115590.1, KX051562.1, KX548902.1, KU647676.1, MN185325.1, MN473453.1, MN473454.1, PP470595.1, KY317937.1, KU922923.1, KU922960.1, MK049245.1, MK049246.1, KY785451.1, KY785480.1, MW915411.1, PP431239.1, PP431229.1, PP431244.1, PP431247.1, PP431233.1, MH368551.1, MK049250.1, KY693678.1, PP431235.1, KY693679.1, MK269361.1, KY272987.1, OQ661916.1, PP431245.1, MW915412.1, MW915414.1, MH119185.1, PP626400.1, MT377493.2, OQ661918.1, MK238035.1, KU955593.1, MG645981.1, MH158236.1, MT377502.1, MT377504.1, MW015936.1, OP281680.1, PQ849442.1, OR264642.1, OQ734448.1, OR264644.1, OR264645.1, OR264647.1, PQ551088.1
+  OQ661914.1, KU681082.3, KX694532.2, KF993678.1, KX051560.1, OQ661915.1, KX051561.1, PP115590.1, KU681081.3, KX051562.1, KY558996.1, MF352141.1, OQ727568.1, KU707826.1, KU497555.1, KX446950.2, KY559032.1, KY648934.1, MN473454.1, PP470595.1, PP626401.1, MT636065.1, KY317937.1, PQ129534.1, OK054444.1, KY272991.1, MF801385.1, KY559027.1, KX013000.1, KX117076.1, KU922923.1, KU922960.1, KU955590.1, MF167360.1, KY379148.1, PP431236.1, KY120352.1, KY553111.1, PP431225.1, MW915411.1, PP431239.1, MT439642.1, PP431229.1, KY559009.1, LC191864.1, OL423654.1, MT377498.1, KY120353.1, PP431246.1, KY785444.1, OL423650.1, PP431247.1, KY014315.2, PP431233.1, KY014314.2, MH368551.1, MW122393.1, KY693678.1, KY765317.1, KY765322.1, OK054473.1, MF801407.1, KY606274.1, OK054396.1, PP431235.1, MF801404.1, KY765318.1, KY765321.1, OK054469.1, KY693679.1, OK054465.1, OK054399.1, OK054466.1, MW122387.1, OK054445.1, OK054487.1, MF098767.1, OK054391.1, OK054424.1, OK054448.1, OK054410.1, OK054404.1, OK054429.1, OK054452.1, OK054386.1, OK054394.1, OK054443.1, OK054480.1, MK269353.1, MF434522.1, KY272987.1, MW122443.1, KX922708.1, OK054425.1, OQ661916.1, OK054403.1, MW122429.1, OK054370.1, PP431245.1, MW915412.1, MW165880.1, MW122411.1, KY328290.1, MW122412.1, MW915413.1, MW915414.1, MH119185.1, MW122413.1, MT507047.1, MT507048.1, MT507049.1, MT507050.1, PP626400.1, MW122450.1, OP858751.1, MT377493.2, MK829152.1, MT078742.1, MH063259.1, MH063263.1, MK829154.1, OQ661918.1, MK238035.1, MK238037.1, MK238039.1, MK238038.1, MN611472.1, EU545988.1, KU955593.1, KX377336.1, KX601167.1, KX694533.2, MG645981.1, MH158236.1, MT377502.1, MT377504.1, MW015936.1, OP281680.1, OQ165285.1, PQ849442.1, ON142674.1, OR264642.1, OM666892.1, OM666893.1, OM666891.1, OQ734448.1, OR264643.1, OR264644.1, OR264645.1, OR264646.1, OR264647.1, PQ008648.1, PQ461653.1, PV426612.1, PQ551086.1, PQ551087.1, PQ551088.1
+
+Lineage: A.1.NmC4
+  PP431249.1
+
+
+==================== recombinant_summary ====================
+ genomeIDs original_lineage       recombinant_parents breakpoint_count                                                                         case_report_folder
+PP431249.1         A.1.NmC2 A.1.NmC2 + A.1 + A.1.NmC2              2BP results/recombinhunt_output/zika/dist3size10/structured_reports/case_2_A.1.NmC2_PP431249.1
+MT377503.1         A.1.NmC1 A.1.NmC1 + A.1 + A.1.NmC1              2BP results/recombinhunt_output/zika/dist3size10/structured_reports/case_3_A.1.NmC1_MT377503.1
+KY241700.1         A.1.NmC1 A.1.NmC1 + A.1 + A.1.NmC1              2BP results/recombinhunt_output/zika/dist3size10/structured_reports/case_3_A.1.NmC1_KY241700.1
+KY241712.1         A.1.NmC1            A.1 + A.1.NmC1              1BP results/recombinhunt_output/zika/dist3size10/structured_reports/case_3_A.1.NmC1_KY241712.1
+PP626402.1         A.1.NmC1 A.1.NmC1 + A.1 + A.1.NmC1              2BP results/recombinhunt_output/zika/dist3size10/structured_reports/case_3_A.1.NmC1_PP626402.1
+MT377491.2         A.1.NmC1 A.1.NmC1 + A.1 + A.1.NmC1              2BP results/recombinhunt_output/zika/dist3size10/structured_reports/case_3_A.1.NmC1_MT377491.2
+MG807647.1         A.1.NmC1 A.1.NmC1 + A.1 + A.1.NmC1              2BP results/recombinhunt_output/zika/dist3size10/structured_reports/case_3_A.1.NmC1_MG807647.1
+OQ661914.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OQ661914.1
+KU681082.3              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KU681082.3
+KX694532.2              A.1            A.1 + A.1.NmC1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KX694532.2
+KF993678.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KF993678.1
+KX051560.1              A.1            A.1 + A.1.NmC1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KX051560.1
+OQ661915.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OQ661915.1
+KX051561.1              A.1            A.1 + A.1.NmC1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KX051561.1
+PP115590.1              A.1            A.1 + A.1.NmC1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PP115590.1
+KU681081.3              A.1            A.1 + A.1.NmC1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KU681081.3
+KX051562.1              A.1            A.1 + A.1.NmC1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KX051562.1
+KY558996.1              A.1      A.1 + A.1.NmC2 + A.1              2BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY558996.1
+MF352141.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MF352141.1
+OQ727568.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OQ727568.1
+KU707826.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KU707826.1
+KU497555.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KU497555.1
+KX446950.2              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KX446950.2
+KY559032.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY559032.1
+KY648934.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY648934.1
+MN473454.1              A.1            A.1.NmC2 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MN473454.1
+PP470595.1              A.1 A.1.NmC2 + A.1 + A.1.NmC2              2BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PP470595.1
+PP626401.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PP626401.1
+MT636065.1              A.1            A.1 + A.1.NmC1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MT636065.1
+KY317937.1              A.1 A.1.NmC2 + A.1 + A.1.NmC2              2BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY317937.1
+PQ129534.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PQ129534.1
+OK054444.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054444.1
+KY272991.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY272991.1
+MF801385.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MF801385.1
+KY559027.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY559027.1
+KX013000.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KX013000.1
+KX117076.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KX117076.1
+KU922923.1              A.1 A.1.NmC2 + A.1 + A.1.NmC2              2BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KU922923.1
+KU922960.1              A.1 A.1.NmC2 + A.1 + A.1.NmC2              2BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KU922960.1
+KU955590.1              A.1      A.1 + A.1.NmC2 + A.1              2BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KU955590.1
+MF167360.1              A.1      A.1 + A.1.NmC2 + A.1              2BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MF167360.1
+KY379148.1              A.1      A.1 + A.1.NmC2 + A.1              2BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY379148.1
+PP431236.1              A.1            A.1 + A.1.NmC2              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PP431236.1
+KY120352.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY120352.1
+KY553111.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY553111.1
+PP431225.1              A.1            A.1.NmC2 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PP431225.1
+MW915411.1              A.1            A.1 + A.1.NmC1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MW915411.1
+PP431239.1              A.1 A.1.NmC2 + A.1 + A.1.NmC2              2BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PP431239.1
+MT439642.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MT439642.1
+PP431229.1              A.1 A.1.NmC2 + A.1 + A.1.NmC2              2BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PP431229.1
+KY559009.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY559009.1
+LC191864.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_LC191864.1
+OL423654.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OL423654.1
+MT377498.1              A.1      A.1 + A.1.NmC1 + A.1              2BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MT377498.1
+KY120353.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY120353.1
+PP431246.1              A.1            A.1 + A.1.NmC2              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PP431246.1
+KY785444.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY785444.1
+OL423650.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OL423650.1
+PP431247.1              A.1 A.1.NmC2 + A.1 + A.1.NmC2              2BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PP431247.1
+KY014315.2              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY014315.2
+PP431233.1              A.1 A.1.NmC2 + A.1 + A.1.NmC2              2BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PP431233.1
+KY014314.2              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY014314.2
+MH368551.1              A.1            A.1 + A.1.NmC1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MH368551.1
+MW122393.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MW122393.1
+KY693678.1              A.1            A.1.NmC2 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY693678.1
+KY765317.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY765317.1
+KY765322.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY765322.1
+OK054473.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054473.1
+MF801407.1              A.1            A.1.NmC1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MF801407.1
+KY606274.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY606274.1
+OK054396.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054396.1
+PP431235.1              A.1 A.1.NmC2 + A.1 + A.1.NmC2              2BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PP431235.1
+MF801404.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MF801404.1
+KY765318.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY765318.1
+KY765321.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY765321.1
+OK054469.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054469.1
+KY693679.1              A.1            A.1.NmC2 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY693679.1
+OK054465.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054465.1
+OK054399.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054399.1
+OK054466.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054466.1
+MW122387.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MW122387.1
+OK054445.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054445.1
+OK054487.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054487.1
+MF098767.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MF098767.1
+OK054391.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054391.1
+OK054424.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054424.1
+OK054448.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054448.1
+OK054410.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054410.1
+OK054404.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054404.1
+OK054429.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054429.1
+OK054452.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054452.1
+OK054386.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054386.1
+OK054394.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054394.1
+OK054443.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054443.1
+OK054480.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054480.1
+MK269353.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MK269353.1
+MF434522.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MF434522.1
+KY272987.1              A.1            A.1 + A.1.NmC1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY272987.1
+MW122443.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MW122443.1
+KX922708.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KX922708.1
+OK054425.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054425.1
+OQ661916.1              A.1            A.1 + A.1.NmC1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OQ661916.1
+OK054403.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054403.1
+MW122429.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MW122429.1
+OK054370.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054370.1
+PP431245.1              A.1 A.1.NmC2 + A.1 + A.1.NmC2              2BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PP431245.1
+MW915412.1              A.1            A.1 + A.1.NmC1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MW915412.1
+MW165880.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MW165880.1
+MW122411.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MW122411.1
+KY328290.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY328290.1
+MW122412.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MW122412.1
+MW915413.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MW915413.1
+MW915414.1              A.1            A.1 + A.1.NmC1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MW915414.1
+MH119185.1              A.1            A.1 + A.1.NmC1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MH119185.1
+MW122413.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MW122413.1
+MT507047.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MT507047.1
+MT507048.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MT507048.1
+MT507049.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MT507049.1
+MT507050.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MT507050.1
+PP626400.1              A.1 A.1.NmC1 + A.1 + A.1.NmC1              2BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PP626400.1
+MW122450.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MW122450.1
+OP858751.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OP858751.1
+MT377493.2              A.1 A.1.NmC1 + A.1 + A.1.NmC1              2BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MT377493.2
+MK829152.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MK829152.1
+MT078742.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MT078742.1
+MH063259.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MH063259.1
+MH063263.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MH063263.1
+MK829154.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MK829154.1
+OQ661918.1              A.1            A.1 + A.1.NmC1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OQ661918.1
+MK238035.1              A.1            A.1 + A.1.NmC1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MK238035.1
+MK238037.1              A.1      A.1 + A.1.NmC1 + A.1              2BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MK238037.1
+MK238039.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MK238039.1
+MK238038.1              A.1      A.1 + A.1.NmC1 + A.1              2BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MK238038.1
+MN611472.1              A.1            A.1.NmC1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MN611472.1
+EU545988.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_EU545988.1
+KU955593.1              A.1            A.1 + A.1.NmC1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KU955593.1
+KX377336.1              A.1      A.1 + A.1.NmC1 + A.1              2BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KX377336.1
+KX601167.1              A.1      A.1 + A.1.NmC1 + A.1              2BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KX601167.1
+KX694533.2              A.1      A.1 + A.1.NmC1 + A.1              2BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KX694533.2
+MG645981.1              A.1      A.1 + A.1.NmC1 + A.1              2BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MG645981.1
+MH158236.1              A.1            A.1 + A.1.NmC1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MH158236.1
+MT377502.1              A.1            A.1 + A.1.NmC1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MT377502.1
+MT377504.1              A.1            A.1 + A.1.NmC1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MT377504.1
+MW015936.1              A.1            A.1 + A.1.NmC1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MW015936.1
+OP281680.1              A.1            A.1 + A.1.NmC1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OP281680.1
+OQ165285.1              A.1      A.1 + A.1.NmC1 + A.1              2BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OQ165285.1
+PQ849442.1              A.1            A.1 + A.1.NmC1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PQ849442.1
+ON142674.1              A.1            A.1.NmC1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_ON142674.1
+OR264642.1              A.1 A.1.NmC1 + A.1 + A.1.NmC1              2BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OR264642.1
+OM666892.1              A.1      A.1 + A.1.NmC1 + A.1              2BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OM666892.1
+OM666893.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OM666893.1
+OM666891.1              A.1      A.1 + A.1.NmC1 + A.1              2BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OM666891.1
+OQ734448.1              A.1            A.1.NmC1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OQ734448.1
+OR264643.1              A.1 A.1.NmC1 + A.1 + A.1.NmC1              2BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OR264643.1
+OR264644.1              A.1            A.1.NmC1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OR264644.1
+OR264645.1              A.1 A.1.NmC1 + A.1 + A.1.NmC1              2BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OR264645.1
+OR264646.1              A.1 A.1.NmC1 + A.1 + A.1.NmC1              2BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OR264646.1
+OR264647.1              A.1            A.1 + A.1.NmC1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OR264647.1
+PQ008648.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PQ008648.1
+PQ461653.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PQ461653.1
+PV426612.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PV426612.1
+PQ551086.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PQ551086.1
+PQ551087.1              A.1                 A.1 + A.1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PQ551087.1
+PQ551088.1              A.1            A.1 + A.1.NmC1              1BP      results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PQ551088.1
+PP431249.1         A.1.NmC4 A.1.NmC2 + A.1 + A.1.NmC2              2BP results/recombinhunt_output/zika/dist3size10/structured_reports/case_5_A.1.NmC4_PP431249.1
+
+
+==================== Extensive Summary Table ====================
+ case_number  case_name  n_sequences  n_changes group_name gt_candidates test_status   initial_region_span        gap_history           best_candidates direction_L1 rank_L1_L2 bc_breakpoints_target gt_breakpoints_target p_value_vs_L1 p_value_vs_L2 alternative_candidates
+           2 PP431249.1           83         42   A.1.NmC2           N/A         N/A      1-28,29-37,38-42          28-38 ->  A.1.NmC2 + A.1 + A.1.NmC2           >>        N/A          28-29, 37-38                   N/A      3.55e-03      2.28e-26                 [], []
+           3 MT377503.1          181        155   A.1.NmC1           N/A         N/A     1-9,10-46,129-155    9-129 -> 46-129 A.1.NmC1 + A.1 + A.1.NmC1           <<        N/A         9-10, 102-103                   N/A      2.96e-41      4.67e-33                 [], []
+           3 KY241700.1          181        136   A.1.NmC1           N/A         N/A     1-41,42-87,88-136          41-88 ->  A.1.NmC1 + A.1 + A.1.NmC1           <<        N/A          41-42, 87-88                   N/A      2.64e-28     1.55e-119                 [], []
+           3 KY241712.1          181        141   A.1.NmC1           N/A         N/A           1-15,66-141              15-66            A.1 + A.1.NmC1           <<        N/A                 21-22                   N/A     2.09e-104      1.55e-06                 [], []
+           3 PP626402.1          181        108   A.1.NmC1           N/A         N/A  1-99,100-104,105-108         99-105 ->  A.1.NmC1 + A.1 + A.1.NmC1           >>        N/A       99-100, 104-105                   N/A      1.16e-06     1.83e-101                 [], []
+           3 MT377491.2          181        107   A.1.NmC1           N/A         N/A   1-98,99-103,104-107         98-104 ->  A.1.NmC1 + A.1 + A.1.NmC1           >>        N/A        98-99, 103-104                   N/A      1.16e-06      4.91e-95                 [], []
+           3 MG807647.1          181        109   A.1.NmC1           N/A         N/A 1-100,101-102,106-109 100-106 -> 102-106 A.1.NmC1 + A.1 + A.1.NmC1           >>        N/A      100-101, 105-106                   N/A      3.35e-05      1.39e-44                 [], []
+           4 OQ661914.1          995        194        A.1           N/A         N/A            1-6,25-194               6-25                 A.1 + A.1           <<        N/A                 13-14                   N/A      2.72e+00      2.72e+00                 [], []
+           4 KU681082.3          995        240        A.1           N/A         N/A          1-79,126-240             79-126                 A.1 + A.1           <<        N/A               119-120                   N/A      2.72e+00      2.72e+00                 [], []
+           4 KX694532.2          995        137        A.1           N/A         N/A           1-5,134-137              5-134            A.1 + A.1.NmC1           <<        N/A               131-132                   N/A      1.49e+09     2.12e-262                 [], []
+           4 KF993678.1          995        132        A.1           N/A         N/A           1-5,124-132              5-124                 A.1 + A.1           <<        N/A               122-123                   N/A      2.72e+00      2.72e+00                 [], []
+           4 KX051560.1          995        129        A.1           N/A         N/A           1-4,127-129              4-127            A.1 + A.1.NmC1           <<        N/A               125-126                   N/A      3.53e+07      0.00e+00                 [], []
+           4 OQ661915.1          995        193        A.1           N/A         N/A            1-6,25-193               6-25                 A.1 + A.1           <<        N/A                 13-14                   N/A      2.72e+00      2.72e+00                 [], []
+           4 KX051561.1          995        137        A.1           N/A         N/A           1-3,134-137              3-134            A.1 + A.1.NmC1           <<        N/A               131-132                   N/A      9.41e+13     3.67e-261                 [], []
+           4 PP115590.1          995        114        A.1           N/A         N/A           1-3,110-114              3-110            A.1 + A.1.NmC1           >>        N/A               108-109                   N/A      6.29e+12     5.07e-297                 [], []
+           4 KU681081.3          995        110        A.1           N/A         N/A           1-3,107-110              3-107            A.1 + A.1.NmC1           <<        N/A               105-106                   N/A      1.29e+07     5.31e-278                 [], []
+           4 KX051562.1          995        144        A.1           N/A         N/A           1-4,141-144              4-141            A.1 + A.1.NmC1           <<        N/A               137-138                   N/A      4.28e+12     1.19e-104                 [], []
+           4 KY558996.1          995         32        A.1           N/A         N/A         1-7,8-9,26-32       7-26 -> 9-26      A.1 + A.1.NmC2 + A.1           <<        N/A             7-8, 9-10                   N/A      6.86e-02      2.35e-58                 [], []
+           4 MF352141.1          995         33        A.1           N/A         N/A             1-3,18-33               3-18                 A.1 + A.1           <<        N/A                 17-18                   N/A      2.72e+00      2.72e+00                 [], []
+           4 OQ727568.1          995         33        A.1           N/A         N/A             1-4,17-33               4-17                 A.1 + A.1           <<        N/A                 10-11                   N/A      2.72e+00      2.72e+00                 [], []
+           4 KU707826.1          995         37        A.1           N/A         N/A            1-31,35-37              31-35                 A.1 + A.1           >>        N/A                 31-32                   N/A      2.72e+00      2.72e+00                 [], []
+           4 KU497555.1          995         43        A.1           N/A         N/A             1-7,33-43               7-33                 A.1 + A.1           <<        N/A                 18-19                   N/A      2.72e+00      2.72e+00                 [], []
+           4 KX446950.2          995         45        A.1           N/A         N/A             1-4,10-45               4-10                 A.1 + A.1           <<        N/A                   5-6                   N/A      2.72e+00      2.72e+00                 [], []
+           4 KY559032.1          995         29        A.1           N/A         N/A             1-6,18-29               6-18                 A.1 + A.1           <<        N/A                   6-7                   N/A      2.72e+00      2.72e+00                 [], []
+           4 KY648934.1          995         46        A.1           N/A         N/A             1-9,17-46               9-17                 A.1 + A.1           <<        N/A                  9-10                   N/A      2.72e+00      2.72e+00                 [], []
+           4 MN473454.1          995         55        A.1           N/A         N/A             1-4,31-55               4-31            A.1.NmC2 + A.1           <<        N/A                   6-7                   N/A     2.60e-146      1.92e+12                 [], []
+           4 PP470595.1          995         39        A.1           N/A         N/A         1-5,6-7,37-39       5-37 -> 7-37 A.1.NmC2 + A.1 + A.1.NmC2           >>        N/A            5-6, 34-35                   N/A      3.45e-38      7.34e-07                 [], []
+           4 PP626401.1          995        163        A.1           N/A         N/A            1-6,98-163               6-98                 A.1 + A.1           <<        N/A                 28-29                   N/A      2.72e+00      2.72e+00                 [], []
+           4 MT636065.1          995         47        A.1           N/A         N/A            1-31,45-47              31-45            A.1 + A.1.NmC1           >>        N/A                 44-45                   N/A      5.21e+00     4.30e-183                 [], []
+           4 KY317937.1          995         41        A.1           N/A         N/A      1-21,31-38,39-41     21-39 -> 21-31 A.1.NmC2 + A.1 + A.1.NmC2           >>        N/A          21-22, 38-39                   N/A      6.62e-56      4.06e-12                 [], []
+           4 PQ129534.1          995         43        A.1           N/A         N/A             1-4,10-43               4-10                 A.1 + A.1           <<        N/A                   5-6                   N/A      2.72e+00      2.72e+00                 [], []
+           4 OK054444.1          995         51        A.1           N/A         N/A              1-6,9-51                6-9                 A.1 + A.1           <<        N/A                   8-9                   N/A      2.72e+00      2.72e+00                 [], []
+           4 KY272991.1          995         39        A.1           N/A         N/A            1-27,33-39              27-33                 A.1 + A.1           >>        N/A                 27-28                   N/A      2.72e+00      2.72e+00                 [], []
+           4 MF801385.1          995         40        A.1           N/A         N/A              1-4,8-40                4-8                 A.1 + A.1           <<        N/A                   7-8                   N/A      2.72e+00      2.72e+00                 [], []
+           4 KY559027.1          995         34        A.1           N/A         N/A             1-3,27-34               3-27                 A.1 + A.1           <<        N/A                   4-5                   N/A      2.72e+00      2.72e+00                 [], []
+           4 KX013000.1          995         54        A.1           N/A         N/A            1-37,49-54              37-49                 A.1 + A.1           >>        N/A                 48-49                   N/A      2.72e+00      2.72e+00                 [], []
+           4 KX117076.1          995         53        A.1           N/A         N/A            1-36,48-53              36-48                 A.1 + A.1           >>        N/A                 47-48                   N/A      2.72e+00      2.72e+00                 [], []
+           4 KU922923.1          995         44        A.1           N/A         N/A       1-5,34-40,41-44       5-41 -> 5-34 A.1.NmC2 + A.1 + A.1.NmC2           >>        N/A           9-10, 40-41                   N/A      2.43e-57      1.44e-03                 [], []
+           4 KU922960.1          995         43        A.1           N/A         N/A       1-8,33-39,40-43       8-40 -> 8-33 A.1.NmC2 + A.1 + A.1.NmC2           >>        N/A            8-9, 39-40                   N/A      2.43e-57      2.94e-09                 [], []
+           4 KU955590.1          995         49        A.1           N/A         N/A      1-42,43-45,47-49     42-47 -> 45-47      A.1 + A.1.NmC2 + A.1           >>        N/A          42-43, 45-46                   N/A      4.70e-01     7.77e-184                 [], []
+           4 MF167360.1          995         50        A.1           N/A         N/A      1-43,44-46,48-50     43-48 -> 46-48      A.1 + A.1.NmC2 + A.1           >>        N/A          43-44, 46-47                   N/A      4.70e-01     3.25e-191                 [], []
+           4 KY379148.1          995         50        A.1           N/A         N/A      1-43,44-46,48-50     43-48 -> 46-48      A.1 + A.1.NmC2 + A.1           >>        N/A          43-44, 46-47                   N/A      4.70e-01     1.24e-191                 [], []
+           4 PP431236.1          995         29        A.1           N/A         N/A            1-25,26-29                               A.1 + A.1.NmC2           <<        N/A                 25-26                   N/A      2.63e-01      4.77e-65                 [], []
+           4 KY120352.1          995         34        A.1           N/A         N/A             1-7,24-34               7-24                 A.1 + A.1           <<        N/A                 18-19                   N/A      2.72e+00      2.72e+00                 [], []
+           4 KY553111.1          995        243        A.1           N/A         N/A            1-9,32-243               9-32                 A.1 + A.1           <<        N/A                 18-19                   N/A      2.72e+00      2.72e+00                 [], []
+           4 PP431225.1          995         18        A.1           N/A         N/A             1-7,14-18               7-14            A.1.NmC2 + A.1           >>        N/A                 12-13                   N/A      2.87e-15      9.63e-02                 [], []
+           4 MW915411.1          995         93        A.1           N/A         N/A             1-4,91-93               4-91            A.1 + A.1.NmC1           <<        N/A                 90-91                   N/A      1.81e+00     3.55e-289                 [], []
+           4 PP431239.1          995         36        A.1           N/A         N/A       1-5,22-25,26-36       5-26 -> 5-22 A.1.NmC2 + A.1 + A.1.NmC2           >>        N/A            5-6, 25-26                   N/A      7.75e-38      4.29e-10                 [], []
+           4 MT439642.1          995         45        A.1           N/A         N/A            1-29,38-45              29-38                 A.1 + A.1           >>        N/A                 30-31                   N/A      2.72e+00      2.72e+00                 [], []
+           4 PP431229.1          995         39        A.1           N/A         N/A         1-3,4-5,35-39       3-35 -> 5-35 A.1.NmC2 + A.1 + A.1.NmC2           <<        N/A            3-4, 33-34                   N/A      1.48e-23      2.94e-03                 [], []
+           4 KY559009.1          995         36        A.1           N/A         N/A             1-4,20-36               4-20                 A.1 + A.1           <<        N/A                   6-7                   N/A      2.72e+00      2.72e+00                 [], []
+           4 LC191864.1          995         69        A.1           N/A         N/A            1-48,58-69              48-58                 A.1 + A.1           >>        N/A                 48-49                   N/A      2.72e+00      2.72e+00                 [], []
+           4 OL423654.1          995         35        A.1           N/A         N/A            1-23,28-35              23-28                 A.1 + A.1           >>        N/A                 25-26                   N/A      2.72e+00      2.72e+00                 [], []
+           4 MT377498.1          995        161        A.1           N/A         N/A        1-5,6-8,96-161       5-96 -> 8-96      A.1 + A.1.NmC1 + A.1           <<        N/A             5-6, 9-10                   N/A      1.39e-02      0.00e+00                 [], []
+           4 KY120353.1          995        238        A.1           N/A         N/A            1-9,32-238               9-32                 A.1 + A.1           <<        N/A                 31-32                   N/A      2.72e+00      2.72e+00                 [], []
+           4 PP431246.1          995         32        A.1           N/A         N/A            1-28,29-32                               A.1 + A.1.NmC2           <<        N/A                 28-29                   N/A      2.63e-01      4.06e-91                 [], []
+           4 KY785444.1          995         18        A.1           N/A         N/A            1-11,14-18              11-14                 A.1 + A.1           >>        N/A                 13-14                   N/A      2.72e+00      2.72e+00                 [], []
+           4 OL423650.1          995         49        A.1           N/A         N/A            1-11,14-49              11-14                 A.1 + A.1           <<        N/A                 12-13                   N/A      2.72e+00      2.72e+00                 [], []
+           4 PP431247.1          995         42        A.1           N/A         N/A      1-17,36-37,38-42     17-38 -> 17-36 A.1.NmC2 + A.1 + A.1.NmC2           >>        N/A          20-21, 37-38                   N/A      7.34e-40      2.45e-07                 [], []
+           4 KY014315.2          995         40        A.1           N/A         N/A             1-7,28-40               7-28                 A.1 + A.1           <<        N/A                 27-28                   N/A      2.72e+00      2.72e+00                 [], []
+           4 PP431233.1          995         41        A.1           N/A         N/A       1-3,35-36,37-41       3-37 -> 3-35 A.1.NmC2 + A.1 + A.1.NmC2           <<        N/A            3-4, 36-37                   N/A      6.88e-36      6.46e-04                 [], []
+           4 KY014314.2          995         46        A.1           N/A         N/A            1-17,23-46              17-23                 A.1 + A.1           <<        N/A                 19-20                   N/A      2.72e+00      2.72e+00                 [], []
+           4 MH368551.1          995        180        A.1           N/A         N/A         1-176,177-180                               A.1 + A.1.NmC1           >>        N/A               176-177                   N/A      6.96e-02      0.00e+00                 [], []
+           4 MW122393.1          995         47        A.1           N/A         N/A            1-38,43-47              38-43                 A.1 + A.1           >>        N/A                 38-39                   N/A      2.72e+00      2.72e+00                 [], []
+           4 KY693678.1          995         49        A.1           N/A         N/A             1-8,46-49               8-46            A.1.NmC2 + A.1           >>        N/A                 11-12                   N/A      1.28e-87      3.46e+00                 [], []
+           4 KY765317.1          995         49        A.1           N/A         N/A             1-7,10-49               7-10                 A.1 + A.1           <<        N/A                  9-10                   N/A      2.72e+00      2.72e+00                 [], []
+           4 KY765322.1          995         50        A.1           N/A         N/A             1-8,11-50               8-11                 A.1 + A.1           <<        N/A                 10-11                   N/A      2.72e+00      2.72e+00                 [], []
+           4 OK054473.1          995         50        A.1           N/A         N/A              1-6,9-50                6-9                 A.1 + A.1           <<        N/A                   8-9                   N/A      2.72e+00      2.72e+00                 [], []
+           4 MF801407.1          995         44        A.1           N/A         N/A              1-3,5-44                3-5            A.1.NmC1 + A.1           <<        N/A                   3-4                   N/A     6.42e-226      2.87e+04                 [], []
+           4 KY606274.1          995         51        A.1           N/A         N/A            1-22,25-51              22-25                 A.1 + A.1           <<        N/A                 23-24                   N/A      2.72e+00      2.72e+00                 [], []
+           4 OK054396.1          995         50        A.1           N/A         N/A              1-6,9-50                6-9                 A.1 + A.1           <<        N/A                   8-9                   N/A      2.72e+00      2.72e+00                 [], []
+           4 PP431235.1          995         41        A.1           N/A         N/A       1-9,29-38,39-41       9-39 -> 9-29 A.1.NmC2 + A.1 + A.1.NmC2           >>        N/A          23-24, 38-39                   N/A      1.51e-34      4.23e-07                 [], []
+           4 MF801404.1          995         42        A.1           N/A         N/A            1-12,15-42              12-15                 A.1 + A.1           <<        N/A                 12-13                   N/A      2.72e+00      2.72e+00                 [], []
+           4 KY765318.1          995         49        A.1           N/A         N/A             1-7,10-49               7-10                 A.1 + A.1           <<        N/A                  9-10                   N/A      2.72e+00      2.72e+00                 [], []
+           4 KY765321.1          995         49        A.1           N/A         N/A             1-8,11-49               8-11                 A.1 + A.1           <<        N/A                   8-9                   N/A      2.72e+00      2.72e+00                 [], []
+           4 OK054469.1          995         49        A.1           N/A         N/A             1-7,10-49               7-10                 A.1 + A.1           <<        N/A                  9-10                   N/A      2.72e+00      2.72e+00                 [], []
+           4 KY693679.1          995         52        A.1           N/A         N/A             1-5,35-52               5-35            A.1.NmC2 + A.1           >>        N/A                   8-9                   N/A     1.13e-108      1.23e+00                 [], []
+           4 OK054465.1          995         51        A.1           N/A         N/A             1-7,10-51               7-10                 A.1 + A.1           <<        N/A                  9-10                   N/A      2.72e+00      2.72e+00                 [], []
+           4 OK054399.1          995         46        A.1           N/A         N/A              1-6,9-46                6-9                 A.1 + A.1           <<        N/A                   6-7                   N/A      2.72e+00      2.72e+00                 [], []
+           4 OK054466.1          995         47        A.1           N/A         N/A              1-5,8-47                5-8                 A.1 + A.1           <<        N/A                   7-8                   N/A      2.72e+00      2.72e+00                 [], []
+           4 MW122387.1          995         51        A.1           N/A         N/A            1-44,47-51              44-47                 A.1 + A.1           >>        N/A                 45-46                   N/A      2.72e+00      2.72e+00                 [], []
+           4 OK054445.1          995         47        A.1           N/A         N/A            1-37,42-47              37-42                 A.1 + A.1           >>        N/A                 41-42                   N/A      2.72e+00      2.72e+00                 [], []
+           4 OK054487.1          995         48        A.1           N/A         N/A             1-7,10-48               7-10                 A.1 + A.1           <<        N/A                  9-10                   N/A      2.72e+00      2.72e+00                 [], []
+           4 MF098767.1          995         39        A.1           N/A         N/A            1-12,20-39              12-20                 A.1 + A.1           <<        N/A                 19-20                   N/A      2.72e+00      2.72e+00                 [], []
+           4 OK054391.1          995         45        A.1           N/A         N/A             1-3,11-45               3-11                 A.1 + A.1           <<        N/A                   4-5                   N/A      2.72e+00      2.72e+00                 [], []
+           4 OK054424.1          995         50        A.1           N/A         N/A             1-8,11-50               8-11                 A.1 + A.1           <<        N/A                 10-11                   N/A      2.72e+00      2.72e+00                 [], []
+           4 OK054448.1          995         39        A.1           N/A         N/A              1-4,7-39                4-7                 A.1 + A.1           <<        N/A                   4-5                   N/A      2.72e+00      2.72e+00                 [], []
+           4 OK054410.1          995         44        A.1           N/A         N/A            1-33,38-44              33-38                 A.1 + A.1           >>        N/A                 37-38                   N/A      2.72e+00      2.72e+00                 [], []
+           4 OK054404.1          995         50        A.1           N/A         N/A              1-6,9-50                6-9                 A.1 + A.1           <<        N/A                   8-9                   N/A      2.72e+00      2.72e+00                 [], []
+           4 OK054429.1          995         52        A.1           N/A         N/A             1-8,11-52               8-11                 A.1 + A.1           <<        N/A                 10-11                   N/A      2.72e+00      2.72e+00                 [], []
+           4 OK054452.1          995         51        A.1           N/A         N/A              1-6,9-51                6-9                 A.1 + A.1           <<        N/A                   8-9                   N/A      2.72e+00      2.72e+00                 [], []
+           4 OK054386.1          995         46        A.1           N/A         N/A            1-33,41-46              33-41                 A.1 + A.1           >>        N/A                 38-39                   N/A      2.72e+00      2.72e+00                 [], []
+           4 OK054394.1          995         38        A.1           N/A         N/A             1-6,15-38               6-15                 A.1 + A.1           <<        N/A                   6-7                   N/A      2.72e+00      2.72e+00                 [], []
+           4 OK054443.1          995         49        A.1           N/A         N/A              1-5,8-49                5-8                 A.1 + A.1           <<        N/A                   5-6                   N/A      2.72e+00      2.72e+00                 [], []
+           4 OK054480.1          995         51        A.1           N/A         N/A              1-6,9-51                6-9                 A.1 + A.1           <<        N/A                   8-9                   N/A      2.72e+00      2.72e+00                 [], []
+           4 MK269353.1          995         48        A.1           N/A         N/A            1-39,46-48              39-46                 A.1 + A.1           >>        N/A                 39-40                   N/A      2.72e+00      2.72e+00                 [], []
+           4 MF434522.1          995         50        A.1           N/A         N/A             1-5,14-50               5-14                 A.1 + A.1           <<        N/A                   7-8                   N/A      2.72e+00      2.72e+00                 [], []
+           4 KY272987.1          995        162        A.1           N/A         N/A          1-79,159-162             79-159            A.1 + A.1.NmC1           <<        N/A               156-157                   N/A      1.49e+09      0.00e+00                 [], []
+           4 MW122443.1          995         55        A.1           N/A         N/A            1-24,29-55              24-29                 A.1 + A.1           <<        N/A                 25-26                   N/A      2.72e+00      2.72e+00                 [], []
+           4 KX922708.1          995         52        A.1           N/A         N/A            1-14,27-52              14-27                 A.1 + A.1           <<        N/A                 14-15                   N/A      2.72e+00      2.72e+00                 [], []
+           4 OK054425.1          995         48        A.1           N/A         N/A             1-7,10-48               7-10                 A.1 + A.1           <<        N/A                  9-10                   N/A      2.72e+00      2.72e+00                 [], []
+           4 OQ661916.1          995        167        A.1           N/A         N/A          1-53,164-167             53-164            A.1 + A.1.NmC1           <<        N/A               163-164                   N/A      9.87e+00      0.00e+00                 [], []
+           4 OK054403.1          995         50        A.1           N/A         N/A              1-5,8-50                5-8                 A.1 + A.1           <<        N/A                   5-6                   N/A      2.72e+00      2.72e+00                 [], []
+           4 MW122429.1          995         50        A.1           N/A         N/A            1-22,26-50              22-26                 A.1 + A.1           <<        N/A                 25-26                   N/A      2.72e+00      2.72e+00                 [], []
+           4 OK054370.1          995         38        A.1           N/A         N/A              1-4,7-38                4-7                 A.1 + A.1           <<        N/A                   4-5                   N/A      2.72e+00      2.72e+00                 [], []
+           4 PP431245.1          995         38        A.1           N/A         N/A      1-18,28-34,35-38     18-35 -> 18-28 A.1.NmC2 + A.1 + A.1.NmC2           >>        N/A          22-23, 34-35                   N/A      1.21e-22      5.01e-06                 [], []
+           4 MW915412.1          995         79        A.1           N/A         N/A             1-5,76-79               5-76            A.1 + A.1.NmC1           >>        N/A                 75-76                   N/A      1.77e+06     3.99e-245                 [], []
+           4 MW165880.1          995         53        A.1           N/A         N/A            1-22,25-53              22-25                 A.1 + A.1           <<        N/A                 23-24                   N/A      2.72e+00      2.72e+00                 [], []
+           4 MW122411.1          995         49        A.1           N/A         N/A            1-13,22-49              13-22                 A.1 + A.1           <<        N/A                 16-17                   N/A      2.72e+00      2.72e+00                 [], []
+           4 KY328290.1          995        125        A.1           N/A         N/A           1-6,118-125              6-118                 A.1 + A.1           <<        N/A                 96-97                   N/A      2.72e+00      2.72e+00                 [], []
+           4 MW122412.1          995         53        A.1           N/A         N/A            1-10,23-53              10-23                 A.1 + A.1           <<        N/A                 10-11                   N/A      2.72e+00      2.72e+00                 [], []
+           4 MW915413.1          995         92        A.1           N/A         N/A             1-4,86-92               4-86                 A.1 + A.1           <<        N/A                 85-86                   N/A      2.72e+00      2.72e+00                 [], []
+           4 MW915414.1          995        100        A.1           N/A         N/A            1-4,97-100               4-97            A.1 + A.1.NmC1           <<        N/A                 96-97                   N/A      6.60e-01     3.27e-317                 [], []
+           4 MH119185.1          995        160        A.1           N/A         N/A          1-51,158-160             51-158            A.1 + A.1.NmC1           >>        N/A               154-155                   N/A      1.88e+14      0.00e+00                 [], []
+           4 MW122413.1          995         56        A.1           N/A         N/A            1-10,20-56              10-20                 A.1 + A.1           <<        N/A                 13-14                   N/A      2.72e+00      2.72e+00                 [], []
+           4 MT507047.1          995         44        A.1           N/A         N/A             1-5,11-44               5-11                 A.1 + A.1           <<        N/A                   8-9                   N/A      2.72e+00      2.72e+00                 [], []
+           4 MT507048.1          995         44        A.1           N/A         N/A             1-4,10-44               4-10                 A.1 + A.1           <<        N/A                   5-6                   N/A      2.72e+00      2.72e+00                 [], []
+           4 MT507049.1          995         46        A.1           N/A         N/A             1-6,12-46               6-12                 A.1 + A.1           <<        N/A                   6-7                   N/A      2.72e+00      2.72e+00                 [], []
+           4 MT507050.1          995         46        A.1           N/A         N/A             1-6,12-46               6-12                 A.1 + A.1           <<        N/A                   6-7                   N/A      2.72e+00      2.72e+00                 [], []
+           4 PP626400.1          995        173        A.1           N/A         N/A   1-7,123-169,170-173     7-170 -> 7-123 A.1.NmC1 + A.1 + A.1.NmC1           <<        N/A        16-17, 169-170                   N/A      0.00e+00      1.13e+04                 [], []
+           4 MW122450.1          995         54        A.1           N/A         N/A            1-46,50-54              46-50                 A.1 + A.1           >>        N/A                 49-50                   N/A      2.72e+00      2.72e+00                 [], []
+           4 OP858751.1          995         40        A.1           N/A         N/A            1-18,21-40              18-21                 A.1 + A.1           <<        N/A                 20-21                   N/A      2.72e+00      2.72e+00                 [], []
+           4 MT377493.2          995        173        A.1           N/A         N/A   1-7,123-169,170-173     7-170 -> 7-123 A.1.NmC1 + A.1 + A.1.NmC1           <<        N/A        16-17, 169-170                   N/A      0.00e+00      1.13e+04                 [], []
+           4 MK829152.1          995         30        A.1           N/A         N/A             1-4,14-30               4-14                 A.1 + A.1           <<        N/A                   7-8                   N/A      2.72e+00      2.72e+00                 [], []
+           4 MT078742.1          995         36        A.1           N/A         N/A             1-4,19-36               4-19                 A.1 + A.1           <<        N/A                   4-5                   N/A      2.72e+00      2.72e+00                 [], []
+           4 MH063259.1          995         36        A.1           N/A         N/A             1-7,15-36               7-15                 A.1 + A.1           <<        N/A                   7-8                   N/A      2.72e+00      2.72e+00                 [], []
+           4 MH063263.1          995         47        A.1           N/A         N/A            1-36,42-47              36-42                 A.1 + A.1           >>        N/A                 39-40                   N/A      2.72e+00      2.72e+00                 [], []
+           4 MK829154.1          995         42        A.1           N/A         N/A            1-20,34-42              20-34                 A.1 + A.1           >>        N/A                 26-27                   N/A      2.72e+00      2.72e+00                 [], []
+           4 OQ661918.1          995        173        A.1           N/A         N/A          1-55,171-173             55-171            A.1 + A.1.NmC1           >>        N/A               167-168                   N/A      1.88e+14      0.00e+00                 [], []
+           4 MK238035.1          995        151        A.1           N/A         N/A           1-6,149-151              6-149            A.1 + A.1.NmC1           <<        N/A               145-146                   N/A      8.07e+20      0.00e+00                 [], []
+           4 MK238037.1          995        152        A.1           N/A         N/A       1-5,6-8,113-152     5-113 -> 8-113      A.1 + A.1.NmC1 + A.1           <<        N/A             5-6, 9-10                   N/A      1.38e-02      0.00e+00                 [], []
+           4 MK238039.1          995         91        A.1           N/A         N/A            1-27,87-91              27-87                 A.1 + A.1           >>        N/A                 71-72                   N/A      2.72e+00      2.72e+00                 [], []
+           4 MK238038.1          995        146        A.1           N/A         N/A       1-5,6-8,111-146     5-111 -> 8-111      A.1 + A.1.NmC1 + A.1           <<        N/A             5-6, 9-10                   N/A      1.39e-02      0.00e+00                 [], []
+           4 MN611472.1          995        107        A.1           N/A         N/A           1-6,104-107              6-104            A.1.NmC1 + A.1           <<        N/A                   6-7                   N/A      0.00e+00      2.37e+06                 [], []
+           4 EU545988.1          995        205        A.1           N/A         N/A           1-8,141-205              8-141                 A.1 + A.1           <<        N/A               136-137                   N/A      2.72e+00      2.72e+00                 [], []
+           4 KU955593.1          995        176        A.1           N/A         N/A         1-172,173-176                               A.1 + A.1.NmC1           >>        N/A               172-173                   N/A      6.96e-02      0.00e+00                 [], []
+           4 KX377336.1          995        469        A.1           N/A         N/A 1-463,464-466,467-469        463-467 ->       A.1 + A.1.NmC1 + A.1           >>        N/A      463-464, 466-467                   N/A      1.28e-02      0.00e+00                 [], []
+           4 KX601167.1          995        466        A.1           N/A         N/A 1-460,461-463,464-466        460-464 ->       A.1 + A.1.NmC1 + A.1           >>        N/A      460-461, 463-464                   N/A      1.28e-02      0.00e+00                 [], []
+           4 KX694533.2          995        469        A.1           N/A         N/A 1-463,464-466,467-469        463-467 ->       A.1 + A.1.NmC1 + A.1           >>        N/A      463-464, 466-467                   N/A      1.27e-02      0.00e+00                 [], []
+           4 MG645981.1          995        148        A.1           N/A         N/A     1-10,83-84,85-148     10-85 -> 10-83      A.1 + A.1.NmC1 + A.1           >>        N/A          81-82, 84-85                   N/A      6.38e+01      0.00e+00                 [], []
+           4 MH158236.1          995        176        A.1           N/A         N/A         1-172,173-176                               A.1 + A.1.NmC1           >>        N/A               172-173                   N/A      6.96e-02      0.00e+00                 [], []
+           4 MT377502.1          995        142        A.1           N/A         N/A           1-6,140-142              6-140            A.1 + A.1.NmC1           <<        N/A               136-137                   N/A      2.93e+15      0.00e+00                 [], []
+           4 MT377504.1          995        143        A.1           N/A         N/A           1-6,141-143              6-141            A.1 + A.1.NmC1           <<        N/A               137-138                   N/A      2.93e+15      0.00e+00                 [], []
+           4 MW015936.1          995        142        A.1           N/A         N/A           1-6,140-142              6-140            A.1 + A.1.NmC1           <<        N/A               136-137                   N/A      2.93e+15      0.00e+00                 [], []
+           4 OP281680.1          995        148        A.1           N/A         N/A          1-12,146-148             12-146            A.1 + A.1.NmC1           <<        N/A               142-143                   N/A      2.93e+15      0.00e+00                 [], []
+           4 OQ165285.1          995        469        A.1           N/A         N/A 1-463,464-466,467-469        463-467 ->       A.1 + A.1.NmC1 + A.1           >>        N/A      463-464, 466-467                   N/A      1.28e-02      0.00e+00                 [], []
+           4 PQ849442.1          995        180        A.1           N/A         N/A         1-176,177-180                               A.1 + A.1.NmC1           >>        N/A               176-177                   N/A      6.96e-02      0.00e+00                 [], []
+           4 ON142674.1          995        116        A.1           N/A         N/A            1-6,60-116               6-60            A.1.NmC1 + A.1           <<        N/A                   6-7                   N/A      0.00e+00      1.69e+05                 [], []
+           4 OR264642.1          995        114        A.1           N/A         N/A      1-6,7-34,110-114    6-110 -> 34-110 A.1.NmC1 + A.1 + A.1.NmC1           <<        N/A          6-7, 109-110                   N/A      0.00e+00      1.05e+00                 [], []
+           4 OM666892.1          995        182        A.1           N/A         N/A    1-51,52-58,127-182   51-127 -> 58-127      A.1 + A.1.NmC1 + A.1           >>        N/A          51-52, 59-60                   N/A      1.71e-01      0.00e+00                 [], []
+           4 OM666893.1          995        181        A.1           N/A         N/A         1-161,179-181            161-179                 A.1 + A.1           >>        N/A               163-164                   N/A      2.72e+00      2.72e+00                 [], []
+           4 OM666891.1          995        177        A.1           N/A         N/A    1-53,54-62,123-177   53-123 -> 62-123      A.1 + A.1.NmC1 + A.1           >>        N/A          53-54, 70-71                   N/A      5.90e+27      0.00e+00                 [], []
+           4 OQ734448.1          995        117        A.1           N/A         N/A            1-6,65-117               6-65            A.1.NmC1 + A.1           >>        N/A                   6-7                   N/A      0.00e+00      1.36e-01                 [], []
+           4 OR264643.1          995        130        A.1           N/A         N/A    1-4,68-126,127-130      4-127 -> 4-68 A.1.NmC1 + A.1 + A.1.NmC1           >>        N/A          8-9, 126-127                   N/A      0.00e+00      5.76e+09                 [], []
+           4 OR264644.1          995        138        A.1           N/A         N/A            1-6,86-138               6-86            A.1.NmC1 + A.1           <<        N/A                   7-8                   N/A      0.00e+00      1.54e+06                 [], []
+           4 OR264645.1          995        130        A.1           N/A         N/A     1-4,5-121,127-130   4-127 -> 121-127 A.1.NmC1 + A.1 + A.1.NmC1           >>        N/A          4-5, 126-127                   N/A      0.00e+00      4.45e-01                 [], []
+           4 OR264646.1          995        136        A.1           N/A         N/A      1-4,5-42,133-136    4-133 -> 42-133 A.1.NmC1 + A.1 + A.1.NmC1           >>        N/A          4-5, 132-133                   N/A      0.00e+00      4.45e-01                 [], []
+           4 OR264647.1          995        133        A.1           N/A         N/A          1-40,130-133             40-130            A.1 + A.1.NmC1           <<        N/A               129-130                   N/A      9.92e+00      0.00e+00                 [], []
+           4 PQ008648.1          995        204        A.1           N/A         N/A           1-37,66-204              37-66                 A.1 + A.1           <<        N/A                 38-39                   N/A      2.72e+00      2.72e+00                 [], []
+           4 PQ461653.1          995        186        A.1           N/A         N/A          1-61,114-186             61-114                 A.1 + A.1           <<        N/A                 69-70                   N/A      2.72e+00      2.72e+00                 [], []
+           4 PV426612.1          995        185        A.1           N/A         N/A           1-37,66-185              37-66                 A.1 + A.1           <<        N/A                 38-39                   N/A      2.72e+00      2.72e+00                 [], []
+           4 PQ551086.1          995        214        A.1           N/A         N/A            1-5,15-214               5-15                 A.1 + A.1           <<        N/A                   5-6                   N/A      2.72e+00      2.72e+00                 [], []
+           4 PQ551087.1          995        219        A.1           N/A         N/A         1-104,155-219            104-155                 A.1 + A.1           <<        N/A               120-121                   N/A      2.72e+00      2.72e+00                 [], []
+           4 PQ551088.1          995        234        A.1           N/A         N/A         1-230,231-234                               A.1 + A.1.NmC1           >>        N/A               230-231                   N/A      6.22e+03      0.00e+00                 [], []
+           5 PP431249.1            0         42   A.1.NmC4           N/A         N/A      1-28,29-37,38-42          28-38 ->  A.1.NmC2 + A.1 + A.1.NmC2           >>        N/A          28-29, 37-38                   N/A      3.55e-03      2.28e-26                 [], []

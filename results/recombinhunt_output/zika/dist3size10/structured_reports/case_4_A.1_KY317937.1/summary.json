@@ -1,0 +1,18 @@
+{
+    "case_number": 4,
+    "case_name": "KY317937.1",
+    "group_name": "A.1",
+    "number_of_sequences": 995,
+    "number_of_changes": 41,
+    "best_candidates": "A.1.NmC2 + A.1 + A.1.NmC2",
+    "best_candidates_breakpoints_target": "21-22, 38-39",
+    "best_candidates_breakpoints_genomic": "3898 - 3899, 9304 - 9305",
+    "direction_L1": ">>",
+    "initial_region_span": "1-21,31-38,39-41",
+    "gap_history": "21-39 -> 21-31",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 1.47e-36",
+    "p_value_vs_L1": "6.62e-56",
+    "p_value_vs_L2": "4.06e-12",
+    "flags": "Model_2BP_Best"
+}

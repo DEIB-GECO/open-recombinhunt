@@ -1,0 +1,18 @@
+{
+    "case_number": 4,
+    "case_name": "KY558996.1",
+    "group_name": "A.1",
+    "number_of_sequences": 995,
+    "number_of_changes": 32,
+    "best_candidates": "A.1 + A.1.NmC2 + A.1",
+    "best_candidates_breakpoints_target": "7-8, 9-10",
+    "best_candidates_breakpoints_genomic": "1397 - 1398, 1990 - 1991",
+    "direction_L1": "<<",
+    "initial_region_span": "1-7,8-9,26-32",
+    "gap_history": "7-26 -> 9-26",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 5.07e-01",
+    "p_value_vs_L1": "6.86e-02",
+    "p_value_vs_L2": "2.35e-58",
+    "flags": "Model_2BP_Best"
+}

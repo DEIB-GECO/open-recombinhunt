@@ -457,7 +457,9 @@ def create_geographic_map(df, virus):
         fig.update_layout(mapbox_style="carto-positron")
         fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 
-        st.plotly_chart(fig, use_container_width=True)
+        a, _ = st.columns([3,2])
+        with a:
+            st.plotly_chart(fig, use_container_width=True)
 
 def create_distribution_plots(df, virus):
     "creates temporal and locational distributions"

@@ -1,0 +1,18 @@
+{
+    "case_number": 4,
+    "case_name": "MK829152.1",
+    "group_name": "A.1",
+    "number_of_sequences": 995,
+    "number_of_changes": 30,
+    "best_candidates": "A.1 + A.1",
+    "best_candidates_breakpoints_target": "7-8",
+    "best_candidates_breakpoints_genomic": "2723 - 2724",
+    "direction_L1": "<<",
+    "initial_region_span": "1-4,14-30",
+    "gap_history": "4-14",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 4.09e-09",
+    "p_value_vs_L1": "2.72e+00",
+    "p_value_vs_L2": "2.72e+00",
+    "flags": "Model_1BP_Best"
+}

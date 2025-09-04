@@ -1,0 +1,166 @@
+genomeIDs	original_lineage	recombinant_parents	breakpoint_count	case_report_folder
+PP431249.1	A.1.NmC2	A.1.NmC2 + A.1 + A.1.NmC2	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_2_A.1.NmC2_PP431249.1
+MT377503.1	A.1.NmC1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_3_A.1.NmC1_MT377503.1
+KY241700.1	A.1.NmC1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_3_A.1.NmC1_KY241700.1
+KY241712.1	A.1.NmC1	A.1 + A.1.NmC1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_3_A.1.NmC1_KY241712.1
+PP626402.1	A.1.NmC1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_3_A.1.NmC1_PP626402.1
+MT377491.2	A.1.NmC1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_3_A.1.NmC1_MT377491.2
+MG807647.1	A.1.NmC1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_3_A.1.NmC1_MG807647.1
+OQ661914.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OQ661914.1
+KU681082.3	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KU681082.3
+KX694532.2	A.1	A.1 + A.1.NmC1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KX694532.2
+KF993678.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KF993678.1
+KX051560.1	A.1	A.1 + A.1.NmC1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KX051560.1
+OQ661915.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OQ661915.1
+KX051561.1	A.1	A.1 + A.1.NmC1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KX051561.1
+PP115590.1	A.1	A.1 + A.1.NmC1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PP115590.1
+KU681081.3	A.1	A.1 + A.1.NmC1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KU681081.3
+KX051562.1	A.1	A.1 + A.1.NmC1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KX051562.1
+KY558996.1	A.1	A.1 + A.1.NmC2 + A.1	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY558996.1
+MF352141.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MF352141.1
+OQ727568.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OQ727568.1
+KU707826.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KU707826.1
+KU497555.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KU497555.1
+KX446950.2	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KX446950.2
+KY559032.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY559032.1
+KY648934.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY648934.1
+MN473454.1	A.1	A.1.NmC2 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MN473454.1
+PP470595.1	A.1	A.1.NmC2 + A.1 + A.1.NmC2	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PP470595.1
+PP626401.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PP626401.1
+MT636065.1	A.1	A.1 + A.1.NmC1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MT636065.1
+KY317937.1	A.1	A.1.NmC2 + A.1 + A.1.NmC2	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY317937.1
+PQ129534.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PQ129534.1
+OK054444.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054444.1
+KY272991.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY272991.1
+MF801385.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MF801385.1
+KY559027.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY559027.1
+KX013000.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KX013000.1
+KX117076.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KX117076.1
+KU922923.1	A.1	A.1.NmC2 + A.1 + A.1.NmC2	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KU922923.1
+KU922960.1	A.1	A.1.NmC2 + A.1 + A.1.NmC2	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KU922960.1
+KU955590.1	A.1	A.1 + A.1.NmC2 + A.1	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KU955590.1
+MF167360.1	A.1	A.1 + A.1.NmC2 + A.1	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MF167360.1
+KY379148.1	A.1	A.1 + A.1.NmC2 + A.1	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY379148.1
+PP431236.1	A.1	A.1 + A.1.NmC2	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PP431236.1
+KY120352.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY120352.1
+KY553111.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY553111.1
+PP431225.1	A.1	A.1.NmC2 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PP431225.1
+MW915411.1	A.1	A.1 + A.1.NmC1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MW915411.1
+PP431239.1	A.1	A.1.NmC2 + A.1 + A.1.NmC2	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PP431239.1
+MT439642.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MT439642.1
+PP431229.1	A.1	A.1.NmC2 + A.1 + A.1.NmC2	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PP431229.1
+KY559009.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY559009.1
+LC191864.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_LC191864.1
+OL423654.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OL423654.1
+MT377498.1	A.1	A.1 + A.1.NmC1 + A.1	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MT377498.1
+KY120353.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY120353.1
+PP431246.1	A.1	A.1 + A.1.NmC2	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PP431246.1
+KY785444.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY785444.1
+OL423650.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OL423650.1
+PP431247.1	A.1	A.1.NmC2 + A.1 + A.1.NmC2	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PP431247.1
+KY014315.2	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY014315.2
+PP431233.1	A.1	A.1.NmC2 + A.1 + A.1.NmC2	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PP431233.1
+KY014314.2	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY014314.2
+MH368551.1	A.1	A.1 + A.1.NmC1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MH368551.1
+MW122393.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MW122393.1
+KY693678.1	A.1	A.1.NmC2 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY693678.1
+KY765317.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY765317.1
+KY765322.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY765322.1
+OK054473.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054473.1
+MF801407.1	A.1	A.1.NmC1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MF801407.1
+KY606274.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY606274.1
+OK054396.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054396.1
+PP431235.1	A.1	A.1.NmC2 + A.1 + A.1.NmC2	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PP431235.1
+MF801404.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MF801404.1
+KY765318.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY765318.1
+KY765321.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY765321.1
+OK054469.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054469.1
+KY693679.1	A.1	A.1.NmC2 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY693679.1
+OK054465.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054465.1
+OK054399.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054399.1
+OK054466.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054466.1
+MW122387.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MW122387.1
+OK054445.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054445.1
+OK054487.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054487.1
+MF098767.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MF098767.1
+OK054391.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054391.1
+OK054424.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054424.1
+OK054448.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054448.1
+OK054410.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054410.1
+OK054404.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054404.1
+OK054429.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054429.1
+OK054452.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054452.1
+OK054386.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054386.1
+OK054394.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054394.1
+OK054443.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054443.1
+OK054480.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054480.1
+MK269353.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MK269353.1
+MF434522.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MF434522.1
+KY272987.1	A.1	A.1 + A.1.NmC1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY272987.1
+MW122443.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MW122443.1
+KX922708.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KX922708.1
+OK054425.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054425.1
+OQ661916.1	A.1	A.1 + A.1.NmC1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OQ661916.1
+OK054403.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054403.1
+MW122429.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MW122429.1
+OK054370.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OK054370.1
+PP431245.1	A.1	A.1.NmC2 + A.1 + A.1.NmC2	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PP431245.1
+MW915412.1	A.1	A.1 + A.1.NmC1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MW915412.1
+MW165880.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MW165880.1
+MW122411.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MW122411.1
+KY328290.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KY328290.1
+MW122412.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MW122412.1
+MW915413.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MW915413.1
+MW915414.1	A.1	A.1 + A.1.NmC1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MW915414.1
+MH119185.1	A.1	A.1 + A.1.NmC1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MH119185.1
+MW122413.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MW122413.1
+MT507047.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MT507047.1
+MT507048.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MT507048.1
+MT507049.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MT507049.1
+MT507050.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MT507050.1
+PP626400.1	A.1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PP626400.1
+MW122450.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MW122450.1
+OP858751.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OP858751.1
+MT377493.2	A.1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MT377493.2
+MK829152.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MK829152.1
+MT078742.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MT078742.1
+MH063259.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MH063259.1
+MH063263.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MH063263.1
+MK829154.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MK829154.1
+OQ661918.1	A.1	A.1 + A.1.NmC1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OQ661918.1
+MK238035.1	A.1	A.1 + A.1.NmC1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MK238035.1
+MK238037.1	A.1	A.1 + A.1.NmC1 + A.1	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MK238037.1
+MK238039.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MK238039.1
+MK238038.1	A.1	A.1 + A.1.NmC1 + A.1	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MK238038.1
+MN611472.1	A.1	A.1.NmC1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MN611472.1
+EU545988.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_EU545988.1
+KU955593.1	A.1	A.1 + A.1.NmC1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KU955593.1
+KX377336.1	A.1	A.1 + A.1.NmC1 + A.1	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KX377336.1
+KX601167.1	A.1	A.1 + A.1.NmC1 + A.1	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KX601167.1
+KX694533.2	A.1	A.1 + A.1.NmC1 + A.1	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_KX694533.2
+MG645981.1	A.1	A.1 + A.1.NmC1 + A.1	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MG645981.1
+MH158236.1	A.1	A.1 + A.1.NmC1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MH158236.1
+MT377502.1	A.1	A.1 + A.1.NmC1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MT377502.1
+MT377504.1	A.1	A.1 + A.1.NmC1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MT377504.1
+MW015936.1	A.1	A.1 + A.1.NmC1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_MW015936.1
+OP281680.1	A.1	A.1 + A.1.NmC1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OP281680.1
+OQ165285.1	A.1	A.1 + A.1.NmC1 + A.1	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OQ165285.1
+PQ849442.1	A.1	A.1 + A.1.NmC1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PQ849442.1
+ON142674.1	A.1	A.1.NmC1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_ON142674.1
+OR264642.1	A.1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OR264642.1
+OM666892.1	A.1	A.1 + A.1.NmC1 + A.1	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OM666892.1
+OM666893.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OM666893.1
+OM666891.1	A.1	A.1 + A.1.NmC1 + A.1	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OM666891.1
+OQ734448.1	A.1	A.1.NmC1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OQ734448.1
+OR264643.1	A.1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OR264643.1
+OR264644.1	A.1	A.1.NmC1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OR264644.1
+OR264645.1	A.1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OR264645.1
+OR264646.1	A.1	A.1.NmC1 + A.1 + A.1.NmC1	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OR264646.1
+OR264647.1	A.1	A.1 + A.1.NmC1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_OR264647.1
+PQ008648.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PQ008648.1
+PQ461653.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PQ461653.1
+PV426612.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PV426612.1
+PQ551086.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PQ551086.1
+PQ551087.1	A.1	A.1 + A.1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PQ551087.1
+PQ551088.1	A.1	A.1 + A.1.NmC1	1BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_4_A.1_PQ551088.1
+PP431249.1	A.1.NmC4	A.1.NmC2 + A.1 + A.1.NmC2	2BP	results/recombinhunt_output/zika/dist3size10/structured_reports/case_5_A.1.NmC4_PP431249.1

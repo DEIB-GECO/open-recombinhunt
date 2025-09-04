@@ -1,0 +1,18 @@
+{
+    "case_number": 3,
+    "case_name": "KY241712.1",
+    "group_name": "A.1.NmC1",
+    "number_of_sequences": 181,
+    "number_of_changes": 141,
+    "best_candidates": "A.1 + A.1.NmC1",
+    "best_candidates_breakpoints_target": "21-22",
+    "best_candidates_breakpoints_genomic": "427 - 428",
+    "direction_L1": "<<",
+    "initial_region_span": "1-15,66-141",
+    "gap_history": "15-66",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "2.09e-104",
+    "p_value_vs_L2": "1.55e-06",
+    "flags": "Model_2BP_Bad_L1_opp"
+}
