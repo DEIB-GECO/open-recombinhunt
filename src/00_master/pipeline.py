@@ -134,7 +134,7 @@ def main():
                 #step2_prep_meta,
                 #step4_postprocess_covid,
                 #step5_create_env,
-                step5_create_samples,
+                #step5_create_samples,
                 step6_run_recombinhunt
             ]
         else:

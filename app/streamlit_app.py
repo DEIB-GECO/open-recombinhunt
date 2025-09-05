@@ -606,20 +606,17 @@ def display_detailed_report_summary(report, virus):
             a.metric("Genome ID", summary["case_name"], border=True)
             b.metric("Lineage Name", summary["group_name"], border=True)
 
-            [a] = st.columns(1)
-            a.metric("Reference Sequence Length", REFERENCE_LENGTHS.get(virus), border=True)
-
             [b] = st.columns(1)
-            b.metric("Number of Changes", summary["number_of_changes"], border=True)
+            b.metric(f"Number of Mutations (Reference Sequence Length: {REFERENCE_LENGTHS.get(virus)})", summary["number_of_changes"], border=True)
 
             [a] = st.columns(1)
             a.metric("Recombinant Parents", summary["best_candidates"], border=True)
 
             [a] = st.columns(1)
-            a.metric("Breakpoints Target", summary["best_candidates_breakpoints_target"], border=True)
+            a.metric("Breakpoints Location in mutations-space", summary["best_candidates_breakpoints_target"], border=True)
             
             [a] = st.columns(1)
-            a.metric("Genomic Coordinates", summary["best_candidates_breakpoints_genomic"], border=True)
+            a.metric("Breakpoints Location in Genomic Coordinates", summary["best_candidates_breakpoints_genomic"], border=True)
 
             BC = summary["best_candidates"]
             BP = f"{BC.count('+')}BP"
@@ -669,34 +666,43 @@ def display_detailed_report(report):
                 formatted_df = format_region_table(df, region).reset_index(drop=True)
 
                 # --- Filtering UI ---
-                _, col0, col1, col2, col3 = st.columns([5, 3, 1, 1, 1])
-                with col1:
-                    filter_c1 = st.checkbox("C1", key=f"{region_name}_c1")
-                with col2:
-                    filter_c2 = st.checkbox("C2", key=f"{region_name}_c2")
-                with col3:
-                    filter_c3 = st.checkbox("C3", key=f"{region_name}_c3")
+                _, col0, col1, col2, col3 = st.columns([11, 2, 1, 1, 1])
+                with col0:
+                    filter_all = st.checkbox("Select All (C1 ^ C2 ^ C3)", key=f"{region_name}_all")
+                # with col1:
+                #     filter_c1 = st.checkbox("C1", key=f"{region_name}_c1")
+                # with col2:
+                #     filter_c2 = st.checkbox("C2", key=f"{region_name}_c2")
+                # with col3:
+                #     filter_c3 = st.checkbox("C3", key=f"{region_name}_c3")
 
 
                 # --- Apply filters ---
                 filtered_df = formatted_df.copy()
-                if filter_c1:
-                    filtered_df = filtered_df[filtered_df["C1"] == "✔️"]
-                if filter_c2:
-                    filtered_df = filtered_df[filtered_df["C2"] == "✔️"]
-                if filter_c3:
-                    filtered_df = filtered_df[filtered_df["C3"] == "✔️"]
+                if filter_all:
+                    filtered_df = filtered_df[
+                        (filtered_df["C1"] == "✔️") &
+                        (filtered_df["C2"] == "✔️") &
+                        (filtered_df["C3"] == "✔️")
+                    ]
+                # else:
+                #     if filter_c1:
+                #         filtered_df = filtered_df[filtered_df["C1"] == "✔️"]
+                #     if filter_c2:
+                #         filtered_df = filtered_df[filtered_df["C2"] == "✔️"]
+                #     if filter_c3:
+                #         filtered_df = filtered_df[filtered_df["C3"] == "✔️"]
 
                 st.dataframe(filtered_df, use_container_width=True, hide_index=True)
 
     # plot visualization graphs from JSON
     plot_files = [f for f in report.keys() if f.startswith("plot_") and f.endswith(".json")]
-    if plot_files:
+    plot_per_region = plot_files[0]
+    if plot_per_region:
         with st.expander("Visualization", expanded=True):
-            for plot_file in plot_files:
-                st.markdown(f"#### {plot_file.replace('_', ' ').replace('.json', '').title()}")
-                fig = go.Figure(report[plot_file])
-                st.plotly_chart(fig, use_container_width=True)
+            st.markdown(f"#### {plot_per_region.replace('_', ' ').replace('.json', '').title()}")
+            fig = go.Figure(report[plot_per_region])
+            st.plotly_chart(fig, use_container_width=True)
 
     # target mutations list
     if "target_mutations" in report:
@@ -958,7 +964,6 @@ def show_virus_page(virus):
         st.rerun()
 
 def main():
-
     # discover available viruses
     viruses = discover_viruses()
 

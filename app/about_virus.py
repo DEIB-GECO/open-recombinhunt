@@ -1,7 +1,12 @@
-import streamlit as st
+from pathlib import Path
+import sys
+
+SRC_PATH = Path(__file__).resolve().parent.parent
+sys.path.append(str(SRC_PATH))
 from src.utils.constants import *
+
+import streamlit as st
 import plotly.express as px
-import pandas as pd
 
 INFO = {
     "yellow-fever": """
