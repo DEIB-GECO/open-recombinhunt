@@ -149,6 +149,7 @@ def main():
     output_dir = results_dir / "nextstrain_output" / args.virus
     output_dir.mkdir(parents=True, exist_ok=True)
     output_file = output_dir / "nextstrain_reformatted.tsv"
+    output_file_last_6_months = output_dir / "nextstrain_reformatted_last_6_months.tsv"
 
     # --- Load and Process Data ---
     logging.info(f"Loading processed metadata from: {input_file}")
@@ -190,7 +191,13 @@ def main():
     
     logging.info(f"Saving reformatted data with {len(df_final)} rows to: {output_file}")
     df_final.to_csv(output_file, sep='\t', index=False)
-    
+
+    current_date = pd.Timestamp.now()
+    six_months_ago = current_date - pd.DateOffset(months=6)
+    df_last_6_months = df_final[df_final['Collection date'] >= six_months_ago.strftime('%Y-%m-%d')]
+    logging.info(f"Saving reformatted data from the last 6 months with {len(df_last_6_months)} rows to: {output_file_last_6_months}")
+    df_last_6_months.to_csv(output_file_last_6_months, sep='\t', index=False)
+
     logging.info("Script finished successfully.")
 
 if __name__ == "__main__":

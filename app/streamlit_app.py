@@ -1,3 +1,4 @@
+import datetime as dt
 import json
 import sys
 from pathlib import Path
@@ -142,7 +143,7 @@ def load_master_data(virus):
     # load source data
     try:
         if virus.lower() == "sars-cov-2":
-            source_file = RESULTS_DIR_BASE / NEXTSTRAIN_OUTPUT / virus / "nextstrain_reformatted.tsv"
+            source_file = RESULTS_DIR_BASE / NEXTSTRAIN_OUTPUT / virus / "nextstrain_reformatted_last_6_months.tsv"
             columns = ["genomeID", "Collection date", "Submission date", "Location", "pangoLin"]
         else:
             source_file = RESULTS_DIR_BASE / HAPLOCOV_OUTPUT / virus / paramset / "haplocov_reformatted.tsv"
@@ -158,7 +159,11 @@ def load_master_data(virus):
     
     # load recombinant summary
     try:
-        recombinant_summary_file = RESULTS_DIR_BASE / RECOMBINHUNT_OUTPUT / virus / paramset / "recombinant_summary.tsv"
+        recombinant_summary_file_base = RESULTS_DIR_BASE / RECOMBINHUNT_OUTPUT / virus / paramset
+    
+        if virus == "sars-cov-2": recombinant_summary_file = recombinant_summary_file_base / ALL / "recombinant_summary.tsv"
+        else:                     recombinant_summary_file = recombinant_summary_file_base / "recombinant_summary.tsv" 
+
         if recombinant_summary_file.exists():
             recombinant_summary_df = pd.read_csv(recombinant_summary_file, sep="\t")
             recombinant_summary_df.rename(columns={"genomeIDs": "genomeID"}, inplace=True)
@@ -189,7 +194,7 @@ def load_master_data(virus):
 
     return merged_df
 
-def apply_time_filter(df):
+def apply_time_filter(df, virus):
     """
     applies time based filtering to the dataframe
     user can select between three options:
@@ -207,11 +212,17 @@ def apply_time_filter(df):
     # select filter value
     filter_value = None
     if filter_type == "Filter by Date Range":
+        today = dt.date.today()
         col1, col2 = st.columns(2)
         with col1:
-            start_date = st.date_input("Start Date", value=pd.to_datetime("2020-01-01"))
+            if virus == "sars-cov-2":
+                min_allowed_date = today - dt.timedelta(days=210)
+                start_date = st.date_input("Start Date", value=min_allowed_date, min_value=min_allowed_date, max_value=today)
+                st.info(f"For SARS-CoV-2, the start date cannot be earlier than {min_allowed_date}. Only the last 6 months of data is available.")
+            else:
+                start_date = st.date_input("Start Date", value=pd.to_datetime("2020-01-01"), max_value=today)
         with col2:
-            end_date = st.date_input("End Date", value=pd.to_datetime("today"))
+            end_date = st.date_input("End Date", value=pd.to_datetime("today"), min_value=start_date, max_value=today)
         filter_value = (start_date, end_date)
     elif filter_type == "Filter by Latest X Sequences":
         filter_value = st.number_input("Number of Latest Sequences", min_value=1, value=10)
@@ -489,7 +500,9 @@ def apply_user_filter(df, virus):
         )
 
     with c:
-        if virus == "sars-cov-2": df["continent"] = df["Location"].apply(lambda x: x.split("/")[0].strip() if isinstance(x, str) else x)
+        if virus == "sars-cov-2": 
+            df["continent"] = df["Location"].apply(lambda x: x.split("/")[0].strip() if isinstance(x, str) else x)
+            df["country"] = df["Location"].apply(lambda x: x.split("/")[1].strip() if isinstance(x, str) else x)
         else: df["continent"] = df["continent"].apply(lambda x: x.strip() if isinstance(x, str) else x)
         location_filter = st.selectbox(
             "Select Continent:",
@@ -929,9 +942,12 @@ def show_virus_page(virus):
 
 
     with tab1:
+        if virus == "sars-cov-2":
+            st.info("Due to the vast amount of SARS-CoV-2 data, the Summary Dashboard is limited to the most recent six months of sequences. For a comprehensive analysis of available SARS-CoV-2 sequences, please utilize the Recombinant Explorer tab.")
+
         # time-based filtering
         with st.spinner("Applying time filter..."):
-            summary_df = apply_time_filter(master_df)
+            summary_df = apply_time_filter(master_df, virus)
 
         st.markdown("---")
 
@@ -949,15 +965,35 @@ def show_virus_page(virus):
         create_distribution_plots(summary_df, virus)
 
     with tab2:
-        # filtering
-        with st.spinner("Applying filters..."):
-            recombinant_df = master_df[master_df["is_recombinant"]]
-            explorer_df = apply_user_filter(recombinant_df, virus)
+        analysis_mode = None
+        if virus == "sars-cov-2":
+            # add a radio button for sars-cov-2 to select between 
+            # consensus sequence analysis and last-6m analysis
 
-        st.markdown("---")
+            st.info("In SARS-CoV-2, we offer two analysis modes: 'Consensus Sequence Analysis' and 'Last 6 Months Analysis'. The former encompasses all available sequences that belong to the same lineage into a 'consensus sequence' and allow analysis on lineage-level rather than genome-level, while the latter focuses on the most recent six months of data and allows for genome-level analysis. Please select your preferred mode below.")
+            analysis_mode = st.radio(
+                "Select Analysis Mode:",
+                options=["Consensus Sequence Analysis", "Last 6 Months Analysis"],
+                index=None,
+                horizontal=True
+            )
 
-        # create interactive table with radio buttons as the index column
-        create_recombinant_cases_table(explorer_df, virus)
+            if analysis_mode is None:
+                st.warning("Please select an analysis mode to proceed.")
+                return
+
+        if virus == "sars-cov-2" and analysis_mode == "Consensus Sequence Analysis":
+            st.write("datdiridatadat")
+        else:
+            # filtering
+            with st.spinner("Applying filters..."):
+                recombinant_df = master_df[master_df["is_recombinant"]]
+                explorer_df = apply_user_filter(recombinant_df, virus)
+
+            st.markdown("---")
+
+            # create interactive table with radio buttons as the index column
+            create_recombinant_cases_table(explorer_df, virus)
 
     if "initial_rerun_done" not in st.session_state:
         st.session_state.initial_rerun_done = True
