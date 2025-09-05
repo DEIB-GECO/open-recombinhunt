@@ -194,6 +194,21 @@ def load_master_data(virus):
 
     return merged_df
 
+@st.cache_data
+def load_consensus_data(virus):
+    if virus == "sars-cov-2":
+        dist, size = 0, 0
+        paramset = f"dist{dist}size{size}"
+        recombinant_summary_file_base = RESULTS_DIR_BASE / RECOMBINHUNT_OUTPUT / virus / paramset / CONSENSUS / "recombinant_summary.tsv"
+
+    if recombinant_summary_file_base.exists():
+        df = pd.read_csv(recombinant_summary_file_base, sep="\t")
+    else:
+        st.warning(f"Recombinant summary file not found: {recombinant_summary_file_base}")
+        return None
+
+    return df
+
 def apply_time_filter(df, virus):
     """
     applies time based filtering to the dataframe
@@ -605,7 +620,7 @@ def format_region_table(df: pd.DataFrame, region: str) -> pd.DataFrame:
 
     return df
 
-def display_detailed_report_summary(report, virus):
+def display_detailed_report_summary(report, virus, analysis_mode):
     if not report:
         st.warning("No report data available.")
         return
@@ -615,9 +630,13 @@ def display_detailed_report_summary(report, virus):
         with st.expander("Case Summary", expanded=True):
             summary = report["summary"]
             
-            a, b = st.columns(2)
-            a.metric("Genome ID", summary["case_name"], border=True)
-            b.metric("Lineage Name", summary["group_name"], border=True)
+            if analysis_mode == "Consensus Sequence Analysis":
+                [a] = st.columns(1)
+                a.metric("Lineage Name", summary["group_name"], border=True)
+            else:
+                a, b = st.columns(2)
+                a.metric("Genome ID", summary["case_name"], border=True)
+                b.metric("Lineage Name", summary["group_name"], border=True)
 
             [b] = st.columns(1)
             b.metric(f"Number of Mutations (Reference Sequence Length: {REFERENCE_LENGTHS.get(virus)})", summary["number_of_changes"], border=True)
@@ -776,7 +795,7 @@ def display_detailed_report(report):
 
             st.markdown(" ".join(chips), unsafe_allow_html=True)
 
-def create_recombinant_cases_table(df, virus):
+def create_recombinant_cases_table(df, virus, analysis_mode):
     """Create a table to display recombinant cases."""
     st.subheader("Recombinant Cases")
 
@@ -789,14 +808,21 @@ def create_recombinant_cases_table(df, virus):
 
     with left_col:
         with st.spinner("Loading recombinant cases..."):
-            formatter = {
-                "genomeID": ("Genome ID", PINLEFT),
-                "breakpoint_count": ("BP Count", {"width": 80}),
-                "original_lineage": ("Assigned Lineage", {"width": 150}),
-                "recombinant_parents": ("Recombinant Parents", {"width": 250}),
-                "country": ("Country", {"width": 100}),
-                "collection_date": ("Collection Date", {"width": 100}),
-            }
+            if analysis_mode == "Consensus Sequence Analysis":
+                formatter = {
+                    "original_lineage": ("Lineage", {"width": 150}),
+                    "breakpoint_count": ("BP Count", {"width": 80}),
+                    "recombinant_parents": ("Recombinant Parents", {"width": 250}),
+                }
+            else:
+                formatter = {
+                    "genomeID": ("Genome ID", PINLEFT),
+                    "breakpoint_count": ("BP Count", {"width": 80}),
+                    "original_lineage": ("Assigned Lineage", {"width": 150}),
+                    "recombinant_parents": ("Recombinant Parents", {"width": 250}),
+                    "country": ("Country", {"width": 100}),
+                    "collection_date": ("Collection Date", {"width": 100}),
+                }
 
             custom_css = {
                 ".ag-root": {"font-family": "inherit"}, 
@@ -819,15 +845,17 @@ def create_recombinant_cases_table(df, virus):
         if response:
             selected = response["selected_rows"]
             if selected is not None:
-                selected_id = selected["genomeID"].iloc[0]
-                st.subheader(f"Details of the Selected Genome: {selected_id}")
+                if analysis_mode == "Consensus Sequence Analysis": selected_id = selected["original_lineage"].iloc[0]
+                else: selected_id = selected["genomeID"].iloc[0]
+                st.subheader(f"Details of: {selected_id}")
 
                 path_to_the_case_report_folder = selected["case_report_folder"].iloc[0]
                 report = load_report_data(path_to_the_case_report_folder)
-                display_detailed_report_summary(report, virus)
+                display_detailed_report_summary(report, virus, analysis_mode)
                 report_exists = True
             else:
-                st.info("Select a genome from the table to see its details here.")
+                word = "lineage" if analysis_mode == "Consensus Sequence Analysis" else "genome"
+                st.info(f"Select a recombinant {word} from the table to see its details here.")
 
     if report_exists:
         display_detailed_report(report)
@@ -983,17 +1011,18 @@ def show_virus_page(virus):
                 return
 
         if virus == "sars-cov-2" and analysis_mode == "Consensus Sequence Analysis":
-            st.write("datdiridatadat")
+            df = load_consensus_data(virus)
+            create_recombinant_cases_table(df, virus, analysis_mode)
         else:
             # filtering
             with st.spinner("Applying filters..."):
                 recombinant_df = master_df[master_df["is_recombinant"]]
-                explorer_df = apply_user_filter(recombinant_df, virus)
+                explorer_df = apply_user_filter(recombinant_df, virus,)
 
             st.markdown("---")
 
             # create interactive table with radio buttons as the index column
-            create_recombinant_cases_table(explorer_df, virus)
+            create_recombinant_cases_table(explorer_df, virus, None)
 
     if "initial_rerun_done" not in st.session_state:
         st.session_state.initial_rerun_done = True
