@@ -1,0 +1,1092 @@
+--- Analyzing Designations by Continent (Percentages) ---
+
+Continent: Africa (Total observed designations in this group: 1872)
+  Designation: A.D.4.NmC1, Percentage: 26.44%
+  Designation: A.D.4.NmC2, Percentage: 12.61%
+  Designation: A.D.4, Percentage: 9.29%
+  Designation: A.D, Percentage: 8.39%
+  Designation: A.D.5.1, Percentage: 7.21%
+  Designation: A.D.2, Percentage: 5.61%
+  Designation: A.D.4.1, Percentage: 5.29%
+  Designation: A.D.NmC2, Percentage: 3.74%
+  Designation: A.3.1, Percentage: 3.69%
+  Designation: A.3.1.1, Percentage: 3.63%
+  Designation: A.D.2.2, Percentage: 2.88%
+  Designation: A.D.4.NmC3, Percentage: 2.56%
+  Designation: A.D.3.3, Percentage: 2.14%
+  Designation: A.D.2.1, Percentage: 1.44%
+  Designation: A.D.3.6, Percentage: 1.28%
+  Designation: A.D.3.12, Percentage: 1.12%
+  Designation: A.D.2.2.NmC1, Percentage: 0.96%
+  Designation: A.D.5.3, Percentage: 0.64%
+  Designation: A.D.NmC1, Percentage: 0.27%
+  Designation: A.D.1, Percentage: 0.21%
+  Designation: A.D.2.2.1, Percentage: 0.21%
+  Designation: A.D.2.NmC1, Percentage: 0.16%
+  Designation: A.D.1.2, Percentage: 0.05%
+  Designation: A.D.1.5, Percentage: 0.05%
+  Designation: A.D.2.NmC2, Percentage: 0.05%
+  Designation: A.D.3.NmC1, Percentage: 0.05%
+
+Continent: Asia (Total observed designations in this group: 7364)
+  Designation: A.D, Percentage: 13.27%
+  Designation: A.D.2, Percentage: 11.12%
+  Designation: A.D.4.NmC3, Percentage: 9.80%
+  Designation: A.3.1, Percentage: 8.46%
+  Designation: A.D.3.6, Percentage: 8.04%
+  Designation: A.D.3.NmC1, Percentage: 5.20%
+  Designation: A.D.4.NmC1, Percentage: 4.79%
+  Designation: A.D.NmC1, Percentage: 4.39%
+  Designation: A.D.3.NmC2, Percentage: 4.35%
+  Designation: A.D.2.NmC1, Percentage: 4.29%
+  Designation: A.D.4.NmC2, Percentage: 4.07%
+  Designation: A.D.3.3, Percentage: 3.59%
+  Designation: A.3.1.NmC1, Percentage: 3.31%
+  Designation: A.3.1.1, Percentage: 2.95%
+  Designation: A.D.2.2.NmC1, Percentage: 2.57%
+  Designation: A.D.3, Percentage: 1.51%
+  Designation: A.D.5.NmC1, Percentage: 1.33%
+  Designation: A.D.2.2, Percentage: 1.32%
+  Designation: A.D.NmC2, Percentage: 1.18%
+  Designation: A.3.1.NmC2, Percentage: 0.76%
+  Designation: A.D.5, Percentage: 0.65%
+  Designation: A.D.3.12, Percentage: 0.64%
+  Designation: A.D.5.1, Percentage: 0.56%
+  Designation: A.D.5.3, Percentage: 0.35%
+  Designation: A.D.1, Percentage: 0.23%
+  Designation: A.D.2.1, Percentage: 0.19%
+  Designation: A.D.2.2.1, Percentage: 0.16%
+  Designation: A.2.1.1, Percentage: 0.14%
+  Designation: A.3, Percentage: 0.11%
+  Designation: A.D.3.8, Percentage: 0.11%
+  Designation: A.D.3.7, Percentage: 0.10%
+  Designation: A.D.2.NmC2, Percentage: 0.08%
+  Designation: A.D.3.10, Percentage: 0.08%
+  Designation: A.D.5.2, Percentage: 0.08%
+  Designation: A.D.1.2, Percentage: 0.05%
+  Designation: A.D.1.9, Percentage: 0.05%
+  Designation: A.D.3.1, Percentage: 0.04%
+  Designation: A.D.3.4, Percentage: 0.03%
+  Designation: A.D.1.3, Percentage: 0.01%
+  Designation: A.D.1.5, Percentage: 0.01%
+  Designation: A.D.1.7, Percentage: 0.01%
+  Designation: A.D.4, Percentage: 0.01%
+
+Continent: Europe (Total observed designations in this group: 5836)
+  Designation: A.D, Percentage: 16.84%
+  Designation: A.D.4.NmC3, Percentage: 8.77%
+  Designation: A.D.NmC2, Percentage: 7.64%
+  Designation: A.D.5.NmC1, Percentage: 5.59%
+  Designation: A.D.2, Percentage: 5.19%
+  Designation: A.D.5.2, Percentage: 5.05%
+  Designation: A.D.3.3, Percentage: 4.95%
+  Designation: A.3.1.1, Percentage: 4.78%
+  Designation: A.3.1, Percentage: 3.77%
+  Designation: A.D.2.2, Percentage: 2.93%
+  Designation: A.D.5.1, Percentage: 2.84%
+  Designation: A.D.1.2, Percentage: 2.78%
+  Designation: A.D.2.2.NmC1, Percentage: 2.43%
+  Designation: A.D.1.5, Percentage: 2.35%
+  Designation: A.D.1, Percentage: 2.14%
+  Designation: A.D.3.6, Percentage: 2.06%
+  Designation: A.D.3.12, Percentage: 2.00%
+  Designation: A.D.4.NmC2, Percentage: 1.53%
+  Designation: A.D.1.9, Percentage: 1.30%
+  Designation: A.D.3.8, Percentage: 1.29%
+  Designation: A.D.3.NmC2, Percentage: 1.20%
+  Designation: A.D.NmC1, Percentage: 1.15%
+  Designation: A.D.5, Percentage: 1.11%
+  Designation: A.D.5.3, Percentage: 1.08%
+  Designation: A.D.1.7, Percentage: 0.96%
+  Designation: A.D.4.NmC1, Percentage: 0.94%
+  Designation: A.D.1.8, Percentage: 0.86%
+  Designation: A.D.1.10, Percentage: 0.82%
+  Designation: A.D.2.NmC1, Percentage: 0.77%
+  Designation: A.D.3.10, Percentage: 0.74%
+  Designation: A.D.1.4, Percentage: 0.65%
+  Designation: A.D.3.1, Percentage: 0.62%
+  Designation: A.D.1.11, Percentage: 0.58%
+  Designation: A.D.3.2, Percentage: 0.50%
+  Designation: A.D.1.6, Percentage: 0.43%
+  Designation: A.D.2.1, Percentage: 0.41%
+  Designation: A.3.1.NmC1, Percentage: 0.24%
+  Designation: A.D.3.4, Percentage: 0.19%
+  Designation: A.D.3.7, Percentage: 0.17%
+  Designation: A.D.3.NmC1, Percentage: 0.17%
+  Designation: A.D.2.NmC2, Percentage: 0.09%
+  Designation: A.D.1.3, Percentage: 0.03%
+  Designation: A.3.1.NmC2, Percentage: 0.02%
+  Designation: A.D.2.2.1, Percentage: 0.02%
+  Designation: A.D.4, Percentage: 0.02%
+
+Continent: NorthAmerica (Total observed designations in this group: 3830)
+  Designation: A.D.1, Percentage: 30.76%
+  Designation: A.D.2, Percentage: 21.98%
+  Designation: A.D.3.3, Percentage: 6.97%
+  Designation: A.D.5.2, Percentage: 6.24%
+  Designation: A.D.1.2, Percentage: 3.84%
+  Designation: A.D.5.1, Percentage: 3.26%
+  Designation: A.2.1, Percentage: 3.16%
+  Designation: A.D.2.NmC2, Percentage: 3.11%
+  Designation: A.D.4.NmC3, Percentage: 2.72%
+  Designation: A.D.2.NmC1, Percentage: 2.40%
+  Designation: A.D.1.5, Percentage: 2.19%
+  Designation: A.D, Percentage: 1.64%
+  Designation: A.D.5.3, Percentage: 1.44%
+  Designation: A.D.1.8, Percentage: 1.38%
+  Designation: A.D.1.9, Percentage: 1.38%
+  Designation: A.D.1.6, Percentage: 1.36%
+  Designation: A.D.3.12, Percentage: 1.28%
+  Designation: A.D.1.7, Percentage: 0.78%
+  Designation: A.D.3.8, Percentage: 0.50%
+  Designation: A.D.3.2, Percentage: 0.47%
+  Designation: A.D.3.4, Percentage: 0.31%
+  Designation: A.D.3.NmC2, Percentage: 0.29%
+  Designation: A.D.1.4, Percentage: 0.26%
+  Designation: A.3.1, Percentage: 0.23%
+  Designation: A.D.2.2.NmC1, Percentage: 0.23%
+  Designation: A.D.4.NmC2, Percentage: 0.23%
+  Designation: A.D.NmC2, Percentage: 0.23%
+  Designation: A.3.1.1, Percentage: 0.21%
+  Designation: A.D.3.1, Percentage: 0.16%
+  Designation: A.D.4.NmC1, Percentage: 0.16%
+  Designation: A.D.1.10, Percentage: 0.10%
+  Designation: A.D.2.2, Percentage: 0.10%
+  Designation: A.D.3.10, Percentage: 0.10%
+  Designation: A.D.4.1, Percentage: 0.10%
+  Designation: A.D.2.2.1, Percentage: 0.08%
+  Designation: A.D.3.7, Percentage: 0.08%
+  Designation: A.D.NmC1, Percentage: 0.08%
+  Designation: A.D.1.11, Percentage: 0.05%
+  Designation: A.D.3.6, Percentage: 0.05%
+  Designation: A.3.1.NmC1, Percentage: 0.03%
+  Designation: A.D.5.NmC1, Percentage: 0.03%
+
+Continent: Oceania (Total observed designations in this group: 733)
+  Designation: A.D.1.3, Percentage: 20.60%
+  Designation: A.D.3.3, Percentage: 17.74%
+  Designation: A.D.1.2, Percentage: 16.10%
+  Designation: A.D, Percentage: 12.69%
+  Designation: A.D.1, Percentage: 7.50%
+  Designation: A.D.5.1, Percentage: 4.37%
+  Designation: A.D.2.2.NmC1, Percentage: 3.82%
+  Designation: A.D.3.12, Percentage: 3.55%
+  Designation: A.D.5.3, Percentage: 2.73%
+  Designation: A.D.3.6, Percentage: 2.18%
+  Designation: A.D.2, Percentage: 1.50%
+  Designation: A.D.2.1, Percentage: 1.36%
+  Designation: A.D.2.2, Percentage: 0.95%
+  Designation: A.D.2.2.1, Percentage: 0.95%
+  Designation: A.D.2.NmC1, Percentage: 0.95%
+  Designation: A.D.NmC2, Percentage: 0.95%
+  Designation: A.D.NmC1, Percentage: 0.55%
+  Designation: A.2.1, Percentage: 0.41%
+  Designation: A.D.1.4, Percentage: 0.27%
+  Designation: A.D.1.7, Percentage: 0.27%
+  Designation: A.D.3.4, Percentage: 0.27%
+  Designation: A.3.1.NmC2, Percentage: 0.14%
+  Designation: A.D.2.NmC2, Percentage: 0.14%
+
+Continent: SouthAmerica (Total observed designations in this group: 740)
+  Designation: A.D.4.NmC2, Percentage: 19.32%
+  Designation: A.D.4.NmC3, Percentage: 13.24%
+  Designation: A.D.3.3, Percentage: 11.62%
+  Designation: A.D.4.NmC1, Percentage: 10.27%
+  Designation: A.D, Percentage: 9.59%
+  Designation: A.3.1, Percentage: 6.62%
+  Designation: A.D.1, Percentage: 4.59%
+  Designation: A.D.1.2, Percentage: 4.46%
+  Designation: A.D.3.12, Percentage: 4.05%
+  Designation: A.3.1.1, Percentage: 3.24%
+  Designation: A.D.1.5, Percentage: 3.11%
+  Designation: A.D.NmC2, Percentage: 2.43%
+  Designation: A.D.3, Percentage: 2.30%
+  Designation: A.D.5.1, Percentage: 1.22%
+  Designation: A.D.5.3, Percentage: 1.08%
+  Designation: A.D.2, Percentage: 0.54%
+  Designation: A.D.3.NmC1, Percentage: 0.41%
+  Designation: A.D.5.2, Percentage: 0.41%
+  Designation: A.D.1.8, Percentage: 0.27%
+  Designation: A.D.2.2.NmC1, Percentage: 0.27%
+  Designation: A.D.5, Percentage: 0.27%
+  Designation: A.D.2.1, Percentage: 0.14%
+  Designation: A.D.2.2.1, Percentage: 0.14%
+  Designation: A.D.2.NmC1, Percentage: 0.14%
+  Designation: A.D.3.6, Percentage: 0.14%
+  Designation: A.D.NmC1, Percentage: 0.14%
+
+
+--- Analyzing Designations by Country (Percentages) ---
+
+Country:  Argentina (Total observed designations in this group: 265)
+  Designation: A.D.3.3, Percentage: 30.19%
+  Designation: A.D.4.NmC2, Percentage: 24.15%
+  Designation: A.D.4.NmC1, Percentage: 16.23%
+  Designation: A.D.3.12, Percentage: 10.57%
+  Designation: A.D.1.2, Percentage: 5.28%
+  Designation: A.D.1.5, Percentage: 4.53%
+  Designation: A.D.3, Percentage: 3.40%
+  Designation: A.D.5.1, Percentage: 3.02%
+  Designation: A.D.3.NmC1, Percentage: 1.13%
+  Designation: A.D.5.3, Percentage: 1.13%
+  Designation: A.D.1.8, Percentage: 0.38%
+
+Country:  Australia (Total observed designations in this group: 682)
+  Designation: A.D.1.3, Percentage: 22.14%
+  Designation: A.D.1.2, Percentage: 17.30%
+  Designation: A.D.3.3, Percentage: 15.84%
+  Designation: A.D, Percentage: 13.64%
+  Designation: A.D.1, Percentage: 8.06%
+  Designation: A.D.2.2.NmC1, Percentage: 4.11%
+  Designation: A.D.3.12, Percentage: 3.37%
+  Designation: A.D.5.1, Percentage: 3.37%
+  Designation: A.D.3.6, Percentage: 2.35%
+  Designation: A.D.2, Percentage: 1.61%
+  Designation: A.D.2.1, Percentage: 1.47%
+  Designation: A.D.2.2, Percentage: 1.03%
+  Designation: A.D.2.2.1, Percentage: 1.03%
+  Designation: A.D.2.NmC1, Percentage: 1.03%
+  Designation: A.D.NmC2, Percentage: 1.03%
+  Designation: A.D.5.3, Percentage: 0.73%
+  Designation: A.D.NmC1, Percentage: 0.59%
+  Designation: A.D.1.4, Percentage: 0.29%
+  Designation: A.D.1.7, Percentage: 0.29%
+  Designation: A.D.3.4, Percentage: 0.29%
+  Designation: A.2.1, Percentage: 0.15%
+  Designation: A.3.1.NmC2, Percentage: 0.15%
+  Designation: A.D.2.NmC2, Percentage: 0.15%
+
+Country:  Austria (Total observed designations in this group: 6)
+  Designation: A.D.5.2, Percentage: 33.33%
+  Designation: A.D.1.10, Percentage: 16.67%
+  Designation: A.D.1.2, Percentage: 16.67%
+  Designation: A.D.3.12, Percentage: 16.67%
+  Designation: A.D.3.8, Percentage: 16.67%
+
+Country:  Bangladesh (Total observed designations in this group: 15)
+  Designation: A.D.5, Percentage: 46.67%
+  Designation: A.D.5.NmC1, Percentage: 26.67%
+  Designation: A.3.1, Percentage: 13.33%
+  Designation: A.D.2.2.NmC1, Percentage: 13.33%
+
+Country:  Belgium (Total observed designations in this group: 500)
+  Designation: A.D.NmC2, Percentage: 42.60%
+  Designation: A.D, Percentage: 12.60%
+  Designation: A.3.1.1, Percentage: 10.00%
+  Designation: A.D.4.NmC3, Percentage: 9.80%
+  Designation: A.D.2, Percentage: 9.60%
+  Designation: A.3.1, Percentage: 5.00%
+  Designation: A.D.4.NmC1, Percentage: 3.20%
+  Designation: A.D.5, Percentage: 1.60%
+  Designation: A.D.3.6, Percentage: 1.40%
+  Designation: A.D.2.2.NmC1, Percentage: 1.00%
+  Designation: A.D.3.NmC2, Percentage: 0.80%
+  Designation: A.D.1, Percentage: 0.60%
+  Designation: A.D.2.NmC1, Percentage: 0.60%
+  Designation: A.D.4.NmC2, Percentage: 0.40%
+  Designation: A.D.NmC1, Percentage: 0.40%
+  Designation: A.D.1.9, Percentage: 0.20%
+  Designation: A.D.5.2, Percentage: 0.20%
+
+Country:  Brazil (Total observed designations in this group: 452)
+  Designation: A.D.4.NmC3, Percentage: 21.02%
+  Designation: A.D.4.NmC2, Percentage: 16.81%
+  Designation: A.D, Percentage: 15.71%
+  Designation: A.3.1, Percentage: 10.84%
+  Designation: A.D.1, Percentage: 7.52%
+  Designation: A.D.4.NmC1, Percentage: 6.19%
+  Designation: A.3.1.1, Percentage: 5.09%
+  Designation: A.D.1.2, Percentage: 4.20%
+  Designation: A.D.NmC2, Percentage: 3.98%
+  Designation: A.D.1.5, Percentage: 2.43%
+  Designation: A.D.3, Percentage: 1.77%
+  Designation: A.D.3.3, Percentage: 1.11%
+  Designation: A.D.2, Percentage: 0.88%
+  Designation: A.D.2.2.NmC1, Percentage: 0.44%
+  Designation: A.D.5, Percentage: 0.44%
+  Designation: A.D.1.8, Percentage: 0.22%
+  Designation: A.D.2.1, Percentage: 0.22%
+  Designation: A.D.2.2.1, Percentage: 0.22%
+  Designation: A.D.2.NmC1, Percentage: 0.22%
+  Designation: A.D.3.6, Percentage: 0.22%
+  Designation: A.D.5.1, Percentage: 0.22%
+  Designation: A.D.NmC1, Percentage: 0.22%
+
+Country:  Bulgaria (Total observed designations in this group: 17)
+  Designation: A.D, Percentage: 52.94%
+  Designation: A.D.NmC2, Percentage: 41.18%
+  Designation: A.D.5, Percentage: 5.88%
+
+Country:  Cambodia (Total observed designations in this group: 4)
+  Designation: A.D.2.2.1, Percentage: 100.00%
+
+Country:  Cameroon (Total observed designations in this group: 25)
+  Designation: A.D.3.6, Percentage: 72.00%
+  Designation: A.3.1, Percentage: 24.00%
+  Designation: A.D, Percentage: 4.00%
+
+Country:  Canada (Total observed designations in this group: 290)
+  Designation: A.D.1, Percentage: 17.93%
+  Designation: A.D.2, Percentage: 17.93%
+  Designation: A.D, Percentage: 15.86%
+  Designation: A.D.1.2, Percentage: 11.38%
+  Designation: A.D.3.3, Percentage: 10.34%
+  Designation: A.D.1.5, Percentage: 4.83%
+  Designation: A.D.2.NmC2, Percentage: 4.14%
+  Designation: A.3.1, Percentage: 3.10%
+  Designation: A.3.1.1, Percentage: 2.41%
+  Designation: A.D.5.1, Percentage: 2.41%
+  Designation: A.D.5.3, Percentage: 2.07%
+  Designation: A.D.4.NmC3, Percentage: 1.72%
+  Designation: A.D.2.NmC1, Percentage: 1.38%
+  Designation: A.D.3.12, Percentage: 1.38%
+  Designation: A.D.4.NmC1, Percentage: 1.03%
+  Designation: A.D.1.4, Percentage: 0.69%
+  Designation: A.3.1.NmC1, Percentage: 0.34%
+  Designation: A.D.2.2.NmC1, Percentage: 0.34%
+  Designation: A.D.3.6, Percentage: 0.34%
+  Designation: A.D.NmC1, Percentage: 0.34%
+
+Country:  China (Total observed designations in this group: 3406)
+  Designation: A.D.4.NmC3, Percentage: 17.06%
+  Designation: A.D.2, Percentage: 14.94%
+  Designation: A.D.3.6, Percentage: 11.69%
+  Designation: A.3.1, Percentage: 9.92%
+  Designation: A.D, Percentage: 9.25%
+  Designation: A.D.NmC1, Percentage: 7.22%
+  Designation: A.D.2.NmC1, Percentage: 5.08%
+  Designation: A.D.3.NmC2, Percentage: 4.35%
+  Designation: A.D.4.NmC1, Percentage: 4.23%
+  Designation: A.D.3.3, Percentage: 3.90%
+  Designation: A.3.1.1, Percentage: 2.85%
+  Designation: A.D.3.NmC1, Percentage: 2.73%
+  Designation: A.3.1.NmC2, Percentage: 1.61%
+  Designation: A.D.2.2.NmC1, Percentage: 1.17%
+  Designation: A.D.3.12, Percentage: 0.85%
+  Designation: A.D.4.NmC2, Percentage: 0.73%
+  Designation: A.D.5, Percentage: 0.70%
+  Designation: A.2.1.1, Percentage: 0.29%
+  Designation: A.D.5.1, Percentage: 0.21%
+  Designation: A.3, Percentage: 0.18%
+  Designation: A.D.1, Percentage: 0.18%
+  Designation: A.3.1.NmC1, Percentage: 0.15%
+  Designation: A.D.3, Percentage: 0.15%
+  Designation: A.D.5.3, Percentage: 0.15%
+  Designation: A.D.2.2, Percentage: 0.12%
+  Designation: A.D.NmC2, Percentage: 0.09%
+  Designation: A.D.5.2, Percentage: 0.06%
+  Designation: A.D.1.2, Percentage: 0.03%
+  Designation: A.D.1.3, Percentage: 0.03%
+  Designation: A.D.2.2.1, Percentage: 0.03%
+  Designation: A.D.3.7, Percentage: 0.03%
+  Designation: A.D.3.8, Percentage: 0.03%
+
+Country:  Colombia (Total observed designations in this group: 1)
+  Designation: A.D.4.NmC3, Percentage: 100.00%
+
+Country:  Croatia (Total observed designations in this group: 315)
+  Designation: A.D.2.2, Percentage: 44.76%
+  Designation: A.D, Percentage: 23.49%
+  Designation: A.3.1, Percentage: 12.06%
+  Designation: A.D.2.2.NmC1, Percentage: 6.98%
+  Designation: A.3.1.1, Percentage: 4.76%
+  Designation: A.D.NmC1, Percentage: 3.17%
+  Designation: A.D.NmC2, Percentage: 2.86%
+  Designation: A.3.1.NmC1, Percentage: 0.95%
+  Designation: A.D.5.NmC1, Percentage: 0.63%
+  Designation: A.D.3.6, Percentage: 0.32%
+
+Country:  Cuba (Total observed designations in this group: 61)
+  Designation: A.D.4.NmC3, Percentage: 85.25%
+  Designation: A.D.4.NmC1, Percentage: 14.75%
+
+Country:  Egypt (Total observed designations in this group: 46)
+  Designation: A.D.2.2, Percentage: 67.39%
+  Designation: A.D.4.NmC3, Percentage: 30.43%
+  Designation: A.D.4.NmC1, Percentage: 2.17%
+
+Country:  Finland (Total observed designations in this group: 100)
+  Designation: A.D.1, Percentage: 24.00%
+  Designation: A.D.3.12, Percentage: 15.00%
+  Designation: A.D.1.2, Percentage: 14.00%
+  Designation: A.D.2.1, Percentage: 14.00%
+  Designation: A.D.2, Percentage: 11.00%
+  Designation: A.D.3.3, Percentage: 10.00%
+  Designation: A.D.1.5, Percentage: 5.00%
+  Designation: A.D.1.8, Percentage: 5.00%
+  Designation: A.D.2.NmC1, Percentage: 1.00%
+  Designation: A.D.5.1, Percentage: 1.00%
+
+Country:  France (Total observed designations in this group: 754)
+  Designation: A.D.5.NmC1, Percentage: 39.52%
+  Designation: A.3.1.1, Percentage: 9.42%
+  Designation: A.D.2, Percentage: 7.29%
+  Designation: A.D.5.2, Percentage: 6.37%
+  Designation: A.D.5.1, Percentage: 5.57%
+  Designation: A.D.1.9, Percentage: 5.04%
+  Designation: A.3.1, Percentage: 3.32%
+  Designation: A.D, Percentage: 2.92%
+  Designation: A.D.1.10, Percentage: 2.79%
+  Designation: A.D.2.2.NmC1, Percentage: 2.52%
+  Designation: A.D.3.8, Percentage: 2.52%
+  Designation: A.D.3.3, Percentage: 2.39%
+  Designation: A.D.1.5, Percentage: 1.59%
+  Designation: A.D.1.6, Percentage: 1.46%
+  Designation: A.D.3.12, Percentage: 1.33%
+  Designation: A.D.1.7, Percentage: 1.06%
+  Designation: A.D.2.NmC1, Percentage: 0.93%
+  Designation: A.D.1, Percentage: 0.80%
+  Designation: A.D.1.11, Percentage: 0.80%
+  Designation: A.D.1.2, Percentage: 0.66%
+  Designation: A.D.5.3, Percentage: 0.66%
+  Designation: A.D.3.1, Percentage: 0.27%
+  Designation: A.D.3.2, Percentage: 0.27%
+  Designation: A.D.2.2, Percentage: 0.13%
+  Designation: A.D.3.4, Percentage: 0.13%
+  Designation: A.D.5, Percentage: 0.13%
+  Designation: A.D.NmC2, Percentage: 0.13%
+
+Country:  Gambia (Total observed designations in this group: 39)
+  Designation: A.D.4.NmC2, Percentage: 41.03%
+  Designation: A.D.2, Percentage: 38.46%
+  Designation: A.D.4.NmC1, Percentage: 20.51%
+
+Country:  Germany (Total observed designations in this group: 1123)
+  Designation: A.D, Percentage: 28.50%
+  Designation: A.D.4.NmC3, Percentage: 8.28%
+  Designation: A.D.NmC2, Percentage: 6.95%
+  Designation: A.D.2.2.NmC1, Percentage: 6.06%
+  Designation: A.D.3.NmC2, Percentage: 5.79%
+  Designation: A.D.3.3, Percentage: 4.99%
+  Designation: A.3.1, Percentage: 4.81%
+  Designation: A.D.2, Percentage: 4.81%
+  Designation: A.3.1.1, Percentage: 4.45%
+  Designation: A.D.NmC1, Percentage: 3.29%
+  Designation: A.D.5.2, Percentage: 2.58%
+  Designation: A.D.1, Percentage: 2.32%
+  Designation: A.D.4.NmC2, Percentage: 2.32%
+  Designation: A.D.5.1, Percentage: 2.23%
+  Designation: A.D.1.8, Percentage: 1.69%
+  Designation: A.D.3.6, Percentage: 1.42%
+  Designation: A.D.3.12, Percentage: 1.34%
+  Designation: A.D.5.NmC1, Percentage: 1.34%
+  Designation: A.D.5, Percentage: 1.25%
+  Designation: A.D.2.NmC1, Percentage: 1.07%
+  Designation: A.D.1.2, Percentage: 0.98%
+  Designation: A.D.5.3, Percentage: 0.80%
+  Designation: A.D.3.8, Percentage: 0.62%
+  Designation: A.3.1.NmC1, Percentage: 0.53%
+  Designation: A.D.1.5, Percentage: 0.45%
+  Designation: A.D.1.10, Percentage: 0.36%
+  Designation: A.D.1.7, Percentage: 0.27%
+  Designation: A.D.2.2, Percentage: 0.18%
+  Designation: A.D.3.1, Percentage: 0.18%
+  Designation: A.3.1.NmC2, Percentage: 0.09%
+  Designation: A.D.2.NmC2, Percentage: 0.09%
+
+Country:  Ghana (Total observed designations in this group: 51)
+  Designation: A.D.NmC2, Percentage: 62.75%
+  Designation: A.D, Percentage: 13.73%
+  Designation: A.3.1.1, Percentage: 9.80%
+  Designation: A.D.2.2, Percentage: 9.80%
+  Designation: A.D.2.2.NmC1, Percentage: 3.92%
+
+Country:  Greece (Total observed designations in this group: 13)
+  Designation: A.D.5.NmC1, Percentage: 84.62%
+  Designation: A.D.NmC2, Percentage: 15.38%
+
+Country:  Guatemala (Total observed designations in this group: 15)
+  Designation: A.D.NmC2, Percentage: 53.33%
+  Designation: A.D, Percentage: 33.33%
+  Designation: A.3.1.1, Percentage: 6.67%
+  Designation: A.D.5.NmC1, Percentage: 6.67%
+
+Country:  Hong Kong (Total observed designations in this group: 20)
+  Designation: A.3.1, Percentage: 60.00%
+  Designation: A.3.1.1, Percentage: 30.00%
+  Designation: A.D.3.12, Percentage: 10.00%
+
+Country:  Hungary (Total observed designations in this group: 44)
+  Designation: A.D.2, Percentage: 34.09%
+  Designation: A.D.4.NmC3, Percentage: 34.09%
+  Designation: A.D.1, Percentage: 11.36%
+  Designation: A.D.4.NmC2, Percentage: 9.09%
+  Designation: A.D.2.NmC1, Percentage: 4.55%
+  Designation: A.D.3.NmC1, Percentage: 4.55%
+  Designation: A.D.4.NmC1, Percentage: 2.27%
+
+Country:  India (Total observed designations in this group: 316)
+  Designation: A.D.2.2.NmC1, Percentage: 24.37%
+  Designation: A.D.5.NmC1, Percentage: 17.72%
+  Designation: A.D, Percentage: 9.81%
+  Designation: A.3.1, Percentage: 8.86%
+  Designation: A.D.3.6, Percentage: 7.91%
+  Designation: A.3.1.1, Percentage: 6.65%
+  Designation: A.D.2.2, Percentage: 6.01%
+  Designation: A.D.4.NmC3, Percentage: 6.01%
+  Designation: A.D.2.2.1, Percentage: 3.48%
+  Designation: A.D.NmC1, Percentage: 3.16%
+  Designation: A.D.4.NmC1, Percentage: 2.22%
+  Designation: A.D.NmC2, Percentage: 1.58%
+  Designation: A.D.4.NmC2, Percentage: 0.95%
+  Designation: A.D.2, Percentage: 0.32%
+  Designation: A.D.3.NmC2, Percentage: 0.32%
+  Designation: A.D.5.1, Percentage: 0.32%
+  Designation: A.D.5.3, Percentage: 0.32%
+
+Country:  Indonesia (Total observed designations in this group: 7)
+  Designation: A.D.2.2, Percentage: 85.71%
+  Designation: A.D.3.NmC2, Percentage: 14.29%
+
+Country:  Iran (Total observed designations in this group: 148)
+  Designation: A.3.1, Percentage: 25.00%
+  Designation: A.D, Percentage: 24.32%
+  Designation: A.D.2, Percentage: 15.54%
+  Designation: A.D.NmC2, Percentage: 11.49%
+  Designation: A.D.2.2.NmC1, Percentage: 6.76%
+  Designation: A.D.5, Percentage: 6.76%
+  Designation: A.D.2.NmC2, Percentage: 2.70%
+  Designation: A.D.3.6, Percentage: 2.03%
+  Designation: A.D.4.NmC3, Percentage: 2.03%
+  Designation: A.D.2.2, Percentage: 1.35%
+  Designation: A.D.NmC1, Percentage: 1.35%
+  Designation: A.3.1.NmC2, Percentage: 0.68%
+
+Country:  Iraq (Total observed designations in this group: 6)
+  Designation: A.D.2.2, Percentage: 33.33%
+  Designation: A.3, Percentage: 16.67%
+  Designation: A.D.4, Percentage: 16.67%
+  Designation: A.D.4.NmC2, Percentage: 16.67%
+  Designation: A.D.4.NmC3, Percentage: 16.67%
+
+Country:  Ireland (Total observed designations in this group: 261)
+  Designation: A.D.4.NmC3, Percentage: 33.72%
+  Designation: A.D.4.NmC2, Percentage: 14.56%
+  Designation: A.D.5.2, Percentage: 11.11%
+  Designation: A.D.1.4, Percentage: 8.43%
+  Designation: A.D.1.9, Percentage: 5.36%
+  Designation: A.D.1.6, Percentage: 4.21%
+  Designation: A.D.1.5, Percentage: 3.45%
+  Designation: A.D.1.11, Percentage: 3.07%
+  Designation: A.D.4.NmC1, Percentage: 3.07%
+  Designation: A.D.3.NmC1, Percentage: 2.30%
+  Designation: A.D.3.12, Percentage: 1.92%
+  Designation: A.D.1.2, Percentage: 1.53%
+  Designation: A.D.3.1, Percentage: 1.53%
+  Designation: A.D.1.7, Percentage: 1.15%
+  Designation: A.D.3.3, Percentage: 1.15%
+  Designation: A.D.5.1, Percentage: 1.15%
+  Designation: A.D.3.4, Percentage: 0.77%
+  Designation: A.D.3.7, Percentage: 0.77%
+  Designation: A.D.1.10, Percentage: 0.38%
+  Designation: A.D.4, Percentage: 0.38%
+
+Country:  Israel (Total observed designations in this group: 2)
+  Designation: A.3.1.1, Percentage: 100.00%
+
+Country:  Italy (Total observed designations in this group: 391)
+  Designation: A.D, Percentage: 32.74%
+  Designation: A.3.1.1, Percentage: 18.41%
+  Designation: A.3.1, Percentage: 14.07%
+  Designation: A.D.NmC2, Percentage: 13.04%
+  Designation: A.D.5, Percentage: 7.93%
+  Designation: A.D.3.6, Percentage: 4.60%
+  Designation: A.D.NmC1, Percentage: 1.53%
+  Designation: A.D.2, Percentage: 1.28%
+  Designation: A.D.4.NmC3, Percentage: 1.02%
+  Designation: A.D.5.1, Percentage: 1.02%
+  Designation: A.D.1.2, Percentage: 0.77%
+  Designation: A.D.2.2.NmC1, Percentage: 0.77%
+  Designation: A.3.1.NmC1, Percentage: 0.51%
+  Designation: A.D.1, Percentage: 0.51%
+  Designation: A.D.3.3, Percentage: 0.51%
+  Designation: A.D.3.NmC1, Percentage: 0.51%
+  Designation: A.D.2.NmC1, Percentage: 0.26%
+  Designation: A.D.3.NmC2, Percentage: 0.26%
+  Designation: A.D.4.NmC2, Percentage: 0.26%
+
+Country:  Japan (Total observed designations in this group: 1019)
+  Designation: A.D, Percentage: 30.72%
+  Designation: A.3.1.NmC1, Percentage: 19.92%
+  Designation: A.D.2, Percentage: 19.53%
+  Designation: A.D.3.3, Percentage: 9.13%
+  Designation: A.3.1.1, Percentage: 4.02%
+  Designation: A.D.3.6, Percentage: 2.55%
+  Designation: A.D.2.2.NmC1, Percentage: 1.96%
+  Designation: A.D.NmC2, Percentage: 1.86%
+  Designation: A.3.1, Percentage: 1.67%
+  Designation: A.D.5.1, Percentage: 1.67%
+  Designation: A.D.2.1, Percentage: 1.37%
+  Designation: A.D.NmC1, Percentage: 1.37%
+  Designation: A.D.3.12, Percentage: 0.98%
+  Designation: A.D.3.7, Percentage: 0.59%
+  Designation: A.D.5.3, Percentage: 0.59%
+  Designation: A.D.1.9, Percentage: 0.39%
+  Designation: A.D.4.NmC3, Percentage: 0.39%
+  Designation: A.D.5.2, Percentage: 0.39%
+  Designation: A.D.1.2, Percentage: 0.20%
+  Designation: A.D.2.NmC1, Percentage: 0.20%
+  Designation: A.D.1, Percentage: 0.10%
+  Designation: A.D.1.5, Percentage: 0.10%
+  Designation: A.D.1.7, Percentage: 0.10%
+  Designation: A.D.3.4, Percentage: 0.10%
+  Designation: A.D.5.NmC1, Percentage: 0.10%
+
+Country:  Jordan (Total observed designations in this group: 65)
+  Designation: A.D.5.3, Percentage: 50.77%
+  Designation: A.D.3.3, Percentage: 29.23%
+  Designation: A.D.5.1, Percentage: 10.77%
+  Designation: A.D.3.12, Percentage: 7.69%
+  Designation: A.D, Percentage: 1.54%
+
+Country:  Kenya (Total observed designations in this group: 767)
+  Designation: A.D.4.NmC1, Percentage: 32.46%
+  Designation: A.D.4.NmC2, Percentage: 24.38%
+  Designation: A.D.4, Percentage: 22.69%
+  Designation: A.D.5.1, Percentage: 16.04%
+  Designation: A.D.3.3, Percentage: 1.83%
+  Designation: A.D.2.2, Percentage: 1.56%
+  Designation: A.D.3.12, Percentage: 0.52%
+  Designation: A.D.5.3, Percentage: 0.52%
+
+Country:  Kuwait (Total observed designations in this group: 22)
+  Designation: A.D.3.8, Percentage: 31.82%
+  Designation: A.D.3.10, Percentage: 27.27%
+  Designation: A.D.3.1, Percentage: 13.64%
+  Designation: A.D.5.1, Percentage: 13.64%
+  Designation: A.D.5.3, Percentage: 9.09%
+  Designation: A.D.3.4, Percentage: 4.55%
+
+Country:  Laos (Total observed designations in this group: 1)
+  Designation: A.3.1.1, Percentage: 100.00%
+
+Country:  Latvia (Total observed designations in this group: 21)
+  Designation: A.3.1.1, Percentage: 57.14%
+  Designation: A.3.1, Percentage: 38.10%
+  Designation: A.D.NmC2, Percentage: 4.76%
+
+Country:  Lebanon (Total observed designations in this group: 96)
+  Designation: A.D.2.2, Percentage: 50.00%
+  Designation: A.D.NmC2, Percentage: 26.04%
+  Designation: A.D, Percentage: 19.79%
+  Designation: A.D.2.2.NmC1, Percentage: 2.08%
+  Designation: A.D.3.12, Percentage: 2.08%
+
+Country:  Malaysia (Total observed designations in this group: 175)
+  Designation: A.3.1, Percentage: 46.29%
+  Designation: A.D, Percentage: 35.43%
+  Designation: A.3.1.1, Percentage: 8.00%
+  Designation: A.D.3.6, Percentage: 5.14%
+  Designation: A.D.2.2.NmC1, Percentage: 2.29%
+  Designation: A.3.1.NmC1, Percentage: 1.71%
+  Designation: A.D.NmC1, Percentage: 1.14%
+
+Country:  Mali (Total observed designations in this group: 52)
+  Designation: A.D.4.NmC1, Percentage: 90.38%
+  Designation: A.D.4.NmC2, Percentage: 7.69%
+  Designation: A.3.1.1, Percentage: 1.92%
+
+Country:  Mexico (Total observed designations in this group: 80)
+  Designation: A.D.4.NmC3, Percentage: 68.75%
+  Designation: A.D.3.NmC2, Percentage: 13.75%
+  Designation: A.D.4.NmC2, Percentage: 11.25%
+  Designation: A.D.1.5, Percentage: 3.75%
+  Designation: A.D.2, Percentage: 1.25%
+  Designation: A.D.3.12, Percentage: 1.25%
+
+Country:  Morocco (Total observed designations in this group: 1)
+  Designation: A.D.2.2.1, Percentage: 100.00%
+
+Country:  Mozambique (Total observed designations in this group: 3)
+  Designation: A.D.2.2.1, Percentage: 100.00%
+
+Country:  Myanmar (Total observed designations in this group: 153)
+  Designation: A.D, Percentage: 41.18%
+  Designation: A.D.3.NmC1, Percentage: 22.88%
+  Designation: A.D.NmC1, Percentage: 15.69%
+  Designation: A.D.2.2.NmC1, Percentage: 5.88%
+  Designation: A.D.3, Percentage: 5.23%
+  Designation: A.3.1, Percentage: 3.27%
+  Designation: A.D.3.NmC2, Percentage: 1.96%
+  Designation: A.D.5.NmC1, Percentage: 1.96%
+  Designation: A.3.1.1, Percentage: 1.31%
+  Designation: A.D.4.NmC2, Percentage: 0.65%
+
+Country:  Nepal (Total observed designations in this group: 24)
+  Designation: A.3.1, Percentage: 66.67%
+  Designation: A.3.1.1, Percentage: 20.83%
+  Designation: A.D.5.NmC1, Percentage: 12.50%
+
+Country:  Netherlands (Total observed designations in this group: 243)
+  Designation: A.D.2, Percentage: 27.16%
+  Designation: A.D.3.3, Percentage: 26.75%
+  Designation: A.D.1.8, Percentage: 7.82%
+  Designation: A.D.3.12, Percentage: 6.58%
+  Designation: A.D.1.2, Percentage: 5.76%
+  Designation: A.D.1, Percentage: 5.35%
+  Designation: A.D.4.NmC2, Percentage: 4.53%
+  Designation: A.D.5.3, Percentage: 4.53%
+  Designation: A.D.2.1, Percentage: 3.70%
+  Designation: A.D.4.NmC3, Percentage: 2.47%
+  Designation: A.D.2.NmC1, Percentage: 2.06%
+  Designation: A.D.5.1, Percentage: 1.65%
+  Designation: A.D.2.NmC2, Percentage: 0.82%
+  Designation: A.D.2.2.1, Percentage: 0.41%
+  Designation: A.D.4.NmC1, Percentage: 0.41%
+
+Country:  New Zealand (Total observed designations in this group: 51)
+  Designation: A.D.3.3, Percentage: 43.14%
+  Designation: A.D.5.3, Percentage: 29.41%
+  Designation: A.D.5.1, Percentage: 17.65%
+  Designation: A.D.3.12, Percentage: 5.88%
+  Designation: A.2.1, Percentage: 3.92%
+
+Country:  Nicaragua (Total observed designations in this group: 10)
+  Designation: A.D.3.3, Percentage: 90.00%
+  Designation: A.D.3.12, Percentage: 10.00%
+
+Country:  Nigeria (Total observed designations in this group: 22)
+  Designation: A.D.NmC2, Percentage: 31.82%
+  Designation: A.D.2, Percentage: 27.27%
+  Designation: A.3.1.1, Percentage: 13.64%
+  Designation: A.D, Percentage: 13.64%
+  Designation: A.D.2.2, Percentage: 9.09%
+  Designation: A.D.NmC1, Percentage: 4.55%
+
+Country:  Pakistan (Total observed designations in this group: 70)
+  Designation: A.3.1, Percentage: 95.71%
+  Designation: A.D, Percentage: 4.29%
+
+Country:  Panama (Total observed designations in this group: 133)
+  Designation: A.D.4.NmC3, Percentage: 32.33%
+  Designation: A.D.1.8, Percentage: 10.53%
+  Designation: A.D.5.2, Percentage: 9.77%
+  Designation: A.D.3.3, Percentage: 8.27%
+  Designation: A.D.1.7, Percentage: 7.52%
+  Designation: A.D.1.5, Percentage: 6.77%
+  Designation: A.D.3.2, Percentage: 6.02%
+  Designation: A.D.2.2.NmC1, Percentage: 5.26%
+  Designation: A.D.3.12, Percentage: 3.01%
+  Designation: A.D.4.NmC1, Percentage: 2.26%
+  Designation: A.D, Percentage: 1.50%
+  Designation: A.D.1.2, Percentage: 1.50%
+  Designation: A.D.3.4, Percentage: 1.50%
+  Designation: A.D.NmC1, Percentage: 1.50%
+  Designation: A.D.3.6, Percentage: 0.75%
+  Designation: A.D.5.1, Percentage: 0.75%
+  Designation: A.D.NmC2, Percentage: 0.75%
+
+Country:  Paraguay (Total observed designations in this group: 11)
+  Designation: A.D.4.NmC1, Percentage: 45.45%
+  Designation: A.D.4.NmC2, Percentage: 27.27%
+  Designation: A.D.4.NmC3, Percentage: 18.18%
+  Designation: A.3.1.1, Percentage: 9.09%
+
+Country:  Peru (Total observed designations in this group: 11)
+  Designation: A.D.5.3, Percentage: 45.45%
+  Designation: A.D.5.2, Percentage: 27.27%
+  Designation: A.D.3.12, Percentage: 18.18%
+  Designation: A.D.3.3, Percentage: 9.09%
+
+Country:  Philippines (Total observed designations in this group: 154)
+  Designation: A.D, Percentage: 27.27%
+  Designation: A.3.1.NmC1, Percentage: 16.23%
+  Designation: A.3.1, Percentage: 7.79%
+  Designation: A.D.2, Percentage: 7.14%
+  Designation: A.D.3.3, Percentage: 7.14%
+  Designation: A.D.5.1, Percentage: 7.14%
+  Designation: A.D.5.3, Percentage: 7.14%
+  Designation: A.D.3.6, Percentage: 5.19%
+  Designation: A.3.1.1, Percentage: 4.55%
+  Designation: A.D.4.NmC3, Percentage: 4.55%
+  Designation: A.D.2.2.NmC1, Percentage: 3.90%
+  Designation: A.D.3.12, Percentage: 1.30%
+  Designation: A.D.2.2, Percentage: 0.65%
+
+Country:  Portugal (Total observed designations in this group: 122)
+  Designation: A.D, Percentage: 55.74%
+  Designation: A.D.NmC2, Percentage: 27.87%
+  Designation: A.3.1.1, Percentage: 4.92%
+  Designation: A.D.2.2.NmC1, Percentage: 4.92%
+  Designation: A.D.3.6, Percentage: 2.46%
+  Designation: A.3.1, Percentage: 1.64%
+  Designation: A.D.NmC1, Percentage: 1.64%
+  Designation: A.D.2.2, Percentage: 0.82%
+
+Country:  Russia (Total observed designations in this group: 140)
+  Designation: A.D.4.NmC3, Percentage: 41.43%
+  Designation: A.D.2, Percentage: 25.00%
+  Designation: A.D.1, Percentage: 8.57%
+  Designation: A.D.3.3, Percentage: 6.43%
+  Designation: A.D.1.5, Percentage: 5.71%
+  Designation: A.D.2.NmC1, Percentage: 3.57%
+  Designation: A.D.3.12, Percentage: 2.86%
+  Designation: A.D.1.2, Percentage: 2.14%
+  Designation: A.D.1.3, Percentage: 1.43%
+  Designation: A.D.2.2, Percentage: 0.71%
+  Designation: A.D.3.2, Percentage: 0.71%
+  Designation: A.D.4.NmC2, Percentage: 0.71%
+  Designation: A.D.5.1, Percentage: 0.71%
+
+Country:  Saudi Arabia (Total observed designations in this group: 156)
+  Designation: A.D.4.NmC3, Percentage: 18.59%
+  Designation: A.D.4.NmC2, Percentage: 16.03%
+  Designation: A.D, Percentage: 14.74%
+  Designation: A.D.3.6, Percentage: 8.97%
+  Designation: A.D.2.2, Percentage: 8.33%
+  Designation: A.D.2, Percentage: 7.69%
+  Designation: A.3.1.NmC1, Percentage: 5.13%
+  Designation: A.D.4.NmC1, Percentage: 5.13%
+  Designation: A.D.3.NmC1, Percentage: 4.49%
+  Designation: A.D.3, Percentage: 2.56%
+  Designation: A.D.NmC1, Percentage: 2.56%
+  Designation: A.3.1, Percentage: 1.92%
+  Designation: A.D.2.2.NmC1, Percentage: 1.92%
+  Designation: A.3.1.1, Percentage: 1.28%
+  Designation: A.D.5, Percentage: 0.64%
+
+Country:  Senegal (Total observed designations in this group: 61)
+  Designation: A.D.NmC2, Percentage: 45.90%
+  Designation: A.D, Percentage: 36.07%
+  Designation: A.3.1.1, Percentage: 18.03%
+
+Country:  Slovenia (Total observed designations in this group: 125)
+  Designation: A.D, Percentage: 48.80%
+  Designation: A.D.3.6, Percentage: 35.20%
+  Designation: A.D.2.2, Percentage: 16.00%
+
+Country:  South Africa (Total observed designations in this group: 637)
+  Designation: A.D.4.NmC1, Percentage: 28.73%
+  Designation: A.D.2, Percentage: 15.54%
+  Designation: A.D.4.1, Percentage: 15.54%
+  Designation: A.3.1, Percentage: 9.89%
+  Designation: A.3.1.1, Percentage: 7.69%
+  Designation: A.D.4.NmC3, Percentage: 5.34%
+  Designation: A.D.2.1, Percentage: 4.24%
+  Designation: A.D.3.12, Percentage: 2.67%
+  Designation: A.D.3.3, Percentage: 2.67%
+  Designation: A.D.4.NmC2, Percentage: 2.20%
+  Designation: A.D.5.1, Percentage: 1.88%
+  Designation: A.D.5.3, Percentage: 1.26%
+  Designation: A.D.1, Percentage: 0.63%
+  Designation: A.D.2.NmC1, Percentage: 0.47%
+  Designation: A.D.3.6, Percentage: 0.31%
+  Designation: A.D.NmC2, Percentage: 0.31%
+  Designation: A.D.1.2, Percentage: 0.16%
+  Designation: A.D.1.5, Percentage: 0.16%
+  Designation: A.D.2.NmC2, Percentage: 0.16%
+  Designation: A.D.NmC1, Percentage: 0.16%
+
+Country:  South Korea (Total observed designations in this group: 134)
+  Designation: A.D, Percentage: 29.10%
+  Designation: A.D.5.NmC1, Percentage: 21.64%
+  Designation: A.3.1.1, Percentage: 14.18%
+  Designation: A.D.3.6, Percentage: 6.72%
+  Designation: A.D.3.3, Percentage: 5.97%
+  Designation: A.D.NmC2, Percentage: 5.22%
+  Designation: A.D.2, Percentage: 4.48%
+  Designation: A.D.NmC1, Percentage: 4.48%
+  Designation: A.3.1, Percentage: 2.24%
+  Designation: A.D.2.NmC1, Percentage: 2.24%
+  Designation: A.D.2.2.NmC1, Percentage: 1.49%
+  Designation: A.D.3.12, Percentage: 1.49%
+  Designation: A.D.5.3, Percentage: 0.75%
+
+Country:  Spain (Total observed designations in this group: 1328)
+  Designation: A.D.4.NmC3, Percentage: 14.98%
+  Designation: A.D.5.2, Percentage: 14.01%
+  Designation: A.D, Percentage: 13.33%
+  Designation: A.D.3.3, Percentage: 6.93%
+  Designation: A.D.1.5, Percentage: 6.25%
+  Designation: A.D.1.2, Percentage: 5.27%
+  Designation: A.D.5.1, Percentage: 4.07%
+  Designation: A.D.NmC2, Percentage: 3.69%
+  Designation: A.D.3.10, Percentage: 3.16%
+  Designation: A.D.3.12, Percentage: 2.64%
+  Designation: A.D.3.8, Percentage: 2.64%
+  Designation: A.D.5.3, Percentage: 2.64%
+  Designation: A.D.4.NmC1, Percentage: 2.18%
+  Designation: A.D.3.2, Percentage: 1.96%
+  Designation: A.D.3.1, Percentage: 1.88%
+  Designation: A.D.1, Percentage: 1.73%
+  Designation: A.D.3.6, Percentage: 1.66%
+  Designation: A.D.1.11, Percentage: 1.51%
+  Designation: A.D.1.10, Percentage: 1.43%
+  Designation: A.D.1.4, Percentage: 1.05%
+  Designation: A.D.1.9, Percentage: 0.90%
+  Designation: A.D.2, Percentage: 0.75%
+  Designation: A.D.5, Percentage: 0.75%
+  Designation: A.D.NmC1, Percentage: 0.75%
+  Designation: A.D.3.4, Percentage: 0.60%
+  Designation: A.D.3.7, Percentage: 0.60%
+  Designation: A.D.1.7, Percentage: 0.45%
+  Designation: A.D.2.2.NmC1, Percentage: 0.45%
+  Designation: A.D.4.NmC2, Percentage: 0.45%
+  Designation: A.D.1.8, Percentage: 0.38%
+  Designation: A.D.2.2, Percentage: 0.30%
+  Designation: A.D.1.6, Percentage: 0.23%
+  Designation: A.D.2.NmC1, Percentage: 0.23%
+  Designation: A.3.1.1, Percentage: 0.08%
+  Designation: A.D.2.1, Percentage: 0.08%
+
+Country:  Sri Lanka (Total observed designations in this group: 2)
+  Designation: A.D.2, Percentage: 50.00%
+  Designation: A.D.2.NmC1, Percentage: 50.00%
+
+Country:  Sudan (Total observed designations in this group: 8)
+  Designation: A.D.4.NmC2, Percentage: 100.00%
+
+Country:  Switzerland (Total observed designations in this group: 41)
+  Designation: A.D.5.1, Percentage: 29.27%
+  Designation: A.D.3.8, Percentage: 26.83%
+  Designation: A.D.1.9, Percentage: 21.95%
+  Designation: A.D.1.10, Percentage: 4.88%
+  Designation: A.D.3.1, Percentage: 4.88%
+  Designation: A.D.1.5, Percentage: 2.44%
+  Designation: A.D.3.10, Percentage: 2.44%
+  Designation: A.D.3.12, Percentage: 2.44%
+  Designation: A.D.3.3, Percentage: 2.44%
+  Designation: A.D.5.3, Percentage: 2.44%
+
+Country:  Taiwan (Total observed designations in this group: 822)
+  Designation: A.D.3.NmC2, Percentage: 20.19%
+  Designation: A.D.4.NmC2, Percentage: 18.25%
+  Designation: A.D.2.NmC1, Percentage: 16.67%
+  Designation: A.D.3.NmC1, Percentage: 9.85%
+  Designation: A.D.4.NmC3, Percentage: 8.76%
+  Designation: A.D.4.NmC1, Percentage: 7.66%
+  Designation: A.D.2, Percentage: 5.47%
+  Designation: A.D.3.6, Percentage: 4.38%
+  Designation: A.D.3, Percentage: 2.31%
+  Designation: A.D.2.2.NmC1, Percentage: 1.58%
+  Designation: A.D, Percentage: 1.46%
+  Designation: A.D.1, Percentage: 1.22%
+  Designation: A.D.3.3, Percentage: 0.85%
+  Designation: A.D.2.2, Percentage: 0.24%
+  Designation: A.D.2.NmC2, Percentage: 0.24%
+  Designation: A.D.5.1, Percentage: 0.24%
+  Designation: A.D.NmC1, Percentage: 0.24%
+  Designation: A.3, Percentage: 0.12%
+  Designation: A.D.1.2, Percentage: 0.12%
+  Designation: A.D.NmC2, Percentage: 0.12%
+
+Country:  Tanzania (Total observed designations in this group: 2)
+  Designation: A.D, Percentage: 50.00%
+  Designation: A.D.2.2.NmC1, Percentage: 50.00%
+
+Country:  Thailand (Total observed designations in this group: 611)
+  Designation: A.D.3.NmC1, Percentage: 27.33%
+  Designation: A.D.4.NmC1, Percentage: 21.44%
+  Designation: A.D.4.NmC2, Percentage: 15.55%
+  Designation: A.D.3, Percentage: 12.27%
+  Designation: A.D.3.6, Percentage: 10.47%
+  Designation: A.D, Percentage: 3.11%
+  Designation: A.D.NmC1, Percentage: 2.13%
+  Designation: A.D.2, Percentage: 1.96%
+  Designation: A.D.3.3, Percentage: 1.96%
+  Designation: A.D.NmC2, Percentage: 1.64%
+  Designation: A.D.5, Percentage: 0.98%
+  Designation: A.3.1, Percentage: 0.33%
+  Designation: A.D.4.NmC3, Percentage: 0.33%
+  Designation: A.D.5.NmC1, Percentage: 0.33%
+  Designation: A.D.2.2.NmC1, Percentage: 0.16%
+
+Country:  Tunisia (Total observed designations in this group: 35)
+  Designation: A.D, Percentage: 51.43%
+  Designation: A.D.2.2.NmC1, Percentage: 31.43%
+  Designation: A.D.3.6, Percentage: 8.57%
+  Designation: A.D.NmC1, Percentage: 5.71%
+  Designation: A.D.NmC2, Percentage: 2.86%
+
+Country:  Turkey (Total observed designations in this group: 93)
+  Designation: A.D, Percentage: 65.59%
+  Designation: A.3.1, Percentage: 13.98%
+  Designation: A.D.2.2.NmC1, Percentage: 12.90%
+  Designation: A.3.1.NmC1, Percentage: 3.23%
+  Designation: A.3.1.1, Percentage: 2.15%
+  Designation: A.D.2.2, Percentage: 1.08%
+  Designation: A.D.NmC2, Percentage: 1.08%
+
+Country:  USA (Total observed designations in this group: 3312)
+  Designation: A.D.1, Percentage: 34.00%
+  Designation: A.D.2, Percentage: 23.82%
+  Designation: A.D.3.3, Percentage: 6.82%
+  Designation: A.D.5.2, Percentage: 6.82%
+  Designation: A.2.1, Percentage: 3.65%
+  Designation: A.D.5.1, Percentage: 3.53%
+  Designation: A.D.1.2, Percentage: 3.38%
+  Designation: A.D.2.NmC2, Percentage: 3.23%
+  Designation: A.D.2.NmC1, Percentage: 2.66%
+  Designation: A.D.1.5, Percentage: 1.75%
+  Designation: A.D.1.9, Percentage: 1.60%
+  Designation: A.D.1.6, Percentage: 1.57%
+  Designation: A.D.5.3, Percentage: 1.48%
+  Designation: A.D.3.12, Percentage: 1.21%
+  Designation: A.D.1.8, Percentage: 1.18%
+  Designation: A.D.1.7, Percentage: 0.60%
+  Designation: A.D.3.8, Percentage: 0.57%
+  Designation: A.D, Percentage: 0.30%
+  Designation: A.D.3.2, Percentage: 0.30%
+  Designation: A.D.3.4, Percentage: 0.30%
+  Designation: A.D.1.4, Percentage: 0.24%
+  Designation: A.D.3.1, Percentage: 0.18%
+  Designation: A.D.1.10, Percentage: 0.12%
+  Designation: A.D.2.2, Percentage: 0.12%
+  Designation: A.D.3.10, Percentage: 0.12%
+  Designation: A.D.4.1, Percentage: 0.12%
+  Designation: A.D.2.2.1, Percentage: 0.09%
+  Designation: A.D.3.7, Percentage: 0.09%
+  Designation: A.D.1.11, Percentage: 0.06%
+  Designation: A.D.2.2.NmC1, Percentage: 0.03%
+  Designation: A.D.4.NmC3, Percentage: 0.03%
+
+Country:  United Arab Emirates (Total observed designations in this group: 5)
+  Designation: A.D.4.NmC3, Percentage: 80.00%
+  Designation: A.D.3.NmC2, Percentage: 20.00%
+
+Country:  United Kingdom (Total observed designations in this group: 199)
+  Designation: A.D.1.2, Percentage: 18.59%
+  Designation: A.D.1.7, Percentage: 18.09%
+  Designation: A.D.3.3, Percentage: 16.58%
+  Designation: A.D.5.1, Percentage: 10.05%
+  Designation: A.D.3.12, Percentage: 7.54%
+  Designation: A.D.1.5, Percentage: 7.04%
+  Designation: A.D.1, Percentage: 5.53%
+  Designation: A.D.3.6, Percentage: 4.52%
+  Designation: A.D.2.NmC1, Percentage: 3.02%
+  Designation: A.D.2, Percentage: 2.01%
+  Designation: A.D.1.4, Percentage: 1.01%
+  Designation: A.D.1.8, Percentage: 1.01%
+  Designation: A.D.1.9, Percentage: 1.01%
+  Designation: A.D.2.NmC2, Percentage: 1.01%
+  Designation: A.D.3.8, Percentage: 1.01%
+  Designation: A.D.5.3, Percentage: 1.01%
+  Designation: A.D.2.2.NmC1, Percentage: 0.50%
+  Designation: A.D.3.1, Percentage: 0.50%
+
+Country:  Viet Nam (Total observed designations in this group: 289)
+  Designation: A.3.1, Percentage: 41.87%
+  Designation: A.D.NmC1, Percentage: 38.75%
+  Designation: A.D.5.3, Percentage: 5.19%
+  Designation: A.3.1.1, Percentage: 4.50%
+  Designation: A.D.3.3, Percentage: 4.15%
+  Designation: A.D, Percentage: 2.77%
+  Designation: A.2.1, Percentage: 0.69%
+  Designation: A.3.1.NmC2, Percentage: 0.69%
+  Designation: A.D.3.6, Percentage: 0.69%
+  Designation: A.D.2.2.NmC1, Percentage: 0.35%
+  Designation: A.D.3.12, Percentage: 0.35%
+
+Country:  Zambia (Total observed designations in this group: 214)
+  Designation: A.D, Percentage: 49.07%
+  Designation: A.D.4.NmC1, Percentage: 28.97%
+  Designation: A.D.4.NmC2, Percentage: 12.62%
+  Designation: A.D.3.3, Percentage: 4.21%
+  Designation: A.D.2.2, Percentage: 1.87%
+  Designation: A.D.2.2.NmC1, Percentage: 1.87%
+  Designation: A.D.3.6, Percentage: 0.47%
+  Designation: A.D.3.NmC1, Percentage: 0.47%
+  Designation: A.D.NmC1, Percentage: 0.47%
+
+Country:  nan (Total observed designations in this group: 4)
+  Designation: A.D.5.1, Percentage: 100.00%
