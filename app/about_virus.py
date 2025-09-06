@@ -469,7 +469,7 @@ def haplocov_parameters(virus, config):
     st.markdown(f"- **Minimum cluster size (size):** {haplo.get('size')}")
     st.markdown(f"- **Designation mode:** {haplo.get('designation_mode')}")
 
-def dataset_from_df(virus, df: pd.DataFrame):
+def dataset_from_df(virus, df: pd.DataFrame, config):
     st.subheader("Dataset Overview")
     
     # total number of records in the final dataset
@@ -522,12 +522,21 @@ def dataset_from_df(virus, df: pd.DataFrame):
             haplocov_lineages_count = haplocov_lineages.nunique()
             existing_lineages_count = existing_lineages.nunique()
 
+            haplocov_params = config[VIRUSES][virus][PARAMETERS].get(HAPLOCOV, {})
+            dist = haplocov_params.get(DIST, "N/A")
+            size = haplocov_params.get(SIZE, "N/A")
+
             if existing_lineages_count == 1:
                 # there is no existing nomenclature for this virus, A.1 assigned to all sequences before HaploCoV is run.
                 # so we can say that HaploCov created all the lineages from scratch.
                 st.info("HaploCov created all lineages from scratch as there was no existing nomenclature for this virus. \nA.1 was assigned to all sequences before HaploCoV was run.")
 
-                st.markdown(f"- **Lineages assigned by HaploCoV:** {haplocov_lineages_count + existing_lineages_count}")
+                if haplocov_params:
+                    markdown_text = f"- **Lineages assigned by HaploCov:** {haplocov_lineages_count + existing_lineages_count} (Run with parameters: **dist**ance threshold = {dist}, minimum cluster **size** = {size})"
+                else:
+                    markdown_text = f"- **Lineages assigned by HaploCov:** {haplocov_lineages_count + existing_lineages_count}"
+                
+                st.markdown(markdown_text)
                 with st.expander("HaploCoV-assigned lineages:", expanded=False):
                     all_lineages_df = df[lineage_col].value_counts().reset_index()
                     all_lineages_df.columns = ["Lineage", "Count"]
@@ -540,7 +549,12 @@ def dataset_from_df(virus, df: pd.DataFrame):
                     existing_lineages_df.columns = ["Lineage", "Count"]
                     st.dataframe(existing_lineages_df, hide_index=True, use_container_width=False)
 
-                st.markdown(f"- **Lineages assigned by HaploCoV:** {haplocov_lineages_count}")
+                if haplocov_params:
+                    markdown_text = f"- **Lineages assigned by HaploCov:** {haplocov_lineages_count} (Run with parameters: **dist**ance threshold = {dist}, minimum cluster **size** = {size})"
+                else:
+                    markdown_text = f"- **Lineages assigned by HaploCov:** {haplocov_lineages_count}"
+
+                st.markdown(markdown_text)
                 with st.expander("HaploCoV-assigned lineages:", expanded=False):
                     haplocov_lineages_df = haplocov_lineages.value_counts().reset_index()
                     haplocov_lineages_df.columns = ["Lineage", "Count"]
@@ -613,7 +627,7 @@ def describe(virus, config, df):
     #st.markdown("---")
 
     if virus in ["sars-cov-2"]: dataset_from_stats(virus, stats=df)
-    else: dataset_from_df(virus, df=df)
+    else: dataset_from_df(virus, df=df, config=config)
     st.markdown("---")
 
     references(virus)
