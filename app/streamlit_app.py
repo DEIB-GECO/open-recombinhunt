@@ -209,6 +209,31 @@ def load_consensus_data(virus):
 
     return df
 
+@st.cache_data
+def load_complete_data_stats(virus):
+    stats = {}
+    if virus == "sars-cov-2":
+        source_file = RESULTS_DIR_BASE / NEXTSTRAIN_OUTPUT / virus / "nextstrain_reformatted.tsv"
+        columns = ["genomeID", "Collection date", "Submission date", "Location", "pangoLin"]
+        df = pd.read_csv(source_file, sep="\t", usecols=columns)
+        
+        stats["total_records"] = len(df)
+
+        df["Collection date"] = pd.to_datetime(df["Collection date"], errors="coerce")
+        min_date = df["Collection date"].min()
+        max_date = df["Collection date"].max()
+        stats["min_collection_date"] = min_date.strftime("%Y-%m-%d") if pd.notnull(min_date) else "N/A"
+        stats["max_collection_date"] = max_date.strftime("%Y-%m-%d") if pd.notnull(max_date) else "N/A"
+
+        stats["unique_countries"] = df["Location"].apply(lambda x: x.split("/")[1].strip() if isinstance(x, str) else x).nunique()
+        stats["country_distribution"] = df["Location"].apply(lambda x: x.split("/")[1].strip() if isinstance(x, str) else x).value_counts().reset_index()
+        stats["unique_lineages"] = df["pangoLin"].nunique()
+        stats["lineage_distribution"] = df["pangoLin"].value_counts().reset_index()
+
+        return stats
+    else:
+        pass
+
 def apply_time_filter(df, virus):
     """
     applies time based filtering to the dataframe
@@ -698,7 +723,7 @@ def display_detailed_report(report):
                 formatted_df = format_region_table(df, region).reset_index(drop=True)
 
                 # --- Filtering UI ---
-                _, col0, col1, col2, col3 = st.columns([11, 2, 1, 1, 1])
+                _, col0 = st.columns([11, 5])
                 with col0:
                     filter_all = st.checkbox("Select All (C1 ^ C2 ^ C3)", key=f"{region_name}_all")
                 # with col1:
@@ -966,8 +991,21 @@ def show_virus_page(virus):
     with tab0:
         st.header(f"About {virus_name}")
 
-        describe(virus, config, master_df)
+        if "stats" not in st.session_state:
+            st.session_state.stats = {}
 
+        if virus == "sars-cov-2":
+            if "sars-cov-2" not in st.session_state.stats:
+                loader_placeholder = st.empty()
+                loader_placeholder.markdown(loading_animation(virus_name), unsafe_allow_html=True)
+                stats = load_complete_data_stats(virus)
+                st.session_state.stats["sars-cov-2"] = stats
+                loader_placeholder.markdown("<style>.loader-overlay{display:none;}</style>", unsafe_allow_html=True)
+            else:
+                stats = st.session_state.stats["sars-cov-2"]
+
+            describe(virus, config, stats)
+        else: describe(virus, config, master_df)
 
     with tab1:
         if virus == "sars-cov-2":
