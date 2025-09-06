@@ -1,0 +1,18 @@
+{
+    "case_number": 3,
+    "case_name": "ON022371.1",
+    "group_name": "A.1",
+    "number_of_sequences": 835,
+    "number_of_changes": 1368,
+    "best_candidates": "A.1.NmC2 + A.1.NmC1",
+    "best_candidates_breakpoints_target": "1336-1337",
+    "best_candidates_breakpoints_genomic": "10103 - 10104",
+    "direction_L1": ">>",
+    "initial_region_span": "1-1334,1337-1368",
+    "gap_history": "1334-1337",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "8.71e-193",
+    "p_value_vs_L2": "6.02e-54",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

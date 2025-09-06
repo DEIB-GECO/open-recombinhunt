@@ -172,7 +172,8 @@ class Environment:
     
     def number_of_sequences_of_lineage(self, lineage_name):
         try:
-            return self.lc_quality_df.at['num', lineage_name.upper()]
+            if "NmC" in lineage_name: return self.lc_quality_df.at['num', lineage_name]
+            else: return self.lc_quality_df.at['num', lineage_name.upper()]
         except KeyError:
             return 0
 

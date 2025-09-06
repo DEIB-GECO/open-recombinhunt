@@ -1,0 +1,18 @@
+{
+    "case_number": 3,
+    "case_name": "MK249066.1",
+    "group_name": "A.1",
+    "number_of_sequences": 835,
+    "number_of_changes": 1414,
+    "best_candidates": "A.1.NmC2 + A.1 + A.1.NmC2",
+    "best_candidates_breakpoints_target": "616-617, 654-655",
+    "best_candidates_breakpoints_genomic": "4530 - 4531, 4734 - 4735",
+    "direction_L1": ">>",
+    "initial_region_span": "1-615,634-654,655-1414",
+    "gap_history": "615-655 -> 615-634",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 2.22e-94",
+    "p_value_vs_L1": "1.02e-121",
+    "p_value_vs_L2": "6.99e-25",
+    "flags": "Model_2BP_Best"
+}

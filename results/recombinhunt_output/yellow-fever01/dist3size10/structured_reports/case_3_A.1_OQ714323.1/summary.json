@@ -1,0 +1,18 @@
+{
+    "case_number": 3,
+    "case_name": "OQ714323.1",
+    "group_name": "A.1",
+    "number_of_sequences": 835,
+    "number_of_changes": 827,
+    "best_candidates": "A.1 + A.1.NmC1",
+    "best_candidates_breakpoints_target": "277-278",
+    "best_candidates_breakpoints_genomic": "5133 - 5134",
+    "direction_L1": "<<",
+    "initial_region_span": "1-119,278-827",
+    "gap_history": "119-278",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "3.00e-24",
+    "p_value_vs_L2": "1.21e-26",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

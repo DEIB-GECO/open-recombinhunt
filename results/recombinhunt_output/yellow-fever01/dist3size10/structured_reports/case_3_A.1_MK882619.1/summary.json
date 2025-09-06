@@ -1,0 +1,18 @@
+{
+    "case_number": 3,
+    "case_name": "MK882619.1",
+    "group_name": "A.1",
+    "number_of_sequences": 835,
+    "number_of_changes": 1314,
+    "best_candidates": "A.1.NmC2 + A.1.NmC1",
+    "best_candidates_breakpoints_target": "1240-1241",
+    "best_candidates_breakpoints_genomic": "9771 - 9772",
+    "direction_L1": ">>",
+    "initial_region_span": "1-1230,1247-1314",
+    "gap_history": "1230-1247",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.83e-191",
+    "p_value_vs_L2": "2.55e-81",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

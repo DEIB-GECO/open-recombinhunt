@@ -1,0 +1,18 @@
+{
+    "case_number": 3,
+    "case_name": "MW158361.1",
+    "group_name": "A.1",
+    "number_of_sequences": 835,
+    "number_of_changes": 1490,
+    "best_candidates": "A.1 + A.1.NmC2",
+    "best_candidates_breakpoints_target": "1476-1477",
+    "best_candidates_breakpoints_genomic": "10527 - 10528",
+    "direction_L1": ">>",
+    "initial_region_span": "1-1445,1485-1490",
+    "gap_history": "1445-1485",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.94e+15",
+    "p_value_vs_L2": "0.00e+00",
+    "flags": "Model_2BP_Bad_L1_opp"
+}
