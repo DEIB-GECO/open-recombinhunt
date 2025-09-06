@@ -476,6 +476,14 @@ def dataset_from_df(virus, df: pd.DataFrame):
     total_records = len(df)
     st.markdown(f"- **Total Records:** {total_records:,}")
 
+    # collection date range
+    collection_date_col = "collection_date"
+    if collection_date_col in df.columns:
+        df[collection_date_col] = pd.to_datetime(df[collection_date_col], errors="coerce")
+        min_date = df[collection_date_col].min()
+        max_date = df[collection_date_col].max()
+        st.markdown(f"- **Collection Date Range:** {min_date.date()} to {max_date.date()}")
+
     # number of unique countries in the dataset
     country_col = "Location" if virus == "sars-cov-2" else "country"
     if country_col in df.columns:
