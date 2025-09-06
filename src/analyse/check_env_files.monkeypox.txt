@@ -1,0 +1,448 @@
+environment file name: lc_df.parquet 
+shape: (401, 91)
+
+               A    A.1  A.1.NmC1  A.1.NmC2  A.1.NmC3    A.2  A.2.1  A.2.2  \
+6555_C|T   False  False     False     False     False  False  False   True   
+7771_C|T   False  False     False     False      True  False  False  False   
+7820_C|T   False  False     False     False     False  False  False  False   
+8270_G|A   False  False     False     False     False  False  False  False   
+8385_C|T   False  False     False     False     False  False  False  False   
+8560_G|A   False  False     False     False     False  False  False   True   
+9229_G|A   False  False     False     False     False  False  False  False   
+9389_C|T   False  False     False     False     False  False  False  False   
+9963_G|A   False  False     False     False     False  False  False  False   
+10173_C|T  False  False     False     False     False  False  False   True   
+10945_G|A  False  False     False     False     False  False  False  False   
+10954_C|T  False  False     False     False     False  False  False  False   
+11668_G|A  False  False     False     False     False  False  False  False   
+11880_C|T  False  False     False     False     False  False  False   True   
+11948_G|A  False  False     False     False     False  False  False   True   
+12169_G|A  False  False     False     False     False  False  False  False   
+12285_G|A  False  False     False     False     False  False  False  False   
+13298_C|T  False  False     False     False     False   True   True   True   
+13563_G|A  False  False     False     False     False  False  False  False   
+14000_G|T  False  False     False     False     False  False  False  False   
+14790_C|T  False  False     False     False     False  False  False   True   
+15168_C|T  False  False     False     False     False  False  False  False   
+15207_C|T  False  False     False     False     False  False  False  False   
+15428_G|A  False  False     False     False     False  False  False  False   
+15718_C|T  False  False     False     False     False  False  False  False   
+15876_G|A  False  False     False     False     False  False  False  False   
+16060_C|T  False  False     False     False     False  False  False  False   
+16748_G|A  False  False     False     False     False  False  False  False   
+16767_G|A  False  False     False     False     False  False  False  False   
+18133_C|T  False  False     False     False     False  False  False  False   
+18441_C|T  False  False     False     False     False  False  False  False   
+18769_A|G   True   True     False     False     False   True   True   True   
+18792_C|T  False  False     False     False     False   True   True   True   
+18901_C|T  False  False     False     False     False  False  False  False   
+18908_C|T  False  False     False     False     False  False  False  False   
+19676_G|A  False  False     False     False     False  False  False   True   
+20453_C|T  False  False     False     False     False  False  False  False   
+20913_G|A  False  False     False     False     False  False  False   True   
+21062_C|T  False  False     False     False     False  False  False  False   
+21359_C|T  False  False     False     False     False  False  False   True   
+21723_G|A  False  False     False     False     False  False  False  False   
+21991_G|A  False  False     False     False     False  False  False   True   
+22167_C|T  False  False     False     False     False  False  False  False   
+22349_C|T  False  False     False     False     False  False  False  False   
+22415_G|A  False  False     False     False     False  False  False  False   
+22643_G|A  False  False     False     False     False  False  False  False   
+22739_C|T  False  False     False     False     False  False  False  False   
+23110_G|A  False  False     False     False     False  False  False  False   
+23118_G|A  False  False     False     False     False  False  False   True   
+23353_C|T  False  False     False     False     False  False  False  False   
+
+           A.2.3    A.3  ...  F.1.NmC1  F.1.NmC2    F.2  F.2.NmC1  F.2.NmC2  \
+6555_C|T   False  False  ...     False     False  False     False     False   
+7771_C|T   False  False  ...      True      True   True      True      True   
+7820_C|T   False  False  ...     False     False  False     False     False   
+8270_G|A   False  False  ...     False     False  False     False     False   
+8385_C|T   False  False  ...     False     False  False     False     False   
+8560_G|A   False  False  ...     False     False  False     False     False   
+9229_G|A   False  False  ...     False     False  False     False     False   
+9389_C|T   False  False  ...     False     False  False     False     False   
+9963_G|A   False  False  ...     False     False  False     False     False   
+10173_C|T  False  False  ...     False     False  False     False     False   
+10945_G|A  False  False  ...     False     False  False     False     False   
+10954_C|T  False  False  ...     False     False  False     False     False   
+11668_G|A  False  False  ...      True      True  False     False     False   
+11880_C|T  False  False  ...     False     False  False     False     False   
+11948_G|A  False  False  ...     False     False  False     False     False   
+12169_G|A  False  False  ...     False     False  False     False     False   
+12285_G|A  False  False  ...     False     False  False     False     False   
+13298_C|T   True  False  ...     False     False  False     False     False   
+13563_G|A  False  False  ...     False     False  False     False     False   
+14000_G|T  False  False  ...      True      True   True      True      True   
+14790_C|T  False  False  ...     False     False  False     False     False   
+15168_C|T  False  False  ...     False     False  False     False     False   
+15207_C|T  False  False  ...     False     False  False     False     False   
+15428_G|A  False  False  ...      True      True   True      True      True   
+15718_C|T  False  False  ...     False     False  False     False     False   
+15876_G|A  False  False  ...     False     False  False     False     False   
+16060_C|T  False  False  ...     False     False  False     False     False   
+16748_G|A  False  False  ...      True      True  False     False     False   
+16767_G|A  False  False  ...      True      True  False     False     False   
+18133_C|T  False  False  ...     False     False  False     False     False   
+18441_C|T  False  False  ...     False     False  False     False     False   
+18769_A|G   True   True  ...      True      True   True      True      True   
+18792_C|T   True  False  ...     False     False  False     False     False   
+18901_C|T  False  False  ...     False     False  False     False     False   
+18908_C|T  False   True  ...     False     False  False     False     False   
+19676_G|A  False  False  ...     False     False  False     False     False   
+20453_C|T  False  False  ...      True      True   True      True      True   
+20913_G|A  False  False  ...     False     False  False     False     False   
+21062_C|T  False  False  ...     False     False  False     False     False   
+21359_C|T  False  False  ...     False     False  False     False     False   
+21723_G|A  False  False  ...      True      True   True      True      True   
+21991_G|A  False  False  ...     False     False  False     False     False   
+22167_C|T  False  False  ...     False     False   True      True      True   
+22349_C|T  False  False  ...     False     False  False     False     False   
+22415_G|A  False  False  ...     False     False  False     False     False   
+22643_G|A  False  False  ...     False     False  False     False     False   
+22739_C|T  False  False  ...     False     False  False     False     False   
+23110_G|A  False  False  ...     False     False  False     False     False   
+23118_G|A  False  False  ...     False     False  False     False     False   
+23353_C|T  False   True  ...     False     False  False     False     False   
+
+             F.3    F.4    F.5    F.6  lc_pos  
+6555_C|T   False  False  False  False    6555  
+7771_C|T    True   True   True   True    7771  
+7820_C|T   False  False  False  False    7820  
+8270_G|A   False  False  False  False    8270  
+8385_C|T   False  False  False  False    8385  
+8560_G|A   False  False  False  False    8560  
+9229_G|A   False  False  False  False    9229  
+9389_C|T   False  False  False  False    9389  
+9963_G|A   False  False  False  False    9963  
+10173_C|T  False  False  False  False   10173  
+10945_G|A  False  False  False  False   10945  
+10954_C|T  False  False  False  False   10954  
+11668_G|A  False  False  False  False   11668  
+11880_C|T  False  False  False  False   11880  
+11948_G|A  False  False  False  False   11948  
+12169_G|A  False  False  False  False   12169  
+12285_G|A  False  False  False  False   12285  
+13298_C|T  False  False  False  False   13298  
+13563_G|A  False  False  False  False   13563  
+14000_G|T   True   True   True   True   14000  
+14790_C|T  False  False  False  False   14790  
+15168_C|T  False  False  False  False   15168  
+15207_C|T  False  False  False  False   15207  
+15428_G|A   True   True   True   True   15428  
+15718_C|T  False  False  False  False   15718  
+15876_G|A  False  False  False  False   15876  
+16060_C|T  False  False  False  False   16060  
+16748_G|A  False  False  False  False   16748  
+16767_G|A  False  False  False  False   16767  
+18133_C|T  False  False  False  False   18133  
+18441_C|T  False  False  False  False   18441  
+18769_A|G   True   True   True   True   18769  
+18792_C|T  False  False  False  False   18792  
+18901_C|T  False  False  False  False   18901  
+18908_C|T  False  False  False  False   18908  
+19676_G|A  False  False  False  False   19676  
+20453_C|T   True   True   True  False   20453  
+20913_G|A  False  False  False  False   20913  
+21062_C|T  False  False  False  False   21062  
+21359_C|T  False  False  False  False   21359  
+21723_G|A   True   True   True   True   21723  
+21991_G|A  False  False  False  False   21991  
+22167_C|T  False  False  False  False   22167  
+22349_C|T  False  False  False  False   22349  
+22415_G|A  False  False  False  False   22415  
+22643_G|A  False  False  False  False   22643  
+22739_C|T  False  False  False  False   22739  
+23110_G|A  False  False  False  False   23110  
+23118_G|A  False  False  False  False   23118  
+23353_C|T  False  False  False  False   23353  
+
+[50 rows x 91 columns]
+
+
+
+environment file name: change_probability.parquet 
+shape: (9414, 2)
+
+                  probability   pos
+6428_C|T             0.000699  6428
+6431_6432            0.000117  6431
+6453_C|T             0.000117  6453
+6463_.|TTATTATCA     0.000233  6463
+6468_C|T             0.000117  6468
+6507_C|T             0.000233  6507
+6555_C|T             0.015496  6555
+6575_A|T             0.000117  6575
+6586_6587            0.000117  6586
+6587_.|T             0.000117  6587
+6591_G|A             0.000117  6591
+6616_G|A             0.000117  6616
+6619_G|A             0.000233  6619
+6624_C|T             0.001981  6624
+6625_G|A             0.000350  6625
+6635_T|G             0.000117  6635
+6638_T|G             0.000117  6638
+6660_T|G             0.000117  6660
+6662_A|T             0.000233  6662
+6674_G|C             0.000117  6674
+6690_T|G             0.000117  6690
+6706_T|G             0.000117  6706
+6712_A|C             0.000117  6712
+6739_C|T             0.000117  6739
+6745_A|T             0.000117  6745
+6746_G|A             0.000117  6746
+6762_.|T             0.002913  6762
+6771_G|A             0.000466  6771
+6788_G|A             0.000233  6788
+6813_C|T             0.000233  6813
+6819_C|T             0.000350  6819
+6850_G|A             0.001049  6850
+6863_G|A             0.000117  6863
+6871_G|A             0.003262  6871
+6878_G|A             0.000233  6878
+6891_.|T             0.000117  6891
+6917_T|C             0.000117  6917
+6948_C|T             0.000350  6948
+6975                 0.008272  6975
+6975_.|TATCATTAT     0.000117  6975
+6999_C|T             0.000233  6999
+7020_7025            0.000117  7020
+7026_C|T             0.000117  7026
+7034_C|T             0.000350  7034
+7037_C|T             0.000117  7037
+7062_C|T             0.000117  7062
+7063_G|A             0.000583  7063
+7142_7145            0.000117  7142
+7144_C|T             0.000117  7144
+7170_C|T             0.000117  7170
+
+
+
+environment file name: change2lineage_probability.parquet 
+shape: (9414, 91)
+
+                         A     A.1  A.1.NmC1  A.1.NmC2  A.1.NmC3       A.2  \
+6428_C|T          0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+6431_6432         0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+6453_C|T          0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+6463_.|TTATTATCA  0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+6468_C|T          0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+6507_C|T          0.000000  0.0000       0.0  0.000000  0.015873  0.000000   
+6555_C|T          0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+6575_A|T          0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+6586_6587         0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+6587_.|T          0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+6591_G|A          0.000000  0.0000       0.0  0.000000  0.000000  0.016129   
+6616_G|A          0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+6619_G|A          0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+6624_C|T          0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+6625_G|A          0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+6635_T|G          0.017241  0.0000       0.0  0.000000  0.000000  0.000000   
+6638_T|G          0.017241  0.0000       0.0  0.000000  0.000000  0.000000   
+6660_T|G          0.017241  0.0000       0.0  0.000000  0.000000  0.000000   
+6662_A|T          0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+6674_G|C          0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+6690_T|G          0.017241  0.0000       0.0  0.000000  0.000000  0.000000   
+6706_T|G          0.017241  0.0000       0.0  0.000000  0.000000  0.000000   
+6712_A|C          0.017241  0.0000       0.0  0.000000  0.000000  0.000000   
+6739_C|T          0.017241  0.0000       0.0  0.000000  0.000000  0.000000   
+6745_A|T          0.017241  0.0000       0.0  0.000000  0.000000  0.000000   
+6746_G|A          0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+6762_.|T          0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+6771_G|A          0.000000  0.0000       0.0  0.000000  0.000000  0.016129   
+6788_G|A          0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+6813_C|T          0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+6819_C|T          0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+6850_G|A          0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+6863_G|A          0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+6871_G|A          0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+6878_G|A          0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+6891_.|T          0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+6917_T|C          0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+6948_C|T          0.000000  0.0625       0.0  0.000000  0.000000  0.000000   
+6975              0.000000  0.0000       0.0  0.012195  0.000000  0.000000   
+6975_.|TATCATTAT  0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+6999_C|T          0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+7020_7025         0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+7026_C|T          0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+7034_C|T          0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+7037_C|T          0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+7062_C|T          0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+7063_G|A          0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+7142_7145         0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+7144_C|T          0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+7170_C|T          0.000000  0.0000       0.0  0.000000  0.000000  0.000000   
+
+                  A.2.1     A.2.2     A.2.3  A.3  ...  F.1.NmC1  F.1.NmC2  \
+6428_C|T            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6431_6432           0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6453_C|T            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6463_.|TTATTATCA    0.0  0.000000  0.000000  0.0  ...  0.012658       0.0   
+6468_C|T            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6507_C|T            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6555_C|T            0.0  0.950000  0.000000  0.0  ...  0.000000       0.0   
+6575_A|T            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6586_6587           0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6587_.|T            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6591_G|A            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6616_G|A            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6619_G|A            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6624_C|T            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6625_G|A            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6635_T|G            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6638_T|G            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6660_T|G            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6662_A|T            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6674_G|C            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6690_T|G            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6706_T|G            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6712_A|C            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6739_C|T            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6745_A|T            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6746_G|A            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6762_.|T            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6771_G|A            0.0  0.007143  0.000000  0.0  ...  0.000000       0.0   
+6788_G|A            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6813_C|T            0.0  0.000000  0.033333  0.0  ...  0.000000       0.0   
+6819_C|T            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6850_G|A            0.0  0.000000  0.000000  0.0  ...  0.075949       0.0   
+6863_G|A            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6871_G|A            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6878_G|A            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6891_.|T            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6917_T|C            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6948_C|T            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6975                0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6975_.|TATCATTAT    0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+6999_C|T            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+7020_7025           0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+7026_C|T            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+7034_C|T            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+7037_C|T            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+7062_C|T            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+7063_G|A            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+7142_7145           0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+7144_C|T            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+7170_C|T            0.0  0.000000  0.000000  0.0  ...  0.000000       0.0   
+
+                       F.2  F.2.NmC1  F.2.NmC2       F.3       F.4  F.5  \
+6428_C|T          0.014286  0.097561       0.0  0.000000  0.000000  0.0   
+6431_6432         0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6453_C|T          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6463_.|TTATTATCA  0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6468_C|T          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6507_C|T          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6555_C|T          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6575_A|T          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6586_6587         0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6587_.|T          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6591_G|A          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6616_G|A          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6619_G|A          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6624_C|T          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6625_G|A          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6635_T|G          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6638_T|G          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6660_T|G          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6662_A|T          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6674_G|C          0.000000  0.000000       0.0  0.000000  0.008850  0.0   
+6690_T|G          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6706_T|G          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6712_A|C          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6739_C|T          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6745_A|T          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6746_G|A          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6762_.|T          0.028571  0.000000       0.0  0.000000  0.008850  0.0   
+6771_G|A          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6788_G|A          0.000000  0.000000       0.0  0.000000  0.017699  0.0   
+6813_C|T          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6819_C|T          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6850_G|A          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6863_G|A          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6871_G|A          0.000000  0.000000       0.0  0.000000  0.238938  0.0   
+6878_G|A          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6891_.|T          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6917_T|C          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6948_C|T          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6975              0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6975_.|TATCATTAT  0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+6999_C|T          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+7020_7025         0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+7026_C|T          0.000000  0.000000       0.0  0.013158  0.000000  0.0   
+7034_C|T          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+7037_C|T          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+7062_C|T          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+7063_G|A          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+7142_7145         0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+7144_C|T          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+7170_C|T          0.000000  0.000000       0.0  0.000000  0.000000  0.0   
+
+                       F.6   pos  
+6428_C|T          0.000000  6428  
+6431_6432         0.000000  6431  
+6453_C|T          0.000000  6453  
+6463_.|TTATTATCA  0.000000  6463  
+6468_C|T          0.000000  6468  
+6507_C|T          0.000000  6507  
+6555_C|T          0.000000  6555  
+6575_A|T          0.000000  6575  
+6586_6587         0.000000  6586  
+6587_.|T          0.000000  6587  
+6591_G|A          0.000000  6591  
+6616_G|A          0.000000  6616  
+6619_G|A          0.000000  6619  
+6624_C|T          0.000000  6624  
+6625_G|A          0.000000  6625  
+6635_T|G          0.000000  6635  
+6638_T|G          0.000000  6638  
+6660_T|G          0.000000  6660  
+6662_A|T          0.000000  6662  
+6674_G|C          0.000000  6674  
+6690_T|G          0.000000  6690  
+6706_T|G          0.000000  6706  
+6712_A|C          0.000000  6712  
+6739_C|T          0.000000  6739  
+6745_A|T          0.000000  6745  
+6746_G|A          0.000000  6746  
+6762_.|T          0.000000  6762  
+6771_G|A          0.000000  6771  
+6788_G|A          0.000000  6788  
+6813_C|T          0.000000  6813  
+6819_C|T          0.000000  6819  
+6850_G|A          0.000000  6850  
+6863_G|A          0.000000  6863  
+6871_G|A          0.000000  6871  
+6878_G|A          0.000000  6878  
+6891_.|T          0.000000  6891  
+6917_T|C          0.000000  6917  
+6948_C|T          0.060606  6948  
+6975              0.000000  6975  
+6975_.|TATCATTAT  0.000000  6975  
+6999_C|T          0.000000  6999  
+7020_7025         0.000000  7020  
+7026_C|T          0.000000  7026  
+7034_C|T          0.000000  7034  
+7037_C|T          0.000000  7037  
+7062_C|T          0.000000  7062  
+7063_G|A          0.000000  7063  
+7142_7145         0.000000  7142  
+7144_C|T          0.000000  7144  
+7170_C|T          0.000000  7170  
+
+[50 rows x 91 columns]
+
+
+
+environment file name: lc_quality_df.parquet 
+shape: (1, 90)
+
+      A  A.1  A.1.NmC1  A.1.NmC2  A.1.NmC3  A.2  A.2.1  A.2.2  A.2.3  A.3  \
+num  58   16       241        82        63   62     17    140     60   11   
+
+     ...  F.1  F.1.NmC1  F.1.NmC2  F.2  F.2.NmC1  F.2.NmC2  F.3  F.4  F.5  F.6  
+num  ...  127        79        27   70        41        36   76  113   17   33  
+
+[1 rows x 90 columns]
+
+
+

@@ -1,0 +1,393 @@
+environment file name: lc_df.parquet 
+shape: (215, 16)
+
+                 A.1  A.1.NmC1  A.1.NmC10  A.1.NmC11  A.1.NmC12  A.1.NmC13  \
+27_G|A         False     False      False      False      False      False   
+30_A|C          True      True       True       True       True       True   
+36_G|A          True      True       True       True       True       True   
+39_T|A          True      True       True       True       True       True   
+52_G|A         False     False      False      False      False      False   
+54_C|T          True      True       True       True       True       True   
+57_T|C          True      True       True       True       True       True   
+63_C|T          True      True       True       True       True       True   
+102_C|T         True      True       True       True       True       True   
+114_G|A         True      True       True       True       True       True   
+123_A|G         True      True       True       True       True       True   
+138_C|T        False     False      False      False      False      False   
+141_T|C         True      True       True       True       True       True   
+144_T|C        False     False      False      False      False      False   
+174_G|A         True      True       True       True       True       True   
+174_GA|AG      False     False      False      False      False      False   
+183_T|C         True      True       True       True       True       True   
+189_G|A        False     False      False      False      False      False   
+192_C|A        False      True       True       True       True      False   
+195_C|T         True     False      False      False      False       True   
+198_T|C        False      True       True       True       True      False   
+199_C|T        False     False      False      False      False      False   
+207_A|G         True      True       True       True       True       True   
+216_TC|AT      False     False      False      False      False      False   
+216_T|A        False      True       True       True       True      False   
+219_C|G         True      True       True       True       True       True   
+225_G|A         True      True       True       True       True       True   
+227_GA|AG       True      True       True       True       True       True   
+231_T|C        False      True       True       True       True      False   
+234_T|C        False      True       True       True       True      False   
+252_C|T        False     False      False      False      False      False   
+264_T|A         True      True       True       True       True       True   
+270_T|C         True      True       True       True       True       True   
+284_AT|GA       True      True       True       True       True       True   
+291_G|A        False     False      False      False      False      False   
+300_T|C         True     False      False      False      False       True   
+313_AA|CG       True      True       True       True       True       True   
+318_C|T         True      True       True       True       True       True   
+320_G|A        False     False      False      False      False       True   
+320_GT|AC       True      True       True       True       True      False   
+327_C|T         True      True       True       True       True       True   
+332_A|G        False     False       True       True      False      False   
+349_GATT|AGCC   True      True       True       True       True       True   
+357_C|T         True      True       True       True       True       True   
+363_T|C        False     False      False      False      False      False   
+379_C|A         True      True       True       True       True       True   
+381_A|G         True      True       True       True       True       True   
+392_C|T         True      True       True       True       True       True   
+396_C|T         True      True       True       True       True       True   
+399_T|C        False     False      False      False      False      False   
+
+               A.1.NmC14  A.1.NmC2  A.1.NmC3  A.1.NmC4  A.1.NmC5  A.1.NmC6  \
+27_G|A             False     False     False     False      True     False   
+30_A|C              True      True      True      True      True      True   
+36_G|A              True      True      True      True      True      True   
+39_T|A              True      True      True      True     False      True   
+52_G|A             False     False     False     False      True     False   
+54_C|T              True      True      True      True      True      True   
+57_T|C              True      True      True      True      True      True   
+63_C|T             False      True      True      True      True      True   
+102_C|T             True      True      True      True      True      True   
+114_G|A             True      True      True      True     False      True   
+123_A|G             True      True      True      True      True     False   
+138_C|T            False     False     False      True     False     False   
+141_T|C             True      True      True      True      True      True   
+144_T|C            False     False     False     False      True     False   
+174_G|A             True      True      True      True     False     False   
+174_GA|AG          False     False     False     False      True     False   
+183_T|C             True      True      True      True      True      True   
+189_G|A             True     False     False     False     False     False   
+192_C|A            False      True      True     False     False      True   
+195_C|T             True     False     False      True      True     False   
+198_T|C            False      True      True     False     False      True   
+199_C|T            False     False     False     False     False     False   
+207_A|G             True      True      True      True      True      True   
+216_TC|AT          False     False     False     False     False     False   
+216_T|A             True      True      True     False     False      True   
+219_C|G             True      True      True      True      True      True   
+225_G|A             True      True      True      True      True      True   
+227_GA|AG           True      True      True      True      True      True   
+231_T|C            False      True      True     False     False      True   
+234_T|C            False      True      True     False     False      True   
+252_C|T            False     False     False     False      True     False   
+264_T|A             True      True      True      True      True      True   
+270_T|C             True      True      True      True      True      True   
+284_AT|GA           True      True      True      True      True      True   
+291_G|A             True     False     False     False     False     False   
+300_T|C             True     False     False      True      True     False   
+313_AA|CG           True      True      True      True      True      True   
+318_C|T             True      True      True      True     False      True   
+320_G|A            False     False     False     False      True      True   
+320_GT|AC           True      True      True      True     False     False   
+327_C|T             True      True      True      True      True      True   
+332_A|G            False      True     False     False     False      True   
+349_GATT|AGCC       True      True      True      True      True      True   
+357_C|T             True      True      True      True      True      True   
+363_T|C            False     False     False     False      True     False   
+379_C|A             True      True      True      True     False      True   
+381_A|G             True      True      True      True      True      True   
+392_C|T             True      True      True      True      True      True   
+396_C|T             True      True      True      True      True      True   
+399_T|C            False     False     False     False      True     False   
+
+               A.1.NmC7  A.1.NmC8  A.1.NmC9  lc_pos  
+27_G|A            False     False     False      27  
+30_A|C             True      True      True      30  
+36_G|A             True      True      True      36  
+39_T|A             True      True     False      39  
+52_G|A            False     False     False      52  
+54_C|T             True      True      True      54  
+57_T|C             True      True      True      57  
+63_C|T             True      True      True      63  
+102_C|T            True      True      True     102  
+114_G|A            True      True      True     114  
+123_A|G            True      True     False     123  
+138_C|T           False     False     False     138  
+141_T|C            True      True      True     141  
+144_T|C           False     False     False     144  
+174_G|A            True      True      True     174  
+174_GA|AG         False     False     False     174  
+183_T|C            True      True      True     183  
+189_G|A           False     False     False     189  
+192_C|A           False      True      True     192  
+195_C|T            True     False     False     195  
+198_T|C           False      True      True     198  
+199_C|T            True     False     False     199  
+207_A|G            True      True      True     207  
+216_TC|AT         False      True     False     216  
+216_T|A            True     False      True     216  
+219_C|G            True      True      True     219  
+225_G|A            True      True      True     225  
+227_GA|AG          True      True      True     227  
+231_T|C           False      True      True     231  
+234_T|C           False      True      True     234  
+252_C|T           False     False     False     252  
+264_T|A            True      True      True     264  
+270_T|C            True      True      True     270  
+284_AT|GA          True      True      True     284  
+291_G|A           False     False     False     291  
+300_T|C            True     False     False     300  
+313_AA|CG          True      True      True     313  
+318_C|T            True      True      True     318  
+320_G|A           False     False     False     320  
+320_GT|AC          True      True      True     320  
+327_C|T            True      True     False     327  
+332_A|G           False     False      True     332  
+349_GATT|AGCC      True      True      True     349  
+357_C|T            True      True      True     357  
+363_T|C           False     False     False     363  
+379_C|A            True      True      True     379  
+381_A|G            True      True      True     381  
+392_C|T            True      True      True     392  
+396_C|T            True      True      True     396  
+399_T|C           False     False     False     399  
+
+
+
+environment file name: change_probability.parquet 
+shape: (1910, 2)
+
+              probability  pos
+9_AT|CC          0.000294    9
+9_A|C            0.000147    9
+9_A|T            0.000441    9
+9_AT|TC          0.006903    9
+12_A|C           0.007343   12
+13_T|A           0.000367   13
+16_G|A           0.000734   16
+17_T|C           0.001983   17
+17_T|A           0.000073   17
+18_C|A           0.000220   18
+18_C|G           0.000220   18
+19_A|G           0.000073   19
+20_A|G           0.000147   20
+25_G|A           0.084814   25
+26_A|G           0.000147   26
+26_A|C           0.000147   26
+27_G|C           0.000073   27
+27_G|A           0.119768   27
+28_A|G           0.000734   28
+29_AA|GC         0.000955   29
+29_AA|GG         0.000073   29
+29_A|G           0.003304   29
+29_AA|CC         0.000367   29
+30_A|C           0.991408   30
+30_A|T           0.000514   30
+32_T|C           0.001469   32
+33_A|G           0.000367   33
+34_G|A           0.001322   34
+34_G|T           0.000294   34
+35_TG|CA         0.002350   35
+36_G|A           0.988912   36
+36_G|C           0.000073   36
+36_GC|AA         0.000514   36
+36_G|T           0.000073   36
+36_GC|AT         0.000147   36
+37_C|A           0.003745   37
+38_TT|CA         0.000587   38
+39_T|C           0.000367   39
+39_TCTT|CGCC     0.000073   39
+39_TC|AA         0.000073   39
+39_T|A           0.857027   39
+39_TC|AT         0.000441   39
+39_T|G           0.008812   39
+40_C|T           0.001836   40
+40_CTT|TCC       0.000073   40
+40_CTT|GCC       0.003598   40
+42_T|G           0.000073   42
+42_TC|CT         0.005434   42
+42_44            0.000073   42
+42_T|C           0.000734   42
+
+
+
+environment file name: change2lineage_probability.parquet 
+shape: (1910, 16)
+
+                   A.1  A.1.NmC1  A.1.NmC10  A.1.NmC11  A.1.NmC12  A.1.NmC13  \
+9_A|T         0.000000  0.000000   0.000000        0.0   0.000000   0.002994   
+9_AT|TC       0.000622  0.009382   0.000000        0.0   0.000000   0.000000   
+9_AT|CC       0.000000  0.000000   0.000000        0.0   0.000000   0.000000   
+9_A|C         0.000000  0.000000   0.000000        0.0   0.000000   0.000000   
+12_A|C        0.000622  0.009382   0.000000        0.0   0.000000   0.002994   
+13_T|A        0.000000  0.000000   0.000000        0.0   0.000000   0.000000   
+16_G|A        0.000000  0.000000   0.000000        0.0   0.001563   0.000000   
+17_T|C        0.000000  0.000000   0.000000        0.0   0.000000   0.000000   
+17_T|A        0.000311  0.000000   0.000000        0.0   0.000000   0.000000   
+18_C|G        0.000000  0.000000   0.000000        0.0   0.000000   0.000000   
+18_C|A        0.000000  0.000000   0.000000        0.0   0.000000   0.000000   
+19_A|G        0.000000  0.000000   0.000000        0.0   0.000000   0.000000   
+20_A|G        0.000000  0.000000   0.000000        0.0   0.000000   0.000000   
+25_G|A        0.017118  0.000000   0.000000        0.0   0.000000   0.002994   
+26_A|G        0.000000  0.000000   0.000000        0.0   0.000000   0.002994   
+26_A|C        0.000000  0.000000   0.000000        0.0   0.003125   0.000000   
+27_G|A        0.005602  0.000000   0.000000        0.0   0.006250   0.000000   
+27_G|C        0.000000  0.000000   0.000000        0.0   0.000000   0.000000   
+28_A|G        0.000934  0.000000   0.000000        0.0   0.003125   0.000000   
+29_AA|CC      0.000622  0.000000   0.000000        0.0   0.000000   0.000000   
+29_AA|GG      0.000000  0.000000   0.000000        0.0   0.000000   0.000000   
+29_A|G        0.000000  0.000000   0.000000        0.0   0.000000   0.000000   
+29_AA|GC      0.003424  0.000000   0.000000        0.0   0.000000   0.000000   
+30_A|C        0.994087  0.993745   1.000000        1.0   0.985938   1.000000   
+30_A|T        0.001245  0.000000   0.000000        0.0   0.000000   0.000000   
+32_T|C        0.000934  0.000000   0.000000        0.0   0.001563   0.000000   
+33_A|G        0.000000  0.000782   0.000000        0.0   0.001563   0.000000   
+34_G|T        0.001245  0.000000   0.000000        0.0   0.000000   0.000000   
+34_G|A        0.002801  0.000000   0.000000        0.0   0.001563   0.000000   
+35_TG|CA      0.002490  0.000000   0.000000        0.0   0.010937   0.010479   
+36_GC|AA      0.001245  0.000000   0.000000        0.0   0.003125   0.000000   
+36_GC|AT      0.000000  0.000000   0.000000        0.0   0.000000   0.001497   
+36_G|A        0.995643  0.995309   0.989474        1.0   0.985938   0.982036   
+36_G|C        0.000000  0.000000   0.000000        0.0   0.000000   0.000000   
+36_G|T        0.000000  0.000000   0.000000        0.0   0.000000   0.000000   
+37_C|A        0.000000  0.000000   0.000000        0.0   0.000000   0.000000   
+38_TT|CA      0.000000  0.001564   0.000000        0.0   0.001563   0.001497   
+39_T|C        0.000000  0.000000   0.000000        0.0   0.000000   0.000000   
+39_T|A        0.997510  0.993745   0.989474        1.0   0.945312   0.956587   
+39_T|G        0.000934  0.000000   0.000000        0.0   0.053125   0.001497   
+39_TC|AA      0.000000  0.000000   0.000000        0.0   0.000000   0.000000   
+39_TCTT|CGCC  0.000000  0.000000   0.000000        0.0   0.000000   0.000000   
+39_TC|AT      0.001245  0.000000   0.000000        0.0   0.000000   0.002994   
+40_CTT|GCC    0.000000  0.000000   0.000000        0.0   0.000000   0.000000   
+40_CTT|TCC    0.000000  0.000000   0.000000        0.0   0.000000   0.000000   
+40_C|T        0.000000  0.000000   0.000000        0.0   0.000000   0.000000   
+42_44         0.000000  0.000000   0.000000        0.0   0.000000   0.000000   
+42_TC|CT      0.000000  0.000000   0.000000        0.0   0.000000   0.000000   
+42_T|C        0.000311  0.000782   0.000000        0.0   0.000000   0.000000   
+42_T|G        0.000000  0.000000   0.000000        0.0   0.000000   0.000000   
+
+              A.1.NmC14  A.1.NmC2  A.1.NmC3  A.1.NmC4  A.1.NmC5  A.1.NmC6  \
+9_A|T               0.0  0.000000  0.000000  0.002294  0.000000  0.000000   
+9_AT|TC             0.0  0.000503  0.002463  0.000000  0.000573  0.000000   
+9_AT|CC             0.0  0.000000  0.000000  0.000000  0.002292  0.000000   
+9_A|C               0.0  0.000000  0.000000  0.000000  0.001146  0.000000   
+12_A|C              0.0  0.000503  0.002463  0.002294  0.000573  0.000000   
+13_T|A              0.0  0.000000  0.000000  0.000000  0.002865  0.000000   
+16_G|A              0.0  0.000000  0.000000  0.000573  0.004585  0.000000   
+17_T|C              0.0  0.000000  0.000000  0.014908  0.000573  0.000000   
+17_T|A              0.0  0.000000  0.000000  0.000000  0.000000  0.000000   
+18_C|G              0.0  0.000000  0.000000  0.000000  0.001719  0.000000   
+18_C|A              0.0  0.000000  0.000000  0.000000  0.001719  0.000000   
+19_A|G              0.0  0.000000  0.000000  0.000000  0.000573  0.000000   
+20_A|G              0.0  0.000503  0.000000  0.000000  0.000000  0.000000   
+25_G|A              0.0  0.547009  0.000000  0.004014  0.000573  0.000000   
+26_A|G              0.0  0.000000  0.000000  0.000000  0.000000  0.000000   
+26_A|C              0.0  0.000000  0.000000  0.000000  0.000000  0.000000   
+27_G|A              0.0  0.000000  0.000000  0.009174  0.907736  0.000000   
+27_G|C              0.0  0.000000  0.000000  0.000000  0.000573  0.000000   
+28_A|G              0.0  0.000000  0.000000  0.001147  0.000000  0.003401   
+29_AA|CC            0.0  0.000000  0.000000  0.000000  0.000000  0.000000   
+29_AA|GG            0.0  0.000000  0.000000  0.000000  0.000573  0.000000   
+29_A|G              0.0  0.000000  0.000000  0.001720  0.024069  0.000000   
+29_AA|GC            0.0  0.000000  0.000000  0.000573  0.000000  0.000000   
+30_A|C              1.0  0.998994  1.000000  0.993119  0.966189  1.000000   
+30_A|T              0.0  0.000000  0.000000  0.000573  0.000573  0.000000   
+32_T|C              0.0  0.000503  0.000000  0.000573  0.006304  0.000000   
+33_A|G              0.0  0.000000  0.000000  0.000573  0.000573  0.000000   
+34_G|T              0.0  0.000000  0.000000  0.000000  0.000000  0.000000   
+34_G|A              0.0  0.000000  0.000000  0.000000  0.001146  0.020408   
+35_TG|CA            0.0  0.000000  0.000000  0.002867  0.001146  0.000000   
+36_GC|AA            0.0  0.000000  0.000000  0.000573  0.000000  0.000000   
+36_GC|AT            0.0  0.000000  0.000000  0.000573  0.000000  0.000000   
+36_G|A              1.0  0.991956  0.995074  0.989106  0.965616  1.000000   
+36_G|C              0.0  0.000000  0.000000  0.000573  0.000000  0.000000   
+36_G|T              0.0  0.000000  0.000000  0.000573  0.000000  0.000000   
+37_C|A              0.0  0.000000  0.000000  0.001720  0.027507  0.000000   
+38_TT|CA            0.0  0.000503  0.000000  0.000000  0.000000  0.000000   
+39_T|C              0.0  0.000000  0.000000  0.000000  0.002865  0.000000   
+39_T|A              1.0  0.990950  0.995074  0.994266  0.000000  1.000000   
+39_T|G              0.0  0.000000  0.000000  0.000000  0.000000  0.000000   
+39_TC|AA            0.0  0.000503  0.000000  0.000000  0.000000  0.000000   
+39_TCTT|CGCC        0.0  0.000000  0.000000  0.000573  0.000000  0.000000   
+39_TC|AT            0.0  0.000000  0.000000  0.000000  0.000000  0.000000   
+40_CTT|GCC          0.0  0.000000  0.000000  0.001147  0.026934  0.000000   
+40_CTT|TCC          0.0  0.000000  0.000000  0.000000  0.000573  0.000000   
+40_C|T              0.0  0.000000  0.000000  0.000000  0.014327  0.000000   
+42_44               0.0  0.000000  0.000000  0.000000  0.000000  0.000000   
+42_TC|CT            0.0  0.000000  0.000000  0.000000  0.000000  0.000000   
+42_T|C              0.0  0.000503  0.000000  0.000000  0.004011  0.000000   
+42_T|G              0.0  0.000000  0.000000  0.000000  0.000000  0.000000   
+
+              A.1.NmC7  A.1.NmC8  A.1.NmC9  pos  
+9_A|T         0.000000       0.0  0.000000    9  
+9_AT|TC       0.072642       0.0  0.000000    9  
+9_AT|CC       0.000000       0.0  0.000000    9  
+9_A|C         0.000000       0.0  0.000000    9  
+12_A|C        0.072642       0.0  0.000000   12  
+13_T|A        0.000000       0.0  0.000000   13  
+16_G|A        0.000000       0.0  0.000000   16  
+17_T|C        0.000000       0.0  0.000000   17  
+17_T|A        0.000000       0.0  0.000000   17  
+18_C|G        0.000000       0.0  0.000000   18  
+18_C|A        0.000000       0.0  0.000000   18  
+19_A|G        0.000000       0.0  0.000000   19  
+20_A|G        0.000943       0.0  0.000000   20  
+25_G|A        0.001887       0.0  0.000000   25  
+26_A|G        0.000000       0.0  0.000000   26  
+26_A|C        0.000000       0.0  0.000000   26  
+27_G|A        0.008491       0.0  0.000000   27  
+27_G|C        0.000000       0.0  0.000000   27  
+28_A|G        0.001887       0.0  0.000000   28  
+29_AA|CC      0.002830       0.0  0.000000   29  
+29_AA|GG      0.000000       0.0  0.000000   29  
+29_A|G        0.000000       0.0  0.000000   29  
+29_AA|GC      0.000943       0.0  0.000000   29  
+30_A|C        0.993396       1.0  0.995349   30  
+30_A|T        0.000943       0.0  0.000000   30  
+32_T|C        0.002830       0.0  0.000000   32  
+33_A|G        0.000943       0.0  0.000000   33  
+34_G|T        0.000000       0.0  0.000000   34  
+34_G|A        0.000000       0.0  0.000000   34  
+35_TG|CA      0.000000       0.0  0.013953   35  
+36_GC|AA      0.000000       0.0  0.000000   36  
+36_GC|AT      0.000000       0.0  0.000000   36  
+36_G|A        0.997170       1.0  0.958140   36  
+36_G|C        0.000000       0.0  0.000000   36  
+36_G|T        0.000000       0.0  0.000000   36  
+37_C|A        0.000000       0.0  0.000000   37  
+38_TT|CA      0.002830       0.0  0.000000   38  
+39_T|C        0.000000       0.0  0.000000   39  
+39_T|A        0.992453       1.0  0.613953   39  
+39_T|G        0.004717       0.0  0.358140   39  
+39_TC|AA      0.000000       0.0  0.000000   39  
+39_TCTT|CGCC  0.000000       0.0  0.000000   39  
+39_TC|AT      0.000000       0.0  0.000000   39  
+40_CTT|GCC    0.000000       0.0  0.000000   40  
+40_CTT|TCC    0.000000       0.0  0.000000   40  
+40_C|T        0.000000       0.0  0.000000   40  
+42_44         0.000000       0.0  0.004651   42  
+42_TC|CT      0.000000       0.0  0.344186   42  
+42_T|C        0.000000       0.0  0.000000   42  
+42_T|G        0.000943       0.0  0.000000   42  
+
+
+
+environment file name: lc_quality_df.parquet 
+shape: (1, 15)
+
+      A.1  A.1.NmC1  A.1.NmC10  A.1.NmC11  A.1.NmC12  A.1.NmC13  A.1.NmC14  \
+num  3213      1279         95        114        640        668         72   
+
+     A.1.NmC2  A.1.NmC3  A.1.NmC4  A.1.NmC5  A.1.NmC6  A.1.NmC7  A.1.NmC8  \
+num      1989       406      1744      1745       294      1060        84   
+
+     A.1.NmC9  
+num       215  
+
+
+
