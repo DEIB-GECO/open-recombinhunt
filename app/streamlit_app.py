@@ -15,7 +15,11 @@ from geopy.geocoders import Nominatim
 from agstyler import draw_grid, PINLEFT, PRECISION_TWO
 from about_virus import describe
 
-st.set_page_config(layout="wide")
+st.set_page_config(
+    page_title="OpenRecombinHunt",
+    page_icon="🧬",
+    layout="wide"
+)
 
 # --- Path Setup for Imports ---
 # Add the project root to the Python path to allow imports from 'src'
