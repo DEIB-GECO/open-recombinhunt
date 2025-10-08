@@ -1,0 +1,665 @@
+--- Analyzing Designations by Continent (Percentages) ---
+
+Continent: Africa (Total observed designations in this group: 1694)
+  Designation: B.D.4.1.2, Percentage: 17.71%
+  Designation: B.D, Percentage: 14.88%
+  Designation: B.D.E.3, Percentage: 12.10%
+  Designation: B.D.4, Percentage: 10.09%
+  Designation: B.D.3, Percentage: 7.97%
+  Designation: B.D.E.5, Percentage: 6.55%
+  Designation: B.D.1, Percentage: 6.49%
+  Designation: B.D.4.1.1.NmC1, Percentage: 5.31%
+  Designation: B.D.4.1.3.NmC1, Percentage: 5.14%
+  Designation: B.D.E.2, Percentage: 5.08%
+  Designation: B.D.E.4, Percentage: 4.25%
+  Designation: B.D.2, Percentage: 1.89%
+  Designation: B.D.4.1.1, Percentage: 1.83%
+  Designation: B, Percentage: 0.53%
+  Designation: B.D.1.1, Percentage: 0.12%
+  Designation: B.D.E.1, Percentage: 0.06%
+
+Continent: Asia (Total observed designations in this group: 4219)
+  Designation: B.D.4, Percentage: 18.94%
+  Designation: B.D.E.2, Percentage: 15.67%
+  Designation: B.D.2, Percentage: 12.66%
+  Designation: B.D.E.3, Percentage: 10.24%
+  Designation: B.D, Percentage: 8.25%
+  Designation: B.D.4.1.1.NmC1, Percentage: 7.61%
+  Designation: B.D.E.4, Percentage: 6.76%
+  Designation: B.D.4.1.3.NmC1, Percentage: 6.21%
+  Designation: B.D.3, Percentage: 5.17%
+  Designation: B.D.1, Percentage: 2.35%
+  Designation: B.D.4.1.1, Percentage: 1.75%
+  Designation: B.D.E.1, Percentage: 1.35%
+  Designation: B.D.4.1.2, Percentage: 1.28%
+  Designation: B.D.4.1, Percentage: 1.14%
+  Designation: B.3, Percentage: 0.38%
+  Designation: B.D.E.1.2, Percentage: 0.14%
+  Designation: B.D.E.5, Percentage: 0.05%
+  Designation: B.D.1.1, Percentage: 0.02%
+  Designation: B.D.E.6, Percentage: 0.02%
+  Designation: B.D.E.7, Percentage: 0.02%
+
+Continent: Europe (Total observed designations in this group: 4539)
+  Designation: B.D.4, Percentage: 14.61%
+  Designation: B.D.E.1, Percentage: 12.54%
+  Designation: B.D.2, Percentage: 11.52%
+  Designation: B.D.E.4, Percentage: 11.46%
+  Designation: B.D.E.3, Percentage: 8.04%
+  Designation: B.D.4.1.1.NmC1, Percentage: 7.62%
+  Designation: B.D.E.2, Percentage: 7.07%
+  Designation: B.D.1, Percentage: 6.74%
+  Designation: B.D.4.1.2, Percentage: 4.63%
+  Designation: B.D, Percentage: 2.27%
+  Designation: B.D.E.1.2, Percentage: 2.14%
+  Designation: B.D.1.1, Percentage: 1.96%
+  Designation: B.D.3, Percentage: 1.92%
+  Designation: B.D.4.1.1, Percentage: 1.87%
+  Designation: B.D.E.1.8, Percentage: 1.67%
+  Designation: B.D.4.1.3.NmC1, Percentage: 1.15%
+  Designation: B.D.4.1, Percentage: 0.82%
+  Designation: B.D.E.1.1, Percentage: 0.55%
+  Designation: B.D.E.1.7, Percentage: 0.48%
+  Designation: B.D.E.5, Percentage: 0.42%
+  Designation: B.D.E.7, Percentage: 0.37%
+  Designation: B.D.E.6, Percentage: 0.15%
+
+Continent: NorthAmerica (Total observed designations in this group: 3414)
+  Designation: B.D.4.1.1.NmC1, Percentage: 41.36%
+  Designation: B.D.4.1.3.NmC1, Percentage: 20.94%
+  Designation: B.D.E.1, Percentage: 14.35%
+  Designation: B.D.E.4, Percentage: 8.08%
+  Designation: B.D.4.1.2, Percentage: 6.06%
+  Designation: B.D.1, Percentage: 3.49%
+  Designation: B.D.E.1.2, Percentage: 1.52%
+  Designation: B.D.E.3, Percentage: 1.23%
+  Designation: B.D.4, Percentage: 0.94%
+  Designation: B.D.E.5, Percentage: 0.79%
+  Designation: B.D, Percentage: 0.35%
+  Designation: B.D.E.6, Percentage: 0.23%
+  Designation: B.D.E.1.7, Percentage: 0.21%
+  Designation: B.D.1.1, Percentage: 0.18%
+  Designation: B.D.E.7, Percentage: 0.12%
+  Designation: B.D.3, Percentage: 0.06%
+  Designation: B.D.E.1.1, Percentage: 0.06%
+  Designation: B.D.2, Percentage: 0.03%
+
+Continent: Oceania (Total observed designations in this group: 489)
+  Designation: B.D.4.1.2, Percentage: 30.06%
+  Designation: B.D.E.4, Percentage: 20.65%
+  Designation: B.D.2, Percentage: 16.77%
+  Designation: B.D.E.2, Percentage: 12.88%
+  Designation: B.D.E.5, Percentage: 7.16%
+  Designation: B.D.4.1.1, Percentage: 4.09%
+  Designation: B.D.4, Percentage: 3.68%
+  Designation: B.D.4.1.1.NmC1, Percentage: 2.86%
+  Designation: B.D.4.1.3.NmC1, Percentage: 0.82%
+  Designation: B.D.E.1, Percentage: 0.41%
+  Designation: B.D.1, Percentage: 0.20%
+  Designation: B.D.E.6, Percentage: 0.20%
+  Designation: B.D.E.7, Percentage: 0.20%
+
+Continent: SouthAmerica (Total observed designations in this group: 596)
+  Designation: B.D.4.1.2, Percentage: 18.96%
+  Designation: B.D.E.4, Percentage: 17.95%
+  Designation: B.D.3, Percentage: 11.91%
+  Designation: B.D, Percentage: 9.56%
+  Designation: B.D.4.1.1, Percentage: 8.39%
+  Designation: B.D.E.1.1, Percentage: 6.88%
+  Designation: B.D.4, Percentage: 6.04%
+  Designation: B.D.E.3, Percentage: 5.70%
+  Designation: B.D.4.1.1.NmC1, Percentage: 5.37%
+  Designation: B.D.1, Percentage: 4.87%
+  Designation: B.D.E.1, Percentage: 1.85%
+  Designation: B.D.E.1.2, Percentage: 1.68%
+  Designation: B.D.1.1, Percentage: 0.34%
+  Designation: B.D.2, Percentage: 0.34%
+  Designation: B.D.E.5, Percentage: 0.17%
+
+
+--- Analyzing Designations by Country (Percentages) ---
+
+Country:  Argentina (Total observed designations in this group: 297)
+  Designation: B.D.4.1.2, Percentage: 33.00%
+  Designation: B.D.3, Percentage: 20.20%
+  Designation: B.D.E.1.1, Percentage: 13.80%
+  Designation: B.D, Percentage: 11.78%
+  Designation: B.D.E.4, Percentage: 11.78%
+  Designation: B.D.E.3, Percentage: 6.06%
+  Designation: B.D.E.1.2, Percentage: 3.37%
+
+Country:  Australia (Total observed designations in this group: 448)
+  Designation: B.D.4.1.2, Percentage: 23.66%
+  Designation: B.D.E.4, Percentage: 22.54%
+  Designation: B.D.2, Percentage: 18.30%
+  Designation: B.D.E.2, Percentage: 14.06%
+  Designation: B.D.E.5, Percentage: 7.81%
+  Designation: B.D.4.1.1, Percentage: 4.46%
+  Designation: B.D.4, Percentage: 4.02%
+  Designation: B.D.4.1.1.NmC1, Percentage: 3.12%
+  Designation: B.D.4.1.3.NmC1, Percentage: 0.89%
+  Designation: B.D.E.1, Percentage: 0.45%
+  Designation: B.D.1, Percentage: 0.22%
+  Designation: B.D.E.6, Percentage: 0.22%
+  Designation: B.D.E.7, Percentage: 0.22%
+
+Country:  Austria (Total observed designations in this group: 2)
+  Designation: B.D.E.4, Percentage: 100.00%
+
+Country:  Bangladesh (Total observed designations in this group: 12)
+  Designation: B.D.4, Percentage: 83.33%
+  Designation: B.D.1, Percentage: 16.67%
+
+Country:  Belgium (Total observed designations in this group: 540)
+  Designation: B.D.4, Percentage: 23.70%
+  Designation: B.D.2, Percentage: 22.04%
+  Designation: B.D.1, Percentage: 17.41%
+  Designation: B.D.1.1, Percentage: 12.59%
+  Designation: B.D.E.3, Percentage: 8.52%
+  Designation: B.D.4.1.1.NmC1, Percentage: 8.15%
+  Designation: B.D.E.2, Percentage: 5.37%
+  Designation: B.D, Percentage: 1.30%
+  Designation: B.D.4.1.3.NmC1, Percentage: 0.37%
+  Designation: B.D.4.1.2, Percentage: 0.19%
+  Designation: B.D.E.4, Percentage: 0.19%
+  Designation: B.D.E.5, Percentage: 0.19%
+
+Country:  Brazil (Total observed designations in this group: 272)
+  Designation: B.D.E.4, Percentage: 26.47%
+  Designation: B.D.4.1.1, Percentage: 18.38%
+  Designation: B.D.4, Percentage: 13.24%
+  Designation: B.D.4.1.1.NmC1, Percentage: 11.76%
+  Designation: B.D.1, Percentage: 9.19%
+  Designation: B.D, Percentage: 8.09%
+  Designation: B.D.E.3, Percentage: 5.88%
+  Designation: B.D.3, Percentage: 4.04%
+  Designation: B.D.1.1, Percentage: 0.74%
+  Designation: B.D.2, Percentage: 0.74%
+  Designation: B.D.4.1.2, Percentage: 0.74%
+  Designation: B.D.E.1, Percentage: 0.37%
+  Designation: B.D.E.5, Percentage: 0.37%
+
+Country:  Bulgaria (Total observed designations in this group: 36)
+  Designation: B.D.E.2, Percentage: 58.33%
+  Designation: B.D.2, Percentage: 36.11%
+  Designation: B.D.4, Percentage: 5.56%
+
+Country:  Burkina Faso (Total observed designations in this group: 1)
+  Designation: B.D.2, Percentage: 100.00%
+
+Country:  Cambodia (Total observed designations in this group: 2)
+  Designation: B.D.1, Percentage: 50.00%
+  Designation: B.D.E.3, Percentage: 50.00%
+
+Country:  Cameroon (Total observed designations in this group: 59)
+  Designation: B.D.4, Percentage: 47.46%
+  Designation: B.D.E.2, Percentage: 32.20%
+  Designation: B.D.1, Percentage: 16.95%
+  Designation: B.D.1.1, Percentage: 3.39%
+
+Country:  Canada (Total observed designations in this group: 150)
+  Designation: B.D.4.1.1.NmC1, Percentage: 45.33%
+  Designation: B.D.E.4, Percentage: 43.33%
+  Designation: B.D.4.1.3.NmC1, Percentage: 9.33%
+  Designation: B.D.4.1.2, Percentage: 1.33%
+  Designation: B.D.1, Percentage: 0.67%
+
+Country:  China (Total observed designations in this group: 2174)
+  Designation: B.D.E.2, Percentage: 19.27%
+  Designation: B.D.4, Percentage: 19.23%
+  Designation: B.D.2, Percentage: 14.40%
+  Designation: B.D.E.3, Percentage: 12.47%
+  Designation: B.D.4.1.1.NmC1, Percentage: 10.53%
+  Designation: B.D.4.1.3.NmC1, Percentage: 9.02%
+  Designation: B.D, Percentage: 5.06%
+  Designation: B.D.E.4, Percentage: 4.14%
+  Designation: B.D.3, Percentage: 2.81%
+  Designation: B.D.E.1, Percentage: 1.20%
+  Designation: B.D.4.1.2, Percentage: 0.83%
+  Designation: B.3, Percentage: 0.51%
+  Designation: B.D.4.1, Percentage: 0.28%
+  Designation: B.D.1, Percentage: 0.18%
+  Designation: B.D.E.1.2, Percentage: 0.09%
+
+Country:  Croatia (Total observed designations in this group: 206)
+  Designation: B.D.1, Percentage: 45.15%
+  Designation: B.D.4, Percentage: 36.41%
+  Designation: B.D.2, Percentage: 10.19%
+  Designation: B.D.E.2, Percentage: 7.77%
+  Designation: B.D.4.1, Percentage: 0.49%
+
+Country:  Cuba (Total observed designations in this group: 66)
+  Designation: B.D.1, Percentage: 46.97%
+  Designation: B.D.3, Percentage: 36.36%
+  Designation: B.D, Percentage: 15.15%
+  Designation: B.D.4, Percentage: 1.52%
+
+Country:  Finland (Total observed designations in this group: 120)
+  Designation: B.D.E.4, Percentage: 46.67%
+  Designation: B.D.4.1.1.NmC1, Percentage: 26.67%
+  Designation: B.D.4.1.1, Percentage: 22.50%
+  Designation: B.D.4.1.2, Percentage: 2.50%
+  Designation: B.D.4.1.3.NmC1, Percentage: 1.67%
+
+Country:  France (Total observed designations in this group: 161)
+  Designation: B.D.E.1, Percentage: 26.71%
+  Designation: B.D.1, Percentage: 10.56%
+  Designation: B.D.4.1.3.NmC1, Percentage: 9.94%
+  Designation: B.D.4.1.1.NmC1, Percentage: 9.32%
+  Designation: B.D.E.2, Percentage: 9.32%
+  Designation: B.D.E.4, Percentage: 7.45%
+  Designation: B.D.4.1.2, Percentage: 6.83%
+  Designation: B.D.4, Percentage: 4.97%
+  Designation: B.D.E.1.2, Percentage: 3.73%
+  Designation: B.D, Percentage: 3.11%
+  Designation: B.D.1.1, Percentage: 3.11%
+  Designation: B.D.2, Percentage: 3.11%
+  Designation: B.D.E.5, Percentage: 1.24%
+  Designation: B.D.E.1.8, Percentage: 0.62%
+
+Country:  Gabon (Total observed designations in this group: 2)
+  Designation: B.D.2, Percentage: 50.00%
+  Designation: B.D.4, Percentage: 50.00%
+
+Country:  Gambia (Total observed designations in this group: 97)
+  Designation: B.D, Percentage: 58.76%
+  Designation: B.D.3, Percentage: 28.87%
+  Designation: B.D.E.3, Percentage: 6.19%
+  Designation: B.D.4.1.3.NmC1, Percentage: 4.12%
+  Designation: B.D.4, Percentage: 2.06%
+
+Country:  Germany (Total observed designations in this group: 974)
+  Designation: B.D.4, Percentage: 26.59%
+  Designation: B.D.E.3, Percentage: 18.89%
+  Designation: B.D.2, Percentage: 14.27%
+  Designation: B.D.4.1.1.NmC1, Percentage: 12.22%
+  Designation: B.D.E.4, Percentage: 6.57%
+  Designation: B.D.E.2, Percentage: 4.72%
+  Designation: B.D.4.1, Percentage: 3.70%
+  Designation: B.D.E.1, Percentage: 3.59%
+  Designation: B.D.4.1.2, Percentage: 3.39%
+  Designation: B.D.1, Percentage: 3.08%
+  Designation: B.D.1.1, Percentage: 1.23%
+  Designation: B.D.E.1.2, Percentage: 0.72%
+  Designation: B.D.E.5, Percentage: 0.62%
+  Designation: B.D.4.1.3.NmC1, Percentage: 0.31%
+  Designation: B.D.E.1.7, Percentage: 0.10%
+
+Country:  Ghana (Total observed designations in this group: 57)
+  Designation: B.D.4, Percentage: 80.70%
+  Designation: B.D.E.2, Percentage: 12.28%
+  Designation: B.D.2, Percentage: 7.02%
+
+Country:  Greece (Total observed designations in this group: 10)
+  Designation: B.D.E.2, Percentage: 50.00%
+  Designation: B.D.2, Percentage: 30.00%
+  Designation: B.D.4, Percentage: 20.00%
+
+Country:  Guatemala (Total observed designations in this group: 10)
+  Designation: B.D.4, Percentage: 50.00%
+  Designation: B.D.1, Percentage: 40.00%
+  Designation: B.D.1.1, Percentage: 10.00%
+
+Country:  Hong Kong (Total observed designations in this group: 1)
+  Designation: B.D.4, Percentage: 100.00%
+
+Country:  Hungary (Total observed designations in this group: 36)
+  Designation: B.D.4.1.1.NmC1, Percentage: 47.22%
+  Designation: B.D.E.3, Percentage: 33.33%
+  Designation: B.D.3, Percentage: 8.33%
+  Designation: B.D, Percentage: 5.56%
+  Designation: B.D.2, Percentage: 2.78%
+  Designation: B.D.4.1.3.NmC1, Percentage: 2.78%
+
+Country:  India (Total observed designations in this group: 158)
+  Designation: B.D.4, Percentage: 25.95%
+  Designation: B.D.4.1, Percentage: 24.68%
+  Designation: B.D, Percentage: 18.99%
+  Designation: B.D.E.2, Percentage: 12.66%
+  Designation: B.D.1, Percentage: 6.33%
+  Designation: B.D.2, Percentage: 6.33%
+  Designation: B.D.3, Percentage: 1.90%
+  Designation: B.D.E.3, Percentage: 1.27%
+  Designation: B.3, Percentage: 0.63%
+  Designation: B.D.4.1.2, Percentage: 0.63%
+  Designation: B.D.4.1.3.NmC1, Percentage: 0.63%
+
+Country:  Indonesia (Total observed designations in this group: 3)
+  Designation: B.D.1, Percentage: 100.00%
+
+Country:  Iran (Total observed designations in this group: 15)
+  Designation: B.D.2, Percentage: 53.33%
+  Designation: B.D, Percentage: 26.67%
+  Designation: B.D.1, Percentage: 6.67%
+  Designation: B.D.4, Percentage: 6.67%
+  Designation: B.D.E.2, Percentage: 6.67%
+
+Country:  Iraq (Total observed designations in this group: 29)
+  Designation: B.D.4.1.1.NmC1, Percentage: 51.72%
+  Designation: B.D.E.3, Percentage: 37.93%
+  Designation: B.D.3, Percentage: 10.34%
+
+Country:  Ireland (Total observed designations in this group: 207)
+  Designation: B.D.E.3, Percentage: 49.28%
+  Designation: B.D.E.1, Percentage: 24.15%
+  Designation: B.D.3, Percentage: 15.94%
+  Designation: B.D.E.1.2, Percentage: 2.90%
+  Designation: B.D.E.6, Percentage: 2.90%
+  Designation: B.D, Percentage: 1.45%
+  Designation: B.D.E.1.1, Percentage: 1.45%
+  Designation: B.D.E.7, Percentage: 0.97%
+  Designation: B.D.E.1.7, Percentage: 0.48%
+  Designation: B.D.E.4, Percentage: 0.48%
+
+Country:  Italy (Total observed designations in this group: 90)
+  Designation: B.D.E.2, Percentage: 41.11%
+  Designation: B.D.4, Percentage: 28.89%
+  Designation: B.D.2, Percentage: 11.11%
+  Designation: B.D.E.3, Percentage: 11.11%
+  Designation: B.D.1, Percentage: 3.33%
+  Designation: B.D.4.1.1.NmC1, Percentage: 2.22%
+  Designation: B.D.E.4, Percentage: 2.22%
+
+Country:  Japan (Total observed designations in this group: 539)
+  Designation: B.D.E.4, Percentage: 30.61%
+  Designation: B.D.4, Percentage: 18.00%
+  Designation: B.D.4.1.1, Percentage: 13.73%
+  Designation: B.D.E.2, Percentage: 13.54%
+  Designation: B.D.2, Percentage: 6.86%
+  Designation: B.D.1, Percentage: 6.49%
+  Designation: B.D.4.1.2, Percentage: 3.90%
+  Designation: B.D.4.1.1.NmC1, Percentage: 2.97%
+  Designation: B.D.E.1, Percentage: 2.97%
+  Designation: B.D.E.5, Percentage: 0.37%
+  Designation: B.D.4.1.3.NmC1, Percentage: 0.19%
+  Designation: B.D.E.3, Percentage: 0.19%
+  Designation: B.D.E.6, Percentage: 0.19%
+
+Country:  Jordan (Total observed designations in this group: 40)
+  Designation: B.D.4.1.2, Percentage: 97.50%
+  Designation: B.D, Percentage: 2.50%
+
+Country:  Kenya (Total observed designations in this group: 1023)
+  Designation: B.D.4.1.2, Percentage: 26.69%
+  Designation: B.D, Percentage: 23.75%
+  Designation: B.D.E.3, Percentage: 19.16%
+  Designation: B.D.3, Percentage: 10.65%
+  Designation: B.D.E.5, Percentage: 10.65%
+  Designation: B.D.1, Percentage: 7.72%
+  Designation: B, Percentage: 0.88%
+  Designation: B.D.E.4, Percentage: 0.39%
+  Designation: B.D.4, Percentage: 0.10%
+
+Country:  Kuwait (Total observed designations in this group: 9)
+  Designation: B.D.E.1, Percentage: 100.00%
+
+Country:  Laos (Total observed designations in this group: 20)
+  Designation: B.D.4, Percentage: 100.00%
+
+Country:  Latvia (Total observed designations in this group: 27)
+  Designation: B.D.1, Percentage: 51.85%
+  Designation: B.D, Percentage: 37.04%
+  Designation: B.D.4, Percentage: 11.11%
+
+Country:  Lebanon (Total observed designations in this group: 29)
+  Designation: B.D.4, Percentage: 65.52%
+  Designation: B.D.2, Percentage: 27.59%
+  Designation: B.D.E.2, Percentage: 6.90%
+
+Country:  Malaysia (Total observed designations in this group: 48)
+  Designation: B.D.4, Percentage: 93.75%
+  Designation: B.D.2, Percentage: 4.17%
+  Designation: B.D.E.2, Percentage: 2.08%
+
+Country:  Mali (Total observed designations in this group: 106)
+  Designation: B.D, Percentage: 62.26%
+  Designation: B.D.3, Percentage: 37.74%
+
+Country:  Mexico (Total observed designations in this group: 58)
+  Designation: B.D.E.3, Percentage: 72.41%
+  Designation: B.D.4.1.1.NmC1, Percentage: 15.52%
+  Designation: B.D.E.4, Percentage: 6.90%
+  Designation: B.D.1, Percentage: 3.45%
+  Designation: B.D.4.1.2, Percentage: 1.72%
+
+Country:  Morocco (Total observed designations in this group: 1)
+  Designation: B.D, Percentage: 100.00%
+
+Country:  Myanmar (Total observed designations in this group: 110)
+  Designation: B.D.2, Percentage: 44.55%
+  Designation: B.D.E.3, Percentage: 27.27%
+  Designation: B.D.E.2, Percentage: 10.91%
+  Designation: B.D.3, Percentage: 7.27%
+  Designation: B.D.4, Percentage: 7.27%
+  Designation: B.D, Percentage: 2.73%
+
+Country:  Netherlands (Total observed designations in this group: 277)
+  Designation: B.D.E.4, Percentage: 38.99%
+  Designation: B.D.4.1.2, Percentage: 16.97%
+  Designation: B.D.4.1.1.NmC1, Percentage: 15.16%
+  Designation: B.D, Percentage: 8.30%
+  Designation: B.D.4.1.1, Percentage: 8.30%
+  Designation: B.D.4.1.3.NmC1, Percentage: 7.94%
+  Designation: B.D.E.3, Percentage: 2.17%
+  Designation: B.D.E.1, Percentage: 0.72%
+  Designation: B.D.E.5, Percentage: 0.72%
+  Designation: B.D.1, Percentage: 0.36%
+  Designation: B.D.1.1, Percentage: 0.36%
+
+Country:  New Zealand (Total observed designations in this group: 41)
+  Designation: B.D.4.1.2, Percentage: 100.00%
+
+Country:  Nicaragua (Total observed designations in this group: 40)
+  Designation: B.D.4.1.2, Percentage: 100.00%
+
+Country:  Nigeria (Total observed designations in this group: 16)
+  Designation: B.D.4, Percentage: 50.00%
+  Designation: B.D.4.1.3.NmC1, Percentage: 31.25%
+  Designation: B.D.2, Percentage: 12.50%
+  Designation: B.D.E.2, Percentage: 6.25%
+
+Country:  Pakistan (Total observed designations in this group: 85)
+  Designation: B.D.1, Percentage: 45.88%
+  Designation: B.D.4, Percentage: 35.29%
+  Designation: B.D.2, Percentage: 14.12%
+  Designation: B.D, Percentage: 3.53%
+  Designation: B.D.E.2, Percentage: 1.18%
+
+Country:  Panama (Total observed designations in this group: 84)
+  Designation: B.D.4, Percentage: 32.14%
+  Designation: B.D.E.4, Percentage: 30.95%
+  Designation: B.D.E.1, Percentage: 15.48%
+  Designation: B.D, Percentage: 11.90%
+  Designation: B.D.1.1, Percentage: 5.95%
+  Designation: B.D.E.1.2, Percentage: 2.38%
+  Designation: B.D.2, Percentage: 1.19%
+
+Country:  Peru (Total observed designations in this group: 23)
+  Designation: B.D.4.1.2, Percentage: 56.52%
+  Designation: B.D.E.1, Percentage: 43.48%
+
+Country:  Philippines (Total observed designations in this group: 158)
+  Designation: B.D.4, Percentage: 29.11%
+  Designation: B.D.4.1.3.NmC1, Percentage: 27.85%
+  Designation: B.D.E.3, Percentage: 22.15%
+  Designation: B.D.4.1.2, Percentage: 7.59%
+  Designation: B.D.3, Percentage: 5.70%
+  Designation: B.D.E.4, Percentage: 3.80%
+  Designation: B.D.E.2, Percentage: 3.16%
+  Designation: B.D.2, Percentage: 0.63%
+
+Country:  Portugal (Total observed designations in this group: 121)
+  Designation: B.D.4, Percentage: 44.63%
+  Designation: B.D.2, Percentage: 34.71%
+  Designation: B.D.E.2, Percentage: 20.66%
+
+Country:  Russia (Total observed designations in this group: 55)
+  Designation: B.D.E.4, Percentage: 56.36%
+  Designation: B.D.4.1.1.NmC1, Percentage: 38.18%
+  Designation: B.D.1, Percentage: 3.64%
+  Designation: B.D.E.5, Percentage: 1.82%
+
+Country:  Saudi Arabia (Total observed designations in this group: 40)
+  Designation: B.D.E.3, Percentage: 40.00%
+  Designation: B.D.4, Percentage: 25.00%
+  Designation: B.D.E.2, Percentage: 22.50%
+  Designation: B.D.2, Percentage: 10.00%
+  Designation: B.D.1, Percentage: 2.50%
+
+Country:  Senegal (Total observed designations in this group: 54)
+  Designation: B.D.1, Percentage: 35.19%
+  Designation: B.D.E.2, Percentage: 25.93%
+  Designation: B.D.4, Percentage: 24.07%
+  Designation: B.D.2, Percentage: 14.81%
+
+Country:  Slovenia (Total observed designations in this group: 92)
+  Designation: B.D.2, Percentage: 59.78%
+  Designation: B.D.E.2, Percentage: 38.04%
+  Designation: B.D.4, Percentage: 2.17%
+
+Country:  South Africa (Total observed designations in this group: 402)
+  Designation: B.D.4.1.1.NmC1, Percentage: 22.39%
+  Designation: B.D.4.1.3.NmC1, Percentage: 20.40%
+  Designation: B.D.4, Percentage: 17.16%
+  Designation: B.D.E.4, Percentage: 16.92%
+  Designation: B.D.4.1.1, Percentage: 7.71%
+  Designation: B.D.3, Percentage: 6.47%
+  Designation: B.D.4.1.2, Percentage: 3.98%
+  Designation: B.D.E.3, Percentage: 2.24%
+  Designation: B.D, Percentage: 1.49%
+  Designation: B.D.1, Percentage: 0.50%
+  Designation: B.D.E.2, Percentage: 0.50%
+  Designation: B.D.E.1, Percentage: 0.25%
+
+Country:  South Korea (Total observed designations in this group: 122)
+  Designation: B.D.4, Percentage: 30.33%
+  Designation: B.D.E.2, Percentage: 18.03%
+  Designation: B.D.4.1.1.NmC1, Percentage: 15.57%
+  Designation: B.D.E.4, Percentage: 14.75%
+  Designation: B.D.2, Percentage: 11.48%
+  Designation: B.D.4.1, Percentage: 2.46%
+  Designation: B.D, Percentage: 1.64%
+  Designation: B.D.3, Percentage: 1.64%
+  Designation: B.D.4.1.2, Percentage: 1.64%
+  Designation: B.D.1.1, Percentage: 0.82%
+  Designation: B.D.E.1, Percentage: 0.82%
+  Designation: B.D.E.3, Percentage: 0.82%
+
+Country:  Spain (Total observed designations in this group: 1282)
+  Designation: B.D.E.1, Percentage: 32.37%
+  Designation: B.D.E.4, Percentage: 9.98%
+  Designation: B.D.2, Percentage: 8.42%
+  Designation: B.D.4.1.2, Percentage: 6.55%
+  Designation: B.D.E.2, Percentage: 6.40%
+  Designation: B.D.4, Percentage: 6.01%
+  Designation: B.D.E.1.2, Percentage: 6.01%
+  Designation: B.D.E.1.8, Percentage: 5.85%
+  Designation: B.D.3, Percentage: 3.98%
+  Designation: B.D, Percentage: 3.28%
+  Designation: B.D.4.1.1.NmC1, Percentage: 2.96%
+  Designation: B.D.4.1.1, Percentage: 2.57%
+  Designation: B.D.E.1.1, Percentage: 1.72%
+  Designation: B.D.E.1.7, Percentage: 1.56%
+  Designation: B.D.E.7, Percentage: 1.17%
+  Designation: B.D.4.1.3.NmC1, Percentage: 0.39%
+  Designation: B.D.E.3, Percentage: 0.39%
+  Designation: B.D.1, Percentage: 0.23%
+  Designation: B.D.E.5, Percentage: 0.08%
+  Designation: B.D.E.6, Percentage: 0.08%
+
+Country:  Sri Lanka (Total observed designations in this group: 2)
+  Designation: B.D.4.1.1.NmC1, Percentage: 100.00%
+
+Country:  Switzerland (Total observed designations in this group: 7)
+  Designation: B.D.E.1, Percentage: 71.43%
+  Designation: B.D.E.4, Percentage: 28.57%
+
+Country:  Taiwan (Total observed designations in this group: 290)
+  Designation: B.D, Percentage: 32.07%
+  Designation: B.D.3, Percentage: 25.86%
+  Designation: B.D.4.1.1.NmC1, Percentage: 13.79%
+  Designation: B.D.E.3, Percentage: 11.38%
+  Designation: B.D.E.2, Percentage: 10.00%
+  Designation: B.D.2, Percentage: 2.41%
+  Designation: B.D.4.1.3.NmC1, Percentage: 1.72%
+  Designation: B.D.E.4, Percentage: 1.72%
+  Designation: B.D.4, Percentage: 1.03%
+
+Country:  Tanzania (Total observed designations in this group: 1)
+  Designation: B.D.4, Percentage: 100.00%
+
+Country:  Thailand (Total observed designations in this group: 375)
+  Designation: B.D, Percentage: 27.47%
+  Designation: B.D.2, Percentage: 18.40%
+  Designation: B.D.E.2, Percentage: 17.87%
+  Designation: B.D.3, Percentage: 15.20%
+  Designation: B.D.E.3, Percentage: 8.53%
+  Designation: B.D.4.1.3.NmC1, Percentage: 4.00%
+  Designation: B.D.4, Percentage: 3.47%
+  Designation: B.D.E.1, Percentage: 1.33%
+  Designation: B.3, Percentage: 1.07%
+  Designation: B.D.1, Percentage: 1.07%
+  Designation: B.D.E.1.2, Percentage: 1.07%
+  Designation: B.D.E.4, Percentage: 0.27%
+  Designation: B.D.E.7, Percentage: 0.27%
+
+Country:  Tunisia (Total observed designations in this group: 4)
+  Designation: B.D.2, Percentage: 75.00%
+  Designation: B.D.4, Percentage: 25.00%
+
+Country:  Turkey (Total observed designations in this group: 92)
+  Designation: B.D.1, Percentage: 48.91%
+  Designation: B.D.4, Percentage: 29.35%
+  Designation: B.D, Percentage: 11.96%
+  Designation: B.D.2, Percentage: 6.52%
+  Designation: B.D.1.1, Percentage: 3.26%
+
+Country:  USA (Total observed designations in this group: 3112)
+  Designation: B.D.4.1.1.NmC1, Percentage: 42.90%
+  Designation: B.D.4.1.3.NmC1, Percentage: 22.53%
+  Designation: B.D.E.1, Percentage: 15.33%
+  Designation: B.D.4.1.2, Percentage: 6.56%
+  Designation: B.D.E.4, Percentage: 5.82%
+  Designation: B.D.1, Percentage: 3.60%
+  Designation: B.D.E.1.2, Percentage: 1.61%
+  Designation: B.D.E.5, Percentage: 0.87%
+  Designation: B.D.E.6, Percentage: 0.26%
+  Designation: B.D.E.1.7, Percentage: 0.22%
+  Designation: B.D.E.7, Percentage: 0.13%
+  Designation: B.D, Percentage: 0.06%
+  Designation: B.D.3, Percentage: 0.06%
+  Designation: B.D.E.1.1, Percentage: 0.06%
+
+Country:  Uganda (Total observed designations in this group: 13)
+  Designation: B.D.4.1.2, Percentage: 84.62%
+  Designation: B.D.E.5, Percentage: 15.38%
+
+Country:  United Kingdom (Total observed designations in this group: 204)
+  Designation: B.D.E.4, Percentage: 55.39%
+  Designation: B.D.4.1.2, Percentage: 15.20%
+  Designation: B.D.E.1, Percentage: 9.31%
+  Designation: B.D.4.1.1.NmC1, Percentage: 7.84%
+  Designation: B.D.E.2, Percentage: 4.90%
+  Designation: B.D.E.5, Percentage: 2.94%
+  Designation: B.D.1, Percentage: 1.96%
+  Designation: B.D.4.1.1, Percentage: 0.98%
+  Designation: B.D.2, Percentage: 0.49%
+  Designation: B.D.4.1.3.NmC1, Percentage: 0.49%
+  Designation: B.D.E.1.2, Percentage: 0.49%
+
+Country:  Uruguay (Total observed designations in this group: 4)
+  Designation: B.D.1, Percentage: 100.00%
+
+Country:  Viet Nam (Total observed designations in this group: 23)
+  Designation: B.D.4, Percentage: 65.22%
+  Designation: B.D.4.1.2, Percentage: 34.78%
+
+Country:  Zambia (Total observed designations in this group: 61)
+  Designation: B.D.E.2, Percentage: 70.49%
+  Designation: B.D.2, Percentage: 21.31%
+  Designation: B.D.4, Percentage: 4.92%
+  Designation: B.D, Percentage: 3.28%
+
+Country:  nan (Total observed designations in this group: 7)
+  Designation: B.D.E.4, Percentage: 71.43%
+  Designation: B.D.E.5, Percentage: 28.57%

@@ -1,0 +1,18 @@
+{
+    "case_number": 3,
+    "case_name": "MF352141.1",
+    "group_name": "A.1",
+    "number_of_sequences": 995,
+    "number_of_changes": 33,
+    "best_candidates": "A.1 + A.1",
+    "best_candidates_breakpoints_target": "17-18",
+    "best_candidates_breakpoints_genomic": "3898 - 3899",
+    "direction_L1": "<<",
+    "initial_region_span": "1-3,18-33",
+    "gap_history": "3-18",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 2.67e-07",
+    "p_value_vs_L1": "2.72e+00",
+    "p_value_vs_L2": "2.72e+00",
+    "flags": "Model_1BP_Best"
+}

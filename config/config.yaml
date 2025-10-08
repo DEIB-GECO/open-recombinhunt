@@ -27,7 +27,6 @@ viruses:
           # Rule 1: Discard rows where 'Isolate Collection date' is missing.
           - column: "Isolate Collection date"
             operator: "notna"
-            # 'value' is not needed for 'notna' operator
 
           # Rule 2: Discard rows where 'Accession' is missing.
           - column: "Accession"
@@ -79,13 +78,7 @@ viruses:
           - { column: "date", operator: "notna" }
           - { column: "qc.overallStatus", operator: "==", value: "good" }
           - { column: "missing_data", operator: "<=", value: 3 }
-          
-          # TODO: Discuss if we need more filters here
-          
-          #- { column: "alignmentScore", operator: ">", value: 40000 }
-          #- { column: "genome_coverage", operator: ">", value: 0.9 }
-          #- { column: "G_coverage", operator: ">", value: 0.98 }
-          #- { column: "F_coverage", operator: ">", value: 0.98 }
+
       haplocov:
         dist: 5
         size: 50
@@ -163,7 +156,7 @@ viruses:
 
       haplocov:
         dist: 3
-        size: 10
+        size: 5
         designation_mode: "haplocov"
 
       recombinhunt:
@@ -265,11 +258,6 @@ viruses:
           - {column: "QC_frame_shifts", operator: "==", value: "good"}
           - {column: "QC_stop_codons", operator: "==", value: "good"}
           - {column: "QC_mixed_sites", operator: "==", value: "good"}
-
-      # haplocov:
-      #   dist: 5
-      #   size: 50
-      #   designation_mode: "both"
 
       recombinhunt:
         lc_threshold: 0.75

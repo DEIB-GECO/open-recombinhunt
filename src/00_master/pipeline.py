@@ -143,11 +143,11 @@ def main():
                 #step2_prep_meta,
                 #step2_prep_fasta,
                 #step2_prep_ref,
-                #step3_run_haplocov,
-                #step4_postprocess_haplocov,
+                step3_run_haplocov,
+                step4_postprocess_haplocov,
                 #step5_create_env,
                 #step5_create_samples,
-                step6_run_recombinhunt
+                #step6_run_recombinhunt
             ]
             
         for step_command in pipeline_steps:

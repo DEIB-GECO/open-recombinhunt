@@ -1,0 +1,18 @@
+{
+    "case_number": 2,
+    "case_name": "MT377491.2",
+    "group_name": "A.1.NmC1",
+    "number_of_sequences": 181,
+    "number_of_changes": 107,
+    "best_candidates": "A.1.NmC1 + A.1 + A.1.NmC1",
+    "best_candidates_breakpoints_target": "98-99, 103-104",
+    "best_candidates_breakpoints_genomic": "9751 - 9752, 10288 - 10289",
+    "direction_L1": ">>",
+    "initial_region_span": "1-98,99-103,104-107",
+    "gap_history": "98-104 -> ",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 1.05e-04",
+    "p_value_vs_L1": "1.16e-06",
+    "p_value_vs_L2": "4.91e-95",
+    "flags": "Model_2BP_Best"
+}

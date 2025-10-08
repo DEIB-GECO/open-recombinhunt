@@ -1,0 +1,243 @@
+--- Analyzing Designations by Continent (Percentages) ---
+
+Continent: Africa (Total observed designations in this group: 24)
+  Designation: A.1.NmC8, Percentage: 58.33%
+  Designation: A.1, Percentage: 41.67%
+
+Continent: Asia (Total observed designations in this group: 268)
+  Designation: A.1.NmC1, Percentage: 66.79%
+  Designation: A.1, Percentage: 32.46%
+  Designation: A.1.NmC4, Percentage: 0.75%
+
+Continent: Europe (Total observed designations in this group: 19)
+  Designation: A.1.NmC4, Percentage: 47.37%
+  Designation: A.1, Percentage: 36.84%
+  Designation: A.1.NmC3, Percentage: 5.26%
+  Designation: A.1.NmC8, Percentage: 5.26%
+  Designation: A.1.NmC9, Percentage: 5.26%
+
+Continent: NorthAmerica (Total observed designations in this group: 574)
+  Designation: A.1, Percentage: 52.09%
+  Designation: A.1.NmC3, Percentage: 15.68%
+  Designation: A.1.NmC4, Percentage: 10.10%
+  Designation: A.1.NmC9, Percentage: 9.93%
+  Designation: A.1.NmC7, Percentage: 8.89%
+  Designation: A.1.NmC2, Percentage: 2.61%
+  Designation: A.1.NmC8, Percentage: 0.70%
+
+Continent: Oceania (Total observed designations in this group: 15)
+  Designation: A.1, Percentage: 100.00%
+
+Continent: SouthAmerica (Total observed designations in this group: 316)
+  Designation: A.1, Percentage: 66.46%
+  Designation: A.1.NmC2, Percentage: 21.52%
+  Designation: A.1.NmC6, Percentage: 7.91%
+  Designation: A.1.NmC5, Percentage: 2.53%
+  Designation: A.1.NmC3, Percentage: 0.63%
+  Designation: A.1.NmC4, Percentage: 0.63%
+  Designation: A.1.NmC8, Percentage: 0.32%
+
+
+--- Analyzing Designations by Country (Percentages) ---
+
+Country:  Angola (Total observed designations in this group: 2)
+  Designation: A.1, Percentage: 100.00%
+
+Country:  Argentina (Total observed designations in this group: 1)
+  Designation: A.1, Percentage: 100.00%
+
+Country:  Australia (Total observed designations in this group: 1)
+  Designation: A.1, Percentage: 100.00%
+
+Country:  Bangladesh (Total observed designations in this group: 5)
+  Designation: A.1.NmC1, Percentage: 100.00%
+
+Country:  Brazil (Total observed designations in this group: 200)
+  Designation: A.1, Percentage: 83.00%
+  Designation: A.1.NmC6, Percentage: 12.50%
+  Designation: A.1.NmC5, Percentage: 4.00%
+  Designation: A.1.NmC8, Percentage: 0.50%
+
+Country:  Cambodia (Total observed designations in this group: 3)
+  Designation: A.1.NmC1, Percentage: 66.67%
+  Designation: A.1, Percentage: 33.33%
+
+Country:  Canada (Total observed designations in this group: 6)
+  Designation: A.1, Percentage: 83.33%
+  Designation: A.1.NmC9, Percentage: 16.67%
+
+Country:  Cape Verde (Total observed designations in this group: 3)
+  Designation: A.1, Percentage: 100.00%
+
+Country:  China (Total observed designations in this group: 36)
+  Designation: A.1, Percentage: 100.00%
+
+Country:  Colombia (Total observed designations in this group: 100)
+  Designation: A.1.NmC2, Percentage: 66.00%
+  Designation: A.1, Percentage: 32.00%
+  Designation: A.1.NmC3, Percentage: 2.00%
+
+Country:  Cuba (Total observed designations in this group: 45)
+  Designation: A.1, Percentage: 71.11%
+  Designation: A.1.NmC4, Percentage: 26.67%
+  Designation: A.1.NmC9, Percentage: 2.22%
+
+Country:  Dominican Republic (Total observed designations in this group: 27)
+  Designation: A.1.NmC4, Percentage: 70.37%
+  Designation: A.1, Percentage: 14.81%
+  Designation: A.1.NmC9, Percentage: 11.11%
+  Designation: A.1.NmC2, Percentage: 3.70%
+
+Country:  Ecuador (Total observed designations in this group: 3)
+  Designation: A.1, Percentage: 100.00%
+
+Country:  El Salvador (Total observed designations in this group: 1)
+  Designation: A.1, Percentage: 100.00%
+
+Country:  France (Total observed designations in this group: 1)
+  Designation: A.1, Percentage: 100.00%
+
+Country:  French Guiana (Total observed designations in this group: 3)
+  Designation: A.1.NmC4, Percentage: 66.67%
+  Designation: A.1, Percentage: 33.33%
+
+Country:  French Polynesia (Total observed designations in this group: 14)
+  Designation: A.1, Percentage: 100.00%
+
+Country:  Guadeloupe (Total observed designations in this group: 10)
+  Designation: A.1.NmC4, Percentage: 60.00%
+  Designation: A.1, Percentage: 20.00%
+  Designation: A.1.NmC8, Percentage: 20.00%
+
+Country:  Guatemala (Total observed designations in this group: 4)
+  Designation: A.1, Percentage: 100.00%
+
+Country:  Guinea (Total observed designations in this group: 2)
+  Designation: A.1.NmC8, Percentage: 100.00%
+
+Country:  Haiti (Total observed designations in this group: 23)
+  Designation: A.1.NmC4, Percentage: 65.22%
+  Designation: A.1, Percentage: 21.74%
+  Designation: A.1.NmC2, Percentage: 13.04%
+
+Country:  Honduras (Total observed designations in this group: 34)
+  Designation: A.1, Percentage: 82.35%
+  Designation: A.1.NmC7, Percentage: 17.65%
+
+Country:  India (Total observed designations in this group: 10)
+  Designation: A.1, Percentage: 100.00%
+
+Country:  Indonesia (Total observed designations in this group: 1)
+  Designation: A.1, Percentage: 100.00%
+
+Country:  Italy (Total observed designations in this group: 6)
+  Designation: A.1, Percentage: 50.00%
+  Designation: A.1.NmC4, Percentage: 50.00%
+
+Country:  Jamaica (Total observed designations in this group: 4)
+  Designation: A.1.NmC4, Percentage: 50.00%
+  Designation: A.1, Percentage: 25.00%
+  Designation: A.1.NmC9, Percentage: 25.00%
+
+Country:  Japan (Total observed designations in this group: 5)
+  Designation: A.1, Percentage: 40.00%
+  Designation: A.1.NmC4, Percentage: 40.00%
+  Designation: A.1.NmC1, Percentage: 20.00%
+
+Country:  Kenya (Total observed designations in this group: 3)
+  Designation: A.1, Percentage: 100.00%
+
+Country:  Martinique (Total observed designations in this group: 2)
+  Designation: A.1, Percentage: 100.00%
+
+Country:  Mexico (Total observed designations in this group: 81)
+  Designation: A.1, Percentage: 100.00%
+
+Country:  Nicaragua (Total observed designations in this group: 141)
+  Designation: A.1, Percentage: 78.01%
+  Designation: A.1.NmC7, Percentage: 21.99%
+
+Country:  Pakistan (Total observed designations in this group: 2)
+  Designation: A.1, Percentage: 100.00%
+
+Country:  Panama (Total observed designations in this group: 10)
+  Designation: A.1.NmC2, Percentage: 100.00%
+
+Country:  Peru (Total observed designations in this group: 2)
+  Designation: A.1, Percentage: 100.00%
+
+Country:  Philippines (Total observed designations in this group: 1)
+  Designation: A.1, Percentage: 100.00%
+
+Country:  Portugal (Total observed designations in this group: 1)
+  Designation: A.1, Percentage: 100.00%
+
+Country:  Puerto Rico (Total observed designations in this group: 105)
+  Designation: A.1.NmC3, Percentage: 80.00%
+  Designation: A.1.NmC7, Percentage: 12.38%
+  Designation: A.1, Percentage: 5.71%
+  Designation: A.1.NmC4, Percentage: 1.90%
+
+Country:  Russia (Total observed designations in this group: 8)
+  Designation: A.1.NmC4, Percentage: 62.50%
+  Designation: A.1, Percentage: 25.00%
+  Designation: A.1.NmC9, Percentage: 12.50%
+
+Country:  Senegal (Total observed designations in this group: 11)
+  Designation: A.1.NmC8, Percentage: 100.00%
+
+Country:  Seychelles (Total observed designations in this group: 2)
+  Designation: A.1, Percentage: 100.00%
+
+Country:  Singapore (Total observed designations in this group: 121)
+  Designation: A.1.NmC1, Percentage: 97.52%
+  Designation: A.1, Percentage: 2.48%
+
+Country:  South Korea (Total observed designations in this group: 3)
+  Designation: A.1, Percentage: 100.00%
+
+Country:  Spain (Total observed designations in this group: 2)
+  Designation: A.1.NmC3, Percentage: 50.00%
+  Designation: A.1.NmC8, Percentage: 50.00%
+
+Country:  Suriname (Total observed designations in this group: 4)
+  Designation: A.1, Percentage: 100.00%
+
+Country:  Taiwan (Total observed designations in this group: 2)
+  Designation: A.1.NmC1, Percentage: 100.00%
+
+Country:  Thailand (Total observed designations in this group: 75)
+  Designation: A.1.NmC1, Percentage: 68.00%
+  Designation: A.1, Percentage: 32.00%
+
+Country:  Trinidad and Tobago (Total observed designations in this group: 3)
+  Designation: A.1, Percentage: 100.00%
+
+Country:  USA (Total observed designations in this group: 73)
+  Designation: A.1.NmC9, Percentage: 69.86%
+  Designation: A.1, Percentage: 19.18%
+  Designation: A.1.NmC3, Percentage: 2.74%
+  Designation: A.1.NmC4, Percentage: 2.74%
+  Designation: A.1.NmC8, Percentage: 2.74%
+  Designation: A.1.NmC2, Percentage: 1.37%
+  Designation: A.1.NmC7, Percentage: 1.37%
+
+Country:  Uganda (Total observed designations in this group: 1)
+  Designation: A.1.NmC8, Percentage: 100.00%
+
+Country:  United Kingdom (Total observed designations in this group: 1)
+  Designation: A.1.NmC4, Percentage: 100.00%
+
+Country:  Venezuela (Total observed designations in this group: 3)
+  Designation: A.1.NmC2, Percentage: 66.67%
+  Designation: A.1, Percentage: 33.33%
+
+Country:  Viet Nam (Total observed designations in this group: 4)
+  Designation: A.1, Percentage: 100.00%
+
+Country:  Virgin Islands (Total observed designations in this group: 5)
+  Designation: A.1.NmC3, Percentage: 80.00%
+  Designation: A.1, Percentage: 20.00%
+
+Country:  nan (Total observed designations in this group: 2)
+  Designation: A.1.NmC1, Percentage: 100.00%
