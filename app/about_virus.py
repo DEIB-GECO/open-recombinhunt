@@ -620,9 +620,6 @@ def describe(virus, config, df):
     quality_filters(virus, config)
     st.markdown("---")
 
-    haplocov()
-    st.markdown("---")
-
     #haplocov_parameters(virus, config)
     #st.markdown("---")
 
