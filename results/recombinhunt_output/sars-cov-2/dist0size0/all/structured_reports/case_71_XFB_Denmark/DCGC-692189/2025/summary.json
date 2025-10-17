@@ -1,0 +1,18 @@
+{
+    "case_number": 71,
+    "case_name": "Denmark/DCGC-692189/2025",
+    "group_name": "XFB",
+    "number_of_sequences": 9,
+    "number_of_changes": 148,
+    "best_candidates": "KP.2.3 + XFB.3",
+    "best_candidates_breakpoints_target": "15-16",
+    "best_candidates_breakpoints_genomic": "7118 - 7119",
+    "direction_L1": "<<",
+    "initial_region_span": "1-15,17-148",
+    "gap_history": "15-17",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 1.21e-01",
+    "p_value_vs_L1": "2.16e-54",
+    "p_value_vs_L2": "1.73e-13",
+    "flags": "Model_1BP_Best"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 119,
+    "case_name": "Unknown_ID",
+    "group_name": "XDB",
+    "number_of_sequences": 23,
+    "number_of_changes": 101,
+    "best_candidates": "XBB.1.16.19 + BA.2.27",
+    "best_candidates_breakpoints_target": "97-98",
+    "best_candidates_breakpoints_genomic": "28361 - 28362",
+    "direction_L1": ">>",
+    "initial_region_span": "1-97,98-101",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "8.43e-18",
+    "p_value_vs_L2": "0.00e+00",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

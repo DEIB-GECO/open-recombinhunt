@@ -1,0 +1,18 @@
+{
+    "case_number": 23,
+    "case_name": "Unknown_ID",
+    "group_name": "XL",
+    "number_of_sequences": 75,
+    "number_of_changes": 74,
+    "best_candidates": "BA.1.17.2 + BA.2",
+    "best_candidates_breakpoints_target": "8-9",
+    "best_candidates_breakpoints_genomic": "6512 - 6513",
+    "direction_L1": "<<",
+    "initial_region_span": "1-8,10-74",
+    "gap_history": "8-10",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "9.28e-156",
+    "p_value_vs_L2": "4.69e-37",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

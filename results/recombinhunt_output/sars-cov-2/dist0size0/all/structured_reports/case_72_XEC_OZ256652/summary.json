@@ -1,0 +1,18 @@
+{
+    "case_number": 72,
+    "case_name": "OZ256652",
+    "group_name": "XEC",
+    "number_of_sequences": 5350,
+    "number_of_changes": 145,
+    "best_candidates": "XEC.6 + XEC.2",
+    "best_candidates_breakpoints_target": "13-14",
+    "best_candidates_breakpoints_genomic": "4387 - 4388",
+    "direction_L1": "<<",
+    "initial_region_span": "1-13,17-145",
+    "gap_history": "13-17",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "9.44e-33",
+    "p_value_vs_L2": "7.20e-25",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

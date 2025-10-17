@@ -1,0 +1,18 @@
+{
+    "case_number": 20,
+    "case_name": "Unknown_ID",
+    "group_name": "XAL",
+    "number_of_sequences": 60,
+    "number_of_changes": 65,
+    "best_candidates": "BA.1.1 + BA.2",
+    "best_candidates_breakpoints_target": "15-16",
+    "best_candidates_breakpoints_genomic": "17411 - 17412",
+    "direction_L1": "<<",
+    "initial_region_span": "1-15,16-65",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "6.97e-101",
+    "p_value_vs_L2": "8.71e-77",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 81,
+    "case_name": "USA/CT-DPH-1298970001/2025",
+    "group_name": "XFM",
+    "number_of_sequences": 4,
+    "number_of_changes": 151,
+    "best_candidates": "LF.7.9 + MC.1",
+    "best_candidates_breakpoints_target": "141-142",
+    "best_candidates_breakpoints_genomic": "28271 - 28272",
+    "direction_L1": ">>",
+    "initial_region_span": "1-141,142-151",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "3.03e-19",
+    "p_value_vs_L2": "1.82e-208",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 72,
+    "case_name": "USA/FL-CDC-LC1136791/2025",
+    "group_name": "XEC",
+    "number_of_sequences": 5350,
+    "number_of_changes": 146,
+    "best_candidates": "KP.3.1.1 + XEC.25",
+    "best_candidates_breakpoints_target": "29-30",
+    "best_candidates_breakpoints_genomic": "10520 - 10521",
+    "direction_L1": "<<",
+    "initial_region_span": "1-15,30-146",
+    "gap_history": "15-30",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "4.96e-74",
+    "p_value_vs_L2": "2.08e-18",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

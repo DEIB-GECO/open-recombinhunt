@@ -1,0 +1,18 @@
+{
+    "case_number": 127,
+    "case_name": "Unknown_ID",
+    "group_name": "XDJ",
+    "number_of_sequences": 1,
+    "number_of_changes": 118,
+    "best_candidates": "JF.1 + HK.3.1",
+    "best_candidates_breakpoints_target": "25-26",
+    "best_candidates_breakpoints_genomic": "14873 - 14874",
+    "direction_L1": "<<",
+    "initial_region_span": "1-25,26-118",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 1.39e-01",
+    "p_value_vs_L1": "1.49e-125",
+    "p_value_vs_L2": "3.33e-113",
+    "flags": "Model_1BP_Best"
+}

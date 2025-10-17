@@ -1,0 +1,18 @@
+{
+    "case_number": 11,
+    "case_name": "IGS-10285-CVDP-7DC538F8-A098-480C-A770-7BD46A9127F9",
+    "group_name": "XFP",
+    "number_of_sequences": 9,
+    "number_of_changes": 153,
+    "best_candidates": "JN.1.48 + XFJ.1",
+    "best_candidates_breakpoints_target": "14-15",
+    "best_candidates_breakpoints_genomic": "5240 - 5241",
+    "direction_L1": "<<",
+    "initial_region_span": "1-8,18-153",
+    "gap_history": "8-18",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 4.71e-02",
+    "p_value_vs_L1": "2.36e-104",
+    "p_value_vs_L2": "2.57e-25",
+    "flags": "Model_1BP_Best"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 55,
+    "case_name": "USA/NMDOH-2025014470/2025",
+    "group_name": "XEQ",
+    "number_of_sequences": 269,
+    "number_of_changes": 142,
+    "best_candidates": "JN.9 + KP.2",
+    "best_candidates_breakpoints_target": "12-13",
+    "best_candidates_breakpoints_genomic": "7118 - 7119",
+    "direction_L1": "<<",
+    "initial_region_span": "1-12,13-142",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 2.54e-03",
+    "p_value_vs_L1": "1.32e-124",
+    "p_value_vs_L2": "1.32e-33",
+    "flags": "Model_1BP_Best"
+}

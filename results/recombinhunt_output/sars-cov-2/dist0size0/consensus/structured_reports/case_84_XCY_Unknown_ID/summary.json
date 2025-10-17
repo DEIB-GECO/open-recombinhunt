@@ -1,0 +1,18 @@
+{
+    "case_number": 84,
+    "case_name": "Unknown_ID",
+    "group_name": "XCY",
+    "number_of_sequences": 5,
+    "number_of_changes": 110,
+    "best_candidates": "GK.4 + JG.4 + GK.4",
+    "best_candidates_breakpoints_target": "3-4, 39-40",
+    "best_candidates_breakpoints_genomic": "1701 - 1702, 21809 - 21810",
+    "direction_L1": "<<",
+    "initial_region_span": "1-3,4-39,40-110",
+    "gap_history": "3-40 -> ",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 9.51e-01",
+    "p_value_vs_L1": "5.54e-148",
+    "p_value_vs_L2": "8.98e-122",
+    "flags": "Model_2BP_Best"
+}

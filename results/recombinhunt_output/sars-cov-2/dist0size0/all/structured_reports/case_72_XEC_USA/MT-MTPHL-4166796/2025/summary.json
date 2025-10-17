@@ -1,0 +1,18 @@
+{
+    "case_number": 72,
+    "case_name": "USA/MT-MTPHL-4166796/2025",
+    "group_name": "XEC",
+    "number_of_sequences": 5350,
+    "number_of_changes": 141,
+    "best_candidates": "XEC.4.6 + XEC.2",
+    "best_candidates_breakpoints_target": "3-4",
+    "best_candidates_breakpoints_genomic": "2060 - 2061",
+    "direction_L1": "<<",
+    "initial_region_span": "1-3,4-141",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.84e-42",
+    "p_value_vs_L2": "3.74e-09",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

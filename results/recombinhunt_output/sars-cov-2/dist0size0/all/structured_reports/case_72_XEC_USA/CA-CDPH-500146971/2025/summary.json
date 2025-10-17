@@ -1,0 +1,18 @@
+{
+    "case_number": 72,
+    "case_name": "USA/CA-CDPH-500146971/2025",
+    "group_name": "XEC",
+    "number_of_sequences": 5350,
+    "number_of_changes": 143,
+    "best_candidates": "XEC.32 + XBB.1.5.32 + XEC.32",
+    "best_candidates_breakpoints_target": "3-4, 6-7",
+    "best_candidates_breakpoints_genomic": "896 - 897, 1539 - 1540",
+    "direction_L1": "<<",
+    "initial_region_span": "1-3,4-6,7-143",
+    "gap_history": "3-7 -> ",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 8.70e-07",
+    "p_value_vs_L1": "1.29e-20",
+    "p_value_vs_L2": "0.00e+00",
+    "flags": "Model_2BP_Best"
+}

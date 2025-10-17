@@ -1,0 +1,18 @@
+{
+    "case_number": 72,
+    "case_name": "USA/IL-USAFSAM-S23723/2025",
+    "group_name": "XEC",
+    "number_of_sequences": 5350,
+    "number_of_changes": 142,
+    "best_candidates": "XEC.4 + JN.1.39 + XEC.4",
+    "best_candidates_breakpoints_target": "11-12, 16-17",
+    "best_candidates_breakpoints_genomic": "4330 - 4331, 8292 - 8293",
+    "direction_L1": "<<",
+    "initial_region_span": "1-11,13-16,17-142",
+    "gap_history": "11-17 -> 11-13",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 9.45e-06",
+    "p_value_vs_L1": "1.98e-12",
+    "p_value_vs_L2": "2.29e-86",
+    "flags": "Model_2BP_Best"
+}

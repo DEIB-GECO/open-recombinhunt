@@ -1,0 +1,18 @@
+{
+    "case_number": 52,
+    "case_name": "USA/IVY-G25Y93M8/2025",
+    "group_name": "XES",
+    "number_of_sequences": 59,
+    "number_of_changes": 152,
+    "best_candidates": "KP.3.3 + KP.2.3.15 + KP.3.3",
+    "best_candidates_breakpoints_target": "11-12, 16-17",
+    "best_candidates_breakpoints_genomic": "4330 - 4331, 6470 - 6471",
+    "direction_L1": "<<",
+    "initial_region_span": "1-11,12-16,17-152",
+    "gap_history": "11-17 -> ",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 1.08e-10",
+    "p_value_vs_L1": "9.36e-20",
+    "p_value_vs_L2": "4.00e-70",
+    "flags": "Model_2BP_Best"
+}

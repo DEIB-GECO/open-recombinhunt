@@ -1,0 +1,18 @@
+{
+    "case_number": 99,
+    "case_name": "Unknown_ID",
+    "group_name": "XY",
+    "number_of_sequences": 63,
+    "number_of_changes": 74,
+    "best_candidates": "BA.1.1 + BA.2",
+    "best_candidates_breakpoints_target": "14-15",
+    "best_candidates_breakpoints_genomic": "11555 - 11556",
+    "direction_L1": "<<",
+    "initial_region_span": "1-14,16-74",
+    "gap_history": "14-16",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "7.10e-122",
+    "p_value_vs_L2": "2.80e-70",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 77,
+    "case_name": "Unknown_ID",
+    "group_name": "XBZ",
+    "number_of_sequences": 150,
+    "number_of_changes": 83,
+    "best_candidates": "BA.5.2.10 + EF.1",
+    "best_candidates_breakpoints_target": "3-4",
+    "best_candidates_breakpoints_genomic": "1942 - 1943",
+    "direction_L1": "<<",
+    "initial_region_span": "1-3,4-83",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "2.23e-157",
+    "p_value_vs_L2": "1.01e-11",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 67,
+    "case_name": "Unknown_ID",
+    "group_name": "XAB",
+    "number_of_sequences": 70,
+    "number_of_changes": 71,
+    "best_candidates": "BA.1.1.9 + BA.2",
+    "best_candidates_breakpoints_target": "6-7",
+    "best_candidates_breakpoints_genomic": "6512 - 6513",
+    "direction_L1": "<<",
+    "initial_region_span": "1-6,7-71",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.10e-281",
+    "p_value_vs_L2": "2.24e-47",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 12,
+    "case_name": "Unknown_ID",
+    "group_name": "XAF",
+    "number_of_sequences": 30,
+    "number_of_changes": 70,
+    "best_candidates": "BA.1.1.9 + BA.2.9",
+    "best_candidates_breakpoints_target": "9-10",
+    "best_candidates_breakpoints_genomic": "10448 - 10449",
+    "direction_L1": "<<",
+    "initial_region_span": "1-9,12-70",
+    "gap_history": "9-12",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.28e-271",
+    "p_value_vs_L2": "1.64e-112",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 122,
+    "case_name": "OZ284692",
+    "group_name": "XFN",
+    "number_of_sequences": 27,
+    "number_of_changes": 152,
+    "best_candidates": "KP.2.3 + XEC.32 + KP.2.3",
+    "best_candidates_breakpoints_target": "140-141, 148-149",
+    "best_candidates_breakpoints_genomic": "28271 - 28272, 28957 - 28958",
+    "direction_L1": ">>",
+    "initial_region_span": "1-140,141-148,149-152",
+    "gap_history": "140-149 -> ",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 4.25e-05",
+    "p_value_vs_L1": "2.34e-14",
+    "p_value_vs_L2": "1.43e-12",
+    "flags": "Model_2BP_Best"
+}

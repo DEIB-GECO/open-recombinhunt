@@ -1,0 +1,18 @@
+{
+    "case_number": 58,
+    "case_name": "USA/NY-PRL-250722_81F09/2025",
+    "group_name": "XFG",
+    "number_of_sequences": 530,
+    "number_of_changes": 152,
+    "best_candidates": "LD.1 + XFG.3",
+    "best_candidates_breakpoints_target": "4-5",
+    "best_candidates_breakpoints_genomic": "896 - 897",
+    "direction_L1": "<<",
+    "initial_region_span": "1-4,6-152",
+    "gap_history": "4-6",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "2.19e-197",
+    "p_value_vs_L2": "1.33e-07",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

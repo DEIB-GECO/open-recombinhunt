@@ -1,0 +1,18 @@
+{
+    "case_number": 21,
+    "case_name": "Unknown_ID",
+    "group_name": "XAG",
+    "number_of_sequences": 26,
+    "number_of_changes": 75,
+    "best_candidates": "BA.1.1.14 + BA.2.9",
+    "best_candidates_breakpoints_target": "8-9",
+    "best_candidates_breakpoints_genomic": "6512 - 6513",
+    "direction_L1": "<<",
+    "initial_region_span": "1-6,9-75",
+    "gap_history": "6-9",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "2.59e-237",
+    "p_value_vs_L2": "7.86e-43",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

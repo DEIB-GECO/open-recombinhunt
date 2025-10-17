@@ -1,0 +1,18 @@
+{
+    "case_number": 29,
+    "case_name": "Unknown_ID",
+    "group_name": "XCU",
+    "number_of_sequences": 2,
+    "number_of_changes": 113,
+    "best_candidates": "XBB.1.5 + XBC.1 + XBB.1.5",
+    "best_candidates_breakpoints_target": "9-10, 47-48",
+    "best_candidates_breakpoints_genomic": "4594 - 4595, 22576 - 22577",
+    "direction_L1": "<<",
+    "initial_region_span": "1-7,10-47,48-113",
+    "gap_history": "7-48 -> 7-10",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 3.10e-14",
+    "p_value_vs_L1": "5.72e-305",
+    "p_value_vs_L2": "0.00e+00",
+    "flags": "Model_2BP_Best"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 58,
+    "case_name": "USA/CA-GBW-GKISBBBE69940/2025",
+    "group_name": "XFG",
+    "number_of_sequences": 530,
+    "number_of_changes": 151,
+    "best_candidates": "LF.7 + NL.11 + LF.7",
+    "best_candidates_breakpoints_target": "4-5, 7-8",
+    "best_candidates_breakpoints_genomic": "672 - 673, 2789 - 2790",
+    "direction_L1": "<<",
+    "initial_region_span": "1-4,5-7,8-151",
+    "gap_history": "4-8 -> ",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 2.08e-05",
+    "p_value_vs_L1": "1.27e-14",
+    "p_value_vs_L2": "6.30e-205",
+    "flags": "Model_2BP_Best"
+}

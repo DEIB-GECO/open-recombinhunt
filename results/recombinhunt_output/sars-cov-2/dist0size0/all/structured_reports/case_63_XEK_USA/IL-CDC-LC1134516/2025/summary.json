@@ -1,0 +1,18 @@
+{
+    "case_number": 63,
+    "case_name": "USA/IL-CDC-LC1134516/2025",
+    "group_name": "XEK",
+    "number_of_sequences": 289,
+    "number_of_changes": 152,
+    "best_candidates": "XEK.6 + XEC.2",
+    "best_candidates_breakpoints_target": "17-18",
+    "best_candidates_breakpoints_genomic": "6183 - 6184",
+    "direction_L1": "<<",
+    "initial_region_span": "1-14,19-152",
+    "gap_history": "14-19",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "2.42e-29",
+    "p_value_vs_L2": "2.46e-29",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

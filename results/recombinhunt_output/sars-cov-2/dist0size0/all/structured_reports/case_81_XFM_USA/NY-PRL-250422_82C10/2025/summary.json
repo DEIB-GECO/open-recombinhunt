@@ -1,0 +1,18 @@
+{
+    "case_number": 81,
+    "case_name": "USA/NY-PRL-250422_82C10/2025",
+    "group_name": "XFM",
+    "number_of_sequences": 4,
+    "number_of_changes": 152,
+    "best_candidates": "LF.7.9 + JN.1.2",
+    "best_candidates_breakpoints_target": "141-142",
+    "best_candidates_breakpoints_genomic": "28271 - 28272",
+    "direction_L1": ">>",
+    "initial_region_span": "1-141,142-152",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "2.93e-20",
+    "p_value_vs_L2": "1.08e-155",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

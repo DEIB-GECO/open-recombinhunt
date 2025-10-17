@@ -1,0 +1,18 @@
+{
+    "case_number": 2,
+    "case_name": "Unknown_ID",
+    "group_name": "XG",
+    "number_of_sequences": 319,
+    "number_of_changes": 71,
+    "best_candidates": "BA.1.17 + BA.2.7",
+    "best_candidates_breakpoints_target": "6-7",
+    "best_candidates_breakpoints_genomic": "6639 - 6640",
+    "direction_L1": "<<",
+    "initial_region_span": "1-6,7-71",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.40e-244",
+    "p_value_vs_L2": "3.39e-64",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

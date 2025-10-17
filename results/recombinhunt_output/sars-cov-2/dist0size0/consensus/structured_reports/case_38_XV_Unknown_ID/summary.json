@@ -1,0 +1,18 @@
+{
+    "case_number": 38,
+    "case_name": "Unknown_ID",
+    "group_name": "XV",
+    "number_of_sequences": 24,
+    "number_of_changes": 66,
+    "best_candidates": "BA.1.14 + BA.2.52",
+    "best_candidates_breakpoints_target": "12-13",
+    "best_candidates_breakpoints_genomic": "13196 - 13197",
+    "direction_L1": "<<",
+    "initial_region_span": "1-11,13-66",
+    "gap_history": "11-13",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.17e-247",
+    "p_value_vs_L2": "8.21e-153",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

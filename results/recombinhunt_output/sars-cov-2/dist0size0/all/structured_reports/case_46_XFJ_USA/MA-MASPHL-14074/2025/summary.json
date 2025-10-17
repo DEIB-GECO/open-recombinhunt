@@ -1,0 +1,18 @@
+{
+    "case_number": 46,
+    "case_name": "USA/MA-MASPHL-14074/2025",
+    "group_name": "XFJ",
+    "number_of_sequences": 24,
+    "number_of_changes": 150,
+    "best_candidates": "JN.1 + XFJ.1",
+    "best_candidates_breakpoints_target": "5-6",
+    "best_candidates_breakpoints_genomic": "896 - 897",
+    "direction_L1": "<<",
+    "initial_region_span": "1-5,7-150",
+    "gap_history": "5-7",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "3.72e-59",
+    "p_value_vs_L2": "1.13e-09",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

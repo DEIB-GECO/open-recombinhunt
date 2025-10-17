@@ -1,0 +1,18 @@
+{
+    "case_number": 98,
+    "case_name": "Unknown_ID",
+    "group_name": "XBR",
+    "number_of_sequences": 11,
+    "number_of_changes": 93,
+    "best_candidates": "BN.3.1 + BQ.1.25",
+    "best_candidates_breakpoints_target": "41-42",
+    "best_candidates_breakpoints_genomic": "22033 - 22034",
+    "direction_L1": ">>",
+    "initial_region_span": "1-41,42-93",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 1.14e-07",
+    "p_value_vs_L1": "1.51e-217",
+    "p_value_vs_L2": "8.68e-211",
+    "flags": "Model_1BP_Best"
+}

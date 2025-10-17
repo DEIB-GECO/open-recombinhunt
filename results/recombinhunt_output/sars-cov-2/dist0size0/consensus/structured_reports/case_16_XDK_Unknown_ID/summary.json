@@ -1,0 +1,18 @@
+{
+    "case_number": 16,
+    "case_name": "Unknown_ID",
+    "group_name": "XDK",
+    "number_of_sequences": 150,
+    "number_of_changes": 118,
+    "best_candidates": "XDK.5 + JN.1.1.1",
+    "best_candidates_breakpoints_target": "8-9",
+    "best_candidates_breakpoints_genomic": "5316 - 5317",
+    "direction_L1": "<<",
+    "initial_region_span": "1-8,9-118",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "3.71e-18",
+    "p_value_vs_L2": "2.25e-52",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

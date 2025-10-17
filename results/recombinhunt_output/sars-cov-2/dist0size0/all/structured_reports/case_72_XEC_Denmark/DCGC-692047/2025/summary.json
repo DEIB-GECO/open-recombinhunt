@@ -1,0 +1,18 @@
+{
+    "case_number": 72,
+    "case_name": "Denmark/DCGC-692047/2025",
+    "group_name": "XEC",
+    "number_of_sequences": 5350,
+    "number_of_changes": 145,
+    "best_candidates": "XEC.25 + XEC.2",
+    "best_candidates_breakpoints_target": "9-10",
+    "best_candidates_breakpoints_genomic": "3566 - 3567",
+    "direction_L1": "<<",
+    "initial_region_span": "1-9,16-145",
+    "gap_history": "9-16",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 3.55e-01",
+    "p_value_vs_L1": "3.54e-25",
+    "p_value_vs_L2": "4.61e-17",
+    "flags": "Model_1BP_Best"
+}

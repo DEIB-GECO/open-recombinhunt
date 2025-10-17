@@ -1,0 +1,18 @@
+{
+    "case_number": 87,
+    "case_name": "Unknown_ID",
+    "group_name": "XCW",
+    "number_of_sequences": 51,
+    "number_of_changes": 108,
+    "best_candidates": "XBB.2.3.20 + JF.1.1.2",
+    "best_candidates_breakpoints_target": "92-93",
+    "best_candidates_breakpoints_genomic": "27387 - 27388",
+    "direction_L1": ">>",
+    "initial_region_span": "1-92,98-108",
+    "gap_history": "92-98",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "8.38e-70",
+    "p_value_vs_L2": "1.01e-225",
+    "flags": "Model_2BP_Bad_L1_opp"
+}
