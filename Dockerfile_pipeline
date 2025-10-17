@@ -1,0 +1,3 @@
+FROM openrecombinhunt-base
+
+ENTRYPOINT ["/bin/bash"]

@@ -1,17 +1,39 @@
 services:
-  frontend:
+  base:
     build:
       context: ./
-      dockerfile: Dockerfile
-    image: open_recombinhunt_frontend
-    container_name: open_recombinhunt_frontend
-    ports:
-      - 60129:8501
+      dockerfile: Dockerfile_base
+    image: openrecombinhunt-base
     environment:
       - PYTHONUNBUFFERED=1
+
+  pipeline:
+    depends_on:
+      - base
+    build:
+      context: ./
+      dockerfile: Dockerfile_pipeline
+    image: openrecominhunt-pipeline
+    container_name: openrecominhunt-pipeline
     volumes:
+      - ./:/app/
+    stdin_open: true
+    tty: true
+
+  frontend:
+    depends_on:
+      - base
+    build:
+      context: ./
+      dockerfile: Dockerfile_frontend
+    image: openrecombinhunt_frontend
+    container_name: openrecombinhunt-frontend
+    ports:
+      - 60129:8501
+    volumes:
+      - ./app:/app/app
+      - ./config:/app/config
       - ./environments:/app/environments
       - ./logs:/app/logs
-      - ./results:/app/results
-      - ./data:/app/data
       - ./samples:/app/samples
+      - ./src:/app/src

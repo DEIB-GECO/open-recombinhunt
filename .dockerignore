@@ -1,40 +1,11 @@
-.git
-.gitignore
-.gitmodules
-.gitattributes
+# Ignore everything at build time
+**
 
-venv/
-.venv/
-env/
-.env/
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-.ipynb_checkpoints/ 
+## Except the data required at build time:
 
-.vscode/ # VS Code configuration
-.idea/   # IntelliJ/PyCharm configuration
-*.swp    # Vim swap files
-*~       # Emacs backup files
+# libraries
+!environment.yml    
+!libs
 
-dist/
-build/
-*.egg-info/
-.coverage
-.pytest_cache/ # pytest cache
-htmlcov/       # coverage HTML reports
-
-Dockerfile
-docker-compose.yml
-docker-compose.*.yml
-.dockerignore
-
-# Project specific
-environments
-logs
-results
-data
-samples
-src/analyse/influenza_data_exploration
+# Results copied at build time in the frontend image 
+!results/

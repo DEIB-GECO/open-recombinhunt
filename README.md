@@ -33,6 +33,8 @@ openrecombinhunt/
 |   └── recombinhunt-cov-7.0.0/  # Source code for the RecombinHunt tool.
 |
 ├── results/
+|   |── analysis
+|   |── nextstrain_output
 |   ├── haplocov_output/
 |   └── recombinhunt_output/
 |
@@ -54,29 +56,11 @@ openrecombinhunt/
 ```
 
 ## Setup and Installation
-### 1. Conda Environment
-This project uses a Conda environment to manage dependencies. To create and activate the environment, run:
+All the commands are intended to be used in a terminal window inside the directory where this file resides. 
 
-```
-# Create the environment from the file
-conda env create -f environment.yml
-
-# Activate the environment
-conda activate orh
-```
-
-### 2. Install RecombinHunt in Editable Mode
-(At least in the development process.)
-
-```
-# Navigate to the recombinhunt source directory
-cd libs/recombinhunt-cov-7.0.0/
-
-# Install in editable mode
-pip install -e .
-
-# Navigate back to the project root
-cd ../../
+Software dependencies are listed in the environment.yml and installed through Conda and PIP within a Docker container (openrecombinhunt-base) that prepares the vitual environment for running the software. To prepare the virtual environment, Start Docker and simply run:
+```bash
+docker compose build
 ```
 
 ## Configuration
@@ -86,14 +70,43 @@ Paths: Define the base paths for data, results, logs, etc.
 
 Viruses: Add or modify entries for each virus, specifying the data source, method, taxon ID, reference sequence, and parameters for HaploCoV and RecombinHunt.
 
-## How to Run the Pipeline
-The pipeline is executed via the main orchestrator script src/00_master/pipeline.py. It should be run from the root directory of the openrecombinhunt project.
+## How to Run the Pipeline (updating the data)
+First, start the dedicated virtual environment by running the command:
+```bash
+docker compose run --rm pipeline
+```
+The above command will open a terminal window in the virtualized environment, where you can execute the pipeline commands.
+
+The pipeline is executed via the main orchestrator script src/00_master/pipeline.py. It should be run from the root directory of the openrecombinhunt project. 
 
 To run the entire pipeline for a single virus:
-```
-python3 src/00_master/pipeline.py --virus yellow-fever
+```bash
+python src/00_master/pipeline.py --virus yellow-fever
 ```
 To run the entire pipeline for all viruses defined in the config file:
+```bash
+python src/00_master/pipeline.py --virus all
 ```
-python3 src/00_master/pipeline.py --virus all
+
+Some files and folders in the following directories will be overwritten as a result of the pipeline updates:
+- environments/
+- results/
+- samples/
+
+## Start the Openrecombinhunt web app (inspect the data)
+Run
+```bash
+docker compose up frontend
+```
+
+The above command will copy the content of the results folder within the virtual environment and start a web-server accessible through a browser at the address [http://localhost:60129](http://localhost:60129).
+
+To stop the web server, type Ctrl+C or Cmd+C. 
+
+Note that you can also run the pipeline (update the data) while the web-server is running. 
+
+## Additional notes
+Whenever a change is applied to the library files in `libs/` or to the dependencies in `environment.yml`, you must run the following command to update the virtual environment
+```bash
+docker compose build --no-cache
 ```

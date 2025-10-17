@@ -1,0 +1,42 @@
+# FROM python:3.10.12-slim-bookworm@sha256:4d440b214e447deddc0a94de23a3d97d28dfafdf125a8b4bb8073381510c9ee2 AS ORH_base_image
+
+# WORKDIR /
+
+# # Make RUN commands use `bash --login`:
+# SHELL ["/bin/bash", "--login", "-c"]
+
+ 
+# RUN apt-get install -y apt-transport-https && \
+#     apt-get update && \
+#     apt-get install -y build-essential
+
+# # Install conda 
+# ENV CONDA_HOME /opt/conda
+# RUN mkdir -p ${CONDA_HOME} && \ 
+#     wget https://repo.anaconda.com/miniconda/Miniconda3-py310_25.7.0-2-Linux-x86_64.sh -O ${CONDA_HOME}/miniconda.sh && \
+#     bash ${CONDA_HOME}/miniconda.sh -b -u -p ${CONDA_HOME} && \
+#     rm ${CONDA_HOME}/miniconda.sh
+
+
+# # source ${CONDA_HOME}/bin/activate && \
+# # conda init --all
+
+# ## # Initialize Conda for non-interactive shells
+# ## RUN ${CONDA_HOME}/bin/conda init bash
+
+
+
+
+FROM continuumio/miniconda3@sha256:4a2425c3ca891633e5a27280120f3fb6d5960a0f509b7594632cdd5bb8cbaea8
+
+WORKDIR /
+
+# Install environment
+COPY environment.yml .
+RUN conda env update --name base --file environment.yml --prune && \
+    conda clean -afy 
+
+# Install recombinhunt
+COPY libs/recombinhunt-cov-7.0.0 /recombinhunt-cov-7.0.0
+RUN pip install -e /recombinhunt-cov-7.0.0
+

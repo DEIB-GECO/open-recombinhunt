@@ -1,0 +1,11 @@
+FROM openrecombinhunt-base
+
+WORKDIR /app
+
+EXPOSE 8501
+HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health
+
+# Copy immutable version of results into the container
+COPY ./results /app/results 
+
+ENTRYPOINT ["python", "-u", "-m", "streamlit", "run", "app/streamlit_app.py", "--server.enableCORS=false","--server.enableXsrfProtection=false","--server.enableWebsocketCompression=true"]
