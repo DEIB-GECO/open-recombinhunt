@@ -464,10 +464,43 @@ def haplocov_parameters(virus, config):
     if not haplo:
         st.write("No HaploCov parameters defined for this virus.")
         return
+    else:
+        dist = haplo.get('dist')
+        size = haplo.get('size')
     st.write("HaploCov is a tool that designates viral haplotypes based on clustering of genomes. Parameters used:")
-    st.markdown(f"- **Distance threshold (dist):** {haplo.get('dist')}")
-    st.markdown(f"- **Minimum cluster size (size):** {haplo.get('size')}")
-    st.markdown(f"- **Designation mode:** {haplo.get('designation_mode')}")
+    st.warning("""
+    **dist**: Defines the maximum genetic distance allowed between two sequences for them to be considered part of the same initial cluster.
+    
+    **size**: Sets the minimum number of sequences required for a cluster to be considered a new, stable lineage worth naming.
+    """)
+    st.markdown(f"- **Distance threshold (dist):** {dist}")
+    st.markdown(f"- **Minimum cluster size (size):** {size}")
+    
+    param_string = f"dist{dist}size{size}"
+    
+    # Construct path to heatmap files
+    results_base_dir = Path(config.get(PATHS).get(RESULTS))
+    heatmap_dir = results_base_dir / HAPLOCOV_OUTPUT / virus / param_string
+    
+    # Check if heatmap files exist
+    heatmap_file = heatmap_dir / "heatmap.png"
+    stackbar_file = heatmap_dir / "stackbar.png"
+    
+    if heatmap_file.exists() or stackbar_file.exists():
+        with st.expander(f"Designation Distribution Heatmap with parameters: dist = {dist}, size = {size}", expanded=False):
+            st.write("The following visualizations show the distribution of viral designations across different geographic regions:")
+            if(virus == "influenza"):
+                # note that this virus is only considered in North America, so we only show the heatmap for North America.
+                st.write("Note: This virus is only considered in North America, so we only show the heatmap for North America.")
+            if heatmap_file.exists():
+                st.subheader("Heatmap Visualization")
+                st.image(str(heatmap_file), caption="Pango Lineage Percentage Heatmap across Continents", use_container_width=False)
+            
+            if stackbar_file.exists():
+                st.subheader("Stacked Bar Chart")
+                st.image(str(stackbar_file), caption="Pango Lineage Percentage Distribution within Continents", use_container_width=True)
+    else:
+        st.info("Heatmap visualizations are not yet available for this virus. They will be generated after running the HaploCoV analysis.")
 
 def dataset_from_df(virus, df: pd.DataFrame, config):
     st.subheader("Dataset Overview")
@@ -620,8 +653,8 @@ def describe(virus, config, df):
     quality_filters(virus, config)
     st.markdown("---")
 
-    #haplocov_parameters(virus, config)
-    #st.markdown("---")
+    haplocov_parameters(virus, config)
+    st.markdown("---")
 
     if virus in ["sars-cov-2"]: dataset_from_stats(virus, stats=df)
     else: dataset_from_df(virus, df=df, config=config)

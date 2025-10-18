@@ -119,6 +119,14 @@ def main():
         # Step 4: Post-processing
         step4_postprocess_haplocov = [python_executable, "src/04_postprocessing/format_haplocov_variations.py", "--virus", virus_name, "--config", args.config]
         step4_postprocess_covid = [python_executable, "src/04_postprocessing/format_covid_variations.py", "--virus", virus_name, "--config", args.config]
+        
+        # Step 4.5: Generate heatmaps (for non-SARS-CoV-2 viruses)
+        haplocov_params = config.get(VIRUSES, {}).get(virus_name, {}).get(PARAMETERS, {}).get(HAPLOCOV, {})
+        if haplocov_params:
+            dist = haplocov_params.get(DIST)
+            size = haplocov_params.get(SIZE)
+            input_file = f"results/haplocov_output/{virus_name}/dist{dist}size{size}/haplocov_reformatted.tsv"
+        step4_5_heatmaps = [python_executable, "src/analyse/designation_heatmaps/designation_country-region_match.py", input_file]
 
         # Step 5: Prepare for RecombinHunt
         step5_create_env = [python_executable, "src/05_prepare_recombinhunt/create_environment.py", "--virus", virus_name, "--config", args.config]
@@ -130,24 +138,25 @@ def main():
         # --- Execute the pipeline sequentially ---
         if virus_name.lower() == "sars-cov-2":
             pipeline_steps = [
-                step1_fetch,
-                step2_prep_meta,
-                step4_postprocess_covid,
-                step5_create_env,
-                step5_create_samples,
-                step6_run_recombinhunt
+                #step1_fetch,
+                #step2_prep_meta,
+                #step4_postprocess_covid,
+                #step5_create_env,
+                #step5_create_samples,
+                #step6_run_recombinhunt
             ]
         else:
             pipeline_steps = [
-                step1_fetch,
-                step2_prep_meta,
-                step2_prep_fasta,
-                step2_prep_ref,
-                step3_run_haplocov,
-                step4_postprocess_haplocov,
-                step5_create_env,
-                step5_create_samples,
-                step6_run_recombinhunt
+                #step1_fetch,
+                #step2_prep_meta,
+                #step2_prep_fasta,
+                #step2_prep_ref,
+                #step3_run_haplocov,
+                #step4_postprocess_haplocov,
+                step4_5_heatmaps,
+                #step5_create_env,
+                #step5_create_samples,
+                #step6_run_recombinhunt
             ]
             
         for step_command in pipeline_steps:
