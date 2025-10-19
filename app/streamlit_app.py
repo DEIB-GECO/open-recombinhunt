@@ -708,33 +708,117 @@ def display_detailed_report_summary(report, virus, analysis_mode):
         with st.expander("Case Summary", expanded=True):
             summary = report["summary"]
             
-            if analysis_mode == "Consensus Sequence Analysis":
-                [a] = st.columns(1)
-                a.metric("Lineage Name", summary["group_name"], border=True)
-            else:
-                a, b = st.columns(2)
-                a.metric("Genome ID", summary["case_name"], border=True)
-                b.metric("Lineage Name", summary["group_name"], border=True)
-
-            [b] = st.columns(1)
-            b.metric(f"Number of Mutations (Reference Sequence Length: {REFERENCE_LENGTHS.get(virus)})", summary["number_of_changes"], border=True)
-
-            [a] = st.columns(1)
-            a.metric("Recombinant Parents", summary["best_candidates"], border=True)
-
-            [a] = st.columns(1)
-            a.metric("Breakpoints Location in mutations-space", summary["best_candidates_breakpoints_target"], border=True)
+            # Original st.metric code (commented for future reference)
+            # if analysis_mode == "Consensus Sequence Analysis":
+            #     [a] = st.columns(1)
+            #     a.metric("Lineage Name", summary["group_name"], border=True)
+            # else:
+            #     a, b = st.columns(2)
+            #     a.metric("Genome ID", summary["case_name"], border=True)
+            #     b.metric("Lineage Name", summary["group_name"], border=True)
+            # [b] = st.columns(1)
+            # b.metric(f"Number of Mutations (Reference Sequence Length: {REFERENCE_LENGTHS.get(virus)})", summary["number_of_changes"], border=True)
+            # [a] = st.columns(1)
+            # a.metric("Recombinant Parents", summary["best_candidates"], border=True)
+            # [a] = st.columns(1)
+            # a.metric("Breakpoints Location in mutations-space", summary["best_candidates_breakpoints_target"], border=True)
+            # [a] = st.columns(1)
+            # a.metric("Breakpoints Location in Genomic Coordinates", summary["best_candidates_breakpoints_genomic"], border=True)
+            # BC = summary["best_candidates"]
+            # BP = f"{BC.count('+')}BP"
+            # C1 = BC.split("+")[0]
+            # C2 = BC.split("+")[1]
+            # a, b = st.columns(2)
+            # a.metric(f"Recombinant Confidence:\n{BP} Rec. vs {C1}", summary["p_value_vs_L1"], border=True)
+            # b.metric(f"Recombinant Confidence:\n{BP} Rec. vs {C2}", summary["p_value_vs_L2"], border=True)
             
-            [a] = st.columns(1)
-            a.metric("Breakpoints Location in Genomic Coordinates", summary["best_candidates_breakpoints_genomic"], border=True)
-
+            # Compact metric cards using custom layout
+            if analysis_mode == "Consensus Sequence Analysis":
+                col1, col2 = st.columns(2)
+                with col1:
+                    st.markdown(f"""
+                    <div style="background-color: #f0f2f6; padding: 0.5rem; border-radius: 0.5rem; margin: 0.2rem;">
+                        <div style="font-size: 0.8rem; color: #666;">Lineage Name</div>
+                        <div style="font-size: 1.0rem; font-weight: bold;">{summary["group_name"]}</div>
+                    </div>
+                    """, unsafe_allow_html=True)
+            else:
+                col1, col2 = st.columns(2)
+                with col1:
+                    st.markdown(f"""
+                    <div style="background-color: #f0f2f6; padding: 0.5rem; border-radius: 0.5rem; margin: 0.2rem;">
+                        <div style="font-size: 0.8rem; color: #666;">Genome ID</div>
+                        <div style="font-size: 1.0rem; font-weight: bold;">{summary["case_name"]}</div>
+                    </div>
+                    """, unsafe_allow_html=True)
+                with col2:
+                    st.markdown(f"""
+                    <div style="background-color: #f0f2f6; padding: 0.5rem; border-radius: 0.5rem; margin: 0.2rem;">
+                        <div style="font-size: 0.8rem; color: #666;">Lineage Name</div>
+                        <div style="font-size: 1.0rem; font-weight: bold;">{summary["group_name"]}</div>
+                    </div>
+                    """, unsafe_allow_html=True)
+            
+            # Number of mutations
+            col3, col4 = st.columns(2)
+            with col3:
+                st.markdown(f"""
+                <div style="background-color: #f0f2f6; padding: 0.5rem; border-radius: 0.5rem; margin: 0.2rem;">
+                    <div style="font-size: 0.8rem; color: #666;">Number of Mutations</div>
+                    <div style="font-size: 1.0rem; font-weight: bold;">{summary["number_of_changes"]}</div>
+                    <div style="font-size: 0.7rem; color: #888;">(Ref Length: {REFERENCE_LENGTHS.get(virus)})</div>
+                </div>
+                """, unsafe_allow_html=True)
+            
+            # Recombinant Parents
+            with col4:
+                st.markdown(f"""
+                <div style="background-color: #f0f2f6; padding: 0.5rem; border-radius: 0.5rem; margin: 0.2rem;">
+                    <div style="font-size: 0.8rem; color: #666;">Recombination Pattern</div>
+                    <div style="font-size: 1.0rem; font-weight: bold;">{summary["best_candidates"]}</div>
+                </div>
+                """, unsafe_allow_html=True)
+            
+            # Breakpoints
+            col5, col6 = st.columns(2)
+            with col5:
+                st.markdown(f"""
+                <div style="background-color: #f0f2f6; padding: 0.5rem; border-radius: 0.5rem; margin: 0.2rem;">
+                    <div style="font-size: 0.8rem; color: #666;">Breakpoints Location in Mutations-space</div>
+                    <div style="font-size: 1.0rem; font-weight: bold;">{summary["best_candidates_breakpoints_target"]}</div>
+                </div>
+                """, unsafe_allow_html=True)
+            
+            with col6:
+                st.markdown(f"""
+                <div style="background-color: #f0f2f6; padding: 0.5rem; border-radius: 0.5rem; margin: 0.2rem;">
+                    <div style="font-size: 0.8rem; color: #666;">Breakpoints Location in Genomic Coordinates</div>
+                    <div style="font-size: 1.0rem; font-weight: bold;">{summary["best_candidates_breakpoints_genomic"]}</div>
+                </div>
+                """, unsafe_allow_html=True)
+            
+            # Confidence metrics
             BC = summary["best_candidates"]
             BP = f"{BC.count('+')}BP"
             C1 = BC.split("+")[0]
             C2 = BC.split("+")[1]
-            a, b = st.columns(2)
-            a.metric(f"Recombinant Confidence:\n{BP} Rec. vs {C1}", summary["p_value_vs_L1"], border=True)
-            b.metric(f"Recombinant Confidence:\n{BP} Rec. vs {C2}", summary["p_value_vs_L2"], border=True)    
+            
+            col7, col8 = st.columns(2)
+            with col7:
+                st.markdown(f"""
+                <div style="background-color: #f0f2f6; padding: 0.5rem; border-radius: 0.5rem; margin: 0.2rem;">
+                    <div style="font-size: 0.8rem; color: #666;">Confidence: {BP} vs {C1}</div>
+                    <div style="font-size: 1.0rem; font-weight: bold;">{summary["p_value_vs_L1"]}</div>
+                </div>
+                """, unsafe_allow_html=True)
+            
+            with col8:
+                st.markdown(f"""
+                <div style="background-color: #f0f2f6; padding: 0.5rem; border-radius: 0.5rem; margin: 0.2rem;">
+                    <div style="font-size: 0.8rem; color: #666;">Confidence: {BP} vs {C2}</div>
+                    <div style="font-size: 1.0rem; font-weight: bold;">{summary["p_value_vs_L2"]}</div>
+                </div>
+                """, unsafe_allow_html=True)    
 
 def display_detailed_report(report):
     if not report:
@@ -883,59 +967,61 @@ def create_recombinant_cases_table(df, virus, analysis_mode):
         st.warning("No recombinant cases found.")
         return
     
-    # Split screen: left (table) | right (details)
-    left_col, right_col = st.columns([1, 1])
-
-    with left_col:
-        with st.spinner("Loading recombinant cases..."):
-            if analysis_mode == "Consensus Sequence Analysis":
-                formatter = {
-                    "original_lineage": ("Lineage", {"width": 150}),
-                    "breakpoint_count": ("BP Count", {"width": 80}),
-                    "recombinant_parents": ("Recombinant Parents", {"width": 250}),
-                }
-            else:
-                formatter = {
-                    "genomeID": ("Genome ID", PINLEFT),
-                    "breakpoint_count": ("BP Count", {"width": 80}),
-                    "original_lineage": ("Assigned Lineage", {"width": 150}),
-                    "recombinant_parents": ("Recombinant Parents", {"width": 250}),
-                    "country": ("Country", {"width": 100}),
-                    "collection_date": ("Collection Date", {"width": 100}),
-                }
-
-            custom_css = {
-                ".ag-root": {"font-family": "inherit"}, 
-                ".ag-cell": {"font-family": "inherit"},
-                ".ag-header-cell": {"font-family": "inherit"}
+    # Full width table with details below
+    with st.spinner("Loading recombinant cases..."):
+        if analysis_mode == "Consensus Sequence Analysis":
+            formatter = {
+                "original_lineage": ("Lineage", {"width": 150}),
+                "breakpoint_count": ("BP Count", {"width": 80}),
+                "recombinant_parents": ("Recombinant Parents", {"width": 250}),
+            }
+        else:
+            formatter = {
+                "genomeID": ("Genome ID", PINLEFT),
+                "breakpoint_count": ("BP Count", {"width": 80}),
+                "original_lineage": ("Assigned Lineage", {"width": 150}),
+                "recombinant_parents": ("Recombinant Parents", {"width": 250}),
+                "country": ("Country", {"width": 100}),
+                "collection_date": ("Collection Date", {"width": 100}),
             }
 
-            response = draw_grid(
-                df,
-                formatter=formatter,
-                fit_columns=True,
-                selection="single",     
-                use_checkbox=True,     
-                max_height=800,
-                css=custom_css,
-            )
+        custom_css = {
+            ".ag-root": {"font-family": "inherit"}, 
+            ".ag-cell": {"font-family": "inherit"},
+            ".ag-header-cell": {"font-family": "inherit"}
+        }
 
+        response = draw_grid(
+            df,
+            formatter=formatter,
+            fit_columns=True,
+            selection="single",     
+            use_checkbox=True,     
+            max_height=600,
+            css=custom_css,
+        )
+
+    # Details section below the table
+    st.markdown("---")
+    
     report_exists = False
-    with right_col:
-        if response:
-            selected = response["selected_rows"]
-            if selected is not None:
-                if analysis_mode == "Consensus Sequence Analysis": selected_id = selected["original_lineage"].iloc[0]
-                else: selected_id = selected["genomeID"].iloc[0]
-                st.subheader(f"Details of: {selected_id}")
+    if response:
+        selected = response["selected_rows"]
+        if selected is not None:
+            if analysis_mode == "Consensus Sequence Analysis": 
+                selected_id = selected["original_lineage"].iloc[0]
+            else: 
+                selected_id = selected["genomeID"].iloc[0]
+            
+            st.subheader(f"Details of: {selected_id}")
 
-                path_to_the_case_report_folder = selected["case_report_folder"].iloc[0]
-                report = load_report_data(path_to_the_case_report_folder)
-                display_detailed_report_summary(report, virus, analysis_mode)
-                report_exists = True
-            else:
-                word = "lineage" if analysis_mode == "Consensus Sequence Analysis" else "genome"
-                st.info(f"Select a recombinant {word} from the table to see its details here.")
+            path_to_the_case_report_folder = selected["case_report_folder"].iloc[0]
+            report = load_report_data(path_to_the_case_report_folder)
+            display_detailed_report_summary(report, virus, analysis_mode)
+            report_exists = True
+        else:
+            word = "lineage" if analysis_mode == "Consensus Sequence Analysis" else "genome"
+            st.info(f"Select a recombinant {word} from the table above to see its details here.")
 
     if report_exists:
         display_detailed_report(report)
