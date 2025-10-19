@@ -910,7 +910,7 @@ def sidebar(virus_list):
             menu_title="OpenRecombinHunt",
             options=menu_options,
             icons=menu_icons,
-            menu_icon="cast",
+            menu_icon="",
             default_index=0,
             orientation="vertical",
             styles={
@@ -918,6 +918,7 @@ def sidebar(virus_list):
                 "icon": {"color": "#000000", "font-size": "18px"},
                 "nav-link": {"font-size": "16px", "text-align": "left", "margin": "0px", "--hover-color": "#818181"},
                 "nav-link-selected": {"background-color": "#4A90E2"},
+                "menu-title": {"display": "none"},  # Hide the menu title
             }
         )
 
