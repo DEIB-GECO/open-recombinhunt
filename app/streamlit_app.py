@@ -717,6 +717,8 @@ def display_detailed_report(report):
         ≥10−5; (C2) marked if row breakpoint is at most one mutation apart from the one of
         the first candidate; (C3) marked if candidate belongs to the same phylogenetic
         branch as the first one.
+
+        The most plausible candidates are the ones that have all three conditions (C1, C2, C3) marked.
     """
     if region_tables:
         with st.expander("Region Analysis Tables", expanded=True):
@@ -737,7 +739,7 @@ def display_detailed_report(report):
                 # --- Filtering UI ---
                 _, col0 = st.columns([11, 5])
                 with col0:
-                    filter_all = st.checkbox("Select All (C1 ^ C2 ^ C3)", key=f"{region_name}_all")
+                    filter_all = st.checkbox("Display only most plausible candidates", key=f"{region_name}_all")
                 # with col1:
                 #     filter_c1 = st.checkbox("C1", key=f"{region_name}_c1")
                 # with col2:
@@ -921,13 +923,6 @@ def sidebar(virus_list):
 
         return selected
 
-def display_pdf(file_path):
-    """Displays a PDF file in the Streamlit app."""
-    with open(file_path, "rb") as f:
-        base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-    
-    pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="100%" height="2000" type="application/pdf"></iframe>'
-    st.markdown(pdf_display, unsafe_allow_html=True)
 
 def show_home_page():
     """Displays the new, comprehensive welcome page."""
@@ -943,24 +938,24 @@ def show_home_page():
     Use the menu on the left to select a virus and begin your exploration.
     """)
 
-    # 2. The Pipeline Diagram (Now with Embedded PDF)
+    # 2. The Pipeline Diagram (Now with PNG)
     st.header("The OpenRecombinHunt Pipeline")
     
-    pdf_path = "app/entire-pipeline.pdf"
+    png_path = "app/entire-pipeline.png"
     try:
-        # Embed the PDF directly into the app
-        display_pdf(pdf_path)
+        # Display the PNG image directly
+        st.image(png_path, use_container_width=False)
         
         # Keep the download button for user convenience
-        with open(pdf_path, "rb") as pdf_file:
+        with open(png_path, "rb") as png_file:
             st.download_button(
-                label="Download Pipeline Diagram (PDF)",
-                data=pdf_file,
-                file_name="OpenRecombinHunt_Pipeline.pdf",
-                mime='application/octet-stream'
+                label="Download Pipeline Diagram (PNG)",
+                data=png_file,
+                file_name="OpenRecombinHunt_Pipeline.png",
+                mime='image/png'
             )
     except FileNotFoundError:
-        st.warning("Pipeline diagram PDF not found. Please ensure 'app/entire-pipeline.pdf' exists.")
+        st.warning("Pipeline diagram PNG not found. Please ensure 'app/entire-pipeline.png' exists.")
 
     st.markdown("---")
 
