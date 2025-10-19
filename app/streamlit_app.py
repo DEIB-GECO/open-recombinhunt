@@ -250,7 +250,7 @@ def apply_time_filter(df, virus):
     # select filter type
     filter_type = st.pills(
         "Choose filter type:",
-        options = ["No filtering", "Filter by Date Range", "Filter by Latest X Sequences"],
+        options = ["No filtering", "Filter by Date Range", "Filter by Latest Sequences"],
         selection_mode = "single"
     )
 
@@ -317,25 +317,66 @@ def create_key_metrics(df):
     # Calculate unique patterns (unique recombinant parents across all lineages)
     unique_patterns = df[df["is_recombinant"]]["recombinant_parents"].nunique() if not df[df["is_recombinant"]].empty else 0
 
-    a, b = st.columns(2)
-    c, d, e = st.columns(3)
-    [f] = st.columns(1) 
-    [g] = st.columns(1)
-
-    a.metric("Total Sequences", total_sequences, border=True)
-    # b.metric("Recombination Rate", f"{recombination_rate:.2f}%", border=True)  # Commented out as requested
-
-    c.metric("Recombinant Sequences", total_recombinants, border=True)  # Renamed from "Recombination Events"
-    d.metric("1BP", num_1BP, border=True)
-    e.metric("2BP", num_2BP, border=True)
-
-    f.metric("Top Recombinant Lineage", f"{top_recombinant_lineage} ({top_recombinant_count})", border=True)
-
-    g.metric("Most Common Patterns", f"{most_common_parents} ({most_common_parents_count})", border=True)  # Renamed from "Most Common Parents"
+    # Create compact metric cards using custom layout
+    col1, col2 = st.columns(2)
+    col3, col4, col5 = st.columns(3)
+    col6, col7, col8 = st.columns(3)
     
-    # Add unique patterns metric
-    [h] = st.columns(1)
-    h.metric("Unique Patterns", unique_patterns, border=True)
+    with col1:
+        st.markdown(f"""
+        <div style="background-color: #f0f2f6; padding: 0.5rem; border-radius: 0.5rem; margin: 0.2rem;">
+            <div style="font-size: 0.8rem; color: #666;">Total Sequences</div>
+            <div style="font-size: 1.2rem; font-weight: bold;">{total_sequences:,}</div>
+        </div>
+        """, unsafe_allow_html=True)
+    
+    with col2:
+        st.markdown(f"""
+        <div style="background-color: #f0f2f6; padding: 0.5rem; border-radius: 0.5rem; margin: 0.2rem;">
+            <div style="font-size: 0.8rem; color: #666;">Recombinant Sequences</div>
+            <div style="font-size: 1.2rem; font-weight: bold;">{total_recombinants:,}</div>
+        </div>
+        """, unsafe_allow_html=True)
+    
+    with col3:
+        st.markdown(f"""
+        <div style="background-color: #f0f2f6; padding: 0.5rem; border-radius: 0.5rem; margin: 0.2rem;">
+            <div style="font-size: 0.8rem; color: #666;">1BP</div>
+            <div style="font-size: 1.2rem; font-weight: bold;">{num_1BP:,}</div>
+        </div>
+        """, unsafe_allow_html=True)
+    
+    with col4:
+        st.markdown(f"""
+        <div style="background-color: #f0f2f6; padding: 0.5rem; border-radius: 0.5rem; margin: 0.2rem;">
+            <div style="font-size: 0.8rem; color: #666;">2BP</div>
+            <div style="font-size: 1.2rem; font-weight: bold;">{num_2BP:,}</div>
+        </div>
+        """, unsafe_allow_html=True)
+    
+    with col5:
+        st.markdown(f"""
+        <div style="background-color: #f0f2f6; padding: 0.5rem; border-radius: 0.5rem; margin: 0.2rem;">
+            <div style="font-size: 0.8rem; color: #666;">Unique Patterns</div>
+            <div style="font-size: 1.2rem; font-weight: bold;">{unique_patterns:,}</div>
+        </div>
+        """, unsafe_allow_html=True)
+    
+    with col6:
+        st.markdown(f"""
+        <div style="background-color: #f0f2f6; padding: 0.5rem; border-radius: 0.5rem; margin: 0.2rem;">
+            <div style="font-size: 0.8rem; color: #666;">Top Recombinant Lineage</div>
+            <div style="font-size: 1.0rem; font-weight: bold;">{top_recombinant_lineage} ({top_recombinant_count})</div>
+        </div>
+        """, unsafe_allow_html=True)
+    
+    with col7:
+        st.markdown(f"""
+        <div style="background-color: #f0f2f6; padding: 0.5rem; border-radius: 0.5rem; margin: 0.2rem;">
+            <div style="font-size: 0.8rem; color: #666;">Most Common Patterns</div>
+            <div style="font-size: 1.0rem; font-weight: bold;">{most_common_parents} ({most_common_parents_count})</div>
+        </div>
+        """, unsafe_allow_html=True)
 
 def create_summary_tables(df):
     "create summary and hotspots tables"
@@ -1015,7 +1056,7 @@ def show_home_page():
     # 5. "How to Use" and "About" Sections
     st.header("About This Project")
     st.markdown("""
-    This dashboard is the final output of a Master's thesis project in Computer Science and Engineering at Politecnico di Milano. The entire pipeline is designed to be fully automated and is run on a monthly schedule to provide up-to-date analysis. The source code is publicly available on GitHub.
+    This dashboard is the final output of a Master's thesis project in Computer Science and Engineering at Politecnico di Milano. The entire pipeline is designed to be fully automated and is run on a monthly schedule to provide up-to-date analysis. The source code is publicly available on [GitHub](https://github.com/yavuuzsameet/openrecombinhunt/tree/master).
     
     **Author:** Yavuz Samet Topcuoglu
     
