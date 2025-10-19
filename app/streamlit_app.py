@@ -864,7 +864,7 @@ def display_detailed_report(report):
                 # --- Filtering UI ---
                 _, col0 = st.columns([11, 5])
                 with col0:
-                    filter_all = st.checkbox("Display only most plausible candidates", key=f"{region_name}_all")
+                    filter_all = st.checkbox("Display only most plausible candidates", value=True, key=f"{region_name}_all")
                 # with col1:
                 #     filter_c1 = st.checkbox("C1", key=f"{region_name}_c1")
                 # with col2:
