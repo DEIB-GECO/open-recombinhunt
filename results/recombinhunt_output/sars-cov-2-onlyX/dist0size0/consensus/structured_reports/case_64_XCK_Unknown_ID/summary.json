@@ -1,0 +1,18 @@
+{
+    "case_number": 64,
+    "case_name": "Unknown_ID",
+    "group_name": "XCK",
+    "number_of_sequences": 13,
+    "number_of_changes": 106,
+    "best_candidates": "HN.4 + JH.1",
+    "best_candidates_breakpoints_target": "85-86",
+    "best_candidates_breakpoints_genomic": "25002 - 25003",
+    "direction_L1": ">>",
+    "initial_region_span": "1-85,86-106",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.12e-156",
+    "p_value_vs_L2": "0.00e+00",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 72,
+    "case_name": "USA/CA-LACPHL-AY12077/2025",
+    "group_name": "XEC",
+    "number_of_sequences": 5350,
+    "number_of_changes": 147,
+    "best_candidates": "XEC.5 + XEC.2",
+    "best_candidates_breakpoints_target": "13-14",
+    "best_candidates_breakpoints_genomic": "4387 - 4388",
+    "direction_L1": "<<",
+    "initial_region_span": "1-10,15-147",
+    "gap_history": "10-15",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 1.35e-01",
+    "p_value_vs_L1": "1.29e-28",
+    "p_value_vs_L2": "4.90e-25",
+    "flags": "Model_1BP_Best"
+}

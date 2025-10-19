@@ -1,0 +1,18 @@
+{
+    "case_number": 36,
+    "case_name": "Unknown_ID",
+    "group_name": "XAA",
+    "number_of_sequences": 57,
+    "number_of_changes": 73,
+    "best_candidates": "BA.1.20 + BA.2",
+    "best_candidates_breakpoints_target": "7-8",
+    "best_candidates_breakpoints_genomic": "8250 - 8251",
+    "direction_L1": "<<",
+    "initial_region_span": "1-7,8-73",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "2.25e-200",
+    "p_value_vs_L2": "1.51e-35",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

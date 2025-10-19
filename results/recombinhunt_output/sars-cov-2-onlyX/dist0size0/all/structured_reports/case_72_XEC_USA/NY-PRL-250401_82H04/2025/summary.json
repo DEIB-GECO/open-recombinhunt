@@ -1,0 +1,18 @@
+{
+    "case_number": 72,
+    "case_name": "USA/NY-PRL-250401_82H04/2025",
+    "group_name": "XEC",
+    "number_of_sequences": 5350,
+    "number_of_changes": 140,
+    "best_candidates": "XEC.2 + B.1.561 + XEC.2",
+    "best_candidates_breakpoints_target": "10-11, 13-14",
+    "best_candidates_breakpoints_genomic": "4330 - 4331, 6182 - 6183",
+    "direction_L1": "<<",
+    "initial_region_span": "1-10,11-13,14-140",
+    "gap_history": "10-14 -> ",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 4.98e-06",
+    "p_value_vs_L1": "9.48e-25",
+    "p_value_vs_L2": "0.00e+00",
+    "flags": "Model_2BP_Best"
+}

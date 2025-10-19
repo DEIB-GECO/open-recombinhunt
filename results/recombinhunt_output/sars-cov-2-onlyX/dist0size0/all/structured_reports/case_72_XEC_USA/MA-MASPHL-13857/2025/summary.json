@@ -1,0 +1,18 @@
+{
+    "case_number": 72,
+    "case_name": "USA/MA-MASPHL-13857/2025",
+    "group_name": "XEC",
+    "number_of_sequences": 5350,
+    "number_of_changes": 145,
+    "best_candidates": "XEC.2 + JN.1.4",
+    "best_candidates_breakpoints_target": "134-135",
+    "best_candidates_breakpoints_genomic": "28271 - 28272",
+    "direction_L1": ">>",
+    "initial_region_span": "1-134,135-145",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "6.64e-28",
+    "p_value_vs_L2": "1.23e-40",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

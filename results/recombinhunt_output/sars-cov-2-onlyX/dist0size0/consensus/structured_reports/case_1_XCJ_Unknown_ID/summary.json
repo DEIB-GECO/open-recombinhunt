@@ -1,0 +1,18 @@
+{
+    "case_number": 1,
+    "case_name": "Unknown_ID",
+    "group_name": "XCJ",
+    "number_of_sequences": 1,
+    "number_of_changes": 107,
+    "best_candidates": "XBB.1.5 + GM.3",
+    "best_candidates_breakpoints_target": "22-23",
+    "best_candidates_breakpoints_genomic": "12466 - 12467",
+    "direction_L1": "<<",
+    "initial_region_span": "1-21,23-107",
+    "gap_history": "21-23",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 3.25e-02",
+    "p_value_vs_L1": "1.81e-31",
+    "p_value_vs_L2": "3.51e-45",
+    "flags": "Model_1BP_Best"
+}

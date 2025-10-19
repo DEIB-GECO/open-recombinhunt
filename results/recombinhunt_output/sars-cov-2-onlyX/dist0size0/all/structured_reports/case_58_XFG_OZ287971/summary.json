@@ -1,0 +1,18 @@
+{
+    "case_number": 58,
+    "case_name": "OZ287971",
+    "group_name": "XFG",
+    "number_of_sequences": 530,
+    "number_of_changes": 144,
+    "best_candidates": "XFG.3 + XBB.1.16.22 + XFG.3",
+    "best_candidates_breakpoints_target": "4-5, 8-9",
+    "best_candidates_breakpoints_genomic": "896 - 897, 3176 - 3177",
+    "direction_L1": "<<",
+    "initial_region_span": "1-4,5-8,10-144",
+    "gap_history": "4-10 -> 8-10",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 6.27e-02",
+    "p_value_vs_L1": "3.57e-15",
+    "p_value_vs_L2": "0.00e+00",
+    "flags": "Model_2BP_Best"
+}

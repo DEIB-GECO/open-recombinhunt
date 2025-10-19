@@ -1,0 +1,18 @@
+{
+    "case_number": 11,
+    "case_name": "USA/NY-GBW-GKISBBBE99384/2025",
+    "group_name": "XFP",
+    "number_of_sequences": 9,
+    "number_of_changes": 150,
+    "best_candidates": "XFJ.3 + MC.13",
+    "best_candidates_breakpoints_target": "119-120",
+    "best_candidates_breakpoints_genomic": "25216 - 25217",
+    "direction_L1": ">>",
+    "initial_region_span": "1-119,123-150",
+    "gap_history": "119-123",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "2.02e-47",
+    "p_value_vs_L2": "2.13e-163",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 72,
+    "case_name": "USA/MI-MDHHS-SC45757/2025",
+    "group_name": "XEC",
+    "number_of_sequences": 5350,
+    "number_of_changes": 142,
+    "best_candidates": "KP.3.1.1 + XEC.19",
+    "best_candidates_breakpoints_target": "14-15",
+    "best_candidates_breakpoints_genomic": "6183 - 6184",
+    "direction_L1": "<<",
+    "initial_region_span": "1-14,16-142",
+    "gap_history": "14-16",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 3.57e-01",
+    "p_value_vs_L1": "1.86e-73",
+    "p_value_vs_L2": "2.83e-16",
+    "flags": "Model_1BP_Best"
+}

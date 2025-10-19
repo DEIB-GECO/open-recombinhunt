@@ -1,0 +1,18 @@
+{
+    "case_number": 90,
+    "case_name": "USA/CA-LACPHL-AY11366/2025",
+    "group_name": "XFA",
+    "number_of_sequences": 2,
+    "number_of_changes": 152,
+    "best_candidates": "MC.1.1 + XEC.4.1.4",
+    "best_candidates_breakpoints_target": "33-34",
+    "best_candidates_breakpoints_genomic": "13341 - 13342",
+    "direction_L1": "<<",
+    "initial_region_span": "1-33,38-152",
+    "gap_history": "33-38",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 1.99e-02",
+    "p_value_vs_L1": "1.86e-143",
+    "p_value_vs_L2": "1.09e-67",
+    "flags": "Model_1BP_Best"
+}

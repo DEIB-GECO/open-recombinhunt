@@ -1,0 +1,18 @@
+{
+    "case_number": 104,
+    "case_name": "Unknown_ID",
+    "group_name": "XAY",
+    "number_of_sequences": 1,
+    "number_of_changes": 82,
+    "best_candidates": "XAY.2 + XAY.2.3",
+    "best_candidates_breakpoints_target": "24-25",
+    "best_candidates_breakpoints_genomic": "15081 - 15082",
+    "direction_L1": "<<",
+    "initial_region_span": "1-24,30-82",
+    "gap_history": "24-30",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.40e+00",
+    "p_value_vs_L2": "1.68e-22",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

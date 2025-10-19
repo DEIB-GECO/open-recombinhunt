@@ -1,0 +1,18 @@
+{
+    "case_number": 8,
+    "case_name": "Unknown_ID",
+    "group_name": "XD",
+    "number_of_sequences": 11,
+    "number_of_changes": 69,
+    "best_candidates": "AY.4 + BA.1.19 + AY.4",
+    "best_candidates_breakpoints_target": "25-26, 54-55",
+    "best_candidates_breakpoints_genomic": "22029 - 22030, 25470 - 25471",
+    "direction_L1": ">>",
+    "initial_region_span": "1-25,26-54,55-69",
+    "gap_history": "25-55 -> ",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 6.27e-120",
+    "p_value_vs_L1": "1.23e-170",
+    "p_value_vs_L2": "0.00e+00",
+    "flags": "Model_2BP_Best"
+}

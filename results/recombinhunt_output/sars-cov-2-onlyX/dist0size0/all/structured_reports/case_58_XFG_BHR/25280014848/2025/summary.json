@@ -1,0 +1,18 @@
+{
+    "case_number": 58,
+    "case_name": "BHR/25280014848/2025",
+    "group_name": "XFG",
+    "number_of_sequences": 530,
+    "number_of_changes": 153,
+    "best_candidates": "LF.7 + LP.8.1.1",
+    "best_candidates_breakpoints_target": "142-143",
+    "best_candidates_breakpoints_genomic": "28311 - 28312",
+    "direction_L1": ">>",
+    "initial_region_span": "1-142,146-153",
+    "gap_history": "142-146",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.27e-05",
+    "p_value_vs_L2": "4.91e-171",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

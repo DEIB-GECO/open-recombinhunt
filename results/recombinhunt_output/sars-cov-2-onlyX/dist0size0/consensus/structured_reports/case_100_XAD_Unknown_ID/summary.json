@@ -1,0 +1,18 @@
+{
+    "case_number": 100,
+    "case_name": "Unknown_ID",
+    "group_name": "XAD",
+    "number_of_sequences": 28,
+    "number_of_changes": 69,
+    "best_candidates": "BA.2 + BA.1.1",
+    "best_candidates_breakpoints_target": "56-57",
+    "best_candidates_breakpoints_genomic": "26274 - 26275",
+    "direction_L1": ">>",
+    "initial_region_span": "1-56,57-69",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 6.57e-05",
+    "p_value_vs_L1": "9.57e-19",
+    "p_value_vs_L2": "5.88e-163",
+    "flags": "Model_1BP_Best"
+}

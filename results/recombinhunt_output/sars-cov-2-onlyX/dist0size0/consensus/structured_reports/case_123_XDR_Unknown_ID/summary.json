@@ -1,0 +1,18 @@
+{
+    "case_number": 123,
+    "case_name": "Unknown_ID",
+    "group_name": "XDR",
+    "number_of_sequences": 23,
+    "number_of_changes": 121,
+    "best_candidates": "XBB.1.5 + JN.1.1",
+    "best_candidates_breakpoints_target": "17-18",
+    "best_candidates_breakpoints_genomic": "11047 - 11048",
+    "direction_L1": "<<",
+    "initial_region_span": "1-17,18-121",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "0.00e+00",
+    "p_value_vs_L2": "3.03e-54",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 78,
+    "case_name": "USA/NY-PRL-250415_82H03/2025",
+    "group_name": "XFC",
+    "number_of_sequences": 72,
+    "number_of_changes": 149,
+    "best_candidates": "JN.4 + XFC.1",
+    "best_candidates_breakpoints_target": "4-5",
+    "best_candidates_breakpoints_genomic": "896 - 897",
+    "direction_L1": "<<",
+    "initial_region_span": "1-4,6-149",
+    "gap_history": "4-6",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.79e-211",
+    "p_value_vs_L2": "1.28e-07",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

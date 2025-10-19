@@ -1,0 +1,18 @@
+{
+    "case_number": 121,
+    "case_name": "Unknown_ID",
+    "group_name": "XDT",
+    "number_of_sequences": 18,
+    "number_of_changes": 118,
+    "best_candidates": "BA.2.86.1 + GK.1.1",
+    "best_candidates_breakpoints_target": "87-88",
+    "best_candidates_breakpoints_genomic": "23952 - 23953",
+    "direction_L1": ">>",
+    "initial_region_span": "1-87,88-118",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "4.59e-73",
+    "p_value_vs_L2": "0.00e+00",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

@@ -1,0 +1,18 @@
+{
+    "case_number": 79,
+    "case_name": "Unknown_ID",
+    "group_name": "XCC",
+    "number_of_sequences": 12,
+    "number_of_changes": 101,
+    "best_candidates": "CH.1.1.1 + FL.27",
+    "best_candidates_breakpoints_target": "22-23",
+    "best_candidates_breakpoints_genomic": "12454 - 12455",
+    "direction_L1": "<<",
+    "initial_region_span": "1-22,23-101",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "2.17e-257",
+    "p_value_vs_L2": "4.12e-87",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

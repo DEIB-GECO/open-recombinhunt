@@ -1,0 +1,18 @@
+{
+    "case_number": 72,
+    "case_name": "USA/VT-25-003495-WGS-01/2025",
+    "group_name": "XEC",
+    "number_of_sequences": 5350,
+    "number_of_changes": 144,
+    "best_candidates": "XEC.33 + XEC.2",
+    "best_candidates_breakpoints_target": "14-15",
+    "best_candidates_breakpoints_genomic": "7842 - 7843",
+    "direction_L1": "<<",
+    "initial_region_span": "1-14,16-144",
+    "gap_history": "14-16",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 9.90e-01",
+    "p_value_vs_L1": "4.89e-32",
+    "p_value_vs_L2": "3.98e-24",
+    "flags": "Model_1BP_Best"
+}

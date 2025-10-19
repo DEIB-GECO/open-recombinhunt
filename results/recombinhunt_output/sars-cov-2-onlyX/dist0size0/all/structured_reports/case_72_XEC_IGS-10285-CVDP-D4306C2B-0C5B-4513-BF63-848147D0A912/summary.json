@@ -1,0 +1,18 @@
+{
+    "case_number": 72,
+    "case_name": "IGS-10285-CVDP-D4306C2B-0C5B-4513-BF63-848147D0A912",
+    "group_name": "XEC",
+    "number_of_sequences": 5350,
+    "number_of_changes": 146,
+    "best_candidates": "XEC.32 + KP.3.3.4",
+    "best_candidates_breakpoints_target": "136-137",
+    "best_candidates_breakpoints_genomic": "28361 - 28362",
+    "direction_L1": ">>",
+    "initial_region_span": "1-136,139-146",
+    "gap_history": "136-139",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "1.05e-12",
+    "p_value_vs_L2": "3.23e-71",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

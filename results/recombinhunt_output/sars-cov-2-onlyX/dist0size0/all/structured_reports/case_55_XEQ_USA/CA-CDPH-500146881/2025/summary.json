@@ -1,0 +1,18 @@
+{
+    "case_number": 55,
+    "case_name": "USA/CA-CDPH-500146881/2025",
+    "group_name": "XEQ",
+    "number_of_sequences": 269,
+    "number_of_changes": 135,
+    "best_candidates": "KP.2 + LF.7.1.4 + KP.2",
+    "best_candidates_breakpoints_target": "8-9, 10-11",
+    "best_candidates_breakpoints_genomic": "6183 - 6184, 7118 - 7119",
+    "direction_L1": "<<",
+    "initial_region_span": "1-8,9-10,12-135",
+    "gap_history": "8-12 -> 10-12",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 1.34e-08",
+    "p_value_vs_L1": "2.65e-19",
+    "p_value_vs_L2": "6.49e-120",
+    "flags": "Model_2BP_Best"
+}

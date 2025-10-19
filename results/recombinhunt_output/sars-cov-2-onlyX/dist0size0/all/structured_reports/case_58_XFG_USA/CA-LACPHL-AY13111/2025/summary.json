@@ -1,0 +1,18 @@
+{
+    "case_number": 58,
+    "case_name": "USA/CA-LACPHL-AY13111/2025",
+    "group_name": "XFG",
+    "number_of_sequences": 530,
+    "number_of_changes": 157,
+    "best_candidates": "KP.3.1 + XFG.2",
+    "best_candidates_breakpoints_target": "11-12",
+    "best_candidates_breakpoints_genomic": "4188 - 4189",
+    "direction_L1": "<<",
+    "initial_region_span": "1-11,15-157",
+    "gap_history": "11-15",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "2.41e-118",
+    "p_value_vs_L2": "4.68e-21",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

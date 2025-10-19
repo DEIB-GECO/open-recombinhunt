@@ -1,0 +1,18 @@
+{
+    "case_number": 53,
+    "case_name": "Unknown_ID",
+    "group_name": "XCP",
+    "number_of_sequences": 77,
+    "number_of_changes": 109,
+    "best_candidates": "HK.3 + JD.1.1",
+    "best_candidates_breakpoints_target": "23-24",
+    "best_candidates_breakpoints_genomic": "14190 - 14191",
+    "direction_L1": "<<",
+    "initial_region_span": "1-20,24-109",
+    "gap_history": "20-24",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 1.19e-05",
+    "p_value_vs_L1": "1.63e-112",
+    "p_value_vs_L2": "2.05e-19",
+    "flags": "Model_1BP_Best"
+}

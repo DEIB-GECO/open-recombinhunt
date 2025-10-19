@@ -1,0 +1,18 @@
+{
+    "case_number": 80,
+    "case_name": "Unknown_ID",
+    "group_name": "XDG",
+    "number_of_sequences": 10,
+    "number_of_changes": 114,
+    "best_candidates": "XBB.1.5.7 + EG.5.2.1",
+    "best_candidates_breakpoints_target": "13-14",
+    "best_candidates_breakpoints_genomic": "6729 - 6730",
+    "direction_L1": "<<",
+    "initial_region_span": "1-10,14-114",
+    "gap_history": "10-14",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "8.44e-67",
+    "p_value_vs_L2": "5.02e-48",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

@@ -115,7 +115,9 @@ def run_recombinhunt_for_lineage(
     except Exception as e:
         logging.error(f"Error reading sample file {sample_filepath}: {e}")
         return results_summary
-    
+
+    """
+    # ALREADY HANDLED IN CREATE_SAMPLES.PY WITH NEW UPDATE
     if virus_name == "sars-cov-2" and run_mode.lower() == ALL:
         logging.warning(f"Warning: Running 'all' mode for SARS-CoV-2 may be resource-intensive due to large sample sizes. Reducing to last 6 months.")
         if 'collection_date' in df_lineage.columns:
@@ -125,10 +127,11 @@ def run_recombinhunt_for_lineage(
             six_months_ago = pd.Timestamp.now() - pd.DateOffset(months=6)
             df_lineage = df_lineage[df_lineage['collection_date'] >= six_months_ago]
             logging.info(f"Filtered samples to last 6 months. {len(df_lineage)} samples remain.")
+    """
 
-    if virus_name == "sars-cov-2" and run_mode.lower() != ALL:
+    if virus_name == "sars-cov-2":
         logging.info("get rid of the collection_date column for all rows - SARS-CoV-2 specific handling.")
-        if 'Collection date' in df_lineage.columns:
+        if 'collection_date' in df_lineage.columns:
             df_lineage.drop(columns=['collection_date'], inplace=True)
 
     nuc_to_ids_map = defaultdict(list)
@@ -261,6 +264,9 @@ def run_experiments(virus_name: str, config: dict):
     
     env_dir = Path(paths_config.get(ENVIRONMENTS)) / virus_name / param_string
     samples_dir = Path(paths_config.get(SAMPLES)) / virus_name / param_string
+
+    if virus_name == "sars-cov-2" and run_mode.lower() == ALL:
+        samples_dir = samples_dir / "last_6_months"
     
     results_dir = Path(paths_config.get(RESULTS)) / "recombinhunt_output" / virus_name / param_string
     if virus_name == "sars-cov-2":

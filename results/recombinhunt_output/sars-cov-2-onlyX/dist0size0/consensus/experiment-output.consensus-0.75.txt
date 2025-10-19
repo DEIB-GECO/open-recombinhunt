@@ -1,0 +1,1641 @@
+
+========== Processing Lineage: XCJ ==========
+Total genomes available for this lineage: 1
+  Results for XCJ:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XG ==========
+Total genomes available for this lineage: 319
+  Results for XG:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XM ==========
+Total genomes available for this lineage: 188
+  Results for XM:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XAT ==========
+Total genomes available for this lineage: 2
+  Results for XAT:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XDV ==========
+Total genomes available for this lineage: 7
+  Results for XDV:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XCV ==========
+Total genomes available for this lineage: 58
+  Results for XCV:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XCL ==========
+Total genomes available for this lineage: 71
+  Results for XCL:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XD ==========
+Total genomes available for this lineage: 11
+  Results for XD:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 1
+
+========== Processing Lineage: XS ==========
+Total genomes available for this lineage: 23
+  Results for XS:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XAM ==========
+Total genomes available for this lineage: 73
+  Results for XAM:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XFP ==========
+Total genomes available for this lineage: 9
+  Results for XFP:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XAF ==========
+Total genomes available for this lineage: 30
+  Results for XAF:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XEJ ==========
+Total genomes available for this lineage: 6
+  Results for XEJ:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XF ==========
+Total genomes available for this lineage: 20
+  Results for XF:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XAC ==========
+Total genomes available for this lineage: 37
+  Results for XAC:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XDK ==========
+Total genomes available for this lineage: 150
+  Results for XDK:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XDH ==========
+Total genomes available for this lineage: 2
+  Results for XDH:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XAP ==========
+Total genomes available for this lineage: 41
+  Results for XAP:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XEE ==========
+Total genomes available for this lineage: 28
+  Results for XEE:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XAL ==========
+Total genomes available for this lineage: 60
+  Results for XAL:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XAG ==========
+Total genomes available for this lineage: 26
+  Results for XAG:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XCQ ==========
+Total genomes available for this lineage: 10
+  Results for XCQ:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XL ==========
+Total genomes available for this lineage: 75
+  Results for XL:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XBG ==========
+Total genomes available for this lineage: 66
+  Results for XBG:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XDY ==========
+Total genomes available for this lineage: 220
+  Results for XDY:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XBT ==========
+Total genomes available for this lineage: 52
+  Results for XBT:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 1
+
+========== Processing Lineage: XFK ==========
+Total genomes available for this lineage: 1
+  Results for XFK:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XAZ ==========
+Total genomes available for this lineage: 477
+  Results for XAZ:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XCU ==========
+Total genomes available for this lineage: 2
+  Results for XCU:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 1
+
+========== Processing Lineage: XBH ==========
+Total genomes available for this lineage: 11
+  Results for XBH:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 1
+
+========== Processing Lineage: XAJ ==========
+Total genomes available for this lineage: 46
+  Results for XAJ:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XBF ==========
+Total genomes available for this lineage: 606
+  Results for XBF:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XCA ==========
+Total genomes available for this lineage: 31
+  Results for XCA:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XBE ==========
+Total genomes available for this lineage: 163
+  Results for XBE:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XCS ==========
+Total genomes available for this lineage: 1
+  Results for XCS:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XAA ==========
+Total genomes available for this lineage: 57
+  Results for XAA:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XEB ==========
+Total genomes available for this lineage: 12
+  Results for XEB:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XV ==========
+Total genomes available for this lineage: 24
+  Results for XV:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XCZ ==========
+Total genomes available for this lineage: 17
+  Results for XCZ:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XBL ==========
+Total genomes available for this lineage: 26
+  Results for XBL:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XDF ==========
+Total genomes available for this lineage: 3
+  Results for XDF:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XER ==========
+Total genomes available for this lineage: 2
+  Results for XER:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XDQ ==========
+Total genomes available for this lineage: 10
+  Results for XDQ:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XAS ==========
+Total genomes available for this lineage: 195
+  Results for XAS:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XCF ==========
+Total genomes available for this lineage: 52
+  Results for XCF:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XFJ ==========
+Total genomes available for this lineage: 24
+  Results for XFJ:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XDN ==========
+Total genomes available for this lineage: 137
+  Results for XDN:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XAK ==========
+Total genomes available for this lineage: 58
+  Results for XAK:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XW ==========
+Total genomes available for this lineage: 75
+  Results for XW:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XBN ==========
+Total genomes available for this lineage: 19
+  Results for XBN:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XP ==========
+Total genomes available for this lineage: 52
+  Results for XP:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XES ==========
+Total genomes available for this lineage: 59
+  Results for XES:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XCP ==========
+Total genomes available for this lineage: 77
+  Results for XCP:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XAU ==========
+Total genomes available for this lineage: 12
+  Results for XAU:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XEQ ==========
+Total genomes available for this lineage: 269
+  Results for XEQ:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XBV ==========
+Total genomes available for this lineage: 7
+  Results for XBV:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XCM ==========
+Total genomes available for this lineage: 33
+  Results for XCM:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XFG ==========
+Total genomes available for this lineage: 530
+  Results for XFG:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XEG ==========
+Total genomes available for this lineage: 4
+  Results for XEG:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 1
+
+========== Processing Lineage: XEL ==========
+Total genomes available for this lineage: 33
+  Results for XEL:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XBD ==========
+Total genomes available for this lineage: 81
+  Results for XBD:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XFH ==========
+Total genomes available for this lineage: 4
+  Results for XFH:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XEK ==========
+Total genomes available for this lineage: 289
+  Results for XEK:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XCK ==========
+Total genomes available for this lineage: 13
+  Results for XCK:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XQ ==========
+Total genomes available for this lineage: 83
+  Results for XQ:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XDL ==========
+Total genomes available for this lineage: 37
+  Results for XDL:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XAB ==========
+Total genomes available for this lineage: 70
+  Results for XAB:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XH ==========
+Total genomes available for this lineage: 103
+  Results for XH:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XBM ==========
+Total genomes available for this lineage: 65
+  Results for XBM:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XFL ==========
+Total genomes available for this lineage: 3
+  Results for XFL:
+    Samples Run: 1
+    Successful Runs: 0
+    Result - No Match: 1
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XFB ==========
+Total genomes available for this lineage: 9
+  Results for XFB:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XEC ==========
+Total genomes available for this lineage: 5350
+  Results for XEC:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XA ==========
+Total genomes available for this lineage: 35
+  Results for XA:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XCT ==========
+Total genomes available for this lineage: 31
+  Results for XCT:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XU ==========
+Total genomes available for this lineage: 2
+  Results for XU:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XBU ==========
+Total genomes available for this lineage: 8
+  Results for XBU:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 1
+
+========== Processing Lineage: XBZ ==========
+Total genomes available for this lineage: 150
+  Results for XBZ:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XFC ==========
+Total genomes available for this lineage: 72
+  Results for XFC:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XCC ==========
+Total genomes available for this lineage: 12
+  Results for XCC:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XDG ==========
+Total genomes available for this lineage: 10
+  Results for XDG:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XFM ==========
+Total genomes available for this lineage: 4
+  Results for XFM:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XCE ==========
+Total genomes available for this lineage: 4
+  Results for XCE:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XDC ==========
+Total genomes available for this lineage: 3
+  Results for XDC:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XCY ==========
+Total genomes available for this lineage: 5
+  Results for XCY:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 1
+
+========== Processing Lineage: XR ==========
+Total genomes available for this lineage: 84
+  Results for XR:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XAH ==========
+Total genomes available for this lineage: 5
+  Results for XAH:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XCW ==========
+Total genomes available for this lineage: 51
+  Results for XCW:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XN ==========
+Total genomes available for this lineage: 190
+  Results for XN:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XE ==========
+Total genomes available for this lineage: 1654
+  Results for XE:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XFA ==========
+Total genomes available for this lineage: 2
+  Results for XFA:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XZ ==========
+Total genomes available for this lineage: 71
+  Results for XZ:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XBK ==========
+Total genomes available for this lineage: 137
+  Results for XBK:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XDE ==========
+Total genomes available for this lineage: 10
+  Results for XDE:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XEN ==========
+Total genomes available for this lineage: 28
+  Results for XEN:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XDS ==========
+Total genomes available for this lineage: 35
+  Results for XDS:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XDA ==========
+Total genomes available for this lineage: 330
+  Results for XDA:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XEV ==========
+Total genomes available for this lineage: 57
+  Results for XEV:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XBR ==========
+Total genomes available for this lineage: 11
+  Results for XBR:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XY ==========
+Total genomes available for this lineage: 63
+  Results for XY:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XAD ==========
+Total genomes available for this lineage: 28
+  Results for XAD:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XEU ==========
+Total genomes available for this lineage: 19
+  Results for XEU:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XEW ==========
+Total genomes available for this lineage: 19
+  Results for XEW:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XBQ ==========
+Total genomes available for this lineage: 36
+  Results for XBQ:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XAY ==========
+Total genomes available for this lineage: 1
+  Results for XAY:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XAV ==========
+Total genomes available for this lineage: 25
+  Results for XAV:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XEH ==========
+Total genomes available for this lineage: 40
+  Results for XEH:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XAN ==========
+Total genomes available for this lineage: 51
+  Results for XAN:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XBB ==========
+Total genomes available for this lineage: 318
+  Results for XBB:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XET ==========
+Total genomes available for this lineage: 4
+  Results for XET:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XBJ ==========
+Total genomes available for this lineage: 8
+  Results for XBJ:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XEY ==========
+Total genomes available for this lineage: 2
+  Results for XEY:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XEM ==========
+Total genomes available for this lineage: 4
+  Results for XEM:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XDD ==========
+Total genomes available for this lineage: 214
+  Results for XDD:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XEP ==========
+Total genomes available for this lineage: 17
+  Results for XEP:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XBS ==========
+Total genomes available for this lineage: 18
+  Results for XBS:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XBW ==========
+Total genomes available for this lineage: 23
+  Results for XBW:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XJ ==========
+Total genomes available for this lineage: 3
+  Results for XJ:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XCH ==========
+Total genomes available for this lineage: 159
+  Results for XCH:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XDB ==========
+Total genomes available for this lineage: 23
+  Results for XDB:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XED ==========
+Total genomes available for this lineage: 23
+  Results for XED:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XDT ==========
+Total genomes available for this lineage: 18
+  Results for XDT:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XFN ==========
+Total genomes available for this lineage: 27
+  Results for XFN:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XDR ==========
+Total genomes available for this lineage: 23
+  Results for XDR:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XBP ==========
+Total genomes available for this lineage: 29
+  Results for XBP:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XEF ==========
+Total genomes available for this lineage: 48
+  Results for XEF:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XAE ==========
+Total genomes available for this lineage: 18
+  Results for XAE:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XDJ ==========
+Total genomes available for this lineage: 1
+  Results for XDJ:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XCR ==========
+Total genomes available for this lineage: 170
+  Results for XCR:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XCG ==========
+Total genomes available for this lineage: 18
+  Results for XCG:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XDM ==========
+Total genomes available for this lineage: 19
+  Results for XDM:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 0
+    Result - 1BP (Recombinant): 1
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XDP ==========
+Total genomes available for this lineage: 220
+  Results for XDP:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+========== Processing Lineage: XB ==========
+Total genomes available for this lineage: 770
+  Results for XB:
+    Samples Run: 1
+    Successful Runs: 1
+    Result - No Match: 0
+    Result - 0BP (Single Candidate): 1
+    Result - 1BP (Recombinant): 0
+    Result - 2BP (Recombinant): 0
+
+
+==================== Overall Summary Table ====================
+true_lineage  samples_run  True Lineage in Candidates %  0BP (Single Candidate)  1BP  2BP  No Match
+         XCJ            1                           0.0                       0    1    0         0
+          XG            1                           0.0                       0    1    0         0
+          XM            1                           0.0                       0    1    0         0
+         XAT            1                           0.0                       1    0    0         0
+         XDV            1                           0.0                       1    0    0         0
+         XCV            1                           0.0                       0    1    0         0
+         XCL            1                           0.0                       0    1    0         0
+          XD            1                           0.0                       0    0    1         0
+          XS            1                           0.0                       0    1    0         0
+         XAM            1                           0.0                       0    1    0         0
+         XFP            1                           0.0                       0    1    0         0
+         XAF            1                           0.0                       0    1    0         0
+         XEJ            1                           0.0                       1    0    0         0
+          XF            1                           0.0                       0    1    0         0
+         XAC            1                           0.0                       1    0    0         0
+         XDK            1                           0.0                       0    1    0         0
+         XDH            1                           0.0                       0    1    0         0
+         XAP            1                           0.0                       0    1    0         0
+         XEE            1                           0.0                       1    0    0         0
+         XAL            1                           0.0                       0    1    0         0
+         XAG            1                           0.0                       0    1    0         0
+         XCQ            1                           0.0                       0    1    0         0
+          XL            1                           0.0                       0    1    0         0
+         XBG            1                           0.0                       0    1    0         0
+         XDY            1                           0.0                       1    0    0         0
+         XBT            1                           0.0                       0    0    1         0
+         XFK            1                           0.0                       1    0    0         0
+         XAZ            1                           0.0                       0    1    0         0
+         XCU            1                           0.0                       0    0    1         0
+         XBH            1                           0.0                       0    0    1         0
+         XAJ            1                           0.0                       1    0    0         0
+         XBF            1                           0.0                       1    0    0         0
+         XCA            1                           0.0                       0    1    0         0
+         XBE            1                           0.0                       0    1    0         0
+         XCS            1                           0.0                       0    1    0         0
+         XAA            1                           0.0                       0    1    0         0
+         XEB            1                           0.0                       0    1    0         0
+          XV            1                           0.0                       0    1    0         0
+         XCZ            1                           0.0                       0    1    0         0
+         XBL            1                           0.0                       1    0    0         0
+         XDF            1                           0.0                       0    1    0         0
+         XER            1                           0.0                       1    0    0         0
+         XDQ            1                           0.0                       1    0    0         0
+         XAS            1                           0.0                       0    1    0         0
+         XCF            1                           0.0                       1    0    0         0
+         XFJ            1                           0.0                       1    0    0         0
+         XDN            1                           0.0                       0    1    0         0
+         XAK            1                           0.0                       0    1    0         0
+          XW            1                           0.0                       0    1    0         0
+         XBN            1                           0.0                       0    1    0         0
+          XP            1                           0.0                       1    0    0         0
+         XES            1                           0.0                       0    1    0         0
+         XCP            1                           0.0                       0    1    0         0
+         XAU            1                           0.0                       0    1    0         0
+         XEQ            1                           0.0                       1    0    0         0
+         XBV            1                           0.0                       0    1    0         0
+         XCM            1                           0.0                       0    1    0         0
+         XFG            1                           0.0                       1    0    0         0
+         XEG            1                           0.0                       0    0    1         0
+         XEL            1                           0.0                       1    0    0         0
+         XBD            1                           0.0                       0    1    0         0
+         XFH            1                           0.0                       1    0    0         0
+         XEK            1                           0.0                       1    0    0         0
+         XCK            1                           0.0                       0    1    0         0
+          XQ            1                           0.0                       0    1    0         0
+         XDL            1                           0.0                       0    1    0         0
+         XAB            1                           0.0                       0    1    0         0
+          XH            1                           0.0                       0    1    0         0
+         XBM            1                           0.0                       0    1    0         0
+         XFL            1                           0.0                       0    0    0         1
+         XFB            1                           0.0                       1    0    0         0
+         XEC            1                           0.0                       1    0    0         0
+          XA            1                           0.0                       0    1    0         0
+         XCT            1                           0.0                       1    0    0         0
+          XU            1                           0.0                       0    1    0         0
+         XBU            1                           0.0                       0    0    1         0
+         XBZ            1                           0.0                       0    1    0         0
+         XFC            1                           0.0                       1    0    0         0
+         XCC            1                           0.0                       0    1    0         0
+         XDG            1                           0.0                       0    1    0         0
+         XFM            1                           0.0                       1    0    0         0
+         XCE            1                           0.0                       0    1    0         0
+         XDC            1                           0.0                       0    1    0         0
+         XCY            1                           0.0                       0    0    1         0
+          XR            1                           0.0                       0    1    0         0
+         XAH            1                           0.0                       0    1    0         0
+         XCW            1                           0.0                       0    1    0         0
+          XN            1                           0.0                       1    0    0         0
+          XE            1                           0.0                       0    1    0         0
+         XFA            1                           0.0                       0    1    0         0
+          XZ            1                           0.0                       0    1    0         0
+         XBK            1                           0.0                       1    0    0         0
+         XDE            1                           0.0                       0    1    0         0
+         XEN            1                           0.0                       1    0    0         0
+         XDS            1                           0.0                       0    1    0         0
+         XDA            1                           0.0                       1    0    0         0
+         XEV            1                           0.0                       1    0    0         0
+         XBR            1                           0.0                       0    1    0         0
+          XY            1                           0.0                       0    1    0         0
+         XAD            1                           0.0                       0    1    0         0
+         XEU            1                           0.0                       0    1    0         0
+         XEW            1                           0.0                       1    0    0         0
+         XBQ            1                           0.0                       0    1    0         0
+         XAY            1                           0.0                       0    1    0         0
+         XAV            1                           0.0                       1    0    0         0
+         XEH            1                           0.0                       1    0    0         0
+         XAN            1                           0.0                       0    1    0         0
+         XBB            1                           0.0                       1    0    0         0
+         XET            1                           0.0                       1    0    0         0
+         XBJ            1                           0.0                       1    0    0         0
+         XEY            1                           0.0                       1    0    0         0
+         XEM            1                           0.0                       1    0    0         0
+         XDD            1                           0.0                       1    0    0         0
+         XEP            1                           0.0                       1    0    0         0
+         XBS            1                           0.0                       0    1    0         0
+         XBW            1                           0.0                       0    1    0         0
+          XJ            1                           0.0                       0    1    0         0
+         XCH            1                           0.0                       1    0    0         0
+         XDB            1                           0.0                       0    1    0         0
+         XED            1                           0.0                       1    0    0         0
+         XDT            1                           0.0                       0    1    0         0
+         XFN            1                           0.0                       0    1    0         0
+         XDR            1                           0.0                       0    1    0         0
+         XBP            1                           0.0                       0    1    0         0
+         XEF            1                           0.0                       1    0    0         0
+         XAE            1                           0.0                       0    1    0         0
+         XDJ            1                           0.0                       0    1    0         0
+         XCR            1                           0.0                       0    1    0         0
+         XCG            1                           0.0                       0    1    0         0
+         XDM            1                           0.0                       0    1    0         0
+         XDP            1                           0.0                       1    0    0         0
+          XB            1                           0.0                       1    0    0         0
+
+
+==================== Recombinant Genomes Detected by Lineage ====================
+
+No recombinant genomes were detected in this run.
+
+
+==================== recombinant_summary ====================
+genomeIDs original_lineage               recombinant_parents breakpoint_count                                                                                     case_report_folder
+                       XCJ                    XBB.1.5 + GM.3              1BP   results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_1_XCJ_Unknown_ID
+                        XG                  BA.1.17 + BA.2.7              1BP    results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_2_XG_Unknown_ID
+                        XM                BA.1.1.6 + BA.2.27              1BP    results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_3_XM_Unknown_ID
+                       XCV              EG.5.1 + XBB.1.16.11              1BP   results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_6_XCV_Unknown_ID
+                       XCL               XBB.1.5.68 + GK.2.1              1BP   results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_7_XCL_Unknown_ID
+                        XD             AY.4 + BA.1.19 + AY.4              2BP    results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_8_XD_Unknown_ID
+                        XS                   AY.126 + BA.1.1              1BP    results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_9_XS_Unknown_ID
+                       XAM                 BA.1.1.9 + BA.2.9              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_10_XAM_Unknown_ID
+                       XFP                  XFJ.3 + JN.1.7.5              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_11_XFP_Unknown_ID
+                       XAF                 BA.1.1.9 + BA.2.9              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_12_XAF_Unknown_ID
+                        XF                  AY.4.2 + BA.1.16              1BP   results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_14_XF_Unknown_ID
+                       XDK                  XDK.5 + JN.1.1.1              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_16_XDK_Unknown_ID
+                       XDH              BN.1.2.3 + XBB.1.9.1              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_17_XDH_Unknown_ID
+                       XAP                    BA.2 + BA.1.23              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_18_XAP_Unknown_ID
+                       XAL                     BA.1.1 + BA.2              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_20_XAL_Unknown_ID
+                       XAG                BA.1.1.14 + BA.2.9              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_21_XAG_Unknown_ID
+                       XCQ                 XBB.2.3.15 + HA.1              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_22_XCQ_Unknown_ID
+                        XL                  BA.1.17.2 + BA.2              1BP   results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_23_XL_Unknown_ID
+                       XBG                  BA.2.76 + BA.5.2              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_24_XBG_Unknown_ID
+                       XBT      BA.5.2.34 + BN.1 + BA.5.2.34              2BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_26_XBT_Unknown_ID
+                       XAZ                  CH.1.1.32 + BA.5              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_28_XAZ_Unknown_ID
+                       XCU         XBB.1.5 + XBC.1 + XBB.1.5              2BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_29_XCU_Unknown_ID
+                       XBH BA.2.75.2 + BA.2.3.17 + BA.2.75.2              2BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_30_XBH_Unknown_ID
+                       XCA             BA.2.75.2 + BQ.1.1.18              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_33_XCA_Unknown_ID
+                       XBE                   BA.5.2.6 + CQ.2              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_34_XBE_Unknown_ID
+                       XCS                GK.1 + XBB.1.16.25              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_35_XCS_Unknown_ID
+                       XAA                    BA.1.20 + BA.2              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_36_XAA_Unknown_ID
+                       XEB                    EG.1.2 + XDP.3              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_37_XEB_Unknown_ID
+                        XV                 BA.1.14 + BA.2.52              1BP   results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_38_XV_Unknown_ID
+                       XCZ                     HK.1 + GK.1.1              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_39_XCZ_Unknown_ID
+                       XDF                EG.10.1 + EG.5.1.3              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_41_XDF_Unknown_ID
+                       XAS                  BA.4.8 + BA.2.65              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_44_XAS_Unknown_ID
+                       XDN                   JN.1 + JD.1.1.8              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_47_XDN_Unknown_ID
+                       XAK                    BA.2 + BA.2.10              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_48_XAK_Unknown_ID
+                        XW                BA.1.1.9 + BA.2.23              1BP   results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_49_XW_Unknown_ID
+                       XBN                 BA.2.75.5 + XBB.3              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_50_XBN_Unknown_ID
+                       XES                  KP.2.3.15 + MR.2              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_52_XES_Unknown_ID
+                       XCP                     HK.3 + JD.1.1              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_53_XCP_Unknown_ID
+                       XAU                 BA.1.1.9 + BA.2.9              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_54_XAU_Unknown_ID
+                       XBV                    CR.1 + XBB.1.5              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_56_XBV_Unknown_ID
+                       XCM             XBB.2.3.13 + DV.7.1.2              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_57_XCM_Unknown_ID
+                       XEG    BA.2.86.1 + GJ.1.2 + BA.2.86.1              2BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_59_XEG_Unknown_ID
+                       XBD                 BA.2.75.2 + BF.23              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_61_XBD_Unknown_ID
+                       XCK                       HN.4 + JH.1              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_64_XCK_Unknown_ID
+                        XQ                 BA.1.1.9 + BA.2.5              1BP   results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_65_XQ_Unknown_ID
+                       XDL                    HK.3 + FL.21.2              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_66_XDL_Unknown_ID
+                       XAB                   BA.1.1.9 + BA.2              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_67_XAB_Unknown_ID
+                        XH                     BA.1 + BA.2.9              1BP   results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_68_XH_Unknown_ID
+                       XBM                    BA.2.76 + BF.3              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_69_XBM_Unknown_ID
+                        XA              B.1.177.18 + B.1.1.7              1BP   results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_73_XA_Unknown_ID
+                        XU                  BA.1.7 + BA.2.37              1BP   results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_75_XU_Unknown_ID
+                       XBU      BA.2.75.2 + DP.1 + BA.2.75.2              2BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_76_XBU_Unknown_ID
+                       XBZ                  BA.5.2.10 + EF.1              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_77_XBZ_Unknown_ID
+                       XCC                  CH.1.1.1 + FL.27              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_79_XCC_Unknown_ID
+                       XDG              XBB.1.5.7 + EG.5.2.1              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_80_XDG_Unknown_ID
+                       XCE                  BQ.1.1.16 + FY.1              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_82_XCE_Unknown_ID
+                       XDC                   EG.5.1.1 + GY.9              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_83_XDC_Unknown_ID
+                       XCY                GK.4 + JG.4 + GK.4              2BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_84_XCY_Unknown_ID
+                        XR                   BA.1.1.9 + BA.2              1BP   results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_85_XR_Unknown_ID
+                       XAH                    BA.2 + BA.1.23              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_86_XAH_Unknown_ID
+                       XCW             XBB.2.3.20 + JF.1.1.2              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_87_XCW_Unknown_ID
+                        XE                    BD.1 + BA.2.31              1BP   results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_89_XE_Unknown_ID
+                       XFA                MC.1.1 + XEC.4.1.4              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_90_XFA_Unknown_ID
+                        XZ                    BA.2 + BA.1.23              1BP   results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_91_XZ_Unknown_ID
+                       XDE                    GW.5.1 + FL.13              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_93_XDE_Unknown_ID
+                       XDS                JG.3.1 + BA.2.86.1              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_95_XDS_Unknown_ID
+                       XBR                  BN.3.1 + BQ.1.25              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_98_XBR_Unknown_ID
+                        XY                     BA.1.1 + BA.2              1BP   results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_99_XY_Unknown_ID
+                       XAD                     BA.2 + BA.1.1              1BP results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_100_XAD_Unknown_ID
+                       XEU                     XEK.2 + XEC.8              1BP results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_101_XEU_Unknown_ID
+                       XBQ              BA.5.2.10 + BM.1.1.1              1BP results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_103_XBQ_Unknown_ID
+                       XAY                   XAY.2 + XAY.2.3              1BP results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_104_XAY_Unknown_ID
+                       XAN                  BA.2 + BA.5.1.23              1BP results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_107_XAN_Unknown_ID
+                       XBS                  BN.1 + BQ.1.1.46              1BP results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_115_XBS_Unknown_ID
+                       XBW                 XBB.1.5 + BQ.1.14              1BP results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_116_XBW_Unknown_ID
+                        XJ                       BD.1 + BA.2              1BP  results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_117_XJ_Unknown_ID
+                       XDB             XBB.1.16.19 + BA.2.27              1BP results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_119_XDB_Unknown_ID
+                       XDT                BA.2.86.1 + GK.1.1              1BP results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_121_XDT_Unknown_ID
+                       XFN             JN.1.16.1 + KP.3.3.10              1BP results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_122_XFN_Unknown_ID
+                       XDR                  XBB.1.5 + JN.1.1              1BP results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_123_XDR_Unknown_ID
+                       XBP                    BL.2 + BQ.1.23              1BP results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_124_XBP_Unknown_ID
+                       XAE                     BA.2 + BA.1.1              1BP results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_126_XAE_Unknown_ID
+                       XDJ                     JF.1 + HK.3.1              1BP results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_127_XDJ_Unknown_ID
+                       XCR               GK.1.1.1 + FU.1.1.1              1BP results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_128_XCR_Unknown_ID
+                       XCG               BA.5.2.10 + XBB.1.5              1BP results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_129_XCG_Unknown_ID
+                       XDM                  XBB.1.16 + XDA.1              1BP results/recombinhunt_output/sars-cov-2/dist0size0/consensus/structured_reports/case_130_XDM_Unknown_ID
+
+
+==================== Extensive Summary Table ====================
+ case_number  case_name  n_sequences  n_changes group_name gt_candidates test_status initial_region_span  gap_history                   best_candidates direction_L1 rank_L1_L2 bc_breakpoints_target gt_breakpoints_target p_value_vs_L1 p_value_vs_L2 alternative_candidates
+           1 Unknown_ID            1        107        XCJ           N/A         N/A         1-21,23-107        21-23                    XBB.1.5 + GM.3           <<        N/A                 22-23                   N/A      1.81e-31      3.51e-45                 [], []
+           2 Unknown_ID          319         71         XG           N/A         N/A            1-6,7-71                               BA.1.17 + BA.2.7           <<        N/A                   6-7                   N/A     1.40e-244      3.39e-64                 [], []
+           3 Unknown_ID          188         64         XM           N/A         N/A          1-14,15-64                             BA.1.1.6 + BA.2.27           <<        N/A                 14-15                   N/A     5.32e-252     9.40e-209                 [], []
+           6 Unknown_ID           58        108        XCV           N/A         N/A         1-89,91-108        89-91              EG.5.1 + XBB.1.16.11           >>        N/A                 89-90                   N/A      7.19e-30      1.03e-91                 [], []
+           7 Unknown_ID           71        106        XCL           N/A         N/A         1-17,18-106                            XBB.1.5.68 + GK.2.1           <<        N/A                 17-18                   N/A     5.50e-120      2.14e-68                 [], []
+           8 Unknown_ID           11         69         XD           N/A         N/A    1-25,26-54,55-69    25-55 ->              AY.4 + BA.1.19 + AY.4           >>        N/A          25-26, 54-55                   N/A     1.23e-170      0.00e+00                 [], []
+           9 Unknown_ID           23         68         XS           N/A         N/A          1-10,11-68                                AY.126 + BA.1.1           <<        N/A                 10-11                   N/A      0.00e+00      8.72e-68                 [], []
+          10 Unknown_ID           73         74        XAM           N/A         N/A            1-6,7-74                              BA.1.1.9 + BA.2.9           <<        N/A                   6-7                   N/A      0.00e+00      1.02e-51                 [], []
+          11 Unknown_ID            9        145        XFP           N/A         N/A       1-115,117-145      115-117                  XFJ.3 + JN.1.7.5           >>        N/A               116-117                   N/A      1.63e-51     1.58e-114                 [], []
+          12 Unknown_ID           30         70        XAF           N/A         N/A           1-9,12-70         9-12                 BA.1.1.9 + BA.2.9           <<        N/A                  9-10                   N/A     1.28e-271     1.64e-112                 [], []
+          14 Unknown_ID           20         64         XF           N/A         N/A            1-3,7-64          3-7                  AY.4.2 + BA.1.16           <<        N/A                   6-7                   N/A      0.00e+00      1.13e-40                 [], []
+          16 Unknown_ID          150        118        XDK           N/A         N/A           1-8,9-118                               XDK.5 + JN.1.1.1           <<        N/A                   8-9                   N/A      3.71e-18      2.25e-52                 [], []
+          17 Unknown_ID            2        101        XDH           N/A         N/A         1-43,44-101                           BN.1.2.3 + XBB.1.9.1           <<        N/A                 43-44                   N/A      1.44e-72     2.51e-205                 [], []
+          18 Unknown_ID           41         66        XAP           N/A         N/A          1-55,56-66                                 BA.2 + BA.1.23           >>        N/A                 55-56                   N/A      8.22e-47     2.37e-322                 [], []
+          20 Unknown_ID           60         65        XAL           N/A         N/A          1-15,16-65                                  BA.1.1 + BA.2           <<        N/A                 15-16                   N/A     6.97e-101      8.71e-77                 [], []
+          21 Unknown_ID           26         75        XAG           N/A         N/A            1-6,9-75          6-9                BA.1.1.14 + BA.2.9           <<        N/A                   8-9                   N/A     2.59e-237      7.86e-43                 [], []
+          22 Unknown_ID           10         99        XCQ           N/A         N/A          1-89,90-99                              XBB.2.3.15 + HA.1           >>        N/A                 89-90                   N/A      1.97e-26     2.21e-102                 [], []
+          23 Unknown_ID           75         74         XL           N/A         N/A           1-8,10-74         8-10                  BA.1.17.2 + BA.2           <<        N/A                   8-9                   N/A     9.28e-156      4.69e-37                 [], []
+          24 Unknown_ID           66         78        XBG           N/A         N/A          1-23,24-78                               BA.2.76 + BA.5.2           <<        N/A                 23-24                   N/A      8.95e-78      1.51e-43                 [], []
+          26 Unknown_ID           52         86        XBT           N/A         N/A    1-13,14-39,40-86    13-40 ->       BA.5.2.34 + BN.1 + BA.5.2.34           <<        N/A          13-14, 39-40                   N/A      7.66e-97     1.11e-177                 [], []
+          28 Unknown_ID          477         71        XAZ           N/A         N/A            1-4,9-71          4-9                  CH.1.1.32 + BA.5           <<        N/A                   4-5                   N/A     3.21e-234      5.25e-09                 [], []
+          29 Unknown_ID            2        113        XCU           N/A         N/A    1-7,10-47,48-113 7-48 -> 7-10         XBB.1.5 + XBC.1 + XBB.1.5           <<        N/A           9-10, 47-48                   N/A     5.72e-305      0.00e+00                 [], []
+          30 Unknown_ID           11         84        XBH           N/A         N/A      1-4,8-19,20-84  4-20 -> 4-8 BA.2.75.2 + BA.2.3.17 + BA.2.75.2           <<        N/A            4-5, 19-20                   N/A      2.08e-62     3.80e-139                 [], []
+          33 Unknown_ID           31         98        XCA           N/A         N/A          1-60,61-98                          BA.2.75.2 + BQ.1.1.18           >>        N/A                 60-61                   N/A     6.32e-135     1.10e-167                 [], []
+          34 Unknown_ID          163         75        XBE           N/A         N/A          1-63,64-75                                BA.5.2.6 + CQ.2           >>        N/A                 63-64                   N/A      1.83e-31      9.81e-96                 [], []
+          35 Unknown_ID            1        114        XCS           N/A         N/A         1-80,83-114        80-83                GK.1 + XBB.1.16.25           >>        N/A                 82-83                   N/A      4.13e-86     5.97e-165                 [], []
+          36 Unknown_ID           57         73        XAA           N/A         N/A            1-7,8-73                                 BA.1.20 + BA.2           <<        N/A                   7-8                   N/A     2.25e-200      1.51e-35                 [], []
+          37 Unknown_ID           12        128        XEB           N/A         N/A           1-3,4-128                                 EG.1.2 + XDP.3           <<        N/A                   3-4                   N/A      0.00e+00      1.15e-17                 [], []
+          38 Unknown_ID           24         66         XV           N/A         N/A          1-11,13-66        11-13                 BA.1.14 + BA.2.52           <<        N/A                 12-13                   N/A     1.17e-247     8.21e-153                 [], []
+          39 Unknown_ID           17        115        XCZ           N/A         N/A         1-35,36-115                                  HK.1 + GK.1.1           <<        N/A                 35-36                   N/A     2.01e-171     1.74e-100                 [], []
+          41 Unknown_ID            3        103        XDF           N/A         N/A           1-4,5-103                             EG.10.1 + EG.5.1.3           <<        N/A                   4-5                   N/A     3.31e-103      2.38e-26                 [], []
+          44 Unknown_ID          195         73        XAS           N/A         N/A          1-64,65-73                               BA.4.8 + BA.2.65           >>        N/A                 64-65                   N/A      1.15e-17      3.66e-51                 [], []
+          47 Unknown_ID          137        122        XDN           N/A         N/A         1-98,99-122                                JN.1 + JD.1.1.8           >>        N/A                 98-99                   N/A      2.04e-86      0.00e+00                 [], []
+          48 Unknown_ID           58         73        XAK           N/A         N/A          1-18,39-73        18-39                    BA.2 + BA.2.10           <<        N/A                 26-27                   N/A      3.04e+03      1.23e-11                 [], []
+          49 Unknown_ID           75         72         XW           N/A         N/A            1-3,4-72                             BA.1.1.9 + BA.2.23           <<        N/A                   3-4                   N/A      0.00e+00      6.43e-35                 [], []
+          50 Unknown_ID           19         98        XBN           N/A         N/A          1-11,12-98                              BA.2.75.5 + XBB.3           <<        N/A                 11-12                   N/A     4.60e-190      6.73e-53                 [], []
+          52 Unknown_ID           59        139        XES           N/A         N/A       1-129,130-139                               KP.2.3.15 + MR.2           >>        N/A               129-130                   N/A      2.14e-26      3.28e-50                 [], []
+          53 Unknown_ID           77        109        XCP           N/A         N/A         1-20,24-109        20-24                     HK.3 + JD.1.1           <<        N/A                 23-24                   N/A     1.63e-112      2.05e-19                 [], []
+          54 Unknown_ID           12         74        XAU           N/A         N/A            1-4,5-74                              BA.1.1.9 + BA.2.9           <<        N/A                   4-5                   N/A      0.00e+00      1.94e-25                 [], []
+          56 Unknown_ID            7         93        XBV           N/A         N/A          1-25,26-93                                 CR.1 + XBB.1.5           <<        N/A                 25-26                   N/A     5.62e-213      4.06e-99                 [], []
+          57 Unknown_ID           33        106        XCM           N/A         N/A         1-40,41-106                          XBB.2.3.13 + DV.7.1.2           <<        N/A                 40-41                   N/A     9.80e-235     9.63e-265                 [], []
+          59 Unknown_ID            4        122        XEG           N/A         N/A     1-3,7-24,25-122  3-25 -> 3-7    BA.2.86.1 + GJ.1.2 + BA.2.86.1           <<        N/A            5-6, 24-25                   N/A     4.18e-108      0.00e+00                 [], []
+          61 Unknown_ID           81         86        XBD           N/A         N/A          1-66,67-86                              BA.2.75.2 + BF.23           >>        N/A                 66-67                   N/A     4.94e-113     7.14e-213                 [], []
+          64 Unknown_ID           13        106        XCK           N/A         N/A         1-85,86-106                                    HN.4 + JH.1           >>        N/A                 85-86                   N/A     1.12e-156      0.00e+00                 [], []
+          65 Unknown_ID           83         69         XQ           N/A         N/A            1-4,5-69                              BA.1.1.9 + BA.2.5           <<        N/A                   4-5                   N/A      0.00e+00      4.32e-61                 [], []
+          66 Unknown_ID           37        117        XDL           N/A         N/A       1-106,108-117      106-108                    HK.3 + FL.21.2           >>        N/A               106-107                   N/A      1.22e-16     9.62e-164                 [], []
+          67 Unknown_ID           70         71        XAB           N/A         N/A            1-6,7-71                                BA.1.1.9 + BA.2           <<        N/A                   6-7                   N/A     1.10e-281      2.24e-47                 [], []
+          68 Unknown_ID          103         68         XH           N/A         N/A          1-10,11-68                                  BA.1 + BA.2.9           <<        N/A                 10-11                   N/A     6.20e-151      1.50e-65                 [], []
+          69 Unknown_ID           65         78        XBM           N/A         N/A          1-32,33-78                                 BA.2.76 + BF.3           <<        N/A                 32-33                   N/A     3.95e-133      1.46e-69                 [], []
+          73 Unknown_ID           35         36         XA           N/A         N/A          1-13,14-36                           B.1.177.18 + B.1.1.7           <<        N/A                 13-14                   N/A     7.50e-197     8.13e-101                 [], []
+          75 Unknown_ID            2         70         XU           N/A         N/A            1-5,6-70                               BA.1.7 + BA.2.37           <<        N/A                   5-6                   N/A      0.00e+00      9.08e-70                 [], []
+          76 Unknown_ID            8         90        XBU           N/A         N/A    1-52,53-71,72-90    52-72 ->       BA.2.75.2 + DP.1 + BA.2.75.2           >>        N/A          52-53, 71-72                   N/A      7.00e-72      0.00e+00                 [], []
+          77 Unknown_ID          150         83        XBZ           N/A         N/A            1-3,4-83                               BA.5.2.10 + EF.1           <<        N/A                   3-4                   N/A     2.23e-157      1.01e-11                 [], []
+          79 Unknown_ID           12        101        XCC           N/A         N/A         1-22,23-101                               CH.1.1.1 + FL.27           <<        N/A                 22-23                   N/A     2.17e-257      4.12e-87                 [], []
+          80 Unknown_ID           10        114        XDG           N/A         N/A         1-10,14-114        10-14              XBB.1.5.7 + EG.5.2.1           <<        N/A                 13-14                   N/A      8.44e-67      5.02e-48                 [], []
+          82 Unknown_ID            4         98        XCE           N/A         N/A            1-5,6-98                               BQ.1.1.16 + FY.1           <<        N/A                   5-6                   N/A      0.00e+00      2.38e-26                 [], []
+          83 Unknown_ID            3        113        XDC           N/A         N/A       1-107,108-113                                EG.5.1.1 + GY.9           >>        N/A               107-108                   N/A      4.19e-20     2.06e-181                 [], []
+          84 Unknown_ID            5        110        XCY           N/A         N/A     1-3,4-39,40-110     3-40 ->                 GK.4 + JG.4 + GK.4           <<        N/A            3-4, 39-40                   N/A     5.54e-148     8.98e-122                 [], []
+          85 Unknown_ID           84         72         XR           N/A         N/A            1-4,5-72                                BA.1.1.9 + BA.2           <<        N/A                   4-5                   N/A     3.08e-310      2.76e-41                 [], []
+          86 Unknown_ID            5         67        XAH           N/A         N/A          1-56,57-67                                 BA.2 + BA.1.23           >>        N/A                 56-57                   N/A      8.22e-47      0.00e+00                 [], []
+          87 Unknown_ID           51        108        XCW           N/A         N/A         1-92,98-108        92-98             XBB.2.3.20 + JF.1.1.2           >>        N/A                 92-93                   N/A      8.38e-70     1.01e-225                 [], []
+          89 Unknown_ID         1654         67         XE           N/A         N/A          1-10,12-67        10-12                    BD.1 + BA.2.31           <<        N/A                 10-11                   N/A     9.63e-292     6.50e-134                 [], []
+          90 Unknown_ID            2        149        XFA           N/A         N/A         1-30,33-149        30-33                MC.1.1 + XEC.4.1.4           <<        N/A                 32-33                   N/A     1.86e-143      1.09e-67                 [], []
+          91 Unknown_ID           71         67         XZ           N/A         N/A          1-56,57-67                                 BA.2 + BA.1.23           >>        N/A                 56-57                   N/A      8.22e-47      0.00e+00                 [], []
+          93 Unknown_ID           10        111        XDE           N/A         N/A         1-88,89-111                                 GW.5.1 + FL.13           >>        N/A                 88-89                   N/A      5.16e-74     3.19e-151                 [], []
+          95 Unknown_ID           35        113        XDS           N/A         N/A         1-10,11-113                             JG.3.1 + BA.2.86.1           <<        N/A                 10-11                   N/A      0.00e+00      3.40e-44                 [], []
+          98 Unknown_ID           11         93        XBR           N/A         N/A          1-41,42-93                               BN.3.1 + BQ.1.25           >>        N/A                 41-42                   N/A     1.51e-217     8.68e-211                 [], []
+          99 Unknown_ID           63         74         XY           N/A         N/A          1-14,16-74        14-16                     BA.1.1 + BA.2           <<        N/A                 14-15                   N/A     7.10e-122      2.80e-70                 [], []
+         100 Unknown_ID           28         69        XAD           N/A         N/A          1-56,57-69                                  BA.2 + BA.1.1           >>        N/A                 56-57                   N/A      9.57e-19     5.88e-163                 [], []
+         101 Unknown_ID           19        138        XEU           N/A         N/A           1-8,9-138                                  XEK.2 + XEC.8           <<        N/A                   8-9                   N/A      3.53e-60      1.83e-20                 [], []
+         103 Unknown_ID           36         91        XBQ           N/A         N/A            1-3,4-91                           BA.5.2.10 + BM.1.1.1           <<        N/A                   3-4                   N/A     1.64e-321      1.15e-17                 [], []
+         104 Unknown_ID            1         82        XAY           N/A         N/A          1-24,30-82        24-30                   XAY.2 + XAY.2.3           <<        N/A                 24-25                   N/A      1.40e+00      1.68e-22                 [], []
+         107 Unknown_ID           51         72        XAN           N/A         N/A          1-11,12-72                               BA.2 + BA.5.1.23           <<        N/A                 11-12                   N/A      1.13e-63      4.26e-17                 [], []
+         115 Unknown_ID           18         87        XBS           N/A         N/A          1-32,39-87        32-39                  BN.1 + BQ.1.1.46           <<        N/A                 38-39                   N/A     1.11e-145     5.89e-129                 [], []
+         116 Unknown_ID           23         94        XBW           N/A         N/A          1-79,80-94                              XBB.1.5 + BQ.1.14           >>        N/A                 79-80                   N/A      3.83e-71     9.35e-242                 [], []
+         117 Unknown_ID            3         69         XJ           N/A         N/A          1-13,15-69        13-15                       BD.1 + BA.2           <<        N/A                 13-14                   N/A     3.08e-192     4.40e-128                 [], []
+         119 Unknown_ID           23        101        XDB           N/A         N/A         1-97,98-101                          XBB.1.16.19 + BA.2.27           >>        N/A                 97-98                   N/A      8.43e-18      0.00e+00                 [], []
+         121 Unknown_ID           18        118        XDT           N/A         N/A         1-87,88-118                             BA.2.86.1 + GK.1.1           >>        N/A                 87-88                   N/A      4.59e-73      0.00e+00                 [], []
+         122 Unknown_ID           27        131        XFN           N/A         N/A       1-115,117-131      115-117             JN.1.16.1 + KP.3.3.10           >>        N/A               115-116                   N/A      5.69e-19      1.60e-29                 [], []
+         123 Unknown_ID           23        121        XDR           N/A         N/A         1-17,18-121                               XBB.1.5 + JN.1.1           <<        N/A                 17-18                   N/A      0.00e+00      3.03e-54                 [], []
+         124 Unknown_ID           29         88        XBP           N/A         N/A          1-40,41-88                                 BL.2 + BQ.1.23           <<        N/A                 40-41                   N/A     1.32e-178     2.56e-187                 [], []
+         126 Unknown_ID           18         72        XAE           N/A         N/A          1-57,58-72                                  BA.2 + BA.1.1           >>        N/A                 57-58                   N/A      3.28e-26     5.14e-167                 [], []
+         127 Unknown_ID            1        118        XDJ           N/A         N/A         1-25,26-118                                  JF.1 + HK.3.1           <<        N/A                 25-26                   N/A     1.49e-125     3.33e-113                 [], []
+         128 Unknown_ID          170        113        XCR           N/A         N/A         1-82,83-113                            GK.1.1.1 + FU.1.1.1           >>        N/A                 82-83                   N/A     6.72e-112     1.34e-198                 [], []
+         129 Unknown_ID           18         93        XCG           N/A         N/A            1-3,4-93                            BA.5.2.10 + XBB.1.5           <<        N/A                   3-4                   N/A     1.67e-274      4.08e-12                 [], []
+         130 Unknown_ID           19        110        XDM           N/A         N/A       1-104,105-110                               XBB.1.16 + XDA.1           >>        N/A               104-105                   N/A      5.10e-21      1.06e-14                 [], []

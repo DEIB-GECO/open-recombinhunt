@@ -1,0 +1,18 @@
+{
+    "case_number": 50,
+    "case_name": "Unknown_ID",
+    "group_name": "XBN",
+    "number_of_sequences": 19,
+    "number_of_changes": 98,
+    "best_candidates": "BA.2.75.5 + XBB.3",
+    "best_candidates_breakpoints_target": "11-12",
+    "best_candidates_breakpoints_genomic": "5183 - 5184",
+    "direction_L1": "<<",
+    "initial_region_span": "1-11,12-98",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "4.60e-190",
+    "p_value_vs_L2": "6.73e-53",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

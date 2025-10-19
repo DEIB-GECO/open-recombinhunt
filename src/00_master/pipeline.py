@@ -143,7 +143,7 @@ def main():
                 #step4_postprocess_covid,
                 #step5_create_env,
                 #step5_create_samples,
-                #step6_run_recombinhunt
+                step6_run_recombinhunt
             ]
         else:
             pipeline_steps = [
@@ -153,7 +153,7 @@ def main():
                 #step2_prep_ref,
                 #step3_run_haplocov,
                 #step4_postprocess_haplocov,
-                step4_5_heatmaps,
+                #step4_5_heatmaps,
                 #step5_create_env,
                 #step5_create_samples,
                 #step6_run_recombinhunt

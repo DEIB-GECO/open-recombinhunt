@@ -1,0 +1,18 @@
+{
+    "case_number": 72,
+    "case_name": "Japan/BRL25-0174/2025",
+    "group_name": "XEC",
+    "number_of_sequences": 5350,
+    "number_of_changes": 145,
+    "best_candidates": "XEC.15 + XEL.3",
+    "best_candidates_breakpoints_target": "142-143",
+    "best_candidates_breakpoints_genomic": "28958 - 28959",
+    "direction_L1": ">>",
+    "initial_region_span": "1-142,143-145",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "5.28e-09",
+    "p_value_vs_L2": "8.18e-101",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

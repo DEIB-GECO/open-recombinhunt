@@ -1,0 +1,18 @@
+{
+    "case_number": 126,
+    "case_name": "Unknown_ID",
+    "group_name": "XAE",
+    "number_of_sequences": 18,
+    "number_of_changes": 72,
+    "best_candidates": "BA.2 + BA.1.1",
+    "best_candidates_breakpoints_target": "57-58",
+    "best_candidates_breakpoints_genomic": "25584 - 25585",
+    "direction_L1": ">>",
+    "initial_region_span": "1-57,58-72",
+    "gap_history": "",
+    "alternative_candidates": "[], []",
+    "model_comparison": "-",
+    "p_value_vs_L1": "3.28e-26",
+    "p_value_vs_L2": "5.14e-167",
+    "flags": "Model_2BP_Bad_L1_opp"
+}

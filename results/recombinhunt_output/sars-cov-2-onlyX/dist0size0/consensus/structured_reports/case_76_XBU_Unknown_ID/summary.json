@@ -1,0 +1,18 @@
+{
+    "case_number": 76,
+    "case_name": "Unknown_ID",
+    "group_name": "XBU",
+    "number_of_sequences": 8,
+    "number_of_changes": 90,
+    "best_candidates": "BA.2.75.2 + DP.1 + BA.2.75.2",
+    "best_candidates_breakpoints_target": "52-53, 71-72",
+    "best_candidates_breakpoints_genomic": "22882 - 22883, 25583 - 25584",
+    "direction_L1": ">>",
+    "initial_region_span": "1-52,53-71,72-90",
+    "gap_history": "52-72 -> ",
+    "alternative_candidates": "[], []",
+    "model_comparison": "2BP vs 1BP: 4.76e-14",
+    "p_value_vs_L1": "7.00e-72",
+    "p_value_vs_L2": "0.00e+00",
+    "flags": "Model_2BP_Best"
+}

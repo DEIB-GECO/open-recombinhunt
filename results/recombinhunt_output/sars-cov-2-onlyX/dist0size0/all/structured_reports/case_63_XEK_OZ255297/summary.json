@@ -1,0 +1,18 @@
+{
+    "case_number": 63,
+    "case_name": "OZ255297",
+    "group_name": "XEK",
+    "number_of_sequences": 289,
+    "number_of_changes": 143,
+    "best_candidates": "XEK.1 + XEC.2",
+    "best_candidates_breakpoints_target": "15-16",
+    "best_candidates_breakpoints_genomic": "5705 - 5706",
+    "direction_L1": "<<",
+    "initial_region_span": "1-13,17-143",
+    "gap_history": "13-17",
+    "alternative_candidates": "[], []",
+    "model_comparison": "1BP vs 2BP: 5.83e-01",
+    "p_value_vs_L1": "2.00e-15",
+    "p_value_vs_L2": "2.65e-32",
+    "flags": "Model_1BP_Best"
+}

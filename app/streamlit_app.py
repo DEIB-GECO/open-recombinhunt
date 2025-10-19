@@ -314,21 +314,28 @@ def create_key_metrics(df):
     most_common_parents = most_common_parents_value_counts.idxmax() if not most_common_parents_value_counts.empty else "N/A"
     most_common_parents_count = most_common_parents_value_counts.max() if not most_common_parents_value_counts.empty else 0
 
+    # Calculate unique patterns (unique recombinant parents across all lineages)
+    unique_patterns = df[df["is_recombinant"]]["recombinant_parents"].nunique() if not df[df["is_recombinant"]].empty else 0
+
     a, b = st.columns(2)
     c, d, e = st.columns(3)
     [f] = st.columns(1) 
     [g] = st.columns(1)
 
     a.metric("Total Sequences", total_sequences, border=True)
-    b.metric("Recombination Rate", f"{recombination_rate:.2f}%", border=True)
+    # b.metric("Recombination Rate", f"{recombination_rate:.2f}%", border=True)  # Commented out as requested
 
-    c.metric("Recombination Events", total_recombinants, border=True)
+    c.metric("Recombinant Sequences", total_recombinants, border=True)  # Renamed from "Recombination Events"
     d.metric("1BP", num_1BP, border=True)
     e.metric("2BP", num_2BP, border=True)
 
     f.metric("Top Recombinant Lineage", f"{top_recombinant_lineage} ({top_recombinant_count})", border=True)
 
-    g.metric("Most Common Parents", f"{most_common_parents} ({most_common_parents_count})", border=True)
+    g.metric("Most Common Patterns", f"{most_common_parents} ({most_common_parents_count})", border=True)  # Renamed from "Most Common Parents"
+    
+    # Add unique patterns metric
+    [h] = st.columns(1)
+    h.metric("Unique Patterns", unique_patterns, border=True)
 
 def create_summary_tables(df):
     "create summary and hotspots tables"
@@ -377,7 +384,7 @@ def create_summary_tables(df):
             )
 
     with st.spinner("Creating recombination hotspots table..."):
-        st.subheader("Recombination Hotspots")
+        st.subheader("Breakdown of Detected Recombinations")
         with st.expander("", expanded=True):
             # group by recombinant_parents
             # display frequency
