@@ -6,6 +6,7 @@ services:
     image: openrecombinhunt-base
     environment:
       - PYTHONUNBUFFERED=1
+    pull_policy: never
 
   pipeline:
     depends_on:
@@ -19,6 +20,7 @@ services:
       - ./:/app/
     stdin_open: true
     tty: true
+    pull_policy: never
 
   frontend:
     depends_on:
@@ -37,3 +39,5 @@ services:
       - ./logs:/app/logs
       - ./samples:/app/samples
       - ./src:/app/src
+    pull_policy: never
+    restart: unless-stopped

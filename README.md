@@ -76,9 +76,9 @@ openrecombinhunt/
 ## Setup and Installation
 All the commands are intended to be used in a terminal window inside the directory where this file resides. 
 
-Software dependencies are listed in the environment.yml and installed through Conda and PIP within a Docker container (openrecombinhunt-base) that prepares the vitual environment for running the software. To prepare the virtual environment, Start Docker and simply run:
+Software dependencies are listed in the environment.yml and installed through Conda and PIP within a Docker container (openrecombinhunt-base) that prepares the vitual environment for running the software. To prepare the virtual environment, start Docker and simply run:
 ```bash
-docker compose build
+docker compose build base && docker compose build
 ```
 
 Note for the software developers: Whenever a change to the library files (directory `libs/`) or dependencies (file `environment.yml`) is made, rebuild the virtual environment with the option `--no-cache` to apply it. 
@@ -114,9 +114,14 @@ Some files and folders in the following directories will be overwritten as a res
 - samples/
 
 ## Start the OpenRecombinHunt web app (inspect the data)
-Run
+(Optional) To synchronize the web app with the latest results computed by the pipeline, run:
 ```bash
-docker compose up frontend
+docker compose build frontend   # copies the results folder into the virtual environment 
+```
+
+Start the app with:
+```bash
+docker compose up frontend      # starts the web app
 ```
 
 The above command will copy the content of the results folder within the virtual environment and start a web-server accessible through a browser at the address [http://localhost:60129](http://localhost:60129).
