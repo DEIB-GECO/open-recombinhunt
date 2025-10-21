@@ -72,66 +72,86 @@ openrecombinhunt/
 ├── environment.yml         # Conda environment definition.
 └── README.md               
 ```
+## System requirements
+- a terminal / command prompt
+- Docker CLI v2 or [Docker Desktop >=4.0.0](https://docs.docker.com/get-started/get-docker/);
+- storage space: 8GB minimum; 16GB recommended
+
+> [!NOTE] Storage space
+> The software image alone requires ~4GB without considering any viral data. Because the pipeline downloads all the available sequences for the viruses configured in the `config.yaml` file (see Section [Configuration](#configuration) for more info), the storage requirements depend on the configuration and are generally destined to increase over time. In Docker Desktop, it's always possible to increase/decrease the maximum amount of storage allowed for the installed images. 
 
 ## Setup and Installation
-All the commands are intended to be used in a terminal window inside the directory where this file resides. 
 
-Software dependencies are listed in the environment.yml and installed through Conda and PIP within a Docker container (openrecombinhunt-base) that prepares the vitual environment for running the software. To prepare the virtual environment, start Docker and simply run:
+**All the commands are intended to be used in a terminal window inside the directory where this file resides.**
+
+Software dependencies are listed in the environment.yml and installed through Conda and PIP within a Docker container (openrecombinhunt-base) that prepares the vitual environment for running the software. To prepare the virtual environment, start Docker and run:
 ```bash
 docker compose build base && docker compose build
 ```
 
-Note for the software developers: Whenever a change to the library files (directory `libs/`) or dependencies (file `environment.yml`) is made, rebuild the virtual environment with the option `--no-cache` to apply it. 
+<small>Notes for software developers: whenever a change to the library files or dependencies (i.e., the `libs/` directory or the `environment.yml` file) is made, rebuild the virtual environment with the option `--no-cache` to apply the change.</small>
 
-## Pipeline/Web App Configuration
-The entire pipeline is controlled by the config/config.yaml file. Before running, you must configure:
+## Usage
 
-Paths: Define the base paths for data, results, logs, etc.
+This package can be executed in two **modes**:
+- as a [**pipeline**](#running-the-pipeline) to download and analyse the viral data
+- as a **web application** to display the recombinant analyses' results
 
-Viruses: Add or modify entries for each virus, specifying the data source, method, taxon ID, reference sequence, and parameters for HaploCoV and RecombinHunt.
+Which mode to run?
+- "I want to use the software for the first time": run the pipeline to build the initial output dataset. Then visualize it through the web application. 
+- "I already used the web app, and want to look at it again": you can restart only the web application. 
+- "I want updated recombinant analyses on more recent data": if the data source contains more recent data, you can re-run the pipeline to download it and update the previous results. Then, re-run the web app to visualize it. 
 
-## How to Run the Pipeline (updating the data)
-First, start the dedicated virtual environment by running the command:
+### Run OpenRecombinHunt as a Pipeline (updating the data)
+
+#### Pipeline options
+The entire pipeline is controlled by the `config/config.yaml` file which defines:
+- the paths for the data, results, logs, etc.
+- the viruses to include
+- for each virus: the data quality filters, download source, method, taxon ID, reference seqeunce, and parameters for HaploCov and RecombinHunt.
+
+#### Running the pipeline
+In a terminal, run:
 ```bash
 docker compose run --rm pipeline
 ```
-The above command will open a terminal window in the virtualized environment, where you can execute the pipeline commands.
+The above command will open a shell in the virtualized environment. There you can execute the entire pipeline as:
 
-The pipeline is executed via the main orchestrator script src/00_master/pipeline.py. It should be run from the root directory of the OpenRecombinHunt project. 
-
-To run the entire pipeline for a single virus:
 ```bash
-python src/00_master/pipeline.py --virus yellow-fever
-```
-To run the entire pipeline for all viruses defined in the config file:
-```bash
-python src/00_master/pipeline.py --virus all
+python src/00_master/pipeline.py --virus yellow-fever   # only for a virus (e.g. yellow fever)
+# or
+python src/00_master/pipeline.py --virus all            # for all viruses configured in config/config.yaml
 ```
 
-Some files and folders in the following directories will be overwritten as a result of the pipeline updates:
-- environments/
-- results/
-- samples/
+The pipeline writes the result of download and analyses in the folders 
+- `samples/` = sequences to anlyse through RecombinHunt
+- `results/` = results of the RecombinHunt analyses
+- `environments/` = RecombinHunt's environments (needed for the analyses)
 
-## Start the OpenRecombinHunt web app (inspect the data)
-(Optional) To synchronize the web app with the latest results computed by the pipeline, run:
+Once the analyses are completed, close the terminal by typing
 ```bash
-docker compose build frontend   # copies the results folder into the virtual environment 
+exit
 ```
 
-Start the app with:
+> [!WARNING] Pipeline execution times
+> The pipeline requires from few minutes (for the smallest dataset) to several hours (e.g., > 10 hours for SARS-CoV-2).
+
+
+### Run OpenRecombinHunt as a Web Application (display the analyses)
+
+In a terminal, run:
 ```bash
-docker compose up frontend      # starts the web app
+docker compose build frontend && docker compose up frontend
 ```
 
-The above command will copy the content of the results folder within the virtual environment and start a web-server accessible through a browser at the address [http://localhost:60129](http://localhost:60129).
+The above command will copy the content of the `results/` folder within the virtual environment and start a web-server accessible through a browser at the address [http://localhost:60129](http://localhost:60129).
 
-To stop the web server, type Ctrl+C or Cmd+C. 
+To stop the web server, press `Ctrl+C` or `Cmd+C` in the same terminal window where you started the web application. 
 
-Note that you can also run the pipeline (update the data) while the web-server is running. 
+Note that you can also run the pipeline (update the data) while the web-server is running, but the updates will be visible only after the web application is rebooted. 
 
-
---------
+## Uninstall 
+Open Docker Desktop and delete the images and containers related to OpenRecombinHunt. Then delete this repository. 
 
 ## License
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
