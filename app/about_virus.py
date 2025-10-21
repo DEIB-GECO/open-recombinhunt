@@ -486,7 +486,7 @@ def haplocov_parameters(virus, config):
     heatmap_file = heatmap_dir / "heatmap.png"
     stackbar_file = heatmap_dir / "stackbar.png"
     
-    if heatmap_file.exists() or stackbar_file.exists():
+    if heatmap_file.exists():
         with st.expander(f"Designation Distribution Heatmap with parameters: dist = {dist}, size = {size}", expanded=False):
             st.write("The following visualizations show the distribution of viral designations across different geographic regions:")
             if(virus == "influenza"):
@@ -496,9 +496,11 @@ def haplocov_parameters(virus, config):
                 st.subheader("Heatmap Visualization")
                 st.image(str(heatmap_file), caption="Pango Lineage Percentage Heatmap across Continents", use_container_width=False)
             
+            """
             if stackbar_file.exists():
                 st.subheader("Stacked Bar Chart")
                 st.image(str(stackbar_file), caption="Pango Lineage Percentage Distribution within Continents", use_container_width=True)
+            """
     else:
         st.info("Heatmap visualizations are not yet available for this virus. They will be generated after running the HaploCoV analysis.")
 
