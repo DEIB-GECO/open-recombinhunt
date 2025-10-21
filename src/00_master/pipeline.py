@@ -126,7 +126,7 @@ def main():
             dist = haplocov_params.get(DIST)
             size = haplocov_params.get(SIZE)
             input_file = f"results/haplocov_output/{virus_name}/dist{dist}size{size}/haplocov_reformatted.tsv"
-        step4_5_heatmaps = [python_executable, "src/analyse/designation_heatmaps/designation_country-region_match.py", input_file]
+            step4_5_heatmaps = [python_executable, "src/analyse/designation_heatmaps/designation_country-region_match.py", input_file]
 
         # Step 5: Prepare for RecombinHunt
         step5_create_env = [python_executable, "src/05_prepare_recombinhunt/create_environment.py", "--virus", virus_name, "--config", args.config]
