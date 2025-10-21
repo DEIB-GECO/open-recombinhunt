@@ -257,7 +257,7 @@ viruses:
     download_date: "2025-08-30"
     
     # Time window for analysis (in months)
-    analysis_window_months: 2
+    analysis_window_months: 6
 
     parameters:
       metadata_processing:

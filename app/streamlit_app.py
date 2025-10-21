@@ -300,7 +300,7 @@ def apply_time_filter(df, virus):
                 window_start = download_date_pd - pd.DateOffset(months=analysis_window_months)
                 min_allowed_date = window_start.date()
                 start_date = st.date_input("Start Date", value=min_allowed_date, min_value=min_allowed_date, max_value=download_date)
-                st.info(f"For SARS-CoV-2, the start date cannot be earlier than {min_allowed_date}. Only the last {analysis_window_months} months of data is available (data downloaded on {download_date}).")
+                st.info(f"For SARS-CoV-2, the start date cannot be earlier than {min_allowed_date}. Only the last {analysis_window_months} months of data is available.")
             else:
                 start_date = st.date_input("Start Date", value=pd.to_datetime("2020-01-01"), max_value=download_date)
         with col2:
@@ -1210,8 +1210,12 @@ def create_recombinant_cases_table(df, virus, analysis_mode):
             path_to_the_case_report_folder = selected["case_report_folder"].iloc[0]
             report = load_report_data(path_to_the_case_report_folder)
             
-            # Show dialog with details
-            genome_details_dialog(selected_id, report, virus, analysis_mode)
+            # Show dialog with details - handle potential conflicts gracefully
+            try:
+                genome_details_dialog(selected_id, report, virus, analysis_mode)
+            except Exception as e:
+                if "Only one dialog is allowed" not in str(e):
+                    st.warning(f"Error opening dialog: {e}")
         else:
             word = "lineage" if analysis_mode == "Consensus Sequence Analysis" else "genome"
             st.info(f"Select a recombinant {word} from the table above to see its details.")
@@ -1365,8 +1369,23 @@ def show_virus_page(virus):
 
         return
 
-    # tabs
-    tab0, tab1, tab2 = st.tabs(["About the Virus", "Summary Dashboard", "Recombinant Explorer"])
+    # tabs - different structure for SARS-CoV-2
+    if virus == "sars-cov-2":
+        # Get analysis window months from config for dynamic tab naming
+        try:
+            virus_config = config.get(VIRUSES).get(virus)
+            analysis_window_months = virus_config.get("analysis_window_months", 6)
+        except Exception:
+            analysis_window_months = 6
+        
+        tab0, tab1, tab2, tab3 = st.tabs([
+            "About the Virus", 
+            f"Summary Dashboard - Last {analysis_window_months} Months", 
+            f"Recombinant Explorer - Last {analysis_window_months} Months", 
+            "Recombinant Explorer - Consensus Sequences"
+        ])
+    else:
+        tab0, tab1, tab2 = st.tabs(["About the Virus", "Summary Dashboard", "Recombinant Explorer"])
 
     with tab0:
         st.header(f"About {virus_name}")
@@ -1389,7 +1408,7 @@ def show_virus_page(virus):
 
     with tab1:
         if virus == "sars-cov-2":
-            st.info("Due to the vast amount of SARS-CoV-2 data, the Summary Dashboard is limited to the most recent six months of sequences. For a comprehensive analysis of available SARS-CoV-2 sequences, please utilize the Recombinant Explorer tab.")
+            st.info(f"Due to the vast amount of SARS-CoV-2 data, the Summary Dashboard is limited to the most recent {analysis_window_months} months of sequences. For a comprehensive analysis of available SARS-CoV-2 sequences, please utilize the Recombinant Explorer tabs.")
 
         # time-based filtering
         with st.spinner("Applying time filter..."):
@@ -1410,28 +1429,32 @@ def show_virus_page(virus):
 
         create_distribution_plots(summary_df, virus)
 
-    with tab2:
-        analysis_mode = None
-        if virus == "sars-cov-2":
-            # add a radio button for sars-cov-2 to select between 
-            # consensus sequence analysis and last-6m analysis
+    # Handle different tab structures based on virus
+    if virus == "sars-cov-2":
+        # SARS-CoV-2 has 4 tabs - separate recombinant explorer tabs
+        with tab2:
+            # Last X months analysis (genome-level)
+            st.info(f"This tab shows recombinant cases from the last {analysis_window_months} months analysis, allowing for genome-level analysis of the most recent data.")
+            
+            # filtering
+            with st.spinner("Applying filters..."):
+                recombinant_df = master_df[master_df["is_recombinant"]]
+                explorer_df = apply_user_filter(recombinant_df, virus,)
 
-            st.info("In SARS-CoV-2, we offer two analysis modes: 'Consensus Sequence Analysis' and 'Last 6 Months Analysis'. The former encompasses all available sequences that belong to the same lineage into a 'consensus sequence' and allow analysis on lineage-level rather than genome-level, while the latter focuses on the most recent six months of data and allows for genome-level analysis. Please select your preferred mode below.")
-            analysis_mode = st.radio(
-                "Select Analysis Mode:",
-                options=["Consensus Sequence Analysis", "Last 6 Months Analysis"],
-                index=None,
-                horizontal=True
-            )
+            st.markdown("---")
 
-            if analysis_mode is None:
-                st.warning("Please select an analysis mode to proceed.")
-                return
+            # create interactive table with radio buttons as the index column
+            create_recombinant_cases_table(explorer_df, virus, None)
 
-        if virus == "sars-cov-2" and analysis_mode == "Consensus Sequence Analysis":
+        with tab3:
+            # Consensus sequence analysis (lineage-level)
+            st.info("This tab shows recombinant cases from consensus sequence analysis. The consensus sequence analysis encompasses all available sequences that belong to the same lineage into a 'consensus sequence' and allows for lineage-level analysis rather than genome-level analysis.")
+            
             df = load_consensus_data(virus)
-            create_recombinant_cases_table(df, virus, analysis_mode)
-        else:
+            create_recombinant_cases_table(df, virus, "Consensus Sequence Analysis")
+    else:
+        # Other viruses have 3 tabs - original structure
+        with tab2:
             # filtering
             with st.spinner("Applying filters..."):
                 recombinant_df = master_df[master_df["is_recombinant"]]
