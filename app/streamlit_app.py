@@ -820,7 +820,7 @@ def display_detailed_report_summary(report, virus, analysis_mode):
                 </div>
                 """, unsafe_allow_html=True)    
 
-def display_detailed_report(report):
+def  display_detailed_report(report):
     if not report:
         st.warning("No report data available.")
         return
@@ -959,6 +959,164 @@ def display_detailed_report(report):
 
             st.markdown(" ".join(chips), unsafe_allow_html=True)
 
+@st.dialog("Genome Details", width="large")
+def genome_details_dialog(selected_id, report, virus, analysis_mode):
+    """Dialog to display detailed genome analysis."""
+    st.subheader(f"Details of: {selected_id}")
+    
+    # Case Summary
+    display_detailed_report_summary(report, virus, analysis_mode)
+    
+    # Region Analysis Tables
+    display_region_analysis_tables(report)
+    
+    # Visualization
+    display_visualization_section(report)
+    
+    # Target Mutations
+    display_target_mutations_section(report)
+
+def display_region_analysis_tables(report):
+    # region tables
+    region_tables = {
+        k: v
+        for k, v in report.items()
+        if k.startswith("region_") and isinstance(v, pd.DataFrame)
+    }
+
+    information = """
+        Tables report the number of sequences,
+        breakpoint, maximum likelihood ratio. The next columns illustrate the comparison
+        of the candidate with the first of the table: value of one-sided AIC comparison
+        between recombination model and non-recombination model (lower values are
+        when row candidate is similar to the first candidate); p-value of AIC -- without
+        multiple comparison corrections; and three conditions: (C1) marked if p-value is
+        ≥10−5; (C2) marked if row breakpoint is at most one mutation apart from the one of
+        the first candidate; (C3) marked if candidate belongs to the same phylogenetic
+        branch as the first one.
+
+        The most plausible candidates are the ones that have all three conditions (C1, C2, C3) marked.
+    """
+    if region_tables:
+        with st.expander("Region Analysis Tables", expanded=True):
+            st.write(information)
+            for region_name, df in region_tables.items():
+                title_mapping = {
+                    "1": "First",
+                    "2": "Second",
+                    "3": "Third"
+                }
+                region = region_name.split("_")[1]
+                region_title = title_mapping.get(region)
+                st.markdown(f"#### {region_title} Region Candidates")
+
+                # Format table
+                formatted_df = format_region_table(df, region).reset_index(drop=True)
+
+                # --- Filtering UI ---
+                _, col0 = st.columns([11, 5])
+                with col0:
+                    filter_all = st.checkbox("Display only most plausible candidates", value=True, key=f"{region_name}_all")
+                # with col1:
+                #     filter_c1 = st.checkbox("C1", key=f"{region_name}_c1")
+                # with col2:
+                #     filter_c2 = st.checkbox("C2", key=f"{region_name}_c2")
+                # with col3:
+                #     filter_c3 = st.checkbox("C3", key=f"{region_name}_c3")
+
+
+                # --- Apply filters ---
+                filtered_df = formatted_df.copy()
+                if filter_all:
+                    filtered_df = filtered_df[
+                        (filtered_df["C1"] == "✔️") &
+                        (filtered_df["C2"] == "✔️") &
+                        (filtered_df["C3"] == "✔️")
+                    ]
+                # else:
+                #     if filter_c1:
+                #         filtered_df = filtered_df[filtered_df["C1"] == "✔️"]
+                #     if filter_c2:
+                #         filtered_df = filtered_df[filtered_df["C2"] == "✔️"]
+                #     if filter_c3:
+                #         filtered_df = filtered_df[filtered_df["C3"] == "✔️"]
+
+                st.dataframe(filtered_df, use_container_width=True, hide_index=True)
+
+    else:
+        st.info("No region analysis tables available.")
+
+def display_visualization_section(report):
+    """Display visualization plots from the report."""
+    with st.expander("Visualization", expanded=True):
+        plot_files = [f for f in report.keys() if f.startswith("plot_") and f.endswith(".json")]
+        if plot_files:
+            plot_per_region = plot_files[0]
+            st.markdown(f"#### {plot_per_region.replace('_', ' ').replace('.json', '').title()}")
+            fig = go.Figure(report[plot_per_region])
+            st.plotly_chart(fig, use_container_width=True)
+        else:
+            st.info("No visualization data available.")
+
+def display_target_mutations_section(report):
+    """Display target mutations from the report."""
+    with st.expander("Target Mutations", expanded=True):
+        if "target_mutations" in report:
+            mutations = [m.strip() for m in report["target_mutations"][0].split(",")]
+            
+            # Download button
+            mutations_text = "\n".join(mutations)
+            st.download_button(
+                label="Download Mutations List",
+                data=mutations_text,
+                file_name="target_mutations.txt",
+                mime="text/plain"
+            )
+            
+            # Mutation classification and display
+            def classify_mutation(mutation: str):
+                if re.fullmatch(r"\d+_\d+", mutation) or re.fullmatch(r"\d+", mutation):
+                    return "deletion"
+                elif re.fullmatch(r"\d+_\.\|[A-Za-z]+", mutation):
+                    return "insertion"
+                elif re.fullmatch(r"\d+_[A-Za-z]+\|[A-Za-z]+", mutation):
+                    return "substitution"
+                else:
+                    return "other"
+
+            colors = {
+                "deletion":   {"bg": "#ffebee", "fg": "#c62828"},
+                "insertion":  {"bg": "#e8f5e9", "fg": "#2e7d32"},
+                "substitution": {"bg": "#e3f2fd", "fg": "#1565c0"},
+                "other":      {"bg": "#eeeeee", "fg": "#424242"},
+            }
+
+            def make_chip(text, kind):
+                style = colors[kind]
+                return (
+                    f"<span style='background:{style['bg']}; color:{style['fg']}; "
+                    f"padding:3px 8px; border-radius:12px; margin:2px; "
+                    f"display:inline-block; font-size:90%; font-weight:500'>{text}</span>"
+                )
+
+            # Legend chips
+            legend = " ".join([
+                make_chip("Deletion", "deletion"),
+                make_chip("Insertion", "insertion"),
+                make_chip("Substitution", "substitution"),
+            ])
+            st.markdown(legend, unsafe_allow_html=True)
+
+            # Mutation chips
+            chips = []
+            for m in mutations:
+                mtype = classify_mutation(m)
+                chips.append(make_chip(m, mtype))
+
+            st.markdown(" ".join(chips), unsafe_allow_html=True)
+        else:
+            st.info("No target mutations data available.")
+
 def create_recombinant_cases_table(df, virus, analysis_mode):
     """Create a table to display recombinant cases."""
     st.subheader("Recombinant Cases")
@@ -967,7 +1125,7 @@ def create_recombinant_cases_table(df, virus, analysis_mode):
         st.warning("No recombinant cases found.")
         return
     
-    # Full width table with details below
+    # Full width table
     with st.spinner("Loading recombinant cases..."):
         if analysis_mode == "Consensus Sequence Analysis":
             formatter = {
@@ -1001,10 +1159,7 @@ def create_recombinant_cases_table(df, virus, analysis_mode):
             css=custom_css,
         )
 
-    # Details section below the table
-    st.markdown("---")
-    
-    report_exists = False
+    # Handle table selection and show dialog
     if response:
         selected = response["selected_rows"]
         if selected is not None:
@@ -1013,18 +1168,15 @@ def create_recombinant_cases_table(df, virus, analysis_mode):
             else: 
                 selected_id = selected["genomeID"].iloc[0]
             
-            st.subheader(f"Details of: {selected_id}")
-
+            # Load report data
             path_to_the_case_report_folder = selected["case_report_folder"].iloc[0]
             report = load_report_data(path_to_the_case_report_folder)
-            display_detailed_report_summary(report, virus, analysis_mode)
-            report_exists = True
+            
+            # Show dialog with details
+            genome_details_dialog(selected_id, report, virus, analysis_mode)
         else:
             word = "lineage" if analysis_mode == "Consensus Sequence Analysis" else "genome"
-            st.info(f"Select a recombinant {word} from the table above to see its details here.")
-
-    if report_exists:
-        display_detailed_report(report)
+            st.info(f"Select a recombinant {word} from the table above to see its details.")
 
 def sidebar(virus_list):
     """sidebar navigation for the streamlit"""
