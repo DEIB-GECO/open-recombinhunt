@@ -11,6 +11,7 @@ from pathlib import Path
 import sys
 import logging
 import zstandard as zstd
+from datetime import datetime
 
 # Add the project's 'src' directory to the Python path.
 SRC_PATH = Path(__file__).resolve().parent.parent
@@ -27,6 +28,29 @@ except ImportError as e:
     sys.exit(1)
 
 # --- Main Fetching Logic Functions ---
+
+def update_download_date(config_path: str, virus_name: str):
+    """Update the download_date for a virus in the config.yaml file."""
+    try:
+        # Read the current config
+        with open(config_path, 'r') as f:
+            config = yaml.safe_load(f)
+        
+        # Update the download_date for the specific virus
+        if VIRUSES in config and virus_name in config[VIRUSES]:
+            current_date = datetime.now().strftime("%Y-%m-%d")
+            config[VIRUSES][virus_name]["download_date"] = current_date
+            
+            # Write the updated config back to file
+            with open(config_path, 'w') as f:
+                yaml.dump(config, f, default_flow_style=False, sort_keys=False)
+            
+            logging.info(f"Updated download_date for {virus_name} to {current_date}")
+        else:
+            logging.warning(f"Could not find virus '{virus_name}' in config to update download_date")
+            
+    except Exception as e:
+        logging.error(f"Failed to update download_date in config: {e}")
 
 def download_and_decompress(url: str, final_filename: str, virus_raw_dir: Path):
         """Helper to download a file and decompress it based on its extension."""
@@ -316,6 +340,11 @@ def main():
             sys.exit(1)
         
         logging.info(f"Data fetching process for '{virus_name}' complete.")
+        
+        # Update the download_date in config.yaml after successful data acquisition
+        logging.info("Updating download_date in config.yaml...")
+        update_download_date(args.config, virus_name)
+        
     except Exception as e:
         logging.critical(f"A critical error occurred during the fetching process: {e}", exc_info=True)
         sys.exit(1)

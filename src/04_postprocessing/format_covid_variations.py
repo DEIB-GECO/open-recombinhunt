@@ -192,9 +192,33 @@ def main():
     logging.info(f"Saving reformatted data with {len(df_final)} rows to: {output_file}")
     df_final.to_csv(output_file, sep='\t', index=False)
 
-    current_date = pd.Timestamp.now()
+    # Use download_date from config for consistent 6-month calculation
+    try:
+        virus_config = config.get(VIRUSES).get(args.virus)
+        download_date_str = virus_config.get("download_date")
+        
+        if download_date_str:
+            current_date = pd.to_datetime(download_date_str)
+            logging.info(f"Using download_date from config: {download_date_str}")
+        else:
+            current_date = pd.Timestamp.now()
+            logging.warning(f"No download_date found in config for {args.virus}, using current date: {current_date.strftime('%Y-%m-%d')}")
+    except Exception as e:
+        current_date = pd.Timestamp.now()
+        logging.warning(f"Error reading download_date from config: {e}. Using current date: {current_date.strftime('%Y-%m-%d')}")
+    
     six_months_ago = current_date - pd.DateOffset(months=6)
-    df_last_6_months = df_final[df_final['Collection date'] >= six_months_ago.strftime('%Y-%m-%d')]
+    df_last_6_months = df_final[
+        (df_final['Collection date'] >= six_months_ago.strftime('%Y-%m-%d')) & 
+        (df_final['Collection date'] <= current_date.strftime('%Y-%m-%d'))
+    ]
+    
+    # Calculate and log the date range for transparency
+    min_collection_date = df_last_6_months['Collection date'].min() if not df_last_6_months.empty else "N/A"
+    max_collection_date = df_last_6_months['Collection date'].max() if not df_last_6_months.empty else "N/A"
+    
+    logging.info(f"6-month window: {six_months_ago.strftime('%Y-%m-%d')} to {current_date.strftime('%Y-%m-%d')}")
+    logging.info(f"Collection date range in filtered data: {min_collection_date} to {max_collection_date}")
     logging.info(f"Saving reformatted data from the last 6 months with {len(df_last_6_months)} rows to: {output_file_last_6_months}")
     df_last_6_months.to_csv(output_file_last_6_months, sep='\t', index=False)
 

@@ -20,6 +20,8 @@ viruses:
       accession_id: "NC_002031.1"
       length: 10862
 
+    download_date: "2025-08-30"
+
     parameters:
       metadata_processing:
         source_lineage_column: "NONE"
@@ -69,6 +71,8 @@ viruses:
       accession_id: "NC_038235.1"
       length: 15222
 
+    download_date: "2025-08-30"
+
     parameters:
       metadata_processing:
         source_lineage_column: "clade"
@@ -101,6 +105,8 @@ viruses:
       accession_id: "NC_001781.1"
       length: 15225
 
+    download_date: "2025-08-30"
+
     parameters:
       metadata_processing:
         source_lineage_column: "clade"
@@ -132,6 +138,8 @@ viruses:
     reference:
       accession_id: "NC_035889.1"
       length: 10808
+
+    download_date: "2025-09-10"
 
     parameters:
       metadata_processing:
@@ -176,6 +184,8 @@ viruses:
       accession_id: "NC_063383.1"
       length: 197209
 
+    download_date: "2025-08-30"
+
     parameters:
       metadata_processing:
         source_lineage_column: "Virus Pangolin Classification"
@@ -219,6 +229,8 @@ viruses:
       accession_id: "NC_007362.1"
       length: 1760
 
+    download_date: "2025-08-30"
+
     parameters:
       haplocov:
         dist: 5
@@ -241,6 +253,8 @@ viruses:
     reference:
       accession_id: "NC_045512.2"
       length: 29903
+
+    download_date: "2025-08-30"
 
     parameters:
       metadata_processing:

@@ -254,23 +254,51 @@ def apply_time_filter(df, virus):
         selection_mode = "single"
     )
 
+    # Get the download date from config for the virus
+    try:
+        virus_config = config.get(VIRUSES).get(virus)
+        download_date_str = virus_config.get("download_date")
+        if download_date_str:
+            download_date = pd.to_datetime(download_date_str).date()
+        else:
+            st.error(f"No download date found for {virus}")
+            download_date = dt.date.today()  # fallback to today if no download_date found
+    except Exception as e:
+        st.error(f"Error getting download date for {virus}: {e}")
+        download_date = dt.date.today()  # fallback to today if any error occurs
+    
+    # Calculate the actual date range in the data for reference
+    try:
+        collection_dates = pd.to_datetime(df["collection_date"], errors='coerce').dropna()
+        if not collection_dates.empty:
+            min_data_date = collection_dates.min().date()
+            max_data_date = collection_dates.max().date()
+            st.info(f"Data contains collection dates from {min_data_date} to {max_data_date}")
+        else:
+            st.warning("No valid collection dates found in the data")
+    except Exception as e:
+        st.warning(f"Could not analyze collection date range: {e}")
+
     # select filter value
     filter_value = None
     if filter_type == "Filter by Date Range":
-        today = dt.date.today()
         col1, col2 = st.columns(2)
         with col1:
             if virus == "sars-cov-2":
-                min_allowed_date = today - dt.timedelta(days=210)
-                start_date = st.date_input("Start Date", value=min_allowed_date, min_value=min_allowed_date, max_value=today)
-                st.info(f"For SARS-CoV-2, the start date cannot be earlier than {min_allowed_date}. Only the last 6 months of data is available.")
+                # Use pandas DateOffset for accurate 6-month calculation (same as format_covid_variations.py)
+                download_date_pd = pd.to_datetime(download_date)
+                six_months_ago = download_date_pd - pd.DateOffset(months=6)
+                min_allowed_date = six_months_ago.date()
+                start_date = st.date_input("Start Date", value=min_allowed_date, min_value=min_allowed_date, max_value=download_date)
+                st.info(f"For SARS-CoV-2, the start date cannot be earlier than {min_allowed_date}. Only the last 6 months of data is available (data downloaded on {download_date}).")
             else:
-                start_date = st.date_input("Start Date", value=pd.to_datetime("2020-01-01"), max_value=today)
+                start_date = st.date_input("Start Date", value=pd.to_datetime("2020-01-01"), max_value=download_date)
         with col2:
-            end_date = st.date_input("End Date", value=pd.to_datetime("today"), min_value=start_date, max_value=today)
+            end_date = st.date_input("End Date", value=download_date, min_value=start_date, max_value=download_date)
+            st.info(f"Data was downloaded on: {download_date}")
         filter_value = (start_date, end_date)
-    elif filter_type == "Filter by Latest X Sequences":
-        filter_value = st.number_input("Number of Latest Sequences", min_value=1, value=10)
+    elif filter_type == "Filter by Latest Sequences":
+        filter_value = st.number_input("Number of Latest Sequences", min_value=1, value=100)
 
     # apply filtering to the df
     filtered_df = df
@@ -280,7 +308,7 @@ def apply_time_filter(df, virus):
         collection_date = pd.to_datetime(df["collection_date"]).dt.date
 
         filtered_df = df[(collection_date >= start_date) & (collection_date <= end_date)]
-    elif filter_type == "Filter by Latest X Sequences" and filter_value:
+    elif filter_type == "Filter by Latest Sequences" and filter_value:
         filtered_df = df.sort_values("collection_date", ascending=False).head(filter_value)
 
     return filtered_df
