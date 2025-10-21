@@ -266,7 +266,14 @@ def run_experiments(virus_name: str, config: dict):
     samples_dir = Path(paths_config.get(SAMPLES)) / virus_name / param_string
 
     if virus_name == "sars-cov-2" and run_mode.lower() == ALL:
-        samples_dir = samples_dir / "last_6_months"
+        # Get analysis window from config for dynamic directory naming
+        try:
+            virus_config = config.get(VIRUSES).get(virus_name)
+            analysis_window_months = virus_config.get("analysis_window_months", 6)
+        except Exception:
+            analysis_window_months = 6
+        
+        samples_dir = samples_dir / f"last_{analysis_window_months}_months"
     
     results_dir = Path(paths_config.get(RESULTS)) / "recombinhunt_output" / virus_name / param_string
     if virus_name == "sars-cov-2":

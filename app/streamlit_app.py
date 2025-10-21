@@ -148,7 +148,14 @@ def load_master_data(virus):
     # load source data
     try:
         if virus.lower() == "sars-cov-2":
-            source_file = RESULTS_DIR_BASE / NEXTSTRAIN_OUTPUT / virus / "nextstrain_reformatted_last_6_months.tsv"
+            # Get analysis window from config to construct the correct filename
+            try:
+                virus_config = config.get(VIRUSES).get(virus)
+                analysis_window_months = virus_config.get("analysis_window_months", 6)
+            except Exception:
+                analysis_window_months = 6
+            
+            source_file = RESULTS_DIR_BASE / NEXTSTRAIN_OUTPUT / virus / f"nextstrain_reformatted_last_{analysis_window_months}_months.tsv"
             columns = ["genomeID", "Collection date", "Submission date", "Location", "pangoLin"]
         else:
             source_file = RESULTS_DIR_BASE / HAPLOCOV_OUTPUT / virus / paramset / "haplocov_reformatted.tsv"
@@ -254,10 +261,12 @@ def apply_time_filter(df, virus):
         selection_mode = "single"
     )
 
-    # Get the download date from config for the virus
+    # Get the download date and analysis window from config for the virus
     try:
         virus_config = config.get(VIRUSES).get(virus)
         download_date_str = virus_config.get("download_date")
+        analysis_window_months = virus_config.get("analysis_window_months", 6)  # Default to 6 months if not specified
+        
         if download_date_str:
             download_date = pd.to_datetime(download_date_str).date()
         else:
@@ -266,6 +275,7 @@ def apply_time_filter(df, virus):
     except Exception as e:
         st.error(f"Error getting download date for {virus}: {e}")
         download_date = dt.date.today()  # fallback to today if any error occurs
+        analysis_window_months = 6
     
     # Calculate the actual date range in the data for reference
     try:
@@ -285,12 +295,12 @@ def apply_time_filter(df, virus):
         col1, col2 = st.columns(2)
         with col1:
             if virus == "sars-cov-2":
-                # Use pandas DateOffset for accurate 6-month calculation (same as format_covid_variations.py)
+                # Use pandas DateOffset for accurate time window calculation (same as format_covid_variations.py)
                 download_date_pd = pd.to_datetime(download_date)
-                six_months_ago = download_date_pd - pd.DateOffset(months=6)
-                min_allowed_date = six_months_ago.date()
+                window_start = download_date_pd - pd.DateOffset(months=analysis_window_months)
+                min_allowed_date = window_start.date()
                 start_date = st.date_input("Start Date", value=min_allowed_date, min_value=min_allowed_date, max_value=download_date)
-                st.info(f"For SARS-CoV-2, the start date cannot be earlier than {min_allowed_date}. Only the last 6 months of data is available (data downloaded on {download_date}).")
+                st.info(f"For SARS-CoV-2, the start date cannot be earlier than {min_allowed_date}. Only the last {analysis_window_months} months of data is available (data downloaded on {download_date}).")
             else:
                 start_date = st.date_input("Start Date", value=pd.to_datetime("2020-01-01"), max_value=download_date)
         with col2:

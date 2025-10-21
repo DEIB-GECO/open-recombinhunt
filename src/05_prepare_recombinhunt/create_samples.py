@@ -51,8 +51,15 @@ def create_samples_step(virus_name: str, config: dict):
         input_dir = results_dir / "nextstrain_output" / virus_name
         input_file = input_dir / "nextstrain_reformatted.tsv" 
 
-        logging.info("Loading data from the last 6 months...")
-        input_file_l6m = input_dir / "nextstrain_reformatted_last_6_months.tsv"
+        # Get analysis window from config for dynamic filename
+        try:
+            virus_config = config.get(VIRUSES).get(virus_name)
+            analysis_window_months = virus_config.get("analysis_window_months", 6)
+        except Exception:
+            analysis_window_months = 6
+        
+        logging.info(f"Loading data from the last {analysis_window_months} months...")
+        input_file_l6m = input_dir / f"nextstrain_reformatted_last_{analysis_window_months}_months.tsv"
     else:
         logging.info(f"Virus is '{virus_name}'. Using HaploCoV reformatted output as input.")
         input_dir = results_dir / "haplocov_output" / virus_name / param_string
@@ -64,9 +71,16 @@ def create_samples_step(virus_name: str, config: dict):
     logging.info(f"Sample files will be saved to: {samples_dir}")
 
     if virus_name == 'sars-cov-2':
-        samples_dir_l6m = Path(paths_config.get(SAMPLES)) / virus_name / param_string / "last_6_months"
+        # Get analysis window from config for dynamic directory naming
+        try:
+            virus_config = config.get(VIRUSES).get(virus_name)
+            analysis_window_months = virus_config.get("analysis_window_months", 6)
+        except Exception:
+            analysis_window_months = 6
+        
+        samples_dir_l6m = Path(paths_config.get(SAMPLES)) / virus_name / param_string / f"last_{analysis_window_months}_months"
         samples_dir_l6m.mkdir(parents=True, exist_ok=True)
-        logging.info(f"FOR last 6 months, Sample files will be saved to: {samples_dir_l6m}")
+        logging.info(f"FOR last {analysis_window_months} months, Sample files will be saved to: {samples_dir_l6m}")
 
     # --- 2. Load Data ---
     logging.info(f"Loading data from: {input_file}")

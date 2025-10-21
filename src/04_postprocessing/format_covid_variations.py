@@ -145,11 +145,19 @@ def main():
     
     input_file = processed_data_dir / "metadata.tsv"
     
+    # Get analysis window from config first
+    try:
+        virus_config = config.get(VIRUSES).get(args.virus)
+        analysis_window_months = virus_config.get("analysis_window_months", 6)  # Default to 6 months if not specified
+    except Exception as e:
+        analysis_window_months = 6
+        logging.warning(f"Error reading analysis_window_months from config: {e}. Using default: {analysis_window_months} months")
+    
     # Define the specific output directory for this run
     output_dir = results_dir / "nextstrain_output" / args.virus
     output_dir.mkdir(parents=True, exist_ok=True)
     output_file = output_dir / "nextstrain_reformatted.tsv"
-    output_file_last_6_months = output_dir / "nextstrain_reformatted_last_6_months.tsv"
+    output_file_last_months = output_dir / f"nextstrain_reformatted_last_{analysis_window_months}_months.tsv"
 
     # --- Load and Process Data ---
     logging.info(f"Loading processed metadata from: {input_file}")
@@ -192,7 +200,7 @@ def main():
     logging.info(f"Saving reformatted data with {len(df_final)} rows to: {output_file}")
     df_final.to_csv(output_file, sep='\t', index=False)
 
-    # Use download_date from config for consistent 6-month calculation
+    # Use download_date from config for consistent time window calculation
     try:
         virus_config = config.get(VIRUSES).get(args.virus)
         download_date_str = virus_config.get("download_date")
@@ -207,20 +215,20 @@ def main():
         current_date = pd.Timestamp.now()
         logging.warning(f"Error reading download_date from config: {e}. Using current date: {current_date.strftime('%Y-%m-%d')}")
     
-    six_months_ago = current_date - pd.DateOffset(months=6)
-    df_last_6_months = df_final[
-        (df_final['Collection date'] >= six_months_ago.strftime('%Y-%m-%d')) & 
+    window_start = current_date - pd.DateOffset(months=analysis_window_months)
+    df_last_window = df_final[
+        (df_final['Collection date'] >= window_start.strftime('%Y-%m-%d')) & 
         (df_final['Collection date'] <= current_date.strftime('%Y-%m-%d'))
     ]
     
     # Calculate and log the date range for transparency
-    min_collection_date = df_last_6_months['Collection date'].min() if not df_last_6_months.empty else "N/A"
-    max_collection_date = df_last_6_months['Collection date'].max() if not df_last_6_months.empty else "N/A"
+    min_collection_date = df_last_window['Collection date'].min() if not df_last_window.empty else "N/A"
+    max_collection_date = df_last_window['Collection date'].max() if not df_last_window.empty else "N/A"
     
-    logging.info(f"6-month window: {six_months_ago.strftime('%Y-%m-%d')} to {current_date.strftime('%Y-%m-%d')}")
+    logging.info(f"{analysis_window_months}-month window: {window_start.strftime('%Y-%m-%d')} to {current_date.strftime('%Y-%m-%d')}")
     logging.info(f"Collection date range in filtered data: {min_collection_date} to {max_collection_date}")
-    logging.info(f"Saving reformatted data from the last 6 months with {len(df_last_6_months)} rows to: {output_file_last_6_months}")
-    df_last_6_months.to_csv(output_file_last_6_months, sep='\t', index=False)
+    logging.info(f"Saving reformatted data from the last {analysis_window_months} months with {len(df_last_window)} rows to: {output_file_last_months}")
+    df_last_window.to_csv(output_file_last_months, sep='\t', index=False)
 
     logging.info("Script finished successfully.")
 
