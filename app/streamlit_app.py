@@ -535,7 +535,7 @@ def create_temporal_plot(df, virus):
         )
 
         fig.update_layout(
-            xaxis_title="Time",
+            xaxis_title="Collection Date",
             yaxis_title="Number of Sequences",
             hovermode="x unified",
             height=500,
