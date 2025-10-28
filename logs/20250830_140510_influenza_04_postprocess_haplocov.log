@@ -1,5 +1,0 @@
-2025-08-30 14:05:10,894 - INFO - Logging initialized. Log file at: logs/20250830_140510_influenza_04_postprocess_haplocov.log
-2025-08-30 14:05:10,894 - INFO - Loading HaploCoV output from: results/haplocov_output/influenza/dist5size50/haplocov_assigned.tsv
-2025-08-30 14:05:11,126 - INFO - Reformatting mutations in the 'listV' column...
-2025-08-30 14:05:12,005 - INFO - Saving reformatted data to: results/haplocov_output/influenza/dist5size50/haplocov_reformatted.tsv
-2025-08-30 14:05:12,508 - INFO - Script finished successfully.

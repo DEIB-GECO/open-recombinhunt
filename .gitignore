@@ -227,3 +227,4 @@ __marimo__/
 /sars-cov-2
 head*
 src/analyse/influenza_data_exploration/
+logs/**

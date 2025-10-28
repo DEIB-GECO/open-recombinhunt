@@ -1,9 +1,0 @@
-2025-08-30 13:35:11,386 - INFO - Logging initialized. Log file at: logs/20250830_133511_influenza_02.2_fetch_sequences_by_id.log
-2025-08-30 13:35:11,386 - INFO - --- Starting Step 2.2: Fetch Sequences by ID for 'influenza' ---
-2025-08-30 13:35:11,386 - INFO - Created temporary working directory: data/processed/influenza/temp_fetch_sequences
-2025-08-30 13:35:11,387 - INFO - Executing: datasets download virus genome accession --inputfile influenza-accession-ids.txt --filename influenza-sequences.zip
-2025-08-30 13:35:21,192 - INFO - Unzipping data/processed/influenza/temp_fetch_sequences/influenza-sequences.zip...
-2025-08-30 13:35:21,375 - INFO - Found: data/processed/influenza/temp_fetch_sequences/ncbi_dataset/data/genomic.fna. Moving and renaming to data/processed/influenza/sequences.fasta
-2025-08-30 13:35:21,376 - INFO - Cleaning up temporary working directory...
-2025-08-30 13:35:21,384 - INFO - Cleanup complete.
-2025-08-30 13:35:21,384 - INFO - Sequence fetching step finished successfully.
