@@ -219,12 +219,12 @@ __marimo__/
 *.DS_Store
 
 # Project-specific 
-/data/
+/data
 *temp_work*
 *Tgenomes*
-/samples/sars-cov-2*
-/results/nextstrain_output/*
+/samples/**
+/results/**
 /sars-cov-2
 head*
 src/analyse/influenza_data_exploration/
-logs/**
+/logs/**
