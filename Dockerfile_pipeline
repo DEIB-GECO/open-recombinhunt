@@ -1,3 +1,5 @@
 FROM openrecombinhunt-base
 
+WORKDIR /app
+
 ENTRYPOINT ["/bin/bash"]
