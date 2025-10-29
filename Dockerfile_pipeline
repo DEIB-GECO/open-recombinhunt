@@ -2,4 +2,4 @@ FROM openrecombinhunt-base
 
 WORKDIR /app
 
-ENTRYPOINT ["/bin/bash"]
+CMD ["/bin/bash"]
