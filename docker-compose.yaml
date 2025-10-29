@@ -14,8 +14,8 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile_pipeline
-    image: openrecominhunt-pipeline
-    container_name: openrecominhunt-pipeline
+    image: openrecombinhunt-pipeline
+    container_name: openrecombinhunt-pipeline
     volumes:
       - ./:/app/
     stdin_open: true
@@ -33,8 +33,8 @@ services:
     ports:
       - 60129:8501
     volumes:
+      - ./.streamlit:/app/.streamlit
       - ./app:/app/app
-      - ./config:/app/config
       - ./environments:/app/environments
       - ./logs:/app/logs
       - ./samples:/app/samples

@@ -5,7 +5,8 @@ WORKDIR /app
 EXPOSE 8501
 HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health
 
-# Copy immutable version of results into the container
-COPY ./results /app/results 
+# Copy immutable version of results into the container (both results and config are overwritten by the pipeline)
+COPY ./results /app/results      
+COPY ./config /app/config 
 
 ENTRYPOINT ["python", "-u", "-m", "streamlit", "run", "app/streamlit_app.py", "--server.enableCORS=false","--server.enableXsrfProtection=false","--server.enableWebsocketCompression=true"]
