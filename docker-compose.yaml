@@ -4,6 +4,7 @@ services:
       context: ./
       dockerfile: Dockerfile_base
     image: openrecombinhunt-base
+    container_name: openrecombinhunt-base
     environment:
       - PYTHONUNBUFFERED=1
     pull_policy: never
