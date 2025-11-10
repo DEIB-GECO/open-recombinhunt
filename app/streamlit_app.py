@@ -1253,7 +1253,7 @@ def show_home_page():
     st.markdown("---")
 
     # 1. A More Compelling Introduction
-    st.header("Welcome to the OpenRecombinHunt Analysis Dashboard")
+    st.header("What is OpenRecombinHunt")
     st.markdown("""
     This application provides an interactive interface to explore the results of the OpenRecombinHunt pipeline, an automated tool for detecting recombination in viral genomes. The goal of this project is to empower researchers and public health officials by making complex genomic analysis accessible and easy to interpret.
 
@@ -1261,12 +1261,12 @@ def show_home_page():
     """)
 
     # 2. The Pipeline Diagram (Now with PNG)
-    st.header("The OpenRecombinHunt Pipeline")
+    st.header("Data pipeline")
     
     png_path = "app/entire-pipeline.png"
     try:
         # Display the PNG image directly
-        st.image(png_path, use_container_width=False)
+        # st.image(png_path, use_container_width=True)
         
         # Keep the download button for user convenience
         with open(png_path, "rb") as png_file:
@@ -1279,69 +1279,97 @@ def show_home_page():
     except FileNotFoundError:
         st.warning("Pipeline diagram PNG not found. Please ensure 'app/entire-pipeline.png' exists.")
 
-    st.markdown("---")
-
     # 3. Interactive Pipeline Explanation
-    with st.expander("Module 1: Data Acquisition"):
+    with st.expander("Pipeline modules"):
+        st.subheader("Module 1: Data Acquisition")
         st.markdown("""
         This module is responsible for the automated download of raw data. It uses a central configuration file to fetch metadata and sequences from public databases like NCBI and Nextstrain, handling various download methods (CLI, URL, FTP) to produce a standardized set of raw files.
         """)
-    with st.expander("Module 2: Preprocessing"):
+        st.subheader("Module 2: Preprocessing")
         st.markdown("""
         Raw data is subjected to a rigorous, source-specific preprocessing workflow. This module cleans, filters, and standardizes the data, applying quality control rules defined in the configuration file to ensure only high-quality, complete records are used for analysis.
         """)
-    with st.expander("Module 3: HaploCoV"):
+        st.subheader("Module 3: HaploCoV")
         st.markdown("""
         For viruses without an existing nomenclature, this module uses HaploCoV to perform *de novo* lineage classification. It clusters sequences into "haplogroups" based on shared mutation profiles, providing the essential lineage assignments needed for the core analysis. For viruses with existing classifications, it can also augment them by identifying novel sub-clusters.
         """)
-    with st.expander("Module 4: Postprocessing"):
-        st.markdown("""
-        This module standardizes the mutation notation from different sources (Nextstrain and HaploCoV) into a single, consistent format required by the RecombinHunt tool. It correctly parses substitutions, insertions, deletions, and complex "compound" mutations.
-        """)
-    with st.expander("Module 5: Prepare for RecombinHunt"):
-        st.markdown("""
-        Before the final analysis, this module prepares two key sets of inputs: the environment, which characterizes the genetic landscape of the virus, and the per-lineage samples that will be tested for recombination.
-        """)
-    with st.expander("Module 6: RecombinHunt"):
-        st.markdown("""
-        This is the core analysis module. It uses the prepared environment and samples to run the RecombinHunt tool, a data-driven method that uses a statistical framework to detect genomes with one or two recombination breakpoints.
-        """)
-    with st.expander("Module 7: Streamlit"):
-         st.markdown("""
-        This is the final visualization layer of the pipeline. The Streamlit application you are currently using reads the outputs from the pipeline and presents them in a structured, interactive dashboard format for exploration.
-        """)
-
-    st.markdown("---")
-    
-    # 4. Core Technologies Section
-    st.header("Core Technologies")
-    col1, col2 = st.columns(2)
-    with col1:
-        st.subheader("What is HaploCoV?")
         st.markdown("""
         HaploCoV is a software framework for the unsupervised classification of viral variants. It clusters viral genomes into "haplogroups" based on shared, high-frequency mutations, making it ideal for assigning lineages to viruses that lack an established nomenclature.
         
         *Reference: Chiara, M., et al. (2023). Commun Biol.*
         """)
-    with col2:
-        st.subheader("What is RecombinHunt?")
+        st.subheader("Module 4: Postprocessing")
+        st.markdown("""
+        This module standardizes the mutation notation from different sources (Nextstrain and HaploCoV) into a single, consistent format required by the RecombinHunt tool. It correctly parses substitutions, insertions, deletions, and complex "compound" mutations.
+        """)
+        st.subheader("Module 5: Prepare for RecombinHunt")
+        st.markdown("""
+        Before the final analysis, this module prepares two key sets of inputs: the environment, which characterizes the genetic landscape of the virus, and the per-lineage samples that will be tested for recombination.
+        """)
+        st.subheader("Module 6: RecombinHunt")
+        st.markdown("""
+        This is the core analysis module. It uses the prepared environment and samples to run the RecombinHunt tool, a data-driven method that uses a statistical framework to detect genomes with one or two recombination breakpoints.
+        """)
         st.markdown("""
         RecombinHunt is a data-driven method for identifying recombinant viral genomes. It uses a likelihood-based approach to compare recombinant and non-recombinant models, allowing it to detect mosaic genomes with high accuracy and within reduced turn-around times.
 
         *Reference: Alfonsi, T., et al. (2024). Nat Commun.*
         """)
+        st.subheader("Module 7: Streamlit")
+        st.markdown("""
+        This is the final visualization layer of the pipeline. The Streamlit application you are currently using reads the outputs from the pipeline and presents them in a structured, interactive dashboard format for exploration.
+        """)
 
     st.markdown("---")
 
     # 5. "How to Use" and "About" Sections
-    st.header("About This Project")
+    st.header("About OpenRecombinHunt")
     st.markdown("""
-    This dashboard is the final output of a Master's thesis project in Computer Science and Engineering at Politecnico di Milano. The entire pipeline is designed to be fully automated and is run on a monthly schedule to provide up-to-date analysis. The source code is publicly available on [GitHub](https://github.com/yavuuzsameet/openrecombinhunt/tree/master).
+    OpenRecombinHunt was created as a joint work of Politecnico di Milano and Università degli Studi di Milano. The pipeline is fully automated and is run on a monthly schedule to provide up-to-date analysis.
     
     **Author:** Yavuz Samet Topcuoglu
     
     **Advisors:** Prof. Anna Bernasconi, Dr. Tommaso Alfonsi
     """)
+    
+    st.markdown("---")
+    st.markdown(
+    """
+    OpenRecombinHunt was supported by the SENSIBLE project (Small-data Early warNing System for viral pathogens In puBLic hEalth), PRIN 2022 PNRR by Italian MUR, grant n. P2022CNN2J.
+    It is maintained by the Data Science for Bioinformatics Lab @ Politecnico di Milano. It is free to use by anyone.
+    """)
+    
+    st.markdown("---")
+    
+    st.subheader("Cite Our Work")
+    st.markdown("""
+    To cite the HaploCov module:
+    
+    Chiara, M., Horner, D.S., Ferrandi, E., Gissi, C. and Pesole, G., 2023. HaploCoV: unsupervised classification and rapid detection of novel emerging variants of SARS-CoV-2. Communications Biology, 6(1), p.443. [https://doi.org/10.1038/s42003-023-04784-4](https://doi.org/10.1038/s42003-023-04784-4)
+                
+    To cite the RecombinHunt module:
+
+    Alfonsi, T., Bernasconi, A., Chiara, M. and Ceri, S., 2024. Data-driven recombination detection in viral genomes. Nature Communications, 15(1), p.3313. [https://doi.org/10.1038/s41467-024-47464-5](https://doi.org/10.1038/s41467-024-47464-5)
+
+    Our manuscript on the OpenRecombinHunt Web Server is in preparation, stay tuned!
+
+    Tommaso Alfonsi, Yavuz Samet Topcuoglu, Stefano Ceri, Matteo Chiara, Anna Bernasconi
+    OpenRecombinHunt: Automatic detection of recombination in publicly available viral sequences
+    [submitted to the Journal of Molecular Biology]
+
+    """)
+    
+    st.markdown("---")
+    
+    st.subheader("Code")
+    st.markdown("""
+    Find our code at: [https://github.com/DEIB-GECO/open-recombinhunt](https://github.com/DEIB-GECO/open-recombinhunt)
+    This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+    """)
+    st.subheader("Contact")
+    st.markdown("[anna.bernasconi@polimi.it](mailto:anna.bernasconi@polimi.it)")
+
+
 
 def show_virus_page(virus):
     """display virus-specific analysis and visualizations"""
