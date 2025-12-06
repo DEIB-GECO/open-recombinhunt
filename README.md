@@ -32,7 +32,7 @@ OpenRecombinHunt pipeline orchestration and environment are as depicted below.
 
 ## Directory Structure
 The project is organized into a modular structure to separate code, data, configuration, and results.
-<img width="4000" height="3385" alt="configuration" src="https://github.com/user-attachments/assets/d7f112af-974b-43d3-867d-6cbcada4de96" />
+<img width="600" height="508" alt="configuration" src="https://github.com/user-attachments/assets/d7f112af-974b-43d3-867d-6cbcada4de96" />
 
 
 ```
