@@ -1,10 +1,10 @@
 # OpenRecombinHunt: An Automated Recombination Analysis Pipeline
 
 OpenRecombinHunt provides an online temporal snapshot of potential recombination events (i.e., single sequences with suspected mosaic structure, with one or two breakpoints).
-In this repository, we provide the code of our method and corresponding Web Server, with the potential of unlocking the automatic detection of recombination in viruses along the most current genomic surveillance interests.
+In this repository, we provide the code of our method and the corresponding Web Server, with the potential of unlocking the automatic detection of recombination in viruses along the most current genomic surveillance interests.
 
 #### Motivation
-Viruses undergo change affecting their genome by several mechanisms, including point mutation and recombination. With the availability of open databases with large amounts of genome sequences (e.g., NCBI Virus and Nextstrain/pathogens) and the implementation of genomic surveillance systems, the need for light-weight automatic computational methods for  monitoring  continuously updating open data surges.
+Viruses undergo change affecting their genome by several mechanisms, including point mutation and recombination. With the availability of open databases with large amounts of genome sequences (e.g., NCBI Virus and Nextstrain/pathogens) and the implementation of genomic surveillance systems, the need for light-weight automatic computational methods for  continuously monitoring and updating open data surges.
 
 #### Methodology
 OpenRecombinHunt extends our previously published RecombinHunt method ([Alfonsi et al., 2024](https://doi.org/10.1038/s41467-024-47464-5)), which we extensively applied to identify recombinant SARS-CoV-2 lineages, to any virus for which a large corpus of sequences is publicly available. 
@@ -21,10 +21,15 @@ We apply this framework to openly-accessible datasets of SARS-CoV-2, Respiratory
 ## Overview
 OpenRecombinHunt is an end-to-end bioinformatics pipeline designed to automate the detection and analysis of viral recombination events. The pipeline handles everything from data acquisition from public repositories like NCBI and Nextstrain, to data preprocessing, environment creation, running recombination analysis using HaploCoV and RecombinHunt, and generating final reports and visualizations.
 
-The entire workflow is configurable via a central config/config.yaml file and is designed to be run on a monthly schedule to process the latest available data.
+The entire workflow is configurable via a central config/config.yaml file and is designed to be run on a monthly schedule to process the latest available data (see full pipeline in [this file]([url](https://github.com/user-attachments/files/23988919/entire-pipeline.pdf))).
+[module0.pdf](https://github.com/user-attachments/files/23988905/module0.pdf)
+
+OpenRecombinHunt pipeline orchestration and environment are as depicted below.
+
 
 ## Directory Structure
 The project is organized into a modular structure to separate code, data, configuration, and results.
+[config.pdf](https://github.com/user-attachments/files/23988941/config.pdf)
 
 
 ```
@@ -144,7 +149,7 @@ In a terminal, run:
 docker compose build frontend && docker compose up frontend
 ```
 
-The above command will copy the content of the `results/` folder within the virtual environment and start a web-server accessible through a browser at the address [http://localhost:60129](http://localhost:60129).
+The above command will copy the content of the `results/` folder within the virtual environment and start a Web server accessible through a browser at the address [http://localhost:60129](http://localhost:60129).
 
 To stop the web server, press `Ctrl+C` or `Cmd+C` in the same terminal window where you started the web application. 
 
@@ -155,3 +160,11 @@ Open Docker Desktop and delete the images and containers related to OpenRecombin
 
 ## License
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+
+
+ --------
+
+ ## Appendix to the manuscript
+<img width="634" height="738" alt="table-comparison" src="https://github.com/user-attachments/assets/324c137c-6984-4df5-900e-3e7f30d0d6b8" />
+
+ 
