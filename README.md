@@ -21,15 +21,18 @@ We apply this framework to openly-accessible datasets of SARS-CoV-2, Respiratory
 ## Overview
 OpenRecombinHunt is an end-to-end bioinformatics pipeline designed to automate the detection and analysis of viral recombination events. The pipeline handles everything from data acquisition from public repositories like NCBI and Nextstrain, to data preprocessing, environment creation, running recombination analysis using HaploCoV and RecombinHunt, and generating final reports and visualizations.
 
-The entire workflow is configurable via a central config/config.yaml file and is designed to be run on a monthly schedule to process the latest available data (see full pipeline in [this file]([url](https://github.com/user-attachments/files/23988919/entire-pipeline.pdf))).
-[module0.pdf](https://github.com/user-attachments/files/23988905/module0.pdf)
+The entire workflow is configurable via a central config/config.yaml file and is designed to be run on a monthly schedule to process the latest available data (see full pipeline in [this_file.pdf](https://github.com/user-attachments/files/23989037/this_file.pdf)
+).
+<img width="13643" height="3393" alt="pipeline-horizontal" src="https://github.com/user-attachments/assets/5e1723ea-1e40-4fa3-9b41-60a9742333d5" />
+
+
 
 OpenRecombinHunt pipeline orchestration and environment are as depicted below.
 
 
 ## Directory Structure
 The project is organized into a modular structure to separate code, data, configuration, and results.
-[config.pdf](https://github.com/user-attachments/files/23988941/config.pdf)
+<img width="5125" height="4337" alt="configuration" src="https://github.com/user-attachments/assets/d7f112af-974b-43d3-867d-6cbcada4de96" />
 
 
 ```
