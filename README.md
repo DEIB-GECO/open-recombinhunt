@@ -32,7 +32,7 @@ OpenRecombinHunt pipeline orchestration and environment are as depicted below.
 
 ## Directory Structure
 The project is organized into a modular structure to separate code, data, configuration, and results.
-<img width="5125" height="4337" alt="configuration" src="https://github.com/user-attachments/assets/d7f112af-974b-43d3-867d-6cbcada4de96" />
+<img width="4000" height="3385" alt="configuration" src="https://github.com/user-attachments/assets/d7f112af-974b-43d3-867d-6cbcada4de96" />
 
 
 ```
@@ -168,6 +168,6 @@ Open Docker Desktop and delete the images and containers related to OpenRecombin
  --------
 
  ## Appendix to the manuscript
-<img width="634" height="738" alt="table-comparison" src="https://github.com/user-attachments/assets/324c137c-6984-4df5-900e-3e7f30d0d6b8" />
+<img width="1000" height="1164" alt="table-comparison" src="https://github.com/user-attachments/assets/324c137c-6984-4df5-900e-3e7f30d0d6b8" />
 
  
